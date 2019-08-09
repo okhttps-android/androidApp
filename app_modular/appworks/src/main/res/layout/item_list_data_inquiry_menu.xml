@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/me_menu_item_normal"
+              android:orientation="vertical"
+              android:padding="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/data_inquiry_modul_view"
+            android:layout_width="6dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/data_inquiry_modul_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.core.widget.view.MyGridView
+            android:id="@+id/data_inquiry_modul_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="3"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_bar"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.crm.BusinessDetailActivty">
+    
+
+    <View
+        style="@style/app_line_horizontal_05p"
+        android:layout_width="match_parent"></View>
+
+    <com.core.widget.VoiceSearchView
+        android:id="@+id/voiceSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <View
+        style="@style/app_line_horizontal_05p"
+        android:layout_width="match_parent"
+        android:visibility="gone"></View>
+    <LinearLayout
+        android:id="@+id/ll_top_state"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="@drawable/shape_brounds_bottom"
+            android:layout_weight="1"
+            android:text="@string/Unscheduled_schedule"
+            android:id="@+id/tv_unmanger" />
+
+        <View style="@style/app_line_v_1dp"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/shape_brounds_bottom"
+            android:gravity="center"
+            android:text="@string/Has_been_scheduled"
+            android:id="@+id/tv_manged" />
+
+        <View style="@style/app_line_v_1dp"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/shape_brounds_bottom"
+            android:gravity="center"
+            android:text="@string/Will_time_out"
+            android:id="@+id/tv_timeout" />
+
+        <View style="@style/app_line_v_1dp"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/shape_brounds_bottom"
+            android:gravity="center"
+            android:text="@string/Has_switched_customers"
+            android:id="@+id/tv_transtered" />
+
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_business"
+        android:dividerHeight ="10dp"
+        style="@style/ListViewBasic">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

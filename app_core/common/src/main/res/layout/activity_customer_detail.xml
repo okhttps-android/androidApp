@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.crm.CustomerDetailActivity">
+
+    <LinearLayout
+        style="@style/crm_ll_card"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@color/gray_light">
+
+        <LinearLayout
+            style="@style/LinearLayout_vertical"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+
+                style="@style/TextView_VerticalCenter"
+                android:layout_margin="20dp"
+                android:text="深圳市xxx公司"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+
+                style="@style/TextView_VerticalCenter"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="负责人：深圳市xxx公司"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                style="@style/TextView_VerticalCenter"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="未成交：普通客户"
+                android:textColor="@color/white" />
+
+            <TextView
+
+                style="@style/TextView_VerticalCenter"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="最后跟进：2016-07-05 08:08"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crm_ll_card"
+            android:layout_height="wrap_content">
+
+            <LinearLayout style="@style/LinearLayout_horizontal">
+
+                <ImageView style="@style/sign_imageview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="基本信息"
+                    android:textColor="#FF8E57"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="客户名称"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="客户地址"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="客户类型"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="所属地区"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_diqu"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="业务员"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_leader"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="营业执照"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_zhihzhao"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="跟进时间"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_lastDate"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="来源"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_source"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp"
+                    android:text="线上注册" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="行业"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_industry"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp"
+                    android:text="金融业" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="电话"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_tel"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp"
+                    android:text="0755-21321312" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crm_ll_card"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout style="@style/LinearLayout_horizontal">
+
+                <ImageView style="@style/sign_imageview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="联系人"
+                    android:textColor="#FF8E57"
+                    android:textSize="15sp" />
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+                    android:textColor="@color/gray_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/gray_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="岗位"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_position"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/gray_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="电话"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_mobile"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/gray_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LinearLayout_horizontal"
+                android:layout_margin="5dp">
+
+                <TextView
+                    style="@style/TextView_VerticalCenter"
+
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="邮箱"
+                    android:textColor="@color/gray_light" />
+
+                <TextView
+                    android:id="@+id/tv_email"
+                    style="@style/TextView_VerticalCenter"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/gray_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/crm_ll_card"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout style="@style/LinearLayout_horizontal">
+
+                <ImageView style="@style/sign_imageview" />
+
+                <TextView
+                    android:id="@+id/business_stage_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/business_stage"
+                    android:textColor="#FF8E57"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <com.core.widget.MyListView
+                android:id="@+id/steps_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/item_line"
+                android:dividerHeight="@dimen/line" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:visibility="gone">
+
+                <com.core.widget.view.steps.StepsView
+                    android:id="@+id/stepsView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="5dp" />
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crm_ll_card"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout style="@style/LinearLayout_horizontal">
+
+                <ImageView style="@style/sign_imageview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="财务信息"
+                    android:textColor="#FF8E57"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_margin="10dp"
+                        android:text="币别" />
+
+                    <TextView
+                        android:id="@+id/tv_money_kind"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_margin="10dp"
+                        android:text="税率" />
+
+                    <TextView
+                        android:id="@+id/tv_feilv"
+                        style="@style/TextView_VerticalCenter"
+
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="0元" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_margin="10dp"
+                        android:text="费用报销" />
+
+                    <TextView
+                        android:id="@+id/tv_feiyonged"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="0元" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crm_ll_card"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout style="@style/LinearLayout_horizontal">
+
+                <ImageView style="@style/sign_imageview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="其它"
+                    android:textColor="#FF8E57"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_left"
+                    style="@style/LinearLayout_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/ll_right">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_margin="10dp"
+                        android:text="备注" />
+
+                    <TextView
+                        android:id="@+id/tv_modifyRecord"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="0条" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_right"
+                    style="@style/LinearLayout_horizontal"
+
+                    android:layout_width="wrap_content">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_margin="10dp"
+                        android:text="拜访次数" />
+
+                    <TextView
+                        android:id="@+id/tv_visitTimes"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:text="0次" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/crm_ll_card"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <View style="@style/app_line_gray_1dp" />
+
+            <Button
+                android:id="@+id/customer_detail_add_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="10dp"
+                android:text="添加到拜访计划" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

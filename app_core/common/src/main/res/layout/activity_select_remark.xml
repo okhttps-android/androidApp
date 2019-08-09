@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_select_remark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.oa.SelectRemarkActivity">
+
+    <RelativeLayout
+        android:id="@+id/meet_select_rl"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_bar"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp">
+
+        <com.xzjmyk.pm.activity.view.ClearEditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_input"
+            android:drawableLeft="@drawable/search"
+            android:drawableRight="@drawable/search_clear"
+            android:hint="@string/search"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/grey"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/meet_select_rl" />
+</RelativeLayout>

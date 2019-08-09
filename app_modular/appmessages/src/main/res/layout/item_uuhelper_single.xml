@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp">
+
+    <TextView
+        android:id="@+id/timeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/text_hint_bg"
+        android:text="2017-11-11"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_min" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeTV"
+        android:background="@drawable/rl_circular_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="titleTV"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_main" />
+
+        <ImageView
+            android:id="@+id/imageIV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTV"
+            android:maxHeight="140dp"
+            android:minHeight="100dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/contentTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageIV"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="contentTV"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@id/contentTV"
+            android:background="@color/item_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:drawableRight="@drawable/oa_next"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="阅读全文"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

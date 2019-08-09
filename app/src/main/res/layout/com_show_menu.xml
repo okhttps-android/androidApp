@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="400dp"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tltle"
+        android:background="@color/bg_main"
+        android:visibility="visible"
+        android:gravity="center_horizontal"
+        />
+    <com.core.widget.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+       <com.core.widget.MyListView
+           android:id="@+id/qs_common_mlist"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="visible"
+           android:background="#ebe9e9">
+
+       </com.core.widget.MyListView>
+    </com.core.widget.CustomerScrollView>
+</LinearLayout>

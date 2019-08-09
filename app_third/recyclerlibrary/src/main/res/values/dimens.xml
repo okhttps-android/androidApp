@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="refresh_padding_top">10dp</dimen>
+    <dimen name="refresh_padding_bottom">10dp</dimen>
+    <dimen name="refresh_item_height">60dp</dimen>
+</resources>

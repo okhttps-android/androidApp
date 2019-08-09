@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/padding"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/contantImg"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginRight="@dimen/padding"
+        android:text="titleTv"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main"
+        app:layout_constraintLeft_toRightOf="@id/contantImg"
+        app:layout_constraintTop_toTopOf="@id/contantImg" />
+
+    <TextView
+        android:id="@+id/subTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="subTv"
+        android:layout_marginRight="@dimen/padding"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine"
+        app:layout_constraintLeft_toLeftOf="@id/titleTv"
+        app:layout_constraintTop_toBottomOf="@id/titleTv" />
+
+    <TextView
+        android:id="@+id/targetTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding"
+        android:text="目标筹款 ："
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_min"
+        app:layout_constraintLeft_toLeftOf="@id/titleTv"
+        app:layout_constraintTop_toBottomOf="@id/subTv" />
+
+    <TextView
+        android:id="@+id/targetTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="targetTv"
+        android:textColor="@color/indianred"
+        android:textSize="@dimen/text_hine"
+        app:layout_constraintBottom_toBottomOf="@id/targetTag"
+        app:layout_constraintLeft_toRightOf="@id/targetTag"
+        app:layout_constraintTop_toTopOf="@id/targetTag" />
+
+
+    <TextView
+        android:id="@+id/defTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginTop="@dimen/padding"
+        android:text="还差13.3万元"
+        android:textColor="#FF414141"
+        android:textSize="9sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/targetTag" />
+
+    <SeekBar
+        android:id="@+id/progressSb"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginRight="@dimen/paddingMin"
+        android:thumb="@null"
+        android:progressDrawable="@drawable/bg_seek_bar_progree"
+        app:layout_constraintBottom_toBottomOf="@id/defTv"
+        app:layout_constraintLeft_toLeftOf="@id/titleTv"
+        app:layout_constraintRight_toLeftOf="@id/defTv"
+        app:layout_constraintTop_toTopOf="@id/defTv" />
+
+
+    <TextView
+        android:id="@+id/giftBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/defTv"
+        app:layout_constraintTop_toBottomOf="@id/defTv"
+        android:layout_marginBottom="@dimen/padding"
+        android:layout_marginTop="@dimen/padding"
+        android:background="@color/indianred"
+        android:padding="4dp"
+        android:text="我要捐款"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_hine" />
+
+    <TextView
+        android:id="@+id/typeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/giftBtn"
+        app:layout_constraintBottom_toBottomOf="@id/giftBtn"
+        app:layout_constraintLeft_toLeftOf="@id/titleTv"
+        android:background="@drawable/text_frame_bg"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:text="疾病救助"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/me_menu_item_normal">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/real_time_form_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:padding="20dp" />
+
+    <LinearLayout
+        android:id="@+id/real_time_form_empty_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:scaleType="fitEnd"
+            android:src="@drawable/gif_empty_view" />
+
+        <TextView
+            android:id="@+id/real_time_form_msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:text="看板数据为空"
+            android:textColor="@color/empty_text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+</FrameLayout>

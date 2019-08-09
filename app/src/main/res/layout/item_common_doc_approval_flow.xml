@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/node_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/item_common_doc_approval_flow_node_img"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/node_none3"
+            android:contentDescription="@string/app_name"
+            />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/item_dcommon_doc_approval_flow_photo_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/app_name"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/node_ll"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/item_common_doc_approval_flow_name_tv"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/item_dcommon_doc_approval_flow_photo_img"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#575757"
+        android:textSize="@dimen/text_hine"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/item_common_doc_approval_flow_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/item_dcommon_doc_approval_flow_photo_img"
+        android:layout_below="@id/item_common_doc_approval_flow_name_tv"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine"
+        android:layout_marginTop="4dp"/>
+    <LinearLayout
+        android:id="@+id/Description_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/item_common_doc_approval_flow_status_tv"
+        android:layout_below="@id/item_common_doc_approval_flow_name_tv"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/left_parenthesis_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ("
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/item_common_doc_approval_flow_statusDescription_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="多休息"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_hine"
+            android:layout_marginTop="4dp" />
+        <TextView
+            android:id="@+id/right_parenthesis_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" )"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/item_common_doc_approval_flow_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#9F9595"
+        android:textSize="@dimen/text_hine"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

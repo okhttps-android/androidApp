@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.xzjmyk.pm.activity.ui.erp.activity.crm.VisitReportPlanActivity">
+
+        <RelativeLayout
+            android:id="@+id/rl_name"
+            style="@style/IMTbleLine_UP_Me"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/oa_client"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="姓名"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_name"
+                style="@style/IMTbleLine_TextValue"
+                android:layout_toRightOf="@+id/name_text"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/sex_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/sex_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/oa_client"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="性别"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_sex"
+                style="@style/IMTbleLine_TextValue"
+                android:layout_toLeftOf="@+id/sex_arrow_img"
+                android:layout_toRightOf="@+id/sex_text"
+                android:text="男"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+            <ImageView
+                android:id="@+id/sex_arrow_img"
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/company_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/company_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/oa_client"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="公司"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_company_login"
+                style="@style/IMTbleLine_TextValue"
+                android:layout_toLeftOf="@+id/company_arrow_img"
+                android:layout_toRightOf="@+id/company_text"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+            <ImageView
+                android:id="@+id/company_arrow_img"
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/deparment_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/deparment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/oa_client"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="部门"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_department_login"
+                style="@style/IMTbleLine_TextValue"
+                android:layout_toLeftOf="@+id/deparment_arrow_img"
+                android:layout_toRightOf="@+id/deparment_text"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+            <ImageView
+                android:id="@+id/deparment_arrow_img"
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/position_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/position_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/oa_client"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="职位"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_position_login"
+                style="@style/IMTbleLine_TextValue"
+                android:layout_toLeftOf="@+id/position_arrow_img"
+                android:layout_toRightOf="@+id/position_text"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+            <ImageView
+                android:id="@+id/position_arrow_img"
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tel_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tel_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/oa_client"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="电话"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_tel_login"
+                style="@style/IMTbleLine_TextValue"
+                android:layout_marginBottom="1dp"
+                android:layout_toRightOf="@+id/tel_text"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/startTime_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/startTime_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/oa_client"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="手机"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_phone_login"
+                style="@style/IMTbleLine_TextValue"
+                android:layout_toRightOf="@+id/startTime_text"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            
+            android:id="@+id/email_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/oa_client"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="邮件"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_email_login"
+                style="@style/IMTbleLine_TextValue"
+                android:layout_toRightOf="@+id/email_text"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/address_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/oa_client"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="地址"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_address_login"
+                style="@style/IMTbleLine_TextValue"
+                android:layout_toLeftOf="@+id/address_arrow_img"
+                android:layout_toRightOf="@+id/address_text"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+            <ImageView
+                android:id="@+id/address_arrow_img"
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:clickable="true"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/birthday_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/birthday_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/oa_client"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="生日"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_birthday_login"
+                style="@style/IMTbleLine_TextValue"
+                android:layout_toLeftOf="@+id/birthday_arrow_img"
+                android:layout_toRightOf="@+id/birthday_text"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+            <ImageView
+                android:id="@+id/birthday_arrow_img"
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="1dp"
+            android:id="@+id/notes_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/notes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/oa_client"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="备注"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_notes_login"
+                style="@style/IMTbleLine_TextValue"
+                android:layout_toRightOf="@+id/notes_text"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/card_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/oa_client"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="名片"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/tv_card_login"
+                style="@style/IMTbleLine_TextValue"
+                android:layout_toRightOf="@+id/card_text"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+
+

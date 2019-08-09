@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/info_rl"
+        style="@style/IMTbleLine_UP_"
+        android:paddingBottom="@dimen/padding"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_me_menu_item_bg">
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_main"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_main" />
+
+        <ImageView
+            android:id="@+id/infoTag"
+            android:visibility="gone"
+            android:layout_width="@dimen/next_width"
+            android:layout_height="@dimen/next_height"
+            android:layout_alignBottom="@id/nameTv"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/oa_next"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/phoneTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/nameTv"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/infoTag"
+            android:layout_toRightOf="@id/nameTv"
+            android:textColor="@color/hintColor"
+            android:textSize="@dimen/text_hine" />
+
+
+        <TextView
+            android:id="@+id/companyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTv"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/hintColor"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/charitTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyTv"
+            android:layout_marginTop="10dp"
+            android:text="捐赠善款(元)"
+            android:textColor="@color/hintColor"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/charitTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/charitTag"
+            android:layout_below="@id/companyTv"
+            android:paddingRight="@dimen/padding"
+            android:text="0.00"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding" />
+
+    <RelativeLayout
+        android:id="@+id/projectRl"
+        style="@style/IMTbleLine_UP_Me"
+        android:clickable="true"
+        android:layout_height="@dimen/item_height_min"
+        android:background="@drawable/selector_me_menu_item_bg">
+
+        <TextView
+            android:id="@+id/projectTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="已捐款次数"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/projectNumTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/projectTag"
+            android:layout_toRightOf="@id/projectTag"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:textColor="@color/hintColor"
+            android:textSize="@dimen/text_main" />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/item_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/activityRl"
+        style="@style/IMTbleLine_UP_Me"
+        android:clickable="true"
+        android:layout_height="@dimen/item_height_min"
+        android:background="@drawable/selector_me_menu_item_bg">
+
+        <TextView
+            android:id="@+id/activityTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="已参与活动"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/activityNumTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/activityTag"
+            android:layout_toRightOf="@id/activityTag"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:textColor="@color/hintColor"
+            android:textSize="@dimen/text_main" />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/item_line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/messageRl"
+        style="@style/IMTbleLine_UP_Me"
+        android:clickable="true"
+        android:layout_height="@dimen/item_height_min"
+        android:background="@drawable/selector_me_menu_item_bg">
+
+        <TextView
+            android:id="@+id/messageTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="消息提醒"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <View
+            android:id="@+id/messageNumTv"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_alignTop="@id/messageTag"
+            android:layout_toRightOf="@id/messageTag"
+            android:background="@drawable/hongdian"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="@dimen/padding"
+            android:gravity="center" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

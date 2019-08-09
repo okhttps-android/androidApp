@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/action_device_cycle_count"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <FrameLayout
+        android:id="@+id/topFl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <com.xzjmyk.pm.activity.view.DivideRadioGroup
+            android:id="@+id/tabGroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/todoLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/padding"
+                    android:layout_marginRight="@dimen/padding"
+                    android:background="#1084D1" />
+
+                <RadioButton
+                    android:id="@+id/todoRb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/task_wait_todo"
+                    style="@style/IMTabButton"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/doneDealLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/padding"
+                    android:layout_marginRight="@dimen/padding"
+                    android:background="#1084D1"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/doneDealRb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    style="@style/IMTabButton"
+                    android:gravity="center"
+                    android:text="@string/task_done_deal" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/byMeLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="@dimen/padding"
+                    android:layout_marginRight="@dimen/padding"
+                    android:background="#1084D1"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/byMeRb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/task_request_me"
+                    style="@style/IMTabButton" />
+            </FrameLayout>
+
+        </com.xzjmyk.pm.activity.view.DivideRadioGroup>
+
+    </FrameLayout>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listview_schedult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_dispaly_top"
+        android:background="#f2f2f2"
+        android:dividerPadding="0px"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+</LinearLayout>

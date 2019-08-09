@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/delete_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="6dp"
+        android:text="@string/common_delete"
+        android:textColor="@color/button_focus" />
+
+    <RelativeLayout
+        style="@style/item_menu"
+        android:layout_below="@id/delete_tv">
+
+        <TextView
+            android:id="@+id/contact_tag"
+            style="@style/item_menu_tag"
+            android:gravity="center_vertical"
+            android:text="@string/common_Contact_person" />
+
+        <TextView
+            android:id="@+id/contact_tv"
+            style="@style/item_menu_input"
+            android:layout_toRightOf="@id/contact_tag"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/oa_next"
+            android:hint="@string/common_input_or_select_much" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

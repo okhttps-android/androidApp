@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+<RelativeLayout
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <Button
+        android:id="@+id/save1"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="保存并返回"
+        android:background="@drawable/bg_bule_btn"
+        android:layout_marginRight="10dp"
+        />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:id="@+id/back"
+        android:text="返回"
+        android:background="@drawable/bg_bule_btn"
+        android:visibility="visible"
+        android:layout_marginLeft="10dp"/>
+    <Button
+        android:id="@+id/clear1"
+        android:layout_marginLeft="20dp"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:text="清除"
+        android:background="@drawable/bg_bule_btn"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/back"
+        android:layout_toEndOf="@+id/back"
+        android:layout_marginStart="20dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/change"
+        android:text="改变颜色"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/changewidth"
+        android:text="改变宽度"
+        android:visibility="gone"
+        />
+</RelativeLayout>
+
+    <com.uas.appme.settings.handwritedemo.LinePathView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view"
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

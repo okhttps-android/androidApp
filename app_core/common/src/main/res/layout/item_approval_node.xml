@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <View
+        android:id="@+id/padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/paddingApp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75sp"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:id="@+id/timeLl"
+            android:layout_width="47sp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding"
+            android:gravity="center|right"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding">
+
+            <TextView
+                android:id="@+id/dateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                tools:text="10-17" />
+
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                tools:text="10:57" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/statusIV"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="56sp"
+            android:layout_marginRight="8dp" />
+
+        <View
+            android:id="@+id/lineTop"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_above="@id/statusIV"
+            android:layout_marginLeft="63sp"
+            android:background="#f2f2f2" />
+
+        <View
+            android:id="@+id/lineBottom"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/statusIV"
+            android:layout_marginLeft="63sp"
+            android:background="#f2f2f2" />
+
+        <ImageView
+            android:id="@+id/handIv"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/statusIV" />
+
+        <TextView
+            android:id="@+id/statusTv"
+            style="@style/commonTextStyle"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/handIv"
+            android:paddingRight="@dimen/padding"
+            android:textSize="12sp"
+            tools:text="等待审批" />
+
+        <TextView
+            android:id="@+id/keyTv"
+            style="@style/commonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_alignTop="@id/handIv"
+            android:layout_toRightOf="@id/handIv"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:maxWidth="180dp"
+            android:textColor="#999999"
+            android:textSize="14sp"
+            tools:text="饶猛" />
+
+        <ImageView
+            android:id="@+id/changeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/keyTv"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_toRightOf="@id/keyTv"
+            android:padding="2dp"
+            android:src="@drawable/change_user"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/valuesTv"
+            style="@style/commonTextStyle"
+            android:layout_below="@id/keyTv"
+            android:layout_toLeftOf="@id/statusTv"
+            android:layout_toRightOf="@id/handIv"
+            android:textColor="@color/done_approval"
+            android:textSize="@dimen/text_min"
+            tools:text="审批意见" />
+    </RelativeLayout>
+</LinearLayout>

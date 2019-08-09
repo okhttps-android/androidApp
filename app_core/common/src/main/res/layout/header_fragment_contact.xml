@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.core.widget.VoiceSearchView
+        android:id="@+id/voiceSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <LinearLayout
+        android:id="@+id/click_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/qiyetongxunlu"
+            android:gravity="center"
+            android:text="@string/contact_company"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/qunliao"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/contact_business" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/uu_friend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/uuhaoyou"
+                android:gravity="center"
+                android:text="@string/contact_friend"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tv_uu_new"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignTop="@+id/tv_oa"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/hongdian"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dip" />
+        </RelativeLayout>
+  
+
+        <TextView
+            android:id="@+id/peculiar_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/guanzhu"
+            android:gravity="center"
+            android:text="@string/contact_often"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/commonPopView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <TextView
+        android:id="@+id/basic_info_set_remark_name"
+        style="@style/commonPopItemTop"
+        android:text="@string/set_remark_name"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/button_invalid" />
+
+    <TextView
+        android:id="@+id/basic_info_remove_blacklist"
+        style="@style/commonPopItem"
+        android:text="@string/remove_blacklist"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/button_invalid" />
+
+    <TextView
+        android:id="@+id/basic_info_add_blacklist"
+        style="@style/commonPopItem"
+        android:text="@string/add_blacklist"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/button_invalid" />
+
+    <TextView
+        android:id="@+id/basic_info_cancel_attention"
+        style="@style/commonPopItemBottom"
+        android:text="@string/cancel_attention"
+        />
+
+    <TextView
+        android:id="@+id/basic_info_delete_all"
+        style="@style/commonPopCancelItem"
+        android:text="@string/delete_all"
+        />
+
+</LinearLayout>

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Transpant"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/schedule_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="@dimen/item_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/schedule_head_area"
+            android:layout_width="57dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/schedule_avatar_img"
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_width"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:src="@drawable/home_image_01_u" />
+
+            <TextView
+                android:id="@+id/schedule_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text="999"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/schedule_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/schedule_head_area"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/schedule_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:text="@string/msg_approval"
+                android:textColor="@color/text_main"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/schedule_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/schedule_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/schedule_name_tv"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:id="@+id/waitting_work_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="@dimen/item_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <!--android:background="@color/item_color1"-->
+        <FrameLayout
+            android:id="@+id/waitting_work_head_area"
+            android:layout_width="57dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/waitting_work_avatar_img"
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_width"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:src="@drawable/daibangongzuo" />
+
+            <TextView
+                android:id="@+id/waitting_work_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text="999"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/waitting_work_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/waitting_work_head_area"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/waitting_work_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/waitting_work_time_tv"
+                android:ellipsize="end"
+                android:text="@string/msg_work"
+                android:textColor="@color/text_main"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/waitting_work_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/waitting_work_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/waitting_work_name_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/transparent" />-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+    <RelativeLayout
+        android:id="@+id/subscribe_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="@dimen/item_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/head_area"
+            android:layout_width="57dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_width"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:src="@drawable/tingyue" />
+
+            <TextView
+                android:id="@+id/subscribe_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/head_area"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/nick_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/time_tv"
+                android:ellipsize="end"
+                android:text="@string/msg_subscribe"
+                android:textColor="@color/text_main"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_dingyue_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subscribe_time_tv"
+                android:layout_toLeftOf="@+id/tv_dingYue_num"
+                android:layout_toStartOf="@+id/tv_dingYue_num"
+                android:text="@string/msg_subscribe_data" />
+
+            <TextView
+                android:id="@+id/tv_dingYue_num"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="top|right"
+                android:background="@drawable/hongdian"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp" />
+
+            <TextView
+                android:id="@+id/subscribe_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/subscribe_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nick_name_tv"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+
+    <RelativeLayout
+        android:id="@+id/booking_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="@dimen/item_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/head_booking"
+            android:layout_width="57dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_width"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:src="@drawable/icon_yuyue3" />
+
+            <TextView
+                android:id="@+id/booking_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/head_booking"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/book_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/time_tv"
+                android:ellipsize="end"
+                android:text="@string/booking_menu"
+                android:textColor="@color/text_main"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_book_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/book_time_tv"
+                android:layout_toLeftOf="@+id/tv_book_num"
+                android:layout_toStartOf="@+id/tv_book_num"
+
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_book_num"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="top|right"
+                android:background="@drawable/hongdian"
+                android:gravity="center"
+                android:text=""
+
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp" />
+
+            <TextView
+                android:id="@+id/book_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/book_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/book_name_tv"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/uustep_v"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line"
+        android:layout_alignParentTop="true"/>
+    <RelativeLayout
+        android:id="@+id/uustep_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="@dimen/item_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/head_uustep"
+            android:layout_width="57dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_width"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:src="@drawable/uu_run" />
+
+            <TextView
+                android:id="@+id/uustep_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/head_uustep"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/uustep_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/time_tv"
+                android:ellipsize="end"
+                android:text="@string/set_sport"
+                android:textColor="@color/text_main"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/uustep_red_tv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="top|right"
+                android:background="@drawable/hongdian"
+                android:gravity="center"
+                android:text=""
+
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp" />
+
+            <TextView
+                android:id="@+id/uustep_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/uustep_content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uustep_name_tv"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/notice_rl"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/item_height"-->
+    <!--android:background="@drawable/selector_me_menu_item_bg"-->
+    <!--android:descendantFocusability="blocksDescendants"-->
+    <!--android:minHeight="@dimen/item_height"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:paddingRight="15dp">-->
+    <!--&lt;!&ndash;android:background="@color/item_color1"&ndash;&gt;-->
+    <!--<FrameLayout-->
+    <!--android:id="@+id/notice_head_area"-->
+    <!--android:layout_width="57dp"-->
+    <!--android:layout_height="65dp"-->
+    <!--android:layout_centerVertical="true">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/notice_avatar_img"-->
+    <!--android:layout_width="@dimen/item_img_height"-->
+    <!--android:layout_height="@dimen/item_img_width"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:background="@color/transparent"-->
+    <!--android:contentDescription="@string/app_name"-->
+    <!--android:padding="1dp"-->
+    <!--android:src="@drawable/home_image_03_u"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/notice_num_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="top|right"-->
+    <!--android:background="@drawable/tab_unread_bg"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="10.0dp"-->
+    <!--android:visibility="gone"/>-->
+    <!--</FrameLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/notice_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="3dp"-->
+    <!--android:layout_toRightOf="@id/notice_head_area"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/notice_name_tv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_toLeftOf="@+id/notice_time_tv"-->
+    <!--android:ellipsize="end"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="新闻通知"-->
+    <!--android:textColor="@color/text_main"-->
+    <!--android:textSize="16sp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/notice_time_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:ellipsize="end"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="@color/text_hine"-->
+    <!--android:textSize="14sp"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/notice_content_tv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/notice_name_tv"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:ellipsize="end"-->
+    <!--android:singleLine="true"-->
+    <!--android:textColor="@color/text_hine"-->
+    <!--android:textSize="14sp"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--</RelativeLayout>-->
+</LinearLayout>

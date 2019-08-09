@@ -1,0 +1,230 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.getkeepsafe.dexcount'
+//apply plugin: 'me.tatarka.retrolambda'
+
+//定义时间
+def releaseTime() {
+    // return new Date().format("yyyyMMdd.HHmm.ss")
+    return new Date().format("yyyyMMdd")
+}
+//设置发布的显示的版本号
+def getVersionName() {
+    return rootProject.ext.android.versionName
+}
+
+//读取版本号
+def getVersionCode() {
+    def versionFile = file('version.properties')
+    if (versionFile.canRead()) {
+        Properties versionProps = new Properties()
+        versionProps.load(new FileInputStream(versionFile))
+        def versionName = versionProps['versionName'].toInteger()
+        def versionCode = versionProps['versionCode'].toInteger()
+        def debugName = versionProps['debugName'].toInteger()
+        def debugCode = versionProps['debugCode'].toInteger()
+        def versionArray = new Integer[4]
+
+        def runTasks = gradle.startParameter.taskNames        //仅在assembleRelease任务是增加版本号
+        println 'runTasks:' + runTasks
+        if (':WeiChat:assembleBaiduDebug' in runTasks) {
+            println 'runTasks:' + 'debug模式打包apk'
+            versionProps['debugCode'] = (++debugCode).toString()
+            versionProps['debugName'] = (++debugName).toString()
+            versionProps.store(versionFile.newWriter(), null)
+        }
+        if (':WeiChat:assembleBaiduRelease' in runTasks) {
+            println 'runTasks:' + '发布模式打包apk'
+            versionProps['versionCode'] = (++versionCode).toString()
+            versionProps['versionName'] = (++versionName).toString()
+            versionProps.store(versionFile.newWriter(), null)
+        }
+        versionArray[0] = versionName
+        versionArray[1] = versionCode
+        versionArray[2] = debugName
+        versionArray[3] = debugCode
+
+        println versionArray[0].toString()
+        return versionArray
+    } else {
+        throw new GradleException("Could not find version.properties!")
+    }
+}
+
+
+android {
+    
+    def versionArray = getVersionCode()
+    //====================Add below two line=============
+    dexOptions {
+//        incremental true
+        javaMaxHeapSize "4g" //specify the heap size for the dex process
+        preDexLibraries = false //delete the already predexed libraries
+        //是否支持大工程模式
+        jumboMode = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+       
+    }
+    signingConfigs {
+        config {
+            storeFile file('C:/Project/Studio/SkWeiChat-Baidu/android-key')
+            storePassword '13237658359'
+            keyAlias 'jie-20150409'
+            keyPassword '13237658359'
+        }
+    }
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        def versionNames = "v" + versionArray[0].toString().substring(0, 1) + "." + versionArray[0].toString().substring(1, 2) + "." + versionArray[0].toString().substring(2, 3)
+        applicationId project.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+//        versionCode rootProject.ext.android.versionCode
+//        versionName rootProject.ext.android.versionName
+        versionCode versionArray[1]
+        versionName versionNames
+        multiDexEnabled true
+        flavorDimensions "versionCode"
+        signingConfig signingConfigs.config
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips", "x86_64", "mips64"
+        }
+
+        renderscriptTargetApi rootProject.ext.android.compileSdkVersion
+        renderscriptSupportModeEnabled true
+    }
+
+    useLibrary 'org.apache.http.legacy'
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+
+    productFlavors {
+        wandoujia {}
+        _360 {}
+        baidu {}
+        xiaomi {}
+        tencent {}
+        taobao {}
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    /*applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            def fileName
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                if (variant.buildType.name.equals('release')) {
+                    //赋值app属性版本名
+                    //variant.mergedFlavor.versionName = getVersionName() + "_" + variant.productFlavors[0].name+"(Build"+currentVersionCode+")"
+                    //variant.mergedFlavor.versionName ="v"+versionArray[0].toString().substring(0,1)+"."+ versionArray[0].toString().substring(1,2)+"."+  versionArray[0].toString().substring(2,3)
+                    def releaseInfo = "v" + versionArray[0].toString().substring(0, 1) + "." + versionArray[0].toString().substring(1, 2) + "." + versionArray[0].toString().substring(2, 3) + "_" + variant.productFlavors[0].name + "(Build" + versionArray[1] + ")"
+                    fileName = "WeiChat_${releaseInfo}_release.apk"
+
+                } else if (variant.buildType.name.equals('debug')) {
+                    //赋值app属性版本名
+                    variant.mergedFlavor.versionName = getVersionName() + "_" + releaseTime() + "_" + variant.productFlavors[0].name + "(Build" + versionArray[3] + ")" + "_debug"
+                    def debugInfo = getVersionName() + "_" + releaseTime() + "_" + variant.productFlavors[0].name + "(Build" + versionArray[3] + ")"
+                    fileName = "WeiChat_${debugInfo}_debug.apk"
+
+                }
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }*/
+
+  
+}
+
+repositories{
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile deps.junit
+    compile deps.appcompatV7
+    compile deps.design
+    compile(deps.stetho) {
+        force = true
+    }
+    compile deps.jodatime
+    compile deps.systembartint
+    compile deps.photoView
+    compile deps.tagGroup
+//    compile deps.analytics
+    compile deps.activityOnCrash
+    compile deps.stickyListHeaders
+    compile deps.stickyGridHeaders
+    compile deps.materialDialogs
+    compile deps.okhttp
+    compile deps.fastjson
+    compile project(':common')
+    compile project(':appmessages')
+    compile project(':network')
+    compile project(':imageload')
+    compile project(':applogin')
+    compile project(':apptasks')
+    compile project(':appcontact')
+    compile project(':appme')
+    compile project(':appworks')
+    compile project(':appbooking')
+    compile project(':appmusic')
+    compile project(':apputils')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+//    compile 'com.android.support:support-v4:26.+'
+
+    
+    compile(name: 'autoupdatesdk-release', ext: 'aar')
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.6.4'
+    }
+}
+
+dexcount {
+    format = "json"
+    includeClasses = false
+    includeFieldCount = true
+    includeTotalMethodCount = false
+    orderByMethodCount = false
+    verbose = false
+    maxTreeDepth = Integer.MAX_VALUE
+    teamCityIntegration = false
+    enableForInstantRun = false
+}
+

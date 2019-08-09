@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_main"
+              android:orientation="vertical"
+    >
+
+    <com.core.widget.VoiceSearchView
+        android:id="@+id/voiceSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/work_daily_context_ptlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/seach_top"
+        android:background="@color/item_line"
+        android:dividerHeight="5px"
+        android:hardwareAccelerated="true"
+        android:layerType="hardware"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+
+</LinearLayout>

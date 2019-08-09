@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgrey"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:animationResolution="100"
+        android:indeterminate="false"
+        android:indeterminateDuration="500"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/webview_progress_bar"
+        android:visibility="gone"></ProgressBar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tencent.smtt.sdk.WebView
+            android:id="@+id/webView_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/linen"
+            android:layerType="software" />
+
+        <TextView
+            android:id="@+id/web_previous_tv"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/selector_flip_btn"
+            android:gravity="center"
+            android:text="@string/web_previous_tv"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/web_next_tv"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/selector_flip_btn"
+            android:gravity="center"
+            android:text="@string/web_next_tv"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

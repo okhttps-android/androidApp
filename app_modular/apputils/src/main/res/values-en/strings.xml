@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_error_wechat_pay_success">支付成功</string>
+    <string name="str_error_wechat_pay_fail">支付失败</string>
+    <string name="str_error_wechat_pay_cancel">支付已取消</string>
+    <string name="no_fields_to_update">没有可更新的字段</string>
+</resources>

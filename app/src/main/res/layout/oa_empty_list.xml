@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/meView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999999"
+        android:layout_marginTop="40dp"
+        android:text="多见一个客户就多一个机会,\n现在就去做客户拜访吧！"/>
+
+
+    <LinearLayout
+        android:id="@+id/otherView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/view_empty_gif"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/gif_empty_view" />
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:text="@string/str_common_empty_text"
+            android:textSize="14sp"
+            android:textColor="@color/empty_text_color"
+            />
+    </LinearLayout>
+
+</LinearLayout>

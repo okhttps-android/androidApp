@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/commonPopView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/head_take_picture"
+        style="@style/commonPopItemTop"
+        android:text="@string/common_camera"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/shape_common_pop_top_item_pressed"/>
+
+    <TextView
+        android:id="@+id/head_select_photos"
+        style="@style/commonPopItemBottom"
+        android:text="@string/select_form_phoneablum"
+        />
+
+    <TextView
+        android:id="@+id/head_cancel"
+        style="@style/commonPopCancelItem"
+        android:text="@string/common_cancel"
+        />
+</LinearLayout>

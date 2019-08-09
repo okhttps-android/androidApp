@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_main">
+
+    <TextView
+        android:id="@+id/wages_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:drawableRight="@drawable/oa_next"
+        android:textSize="15sp"
+        android:hint="@string/input_search_date"
+        android:textColor="#333333"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/item_line" />
+    <com.andreabaccega.widget.FormEditText
+        android:id="@+id/wages_phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/dark_dark_grey"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:hint="@string/please_input_phone_number"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:maxLength="11"
+        android:visibility="gone"
+        />
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/item_line" />
+
+    <TextView
+        android:textColor="#333333"
+        android:id="@+id/wages_phone_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:textSize="15sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/item_line" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/wages_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/dark_dark_grey"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="@string/input_search_password"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/wages_code_et"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/dark_dark_grey"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="@string/please_settting_password1"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:maxLength="6"
+            android:inputType="number"
+            />
+        <Button
+            android:id="@+id/wages_code_btn"
+            android:padding="2dp"
+            android:text="@string/get_code"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="#2f95dd"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            />
+
+        <Button
+            android:id="@+id/seconds_tv"
+            android:padding="2dp"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="#DCDCDC"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/item_line" />
+
+    <Button
+        android:id="@+id/forget_password_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:text="@string/login_losspwd"
+        android:textColor="#2f95dd"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:background="@null"
+        />
+
+    <Button
+        android:id="@+id/check_btn"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bule_btn"
+        android:padding="10dp"
+        android:text="@string/client_search"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_main"
+        android:visibility="visible"/>
+</LinearLayout>

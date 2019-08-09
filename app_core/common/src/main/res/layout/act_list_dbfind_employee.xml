@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_background"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+        <RelativeLayout
+            android:id="@+id/rlSearchFrameDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <com.xzjmyk.pm.activity.view.ClearEditText
+                    android:id="@+id/et_Search"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/search_frame"
+                    android:hint="请输入联系人"
+                    android:imeOptions="actionSearch"
+                    android:paddingEnd="32dp"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/iv_DeleteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:paddingEnd="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingStart="20dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/gray_light"
+        android:text="长按可以多选人员"
+        android:visibility="gone" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_employee"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:divider="#00000000"
+        android:dividerHeight="15dp"
+        android:dividerPadding="5dp"
+        android:scrollingCache="false"
+        android:fadingEdge="none"
+        android:listSelector="#00000000"
+        android:padding="1dp"
+        android:scrollbars="none" />
+</LinearLayout>

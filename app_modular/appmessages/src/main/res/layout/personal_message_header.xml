@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/personalLL"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@+id/foodRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="@dimen/item_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/foodFl"
+            android:layout_width="57dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/foodImg"
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_width"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:src="@drawable/icon_message_food"/>
+
+            <TextView
+                android:id="@+id/foodNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text="999"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/foodContactRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/foodFl"
+            android:gravity="center_vertical">
+
+            <com.core.widget.RedView
+                android:id="@+id/foodRv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                app:showImage="false"
+                app:text=""/>
+
+            <TextView
+                android:id="@+id/foodTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="餐饮"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/foodSubTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/foodTv"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="美味齐全"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line"/>
+
+    <RelativeLayout
+        android:id="@+id/hairRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="@dimen/item_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/hairFl"
+            android:layout_width="57dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/hairImg"
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_width"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:src="@drawable/icon_message_hair"/>
+
+            <TextView
+                android:id="@+id/hairNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text="999"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/hairContactRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/hairFl"
+            android:gravity="center_vertical">
+
+            <com.core.widget.RedView
+                android:id="@+id/hairRv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                app:showImage="false"
+                app:text=""/>
+
+            <TextView
+                android:id="@+id/hairTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="美容美发"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/hairSubTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hairTv"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="时尚潮流"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line"/>
+
+    <RelativeLayout
+        android:id="@+id/ktvRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="@dimen/item_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/ktvFl"
+            android:layout_width="57dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/ktvImg"
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_width"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:src="@drawable/icon_message_ktv"/>
+
+            <TextView
+                android:id="@+id/ktvNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text="999"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/ktvContactRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/ktvFl"
+            android:gravity="center_vertical">
+
+            <com.core.widget.RedView
+                android:id="@+id/ktvRv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                app:showImage="false"
+                app:text=""/>
+
+            <TextView
+                android:id="@+id/ktvTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="KTV"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/ktvSubTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ktvTv"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="音乐节"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line"/>
+
+    <RelativeLayout
+        android:id="@+id/sportRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="@dimen/item_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/sportFl"
+            android:layout_width="57dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/sportImg"
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_width"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:src="@drawable/icon_message_sport"/>
+
+            <TextView
+                android:id="@+id/sportNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text="999"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/sportContactRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/sportFl"
+            android:gravity="center_vertical">
+
+            <com.core.widget.RedView
+                android:id="@+id/sportRv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                app:showImage="false"
+                app:text=""/>
+
+            <TextView
+                android:id="@+id/sportTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="运动健身"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/sportSubTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sportTv"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="hi起来"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line"/>
+
+    <RelativeLayout
+        android:id="@+id/clubRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="@dimen/item_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/clubFl"
+            android:layout_width="57dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/clubImg"
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_width"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:src="@drawable/icon_message_huisuo"/>
+
+            <TextView
+                android:id="@+id/clubNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text="999"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/clubContactRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/clubFl"
+            android:gravity="center_vertical">
+
+            <com.core.widget.RedView
+                android:id="@+id/clubRv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                app:showImage="false"
+                app:text=""/>
+
+            <TextView
+                android:id="@+id/clubTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="会所"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/clubSubTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clubTv"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="预约有优惠"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line"/>
+
+
+    <RelativeLayout
+        android:id="@+id/hospitalRl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="@dimen/item_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/hospitalFl"
+            android:layout_width="57dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/hospitalImg"
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_width"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:src="@drawable/icon_message_hospital"/>
+
+            <TextView
+                android:id="@+id/hospitalNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text="999"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/hospitalContactRl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/hospitalFl"
+            android:gravity="center_vertical">
+
+            <com.core.widget.RedView
+                android:id="@+id/hospitalRv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                app:showImage="false"
+                app:text=""/>
+
+            <TextView
+                android:id="@+id/hospitalTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="医院挂号"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/hospitalSubTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hospitalTv"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/schedule_time_tv"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="您的健康助手"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line"/>
+</LinearLayout>

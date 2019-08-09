@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="企业基本信息"
+                    android:textColor="#2F95DD" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="（请按照贵公司的营业执照填写下方信息）" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/form_relative_left_text"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <com.core.widget.ClearEditText
+                    android:id="@+id/enterprise_register_company_et"
+                    style="@style/register_edittext_style"
+                    android:drawableLeft="@drawable/ic_company_name"
+                    android:hint="企业名称"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+            <TextView
+                android:id="@+id/enterprise_register_company_error_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="#e9e9e9"
+                android:drawableLeft="@drawable/ic_reg_notice"
+                android:drawablePadding="4dp"
+                android:padding="2dp"
+                android:text="请填写正确的企业名称，2-99个字符"
+                android:textColor="@color/red"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/form_relative_left_text"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <com.core.widget.ClearEditText
+                    android:id="@+id/enterprise_register_license_et"
+                    style="@style/register_edittext_style"
+                    android:drawableLeft="@drawable/ic_business_license"
+                    android:hint="营业执照号(例如:1234567890)"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    style="@style/form_relative_left_text"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+            <TextView
+                android:id="@+id/enterprise_register_license_error_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="#e9e9e9"
+                android:drawableLeft="@drawable/ic_reg_notice"
+                android:drawablePadding="4dp"
+                android:padding="2dp"
+                android:text="请填写营业执照上的注册号"
+                android:textColor="@color/red"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/form_relative_left_text"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <com.core.widget.ClearEditText
+                    android:id="@+id/enterprise_register_represent_et"
+                    style="@style/register_edittext_style"
+                    android:drawableLeft="@drawable/ic_reg_name"
+                    android:hint="法定代表人(例如:张三)"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+            <TextView
+                android:id="@+id/enterprise_register_represent_error_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="#e9e9e9"
+                android:drawableLeft="@drawable/ic_reg_notice"
+                android:drawablePadding="4dp"
+                android:padding="2dp"
+                android:text="请填写营业执照上的法定代表人"
+                android:textColor="@color/red"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/form_relative_left_text"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/enterprise_register_address_et"
+                    style="@style/register_edittext_style"
+                    android:drawableLeft="@drawable/ic_reg_address"
+                    android:gravity="center_vertical"
+                    android:hint="企业地址(例如:xx省xx市xx区xx路xx号)"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+            <TextView
+                android:id="@+id/enterprise_register_address_error_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="#e9e9e9"
+                android:drawableLeft="@drawable/ic_reg_notice"
+                android:drawablePadding="4dp"
+                android:padding="2dp"
+                android:text="请填写正确的企业地址"
+                android:textColor="@color/red"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/form_relative_left_text"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/enterprise_register_industry_et"
+                    style="@style/register_edittext_style"
+                    android:drawableLeft="@drawable/ic_trade_certify"
+                    android:drawableRight="@drawable/ic_drop_down"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="所在行业"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+
+            <TextView
+                android:id="@+id/enterprise_register_industry_error_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="#e9e9e9"
+                android:drawableLeft="@drawable/ic_reg_notice"
+                android:drawablePadding="4dp"
+                android:padding="2dp"
+                android:text="请选择所在行业"
+                android:textColor="@color/red"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/form_relative_left_text"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:visibility="invisible" />
+
+                <com.core.widget.ClearEditText
+                    android:id="@+id/enterprise_register_business_et"
+                    style="@style/register_edittext_style"
+                    android:drawableLeft="@drawable/ic_business_scope"
+                    android:hint="经营范围"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="#e9e9e9"
+                android:drawableLeft="@drawable/ic_reg_notice"
+                android:drawablePadding="4dp"
+                android:padding="2dp"
+                android:text="请填写营业执照上的注册号"
+                android:textColor="@color/red"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/form_relative_left_text"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <com.andreabaccega.widget.FormEditText
+                    android:id="@+id/formEditText"
+                    style="@style/register_edittext_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_business_license"
+                    android:enabled="false"
+                    android:hint="营业执照" />
+
+                <ImageView
+                    android:id="@+id/enterprise_register_picture_iv"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_reg_camera" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/enterprise_register_license_iv"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_reg_defaultpic" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="上传营业执照时，请拍照上传，并保证件照清晰可见，方便我们审核，谢谢！"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/enterprise_register_clause_cb"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/enterprise_register_clause_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:lineSpacingExtra="6dp"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/enterprise_register_next_step_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_bule_btn"
+                android:enabled="false"
+                android:padding="10dp"
+                android:text="@string/next_step"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_main" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

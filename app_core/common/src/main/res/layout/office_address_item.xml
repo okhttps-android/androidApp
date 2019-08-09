@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/of_add_set_range_rl"
+        style="@style/IMTbleLine2"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/item_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="英唐大厦英唐大厦英唐大厦英唐大厦英唐大厦英唐大厦英唐大厦英唐大厦英唐大厦"
+            android:textSize="14sp"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/item_address_delete_im"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/office_address_delete"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_linear_detail"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tv_NODENAME"
+            style="@style/item_relative_style_tv"
+            android:text="名称：" />
+        <TextView
+            android:id="@+id/tv_NODENAME_value"
+            style="@style/item_relative_style_value"
+            android:layout_toRightOf="@+id/tv_NODENAME"
+            android:text="操作人" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tv_DEALMAN"
+            style="@style/item_relative_style_tv"
+            android:text="处理人：" />
+        <TextView
+            android:id="@+id/tv_DEALMAN_value"
+            style="@style/item_relative_style_value"
+            android:layout_toRightOf="@+id/tv_DEALMAN"
+            android:text="操作结果" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tv_LAUNCHERNAME"
+            style="@style/item_relative_style_tv"
+            android:text="发起人：" />
+        <TextView
+            android:id="@+id/tv_LAUNCHERNAME_value"
+            style="@style/item_relative_style_value"
+            android:layout_toRightOf="@+id/tv_LAUNCHERNAME"
+            android:text="操作结果" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tv_DEALTIME"
+            style="@style/item_relative_style_tv"
+            android:text="审批时间：" />
+        <TextView
+            android:id="@+id/tv_DEALTIME_value"
+            style="@style/item_relative_style_value"
+            android:layout_toRightOf="@+id/tv_DEALTIME"
+            android:text="操作" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tv_LAUNCHTIME"
+            style="@style/item_relative_style_tv"
+            android:text="发起时间：" />
+        <TextView
+            android:id="@+id/tv_LAUNCHTIME_value"
+            style="@style/item_relative_style_value"
+            android:layout_toRightOf="@+id/tv_LAUNCHTIME"
+            android:text="操作" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tv_STATUS"
+            style="@style/item_relative_style_tv"
+            android:text="状态：" />
+        <TextView
+            android:id="@+id/tv_STATUS_value"
+            style="@style/item_relative_style_value"
+            android:layout_toRightOf="@+id/tv_STATUS"
+            android:text="操作" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tv_RESULT"
+            style="@style/item_relative_style_tv"
+            android:text="结果：" />
+        <TextView
+            android:id="@+id/tv_RESULT_value"
+            style="@style/item_relative_style_value"
+            android:layout_toRightOf="@+id/tv_RESULT"
+            android:text="操作结果" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tv_REAMRK"
+            style="@style/item_relative_style_tv"
+            android:text="备注：" />
+        <TextView
+            android:id="@+id/tv_REAMRK_value"
+            style="@style/item_relative_style_value"
+            android:layout_toRightOf="@+id/tv_REAMRK"
+            android:text="操作结果" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" >
+    </View>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true">
+
+    <com.core.widget.MyListView
+        android:id="@+id/headerLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/item_line"
+        android:dividerHeight="@dimen/line"
+        android:focusableInTouchMode="false"/>
+</RelativeLayout>

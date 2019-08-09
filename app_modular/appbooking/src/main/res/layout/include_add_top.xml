@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--抬头信息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/max_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/shadow_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:scaleType="fitXY" />
+
+        <com.xzjmyk.pm.activity.view.shadow.ShadowLayout
+            android:id="@+id/sl_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            app:sl_cornerRadius="50dp"
+            app:sl_dx="2dp"
+            app:sl_dy="2dp"
+            app:sl_shadowColor="#AA000000"
+            app:sl_shadowRadius="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_header"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+
+                android:background="@null"
+                android:src="@drawable/defaultpic">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+        </com.xzjmyk.pm.activity.view.shadow.ShadowLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            android:layout_toRightOf="@+id/sl_header"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_detail"
+                android:drawablePadding="3dp"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:text="********"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:drawableLeft="@drawable/icon_map"
+                android:drawablePadding="6dp"
+                android:elevation="2dp"
+                android:gravity="center_vertical"
+                android:text="********"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oa_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/auto_rl"
+        style="@style/commonSettingItem"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/auto_mission"
+            android:textSize="@dimen/commonSettingItemTextSize" />
+
+        <com.core.widget.view.SwitchView
+            android:id="@+id/auto_sv"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:id="@+id/distance_rl"
+        style="@style/commonSettingItem"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/effective_range"
+            android:textSize="@dimen/commonSettingItemTextSize" />
+
+
+        <TextView
+            android:id="@+id/distance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/oa_next"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:id="@+id/time_rl"
+        style="@style/commonSettingItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/reserve_time"
+            android:textSize="@dimen/commonSettingItemTextSize" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/oa_next"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        style="@style/commonSettingItem"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/neer_submit_able"
+            android:textSize="@dimen/commonSettingItemTextSize" />
+
+        <com.core.widget.view.SwitchView
+            android:id="@+id/needprocess_sv"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:id="@+id/face_sign_ll"
+        style="@style/commonSettingItem"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/work_out_face_sign"
+            android:textSize="@dimen/commonSettingItemTextSize" />
+
+        <com.core.widget.view.SwitchView
+            android:id="@+id/face_sign_sv"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

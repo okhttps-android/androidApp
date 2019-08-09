@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.core.widget.VoiceSearchView
+        android:id="@+id/voiceSearchView"
+        android:layout_width="match_parent"
+        android:focusableInTouchMode="false"
+        android:layout_height="48dp" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/refreshListView"
+        style="@style/ListViewBasic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/item_line"
+        android:dividerHeight="@dimen/line"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+</LinearLayout>

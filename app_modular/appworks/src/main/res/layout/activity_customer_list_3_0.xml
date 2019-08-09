@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.modular.apputils.widget.DivideRadioGroup
+        android:id="@+id/tabBottomRg"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/customerListRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_customer_list"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:text="客户列表"
+            android:textColor="@color/color_public_customer_tab"
+            android:textSize="8sp" />
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="match_parent"
+            android:background="@color/linen" />
+
+        <RadioButton
+            android:id="@+id/customerLocationRb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/selector_customer_map"
+            android:gravity="center"
+            android:padding="@dimen/padding"
+            android:text="地图分布"
+            android:textColor="@color/color_public_customer_tab"
+            android:textSize="8sp" />
+
+    </com.modular.apputils.widget.DivideRadioGroup>
+
+    <FrameLayout
+        android:id="@+id/customerFl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/line"
+        android:layout_above="@id/tabBottomRg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_above="@id/tabBottomRg"
+        android:background="@color/item_line" />
+
+
+
+</RelativeLayout>

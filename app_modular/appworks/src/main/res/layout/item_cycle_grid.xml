@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/line"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line"/>
+
+    <TextView
+        android:id="@+id/captionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/paddingMin"
+        android:text="设备编号" />
+
+    <TextView
+        android:id="@+id/valuesTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/captionTv"
+        android:layout_toRightOf="@id/captionTv"
+        android:gravity="right|center_vertical"
+        android:padding="@dimen/paddingMin"
+        android:textColor="@color/text_main" />
+</RelativeLayout>

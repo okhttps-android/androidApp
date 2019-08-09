@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.core.widget.CustomerScrollView
+        android:id="@+id/common_docui_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:focusableInTouchMode="true"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/common_docui_photo_img"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/common_docui_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/common_docui_photo_img"
+                    android:textColor="#575757"
+                    android:textSize="@dimen/text_hine"
+
+                    />
+
+                <TextView
+                    android:id="@+id/common_docui_Section_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/common_docui_name_tv"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/common_docui_photo_img"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_hine" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/common_docui_status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/text_hine" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/item_line" />
+
+            <com.core.widget.MyListView
+                android:id="@+id/common_docui_main_msg_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:focusableInTouchMode="false"></com.core.widget.MyListView>
+
+            <LinearLayout
+                android:id="@+id/common_docui_secondmsg_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <com.core.widget.MyListView
+                    android:id="@+id/common_docui_second_msg_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:focusableInTouchMode="false"></com.core.widget.MyListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ex_invoice_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/item_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/invoice"
+                    android:textColor="@color/red" />
+
+                <com.core.widget.view.MyGridView
+                    android:id="@+id/grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="11dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="3dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="3dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/common_docui_files_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/item_line"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="附件" />
+
+                <com.core.widget.MyListView
+                    android:id="@+id/common_docui_files_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:focusableInTouchMode="false" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/hide_above_af"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/item_line"
+                android:visibility="gone" />
+
+            <com.core.widget.MyListView
+                android:id="@+id/common_docui_approval_flow_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:divider="@color/white"
+                android:dividerHeight="0dp"
+                android:focusableInTouchMode="false"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </com.core.widget.CustomerScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bule_btn"
+            android:padding="10dp"
+            android:text="@string/salary_sign"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_popuwin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/msg_delete_tv"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:background="@drawable/selector_me_menu_item_bg"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/msg_markread_tv"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:background="@drawable/selector_me_menu_item_bg"
+            android:gravity="center"
+            android:text="标为已读"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="gone" />
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:background="@color/gray_light"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/msg_detail_tv"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:background="@drawable/selector_me_menu_item_bg"
+            android:gravity="center"
+            android:text="查看消息"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>

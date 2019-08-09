@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_register_notice" />
+
+        <TextView
+            android:id="@+id/pop_invite_register_enterprise_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="深圳市优软科技有限公司已注册优软云，查看详情！" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/pop_invite_register_cancel_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_cancel_bg"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/selector_cancel_text_color" />
+
+        <TextView
+            android:id="@+id/pop_invite_register_add_partner_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="26dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_confirm_bg"
+            android:gravity="center"
+            android:text="添加合作伙伴"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

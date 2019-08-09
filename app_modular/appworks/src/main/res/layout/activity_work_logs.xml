@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nodeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="* 提示：打卡记录只取有效打卡记录（即为最终算入考勤的打卡记录时间）"
+        android:textColor="#FFD11010"
+        android:textSize="12sp" />
+
+    <com.module.recyclerlibrary.ui.refresh.EmptyRecyclerView
+        android:id="@+id/mEmptyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_image"
+        android:background="@color/subscrip_text"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/item_isr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="aaaa"
+            android:textSize="@dimen/text_hine" />
+
+        <TextView
+            android:id="@+id/item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/item_isr_tv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="hhhh"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+
+            android:id="@+id/item_title_sub_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/item_title_tv"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@id/item_isr_tv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="aaaa"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_min" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

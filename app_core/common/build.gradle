@@ -1,0 +1,88 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+      
+
+    }
+    useLibrary 'org.apache.http.legacy'
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    
+    
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile deps.junit
+    compile deps.appcompatV7
+    compile deps.fastjson
+    compile deps.materialDialogs
+    compile deps.multidex
+    compile(deps.stetho)
+            {
+                force = true
+            }
+    compile deps.gif
+    compile deps.circleimageview
+    compile deps.activityOnCrash
+//    compile 'com.umeng.analytics:analytics:6.1.2'
+    compile deps.analytics
+    compile deps.photoView
+    compile deps.stickyListHeaders
+    compile deps.stickyGridHeaders
+    compile deps.cardviewV7
+    compile deps.BaseRecyclerViewAdapterHelper
+    compile deps.design
+    compile deps.banner
+    compile(deps.smartRefreshLayout) {
+        exclude group: 'com.squareup.leakcanary'
+        exclude group: 'com.umeng.analytics'
+        exclude group: 'com.android.support'
+        exclude group: 'org.apache.maven.plugins'
+        exclude group: 'com.sun.xml.stream.buffer'
+        exclude group: 'javax.annotation.processing'
+    }
+    compile(deps.smartRefreshHeader) {
+        exclude group: 'com.squareup.leakcanary'
+        exclude group: 'com.umeng.analytics'
+        exclude group: 'com.android.support'
+        exclude group: 'org.apache.maven.plugins'
+        exclude group: 'com.sun.xml.stream.buffer'
+        exclude group: 'javax.annotation.processing'
+    }
+
+    compile project(':network')
+    compile project(':applocation')
+    compile project(':pullToRefershLibraryMy')
+    compile project(':MPAndroidChart')
+    compile project(':libedittextformlibrary')
+    compile project(':libfloatingactionbutton')
+    compile project(':libbdupdatesdk')
+    compile project(':library-swipemenu_lv')
+    compile project(':library-viewpager-indicator')
+    compile project(':lib-zxing')
+    compile project(':library-refreshlayout')
+    compile project(':recyclerlibrary')
+    compile files('libs/hellocharts-library-1.5.8.jar')
+    compile deps.wechatSdk
+    compile 'com.github.hss01248:NotifyUtil:1.0.1'
+    compile deps.basePopup
+    compile deps.acprogress
+    compile "com.facebook.react:react-native:+"
+    // From node_modules
+//    androidTestCompile deps.leakcanaryNp
+//    debugCompile deps.leakcanary
+//    releaseCompile deps.leakcanaryNp
+}

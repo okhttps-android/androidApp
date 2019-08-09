@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_flihts_time"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.oa.FlihtsTimeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listView"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/add_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_min"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/add_work_times"
+            android:textColor="@color/button_focus"
+            android:textSize="@dimen/text_main" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_min"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="@string/all_work_time"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_min"
+            android:layout_marginTop="2px"
+            android:background="@color/white"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/munber_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:drawableRight="@drawable/oa_next"
+                android:gravity="center_vertical"
+                android:hint="@string/select_must"
+                android:text="@string/two_hour_before"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="@string/earliest_work_signin_time"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/click_btn"
+            style="@style/commonButtonStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/save"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.core.widget.CustomerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View style="@style/app_comm_list_line_gray" />
+            <LinearLayout
+                android:id="@+id/ll_time_point"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_corner_radius"
+                    android:text="@string/app_time_selecting"/>
+                <TextView
+                    android:id="@+id/tv_time_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/default_corner_radius"
+                    android:textSize="14sp"
+                    android:text="2017-09-15 19:00"/>
+                <View style="@style/app_comm_list_line_gray" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_time_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_date_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_brounds_bottom"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_date_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="开始时间" />
+
+                    <TextView
+                        android:id="@+id/v_date_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/app_line_v_1dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/ll_date_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_brounds_bottom"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_date_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="结束时间" />
+
+                    <TextView
+                        android:id="@+id/v_date_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@color/white" />
+
+            <View style="@style/app_comm_list_line_gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/ll_time_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_brounds_bottom"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_time_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="开始时间" />
+
+                    <TextView
+                        android:id="@+id/v_time_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/app_line_v_1dp"></View>
+
+                <LinearLayout
+                    android:id="@+id/ll_time_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_brounds_bottom"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_time_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="结束时间" />
+
+                    <TextView
+                        android:id="@+id/v_time_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--com.core.widget.NScrollerGridView-->
+
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_date_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:horizontalSpacing="15dp"
+            android:layout_below="@+id/ll_top"
+            android:layout_above="@+id/click_btn"
+            android:numColumns="4"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp">
+
+
+        </GridView>
+        <Button
+            android:id="@+id/click_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/bg_bule_btn"
+            android:padding="5dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+</com.core.widget.CustomerScrollView>
+

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/hine_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hine_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_object"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/book1"
+                android:minWidth="0dp"
+                style="@style/item_menu_tag"
+                android:gravity="center_vertical"
+                android:text="@string/booking_object" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/book1"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv_book_object"
+                style="@style/item_menu_input"
+                android:layout_toRightOf="@id/company_tag"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/oa_next"
+                android:hint="@string/common_select" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/company_add_rl"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/book2"
+                style="@style/item_menu_tag"
+                android:gravity="center_vertical"
+                android:minWidth="0dp"
+                android:text="@string/times"
+                android:textColor="@color/hintColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/book2"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv_book_times"
+                style="@style/item_menu_input"
+                android:layout_width="367dp"
+                android:layout_toRightOf="@id/company_add_tag"
+                android:drawableRight="@drawable/oa_next"
+                android:hint="@string/common_select"
+                android:textColor="@color/hintColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remark_rl"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/book3"
+                style="@style/item_menu_tag"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:minWidth="0dp"
+                android:text="@string/address" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/book3"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv_book_address"
+                style="@style/item_menu_input"
+                android:layout_width="300dp"
+                android:layout_toRightOf="@id/remark_tag"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/oa_next"
+                android:ellipsize="end"
+                android:hint="@string/common_select" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/topic_rl"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/book4"
+                style="@style/item_menu_tag"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:minWidth="0dp"
+                android:text="@string/booking_topic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/book4"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:id="@+id/tv_book_topic"
+                style="@style/item_menu_input"
+                android:layout_width="300dp"
+                android:layout_toRightOf="@id/remark_tag"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/oa_next"
+                android:ellipsize="end"
+                android:hint="@string/common_select" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <RelativeLayout
+            style="@style/form_relative_customer"
+            android:layout_height="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/booking_topic"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.core.widget.NScrollerGridView
+            android:id="@+id/gv_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:horizontalSpacing="15dp"
+            android:numColumns="4"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:scrollbars="none"
+            android:verticalSpacing="10dp" />
+
+        <EditText
+            android:id="@+id/et_book_content"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:enabled="false"
+            android:gravity="top"
+            android:paddingLeft="10dp"
+            android:textSize="15sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="60dp">
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_bule_btn"
+                android:padding="10dp"
+                android:text="@string/app_button_commit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_main" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

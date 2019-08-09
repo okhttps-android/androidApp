@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.xzjmyk.pm.activity.ui.erp.activity.oa.SaveMeetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="会议纪要"
+                android:textColor="@color/text_main"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/summary_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="请填写备注"
+                android:minHeight="100dp"
+                android:minLines="5"
+                android:paddingTop="5dp"
+                android:textColor="@color/text_hine"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/text_main"
+                tools:text="大家佛前二五i附近大家佛前二五i附近大家佛前二五i附近大家佛前二五i附近大家佛前二五i附近大家佛前二五i附近大家佛前二五i附近" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="会议决议"
+                android:textColor="@color/text_main"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/resolution_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="请填写备注"
+                android:minHeight="100dp"
+                android:minLines="5"
+                android:paddingTop="5dp"
+                android:textColor="@color/text_hine"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/text_main"
+                tools:text="大家佛前二五i附近大家佛前二五i附近大家佛前二五i附近大家佛前二五i附近大家佛前二五i附近大家佛前二五i附近大家佛前二五i附近"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="遗留问题"
+                android:textColor="@color/text_main"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/wreckage_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="请填写备注"
+                android:minHeight="100dp"
+                android:minLines="5"
+                android:paddingTop="5dp"
+                android:textColor="@color/text_hine"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/text_main" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="后续工作"
+                android:textColor="@color/text_main"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/follow_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="请填写备注"
+                android:minHeight="100dp"
+                android:minLines="5"
+                android:paddingTop="5dp"
+                android:textColor="@color/text_hine"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/text_main" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

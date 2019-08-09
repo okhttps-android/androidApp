@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/splash_gif_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/splash_skip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/shape_splash_count"
+            android:paddingBottom="6dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="6dp"
+            android:text="点击跳过\t5"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="70.0dip"
+        android:background="@null">
+
+        <Button
+            android:id="@+id/select_login_btn"
+            style="@style/IMButton.Green"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="21dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:shadowColor="#ffb8b8b8"
+            android:shadowDx="1.2"
+            android:shadowDy="1.2"
+            android:shadowRadius="1.0"
+            android:text="@string/login"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/select_register_btn"
+            style="@style/IMButton.Green"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="21dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:shadowColor="#ff016c08"
+            android:shadowDx="1.2"
+            android:shadowDy="1.2"
+            android:shadowRadius="1.0"
+            android:text="@string/register"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

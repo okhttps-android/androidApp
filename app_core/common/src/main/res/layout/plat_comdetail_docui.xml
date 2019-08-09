@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+    <com.core.widget.CustomerScrollView
+        android:id="@+id/common_docui_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/common_docui_photo_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:contentDescription="@string/app_name"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/common_docui_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/common_docui_photo_img"
+                android:textColor="#575757"
+                android:textSize="@dimen/text_hine"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/common_docui_Section_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/common_docui_photo_img"
+                android:layout_below="@id/common_docui_name_tv"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_hine"
+                android:layout_marginTop="4dp"
+                />
+            <TextView
+                android:id="@+id/common_docui_status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="@dimen/text_hine"
+               />
+        </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/item_line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <com.core.widget.MyListView
+                android:id="@+id/common_docui_main_msg_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false">
+            </com.core.widget.MyListView>
+
+            <LinearLayout
+                android:id="@+id/common_docui_secondmsg_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.core.widget.MyListView
+                    android:id="@+id/common_docui_second_msg_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:focusableInTouchMode="false">
+                </com.core.widget.MyListView>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/hide_above_af"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/item_line"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"/>
+            <com.core.widget.MyListView
+                android:id="@+id/common_approval_flow_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp"
+                android:focusableInTouchMode="false"
+               >
+            </com.core.widget.MyListView>
+
+        </LinearLayout>
+
+    </com.core.widget.CustomerScrollView>
+
+    <LinearLayout
+        android:id="@+id/item_common_docui_res_and_del_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_main"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+       >
+
+        <LinearLayout
+            android:id="@+id/common_docui_resubmit_ll"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/selector_me_menu_item_bg">
+            <TextView
+                android:id="@+id/common_docui_resubmit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/titleBlue"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/common_resubmit_button"
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/item_line"
+            android:layout_gravity="center_vertical"
+            />
+        <LinearLayout
+            android:id="@+id/common_docui_delete_ll"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/selector_me_menu_item_bg">
+            <TextView
+                android:id="@+id/common_docui_delete_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/titleBlue"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/common_delete"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/common_docui_agree_and_change_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_main"
+        android:paddingBottom="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/common_docui_agree_ll"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/selector_me_menu_item_bg"
+           >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tongyi"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/common_docui_agree_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColor="@color/titleBlue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/agree"
+                android:layout_marginLeft="8dp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/item_line"
+            android:layout_gravity="center_vertical"
+            />
+        <LinearLayout
+            android:id="@+id/common_docui_disagree_ll"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/selector_me_menu_item_bg">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/butongyi"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/common_docui_disagree_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColor="@color/titleBlue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/common_disagree"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/item_line"
+            android:layout_gravity="center_vertical"
+            />
+        <LinearLayout
+            android:id="@+id/common_docui_change_dealman_ll"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@drawable/selector_me_menu_item_bg">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/biangeng"
+                android:layout_gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/common_docui_change_dealman_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColor="@color/titleBlue"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/common_changedealman"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_form"
+        android:dividerHeight="1dp"
+        style="@style/ListViewdoc"
+        android:layout_below="@id/view_v1"
+        android:background="@color/Transpant"
+        android:divider="@drawable/bg_bar"
+        android:layerType="software"
+        android:scrollingCache="false"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_detail"
+        style="@style/ListViewdoc"
+        android:layout_below="@id/view_v1"
+        android:background="@color/Transpant"
+        android:divider="@drawable/bg_bar"
+        android:layerType="software"
+        android:scrollingCache="false"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>

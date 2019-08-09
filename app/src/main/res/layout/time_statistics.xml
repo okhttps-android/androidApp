@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/delete_loogin_in_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="UU登入时间统计"
+                android:textColor="#575757"
+                android:layout_marginTop="5dp"
+                />
+
+            <com.core.widget.MyListView
+                android:id="@+id/login_in_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.core.widget.MyListView>
+
+            <TextView
+                android:id="@+id/delete_loogin_exit_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="UU登出时间统计"
+                android:textColor="#575757"
+                android:layout_marginTop="20dp"
+                />
+
+            <com.core.widget.MyListView
+                android:id="@+id/login_exit_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.core.widget.MyListView>
+            <TextView
+                android:id="@+id/delete_killed_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="UU被杀死时间统计"
+                android:textColor="#575757"
+                android:layout_marginTop="20dp"
+                />
+
+            <com.core.widget.MyListView
+                android:id="@+id/killed_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </com.core.widget.MyListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

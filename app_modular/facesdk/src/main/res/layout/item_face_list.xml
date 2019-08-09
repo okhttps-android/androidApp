@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/padding">
+
+    <TextView
+        android:id="@+id/deleteTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_confirm_bg"
+        android:clickable="true"
+        android:padding="@dimen/paddingMin"
+        android:text="重置照片"
+        android:textColor="#FFFFFFFF"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="陈劲松"
+        android:textColor="#FF333333"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/phoneTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTv"
+        android:layout_marginTop="@dimen/paddingMin"
+        android:text="13456789876"
+        android:textColor="#FF999999"
+        android:textSize="12sp" />
+</RelativeLayout>

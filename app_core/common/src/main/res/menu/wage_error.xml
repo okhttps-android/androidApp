@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xzjmyk.pm.activity.MainActivity">
+
+    <item
+        android:tooltipText="2017年12月工资"
+        android:id="@+id/wage_date"
+        android:title="工资日期"
+        app:showAsAction="ifRoom"
+        android:visible="false"
+        />
+    <item
+        android:tooltipText="报错"
+        android:id="@+id/wage_error"
+        android:title="报错"
+        app:showAsAction="ifRoom" />
+
+</menu>

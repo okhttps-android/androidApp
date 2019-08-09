@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/btn_login_nomarl" />
+            <corners android:radius="360dp" />
+            <size android:width="50dp" android:height="50dp" />
+            <padding android:bottom="0.5dp" android:left="0.5dp" android:right="0.5dp" android:top="0.5dp" />
+        </shape>
+    </item>
+</selector>

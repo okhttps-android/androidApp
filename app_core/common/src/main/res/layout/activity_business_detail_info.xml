@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?><!--    com.core.widget.CustomerScrollView-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_bar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.xzjmyk.pm.activity.ui.erp.activity.crm.BusinessDetailInfoActivity">
+            <!--  <RelativeLayout
+
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:visibility="gone">
+
+                  <LinearLayout
+                      android:id="@+id/ll_left_layout"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+
+                      android:layout_alignParentLeft="true"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:layout_width="50dp"
+                          android:layout_height="50dp"
+                          android:layout_marginTop="20dp"
+                          android:layout_gravity="center_horizontal"
+                          android:background="@drawable/shape_crm_round" />
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:textColor="@color/wheat"
+                          android:text="xxxx提供" />
+                  </LinearLayout>
+
+                  <View
+                      android:layout_toRightOf="@+id/ll_left_layout"
+                      android:layout_toLeftOf="@+id/ll_center_layout"
+                      android:layout_centerVertical="true"
+                      android:layerType="software"
+                      style="@style/app_line_xuxian_horizontal_05p"></View>
+
+                  <LinearLayout
+                      android:id="@+id/ll_center_layout"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      android:layout_centerInParent="true"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:layout_width="50dp"
+                          android:layout_height="50dp"
+                          android:layout_marginTop="20dp"
+                          android:layout_gravity="center_horizontal"
+                          android:background="@drawable/shape_crm_round" />
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:textColor="@color/wheat"
+                          android:text="xxxx提供" />
+                  </LinearLayout>
+
+                  <View
+                      android:layout_toRightOf="@+id/ll_center_layout"
+                      android:layout_toLeftOf="@+id/ll_right_layout"
+                      android:layout_centerVertical="true"
+                      android:layerType="software"
+                      style="@style/app_line_xuxian_horizontal_05p"></View>
+                  <LinearLayout
+                      android:id="@+id/ll_right_layout"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      android:layout_alignParentRight="true"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:layout_width="50dp"
+                          android:layout_height="50dp"
+                          android:layout_marginTop="20dp"
+                          android:layout_gravity="center_horizontal"
+                          android:background="@drawable/shape_crm_round" />
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:textColor="@color/wheat"
+                          android:text="xxxx提供" />
+                  </LinearLayout>
+
+              </RelativeLayout>-->
+            <LinearLayout
+                style="@style/crm_ll_card"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/LinearLayout_horizontal">
+
+                    <ImageView style="@style/sign_imageview"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/common_basicinfo"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/business_id"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_code"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/describe"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_description"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/business_from"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_from"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/business_Library"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_nichehouse"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/Company_Name"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_custname"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/address"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_address"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="商机类型"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_type"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/current_stage"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_currentprocess"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/creat_time"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_recorddate"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/creater"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_recorder"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/last_followup_time"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_lastdate"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/Follow_up_person"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_doman"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/crm_ll_card"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout style="@style/LinearLayout_horizontal">
+
+                    <ImageView style="@style/sign_imageview"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/business_stage"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <com.core.widget.view.steps.StepsView
+                    android:id="@+id/stepsView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/stage_need_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/Stage_requirements"
+                    android:textColor="@color/titleBlue"/>
+
+                <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+                    android:id="@+id/lv_business"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/crm_ll_card"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout style="@style/LinearLayout_horizontal">
+
+                    <ImageView style="@style/sign_imageview"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/common_Contact_information"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <View
+                        android:id="@+id/ll_card_line"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:background="@color/item_line"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/ll_card_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="2个"
+                        android:textColor="@color/button_focus"
+                        android:textSize="15sp"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <com.core.widget.MyListView
+                    android:id="@+id/myListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/item_line"
+                    android:dividerHeight="@dimen/line"/>
+
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="联系人"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_contact"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="职位"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_position"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="70dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="电话"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bt_tel"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/crm_ll_card"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <LinearLayout style="@style/LinearLayout_horizontal">
+
+                    <ImageView style="@style/sign_imageview"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/others"
+                        android:textColor="#FF8E57"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="70dp"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/Remarks"
+                        android:textColor="@color/gray_light"/>
+
+                    <TextView
+                        android:id="@+id/bc_remark"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        style="@style/crm_ll_card"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/crm_ll_followup"
+            style="@style/LinearLayout_horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/bt_manage_date"
+                style="@style/crm_business_btn_nomargin"
+                android:layout_weight="1"
+                android:text="@string/add_schedule"
+                android:textColor="@color/titleBlue"/>
+
+            <Button
+                android:id="@+id/add_mission"
+                style="@style/crm_business_btn_nomargin"
+                android:layout_weight="1"
+                android:text="@string/add_mission"
+                android:textColor="@color/titleBlue"/>
+
+            <Button
+                android:id="@+id/stage_follow"
+                style="@style/crm_business_btn_nomargin"
+                android:layout_weight="1"
+                android:text="@string/stage_follow"
+                android:textColor="@color/titleBlue"/>
+
+            <Button
+                android:id="@+id/bt_manage_go"
+                style="@style/crm_business_btn_nomargin"
+                android:layout_weight="1"
+                android:text="@string/more_operation"
+                android:textColor="@color/titleBlue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/crm_ll_qiang"
+            style="@style/LinearLayout_horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/bt_qiang"
+                style="@style/crm_business_btn_nomargin"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/grab"
+                android:textColor="@color/red"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/crm_ll_manage"
+            style="@style/LinearLayout_horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/bt_fenpei"
+                style="@style/crm_business_btn_nomargin"
+                android:layout_weight="1"
+                android:text="@string/assign"/>
+
+            <Button
+                android:id="@+id/bt_zhuanyi"
+                style="@style/crm_business_btn_nomargin"
+                android:layout_weight="1"
+                android:text="@string/transfer"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

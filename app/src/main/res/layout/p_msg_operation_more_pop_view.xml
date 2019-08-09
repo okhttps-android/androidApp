@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="1dp"
+    android:background="@drawable/text_view_border">
+
+    <TextView
+        android:id="@+id/praise_tv"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/like"
+        android:text="@string/qzone_praise"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_hine" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="30dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/comment_tv"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/sead"
+        android:text="@string/qzone_comment"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_hine"
+        />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="35dp"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/gift_tv"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:drawableLeft="@drawable/dele"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/send_gift"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_hine" />
+
+</LinearLayout>

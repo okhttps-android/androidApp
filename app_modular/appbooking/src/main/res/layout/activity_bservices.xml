@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context="com.modular.booking.activity.services.BServicesActivity">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mListView"
+        style="@style/ListViewBasic"
+        android:layout_below="@+id/voiceSearchView"
+        android:background="@color/transparent"
+        android:divider="@color/item_line"
+        android:dividerHeight="0.1dp" />
+</RelativeLayout>

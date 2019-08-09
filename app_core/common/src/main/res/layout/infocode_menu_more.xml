@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="@style/commonPopView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/share_2code"
+        style="@style/commonPopItemTop"
+        android:text="@string/share_2code"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/button_invalid" />
+
+    <TextView
+        android:id="@+id/change_style"
+        style="@style/commonPopItem"
+        android:text="@string/change_style"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/button_invalid" />
+
+    <TextView
+        android:id="@+id/save_to_MBphone"
+        style="@style/commonPopItem"
+        android:text="@string/save_to_MBphone"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/button_invalid" />
+
+    <TextView
+        android:id="@+id/scan_2dcode"
+        style="@style/commonPopItemBottom"
+        android:text="@string/scan_2dcode"
+        />
+
+    <TextView
+        android:id="@+id/cancel_tv"
+        style="@style/commonPopCancelItem"
+        android:text="@string/common_cancel"
+        />
+
+</LinearLayout>

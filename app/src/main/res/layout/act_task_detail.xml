@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.core.widget.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/reply_ll"
+                style="@style/form_linear_customer">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#008B00" />
+
+                <EditText
+                    android:id="@+id/et_task_name"
+                    style="@style/form_relative_right_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/task_Reply_to_your_task_completiong" />
+
+                <Button
+                    android:id="@+id/bt_task_huifu"
+                    style="@style/button_style_one"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/task_reply" />
+
+                <LinearLayout
+                    android:id="@+id/ll_bt_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/bt_task_queren"
+                        style="@style/button_style_one"
+                        android:layout_width="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.0"
+                        android:text="@string/common_sure" />
+
+                    <Button
+                        android:id="@+id/bt_task_bohui"
+                        style="@style/button_style_one"
+                        android:layout_width="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1.0"
+                        android:text="@string/task_turn_down" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_textview_line"
+                    android:layerType="software" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/taskdetail_info"
+                    android:textColor="@color/yellow_home"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_textview_line"
+                    android:layerType="software" />
+            </LinearLayout>
+
+            <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fillViewport="true">-->
+
+            <LinearLayout
+                style="@style/form_linear_customer"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp">
+
+                <LinearLayout
+                    style="@style/linear_task_background"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:text="@string/taskdetail_name"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_task_name"
+                        style="@style/task_text_right"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/common_noinput" />
+                </LinearLayout>
+
+                <View style="@style/line_horizontal_style_one" />
+
+                <LinearLayout
+                    style="@style/linear_task_background"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:text="@string/taskdetail_sponsor"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_task_emcode"
+                        style="@style/task_text_right"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <View style="@style/line_horizontal_style_one" />
+
+                <LinearLayout
+                    style="@style/linear_task_background"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:text="@string/taskdetail_executor"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_task_performer"
+                        style="@style/task_text_right" />
+                </LinearLayout>
+
+                <View style="@style/line_horizontal_style_one" />
+
+                <LinearLayout
+                    style="@style/linear_task_background"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:text="@string/taskdetail_startime"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_task_starttime"
+                        style="@style/task_text_right" />
+                </LinearLayout>
+
+                <View style="@style/line_horizontal_style_one" />
+
+                <LinearLayout
+                    style="@style/linear_task_background"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:text="@string/taskdetail_endtime"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_task_endtime"
+                        style="@style/task_text_right" />
+                </LinearLayout>
+
+                <View style="@style/line_horizontal_style_one" />
+
+                <LinearLayout
+                    style="@style/linear_task_background"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:text="@string/task_go_on_time"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_task_duration"
+                        style="@style/task_text_right" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_horizontal_style_one"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    style="@style/linear_task_background"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:text="@string/taskdetail_state"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_task_status"
+                        style="@style/task_text_right"
+                        android:textColor="@color/yellow_home" />
+                </LinearLayout>
+
+                <View style="@style/line_horizontal_style_one" />
+
+                <LinearLayout
+                    style="@style/linear_task_background"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="right|center"
+                        android:singleLine="true"
+                        android:text="@string/taskdetail_desc"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_task_describe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2.0"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <View
+                    style="@style/line_horizontal_style_one"
+                    android:layout_marginTop="5dp" />
+
+                <LinearLayout
+                    style="@style/linear_task_background"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="right|center"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="2.0"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lay_voice_task"
+                    style="@style/linear_task_background"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/tv_voice_msg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1.0"
+                        android:gravity="right"
+                        android:text="语音"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/iv_recode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:contentDescription="@string/app_name"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:src="@drawable/icon_voice_black" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--</ScrollView>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_textview_line"
+                    android:layerType="software" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/taskdetail_content_title"
+                    android:textColor="@color/yellow_home"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_textview_line"
+                    android:layerType="software" />
+            </LinearLayout>
+
+            <com.core.widget.CustomerListView
+                android:id="@+id/iv_taskMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFEFEF"
+                android:divider="@color/Transpant"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:padding="5dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </com.core.widget.CustomerScrollView>
+</LinearLayout>

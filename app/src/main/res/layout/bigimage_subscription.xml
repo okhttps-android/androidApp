@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/small_ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/isre_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/small_img"
+            android:layout_toLeftOf="@+id/small_img"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/small_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/isre_tv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:padding="5dp"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/sub_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/isre_tv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:padding="4dp"
+            android:textSize="@dimen/text_min" />
+
+
+        <ImageView
+            android:id="@+id/small_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@color/hintColor"
+            android:scaleType="fitXY"
+            android:src="@drawable/list_01" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/big_rl"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <ImageView
+            android:id="@+id/big_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/big_sub_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="@color/subscrip_text"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_min" />
+
+        <TextView
+            android:id="@+id/big_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/big_sub_title_tv"
+            android:background="@color/subscrip_text"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/big_isre_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+</FrameLayout>

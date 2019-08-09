@@ -1,0 +1,363 @@
+[
+  {
+    "industry": "KTV",
+    "targets": [
+      {
+        "targetName": "房间预订时数列表",
+        "typelist": "0",
+        "targetDetails": [
+          {
+            "detailName": "日期",
+            "detailKey": "sb_recorddate",
+            "detailValue": ""
+          },
+          {
+            "detailName": "时数",
+            "detailKey": "timecount",
+            "detailValue": ""
+          },
+          {
+            "detailName": "房间名称",
+            "detailKey": "sb_spname",
+            "detailValue": ""
+          }
+        ]
+      },
+      {
+        "targetName": "订单数量列表",
+        "typelist": "1",
+        "targetDetails": [
+          {
+            "detailName": "日期",
+            "detailKey": "sb_recorddate",
+            "detailValue": ""
+          },
+          {
+            "detailName": "数量",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      },
+      {
+        "targetName": "客户资料",
+        "typelist": "2",
+        "targetDetails": [
+          {
+            "detailName": "姓名",
+            "detailKey": "sb_recordor",
+            "detailValue": ""
+          },
+          {
+            "detailName": "电话",
+            "detailKey": "sb_telephone",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "industry": "会所",
+    "targets": [
+      {
+        "targetName": "技师预约列表",
+        "typelist": "0",
+        "targetDetails": [
+          {
+            "detailName": "日期",
+            "detailKey": "sb_recorddate",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "sb_username",
+            "detailValue": ""
+          },
+          {
+            "detailName": "工作时数",
+            "detailKey": "timecount",
+            "detailValue": ""
+          }
+        ]
+      },
+      {
+        "targetName": "服务项目预约列表",
+        "typelist": "1",
+        "targetDetails": [
+          {
+            "detailName": "日期",
+            "detailKey": "sb_recorddate",
+            "detailValue": ""
+          },
+          {
+            "detailName": "项目名称",
+            "detailKey": "sb_stname",
+            "detailValue": ""
+          },
+          {
+            "detailName": "项目预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      },
+      {
+        "targetName": "客户资料",
+        "typelist": "2",
+        "targetDetails": [
+          {
+            "detailName": "姓名",
+            "detailKey": "sb_recordor",
+            "detailValue": ""
+          },
+          {
+            "detailName": "电话",
+            "detailKey": "sb_telephone",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "industry": "餐饮",
+    "targets": [
+      {
+        "targetName": "包房预约列表",
+        "typelist": "0",
+        "targetDetails": [
+          {
+            "detailName": "日期",
+            "detailKey": "sb_recorddate",
+            "detailValue": ""
+          },
+          {
+            "detailName": "房间名称",
+            "detailKey": "sb_spname",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      },
+      {
+        "targetName": "客户资料",
+        "typelist": "1",
+        "targetDetails": [
+          {
+            "detailName": "姓名",
+            "detailKey": "sb_recordor",
+            "detailValue": ""
+          },
+          {
+            "detailName": "电话",
+            "detailKey": "sb_telephone",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "industry": "美容美发",
+    "targets": [
+      {
+        "targetName": "店员预约列表",
+        "typelist": "0",
+        "targetDetails": [
+          {
+            "detailName": "日期",
+            "detailKey": "sb_recorddate",
+            "detailValue": ""
+          },
+          {
+            "detailName": "发型师姓名",
+            "detailKey": "sb_username",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      },
+      {
+        "targetName": "服务项目预约列表",
+        "typelist": "1",
+        "targetDetails": [
+          {
+            "detailName": "日期",
+            "detailKey": "sb_recorddate",
+            "detailValue": ""
+          },
+          {
+            "detailName": "项目名称",
+            "detailKey": "sb_stname",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      },
+      {
+        "targetName": "客户资料",
+        "typelist": "2",
+        "targetDetails": [
+          {
+            "detailName": "姓名",
+            "detailKey": "sb_recordor",
+            "detailValue": ""
+          },
+          {
+            "detailName": "电话",
+            "detailKey": "sb_telephone",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "industry": "运动健身",
+    "targets": [
+      {
+        "targetName": "场地预约列表",
+        "typelist": "0",
+        "targetDetails": [
+          {
+            "detailName": "日期",
+            "detailKey": "sb_recorddate",
+            "detailValue": ""
+          },
+          {
+            "detailName": "场地名称",
+            "detailKey": "sb_spname",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      },
+      {
+        "targetName": "客户资料",
+        "typelist": "1",
+        "targetDetails": [
+          {
+            "detailName": "姓名",
+            "detailKey": "sb_recordor",
+            "detailValue": ""
+          },
+          {
+            "detailName": "电话",
+            "detailKey": "sb_telephone",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "industry": "医院挂号",
+    "targets": [
+      {
+        "targetName": "科室预约列表",
+        "typelist": "1",
+        "targetDetails": [
+          {
+            "detailName": "日期",
+            "detailKey": "sb_recorddate",
+            "detailValue": ""
+          },
+          {
+            "detailName": "科室名称",
+            "detailKey": "sb_stname",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      },
+      {
+        "targetName": "医生预约列表",
+        "typelist": "0",
+        "targetDetails": [
+          {
+            "detailName": "日期",
+            "detailKey": "sb_recorddate",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          },
+          {
+            "detailName": "医生姓名",
+            "detailKey": "sb_username",
+            "detailValue": ""
+          }
+        ]
+      },
+      {
+        "targetName": "客户资料",
+        "typelist": "2",
+        "targetDetails": [
+          {
+            "detailName": "姓名",
+            "detailKey": "sb_recordor",
+            "detailValue": ""
+          },
+          {
+            "detailName": "电话",
+            "detailKey": "sb_telephone",
+            "detailValue": ""
+          },
+          {
+            "detailName": "预约次数",
+            "detailKey": "ordercount",
+            "detailValue": ""
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:arc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/time_helper_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="#4E4E4E"
+            android:textSize="16sp"
+            tools:text="8月8日（周三）" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#E2E2E2" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/time_helper_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/time_helper_bottom_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/animlist_time_helper_icon" />
+
+    <View
+        android:id="@+id/time_helper_gray_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.core.widget.arcmenu.ArcMenu
+            android:id="@+id/time_helper_arcmenu"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-120dp"
+            android:layout_marginLeft="-120dp"
+            arc:childSize="42dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

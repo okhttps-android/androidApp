@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical">
+
+    <com.core.widget.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="基本资料"
+                android:background="@color/oa_bg"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp"
+                android:textSize="18sp"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:id="@+id/ly_head_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/ry_leave_man"
+                    style="@style/form_relative_customer"
+                    android:background="@color/item_color1"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/tv_leave_man"
+                        style="@style/form_relative_left_text"
+                        android:text="请  假  人："
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_leave_man"
+                        style="@style/form_relative_right_text"
+                        editTextFormExample:testType="nocheck" />
+                </RelativeLayout>
+
+                <!--<ImageView style="@style/app_comm_list_line_gray" />-->
+
+                <RelativeLayout
+                    android:id="@+id/ry_leave_mankind"
+                    style="@style/form_relative_customer"
+                    android:background="@color/item_color2"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/tv_leave_mankind"
+                        style="@style/form_relative_left_text"
+                        android:text="人员类型："
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_leave_mankind"
+                        style="@style/form_relative_right_text"
+                        editTextFormExample:testType="nocheck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ry_leave_type"
+                    style="@style/form_relative_customer"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/tv_leave_type"
+                        style="@style/form_relative_left_text"
+                        android:text="请假类型：" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_leave_type"
+                        style="@style/form_relative_right_text"
+                        android:focusableInTouchMode="false"
+                        editTextFormExample:testType="nocheck" />
+                </RelativeLayout>
+
+                <!--<ImageView style="@style/app_comm_list_line_gray" />-->
+
+                <RelativeLayout
+                    android:id="@+id/ry_leave_category"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv_leave_category"
+                        style="@style/form_relative_left_text"
+                        android:text="请假类型"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_leave_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:hint="请选择(必选)"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+                <!--<ImageView style="@style/app_comm_list_line_gray" />-->
+
+                <RelativeLayout
+                    android:id="@+id/ry_set_website"
+                    style="@style/form_relative_customer"
+                    android:background="@color/item_color2"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/tv_iv_leave_days"
+                        style="@style/form_relative_left_text"
+                        android:text="请假天数："
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_leave_days"
+                        style="@style/form_relative_right_text"
+                        whatever:customRegexp="^(([0-9])|([0-9]+\\.?[0-9]+))$"
+                        whatever:testErrorString="@string/error_only_numeric_digits_allowed"
+                        whatever:testType="regexp" />
+                </RelativeLayout>
+
+                <!--<ImageView style="@style/app_comm_list_line_gray" />-->
+
+                <RelativeLayout
+                    android:id="@+id/ry_leave_hours"
+                    style="@style/form_relative_customer"
+                    android:background="@color/item_color1"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/tv_leave_hours"
+                        style="@style/form_relative_left_text"
+
+                        android:text="请假时数："
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_leave_hours"
+                        style="@style/form_relative_right_text"
+
+                        whatever:customRegexp="^(([0-9])|([0-9]+\\.?[0-9]+))$"
+                        whatever:testErrorString="@string/error_only_numeric_digits_allowed"
+                        whatever:testType="regexp" />
+                </RelativeLayout>
+
+                <!--<ImageView style="@style/app_comm_list_line_gray" />-->
+
+
+                <RelativeLayout
+                    android:id="@+id/ry_set_startTime"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+
+
+                    <TextView
+                        android:id="@+id/tv_set_"
+                        style="@style/form_relative_left_text"
+                        android:text="开始时间"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/tv_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="请选择"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+                <RelativeLayout
+                    android:id="@+id/ry_set_endTime"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_date_gh"
+                        style="@style/form_relative_left_text"
+                        android:text="结束时间"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <com.andreabaccega.widget.FormEditText
+                        xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="请选择"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+                <RelativeLayout
+                    android:id="@+id/ry_leave_reason"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:background="@color/white">
+
+
+                    <TextView
+                        android:id="@+id/tv_leave_reason"
+                        style="@style/form_relative_left_text"
+                        android:text="请假原因"
+                        android:layout_marginLeft="0dp"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_leave_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:hint="请输入(必填)"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:maxWidth="200dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/voice_search_iv"
+                        android:background="@drawable/btn_yuyin_nor"
+                        android:visibility="visible"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/et_leave_reason"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bottom_display"
+                style="@style/form_linear_customer">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bottom_save"
+                style="@style/form_linear_customer"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/bt_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_bule_btn"
+                    android:padding="10dp"
+                    android:text="提交"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main" />
+            </LinearLayout>
+
+            <include layout="@layout/item_work_view" />
+
+        </LinearLayout>
+    </com.core.widget.CustomerScrollView>
+</LinearLayout>

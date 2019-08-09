@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppUtils</string>
+    <string name="str_error_wechat_pay_success">支付成功</string>
+    <string name="str_error_wechat_pay_fail">支付失败</string>
+    <string name="str_error_wechat_pay_cancel">支付已取消</string>
+    <string name="click_to"><u>点击前往</u></string>
+    <string name="administrators_phone"><u>13430818775</u></string>
+
+
+    <string name="monday">一</string>
+    <string name="tuseday">二</string>
+    <string name="wednesday">三</string>
+    <string name="thursday">四</string>
+    <string name="friday">五</string>
+    <string name="saturday">六</string>
+    <string name="sunday">日</string>
+    <string name="hot_news">热点事件</string>
+    <string name="kou_hao">标新 ，立异</string>
+    <string name="advertisement">新一代梅赛德斯</string>
+    <string name="no_fields_to_update">没有可更新的字段</string>
+</resources>

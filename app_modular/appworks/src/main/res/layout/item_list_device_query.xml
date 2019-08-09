@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#f6f6f6"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/item_data_inquiry_flex_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_b2b_change_account">
+
+        <ImageView
+            android:id="@+id/item_data_inquiry_flex_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_menu_retract"
+            android:visibility="gone" />
+
+
+        <com.core.widget.MyListView
+            android:id="@+id/item_data_inquiry_flex_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/item_data_inquiry_flex_iv"
+            android:clickable="false"
+            android:divider="@null"
+            android:focusable="false"
+            android:scrollbars="none" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="5dp"
+    android:background="@drawable/selector_me_menu_item_bg"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/all_subscribe_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_subscription_number"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/all_subscribe_iv">
+
+        <TextView
+            android:id="@+id/all_subscribe_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="xxxx"/>
+
+        <TextView
+            android:id="@+id/all_subscribe_apply_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="＋订阅"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+</RelativeLayout>

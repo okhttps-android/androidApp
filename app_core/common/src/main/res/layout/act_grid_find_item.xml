@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_grid_find_item"
+    android:layout_width="60dp"
+    android:layout_height="120dp" >
+    <!-- clickenable=true  终止事件分发  点击事件无效 -->
+    <TextView
+        android:id="@+id/tv_gird_msg_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/iv_gird_image"
+        android:paddingBottom="10dp"
+        android:textColor="#ffffff" />
+    <ImageView
+        android:id="@+id/iv_gird_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="#BFBFBF" />
+    <TextView
+        android:id="@+id/tv_gird_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_gird_image"
+        android:layout_marginTop="@dimen/line_big"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hine_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="@string/common_Contact_person"
+            android:textColor="@color/button_focus" />
+
+        <TextView
+            android:id="@+id/delete_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="6dp"
+            android:text="@string/common_delete"
+            android:textColor="@color/button_focus" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/company_rl"
+        style="@style/item_menu">
+
+        <TextView
+            android:id="@+id/company_tag"
+            style="@style/item_menu_tag"
+            android:gravity="center_vertical"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/company_tv"
+            style="@style/item_menu_input"
+            android:layout_toRightOf="@id/company_tag"
+            android:drawablePadding="6dp"
+            android:hint="@string/common_input1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/company_add_rl"
+        style="@style/item_menu">
+
+        <TextView
+            android:id="@+id/company_add_tag"
+            style="@style/item_menu_tag"
+            android:gravity="center_vertical"
+            android:text="@string/dialog_phone"
+            android:textColor="@color/hintColor" />
+
+        <EditText
+            android:id="@+id/company_add_tv"
+            style="@style/item_menu_input"
+            android:layout_toRightOf="@id/company_add_tag"
+            android:hint="@string/common_input1"
+            android:inputType="phone"
+            android:textColor="@color/hintColor" />
+    </RelativeLayout>
+</LinearLayout>

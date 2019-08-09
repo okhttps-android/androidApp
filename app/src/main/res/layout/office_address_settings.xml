@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebe9e9">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/of_add_set_address_im"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/dizhi"
+                    />
+
+                <TextView
+                    android:id="@+id/of_add_set_title1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/os_headerdescription1"
+                    android:layout_toRightOf="@+id/of_add_set_address_im"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/os_headerdescription2"
+                    android:layout_below="@+id/of_add_set_title1_tv"
+                    android:layout_toRightOf="@id/of_add_set_address_im"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+            <RelativeLayout
+                android:id="@+id/of_add_set_range_rl"
+                style="@style/IMTbleLine2"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:id="@+id/of_add_set_range_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/os_signrange"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/of_add_set_sign_range"
+                    style="@style/IMTbleLine_TextValue"
+                    android:layout_toLeftOf="@+id/of_add_set_range_img"
+                    android:layout_toRightOf="@+id/of_add_set_range_text"
+                    android:textColor="@color/dark_dark_grey"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/of_add_set_range_img"
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name"
+                    />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+            <RelativeLayout
+                android:id="@+id/of_add_set_range_rl2"
+                style="@style/IMTbleLine2"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:id="@+id/of_add_set_range_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/os_workrange"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/of_add_set_work_range_tv"
+                    style="@style/IMTbleLine_TextValue"
+                    android:layout_toLeftOf="@+id/of_add_set_range_img2"
+                    android:layout_toRightOf="@+id/of_add_set_range_text2"
+                    android:textColor="@color/dark_dark_grey"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/of_add_set_range_img2"
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name"
+                    />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+            <com.core.widget.MyListView
+                android:id="@+id/of_add_set_address_lv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="visible"
+                android:background="@color/white">
+            </com.core.widget.MyListView>
+
+
+            <RelativeLayout
+                android:id="@+id/of_add_set_addaddress_rl"
+                android:layout_width="match_parent"
+                style="@style/IMTbleLine2"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/os_add_address"
+                    android:textColor="#2F95DD"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                   />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+            <Button
+                android:id="@+id/of_add_set_save_bt"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/common_save_button"
+                style="@style/commonButtonStyle" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

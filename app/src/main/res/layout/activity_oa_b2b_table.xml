@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#6A6A6A"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/work_alart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="@dimen/drawable_padding"
+                android:src="@drawable/hongdian"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/work_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableTop="@drawable/oa_1"
+                android:gravity="center"
+                android:text="打卡签到"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/mission_alart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="@dimen/drawable_padding"
+                android:src="@drawable/hongdian"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/mission_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableTop="@drawable/oa_2"
+                android:gravity="center"
+                android:text="外勤签到"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/worklog_alart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="@dimen/drawable_padding"
+                android:src="@drawable/hongdian"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/worklog_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableTop="@drawable/oa_4"
+                android:gravity="center"
+                android:text="工作日报"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/leave_alart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="@dimen/drawable_padding"
+                android:src="@drawable/hongdian"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/leave_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableTop="@drawable/oa_5"
+                android:gravity="center"
+                android:text="请假申请"
+                android:textColor="@color/white" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/outtask_alart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="@dimen/drawable_padding"
+                android:src="@drawable/hongdian"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/outtask_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableTop="@drawable/oa_chuchai"
+                android:gravity="center"
+                android:text="出差申请"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/overtime_alart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="@dimen/drawable_padding"
+                android:src="@drawable/hongdian"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/overtime_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableTop="@drawable/oa_jiaban"
+                android:gravity="center"
+                android:text="加班申请"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:drawableTop="@drawable/oa_chuchai"
+            android:gravity="center"
+            android:text="出差申请"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:drawableTop="@drawable/oa_chuchai"
+            android:gravity="center"
+            android:text="出差申请"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_me_menu_item_bg"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/empty_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/tip"
+        android:drawablePadding="5dp"
+        android:text="@string/not_message_and_add"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_main" />
+</RelativeLayout>

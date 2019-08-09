@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/deleteIt"
+        android:icon="@drawable/ic_menu_delete"
+        android:title="@string/delete"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/oa_signin_set"
+        android:title="编辑模板"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/oa_leave"
+        android:icon="@drawable/xlist"
+        android:title="查看列表"
+        app:showAsAction="always" />
+
+</menu>

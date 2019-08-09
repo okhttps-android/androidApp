@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.xzjmyk.pm.activity.MainActivity">
+
+    <item
+        android:id="@+id/menu_time_helper_setting"
+        android:icon="@drawable/ic_time_helper_setting"
+        android:title="@string/setting"
+        app:showAsAction="ifRoom" />
+
+</menu>

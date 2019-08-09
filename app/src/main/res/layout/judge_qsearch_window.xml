@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/pop_round_bg">
+
+
+   <!-- <TextView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="即将进行语音快速搜索,请在语音框出来后说中文"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>-->
+    <TextView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="语音导航即将开始,请在语音框出来后说“预约” "
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/button_invalid"/>
+    <TextView
+        android:id="@+id/next_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:text="下次进入再说"
+        android:minHeight="45dp"
+        android:textSize="15sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/button_invalid"/>
+    <TextView
+        android:id="@+id/no_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:text="不再提示"
+        android:minHeight="45dp"
+        android:textSize="15sp"/>
+
+</LinearLayout>

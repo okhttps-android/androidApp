@@ -1,0 +1,236 @@
+<com.xzjmyk.pm.basepedo.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="40dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoDragView="@+id/ll_top"
+    sothree:umanoOverlay="true"
+    sothree:umanoScrollableView="@+id/list">
+
+    <!-- MAIN CONTENT -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/head_background_im"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/uustepbg"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您今天运动了 "
+                    />
+                <TextView
+                    android:id="@+id/text_step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/approval"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 步喔，"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="继续加油，突破自己 !"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/steps_history_ll"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="40dp"-->
+                <!--android:visibility="gone"-->
+                <!-->-->
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/uustephistory"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/history_record_tv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:text="历史记录"-->
+                    <!--android:textColor="#288af8"-->
+                    <!--android:textSize="16sp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--/>-->
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <!-- SLIDING LAYOUT -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/for_dyy"
+        android:clickable="true"
+        android:focusable="false"
+        android:id="@+id/dragView"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+        <LinearLayout
+            android:id="@+id/steps_history_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/uustephistory"/>
+
+            <TextView
+                android:id="@+id/history_record_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="历史记录"
+                android:textColor="#288af8"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/item_comdoc_am_list_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" 日 期"
+                android:layout_marginRight="10dp"
+                android:textColor="#6E6E6E"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/item_comdoc_am_value_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" 步 数"
+                android:textColor="#6E6E6E"
+                android:gravity="center_horizontal"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.core.widget.MyListView
+                    android:id="@+id/step_num_lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_me_menu_item_bg">
+                </com.core.widget.MyListView>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前版本须知"
+                android:textSize="18sp"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="计步功能：触发感应器开始计步，在持续运动2秒后才开始有效计数，不足2秒停止则时间重置,新增步数重置（屏蔽细微移动）。"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="屏蔽功能：屏蔽细微移动或者驾车时震动所带来的干扰，停止运动超过3秒，便重新开启屏蔽功能(目前版本又去掉了，具体要否再协商)。"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="通知栏提醒：实时通知更新步数，但最终只显示持续运动超过2秒的有效步数，通知栏便于实时测试观察，暂时不做点击取消显示(低版本号,以及某些型号如小米手机挂后台一段时间后服务更新受到一定限制，步数通知显示可能会有延迟或者不更新)。"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="计步优化：添加数据库记录与更新数据;添加广播事件，监听锁屏、关屏、关机等事件，并进行保存数据的相关操作;调整计步精度;并且数据跨天清零。"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="计步防作弊：这里对波峰以及晃动的时间差做了特殊的处理，只记录放在口袋里的走动或者类似其的运动才会开始计步（主要外勤企业版的需求），所以测试者不要再拿着手机使劲摇的时候问我步数不变动、不准等问题了，请你走动起来测试，谢谢!!!"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:text="预关闭功能：考虑下个版本外勤需要，如果当前存在外勤直接关闭不合适，所以预关闭。下次开启应用时判断是否有外勤，无则不开启UU运动，有则开启UU运动。目前UU运动只属于开放测试阶段。"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.xzjmyk.pm.basepedo.slidinguppanel.SlidingUpPanelLayout>

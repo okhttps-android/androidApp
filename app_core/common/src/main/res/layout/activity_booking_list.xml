@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.core.widget.CustomerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--top layout-->
+        <LinearLayout
+            style="@style/crm_ll_card"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_book_me"
+                style="@style/TextView_Basic"
+                android:layout_weight="1"
+                android:background="@drawable/shape_brounds_bottom"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/booking_me" />
+
+            <View style="@style/app_line_v_1dp" />
+
+            <TextView
+                android:id="@+id/tv_book_shared"
+                style="@style/TextView_Basic"
+                android:layout_weight="1"
+                android:background="@drawable/shape_brounds_bottom"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/booking_shared" />
+        </LinearLayout>
+        
+        <!--new layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#6A6A6A"
+            android:paddingBottom="10dp">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_signin_num"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/hongdian"
+                    android:layout_gravity="top|right"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="10.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/signin" />
+                <TextView
+                    android:id="@+id/mbook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:drawableTop="@drawable/oa_1"
+                    android:layout_centerInParent="true"
+                    android:text="@string/oasign_title"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="2dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_signout_num"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/hongdian"
+                    android:layout_gravity="top|right"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="10.0dip"
+                    />
+                <TextView
+                    android:id="@+id/outoffice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:drawableTop="@drawable/oa_2"
+                    android:layout_centerInParent="true"
+                    android:text="@string/oaoutplan_title"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/worklog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableTop="@drawable/oa_4"
+                android:gravity="center"
+                android:text="@string/oaworkdaily_title"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/erp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/drawable_padding"
+                android:drawableTop="@drawable/oa_5"
+                android:gravity="center"
+                android:text="@string/oavacation_apply"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:id="@+id/oamain_more_menu_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/oamain_more_menu_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/ic_oa_more" />
+
+                    <TextView
+                        android:id="@+id/oamain_more_menu_hd_tv"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/hongdian"
+                        android:textColor="@android:color/white"
+                        android:textSize="10.0dip"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/more_menu_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/oamore_tltle"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--年月日布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/yeas_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                android:id="@+id/day_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                android:id="@+id/week_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="230dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/item_line" />
+
+        <com.core.widget.MyListView
+            android:id="@+id/lv_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/item_line"
+            android:dividerHeight="2px" />
+    </LinearLayout>
+</com.core.widget.CustomerScrollView>

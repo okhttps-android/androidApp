@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical">
+    <ListView
+        android:id="@+id/lv_tool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <GridView
+        android:id="@+id/gv_home_display"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="0.5dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="0.5dp"/>
+</LinearLayout>

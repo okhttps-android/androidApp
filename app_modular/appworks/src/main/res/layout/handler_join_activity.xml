@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/padding"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context="com.uas.appworks.OA.platform.activity.JoinCharitActivity">
+
+    <TextView
+        android:id="@+id/activityTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginTop="@dimen/padding"
+        android:text="共参与活动"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/numTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/activityTag"
+        android:layout_marginRight="@dimen/padding"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/padding"
+        android:layout_below="@id/activityTag"
+        android:layout_marginTop="@dimen/padding"
+        android:background="@color/base_bg" />
+</RelativeLayout>

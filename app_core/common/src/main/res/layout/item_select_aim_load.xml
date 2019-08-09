@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tag_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enterprise"
+        android:visibility="gone"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/tag_view"
+        android:layout_below="@id/tag_tv"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <TextView
+        android:id="@+id/distance_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tag_view"
+        android:text="10km"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/distance_tv"
+        android:layout_toLeftOf="@id/distance_tv"
+        android:text="没有符合条件的结果"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/sub_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/title_tv"
+        android:layout_below="@id/title_tv"
+        android:layout_marginTop="8dp"
+        android:text="请搜索地址后完善单位名称"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+
+    <TextView
+        android:id="@+id/times_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sub_tv"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/icon_all_mission"
+        android:text="总拜访 2 次"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/sub_tv"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@id/times_tv"
+        android:drawableLeft="@drawable/icon_last_missiom"
+        android:text="上次拜访"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+</RelativeLayout>

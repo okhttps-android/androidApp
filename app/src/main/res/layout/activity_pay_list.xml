@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xzjmyk.pm.activity.ui.me.PayListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/money_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/dark_dark_grey"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="请输入支付金额"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:maxLength="6"
+            android:inputType="number"
+            android:text="0.01"
+            />
+        <Button
+            android:id="@+id/pay_btn"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_bule_btn"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main"
+            android:visibility="visible"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单列表:"
+            android:textSize="@dimen/text_main"
+            android:layout_marginLeft="20dp"
+            />
+
+        <com.core.widget.CustomerScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#FBFBFB" />
+                <com.core.widget.MyListView
+                    android:id="@+id/orders_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:visibility="visible"
+                    android:background="@color/white"
+                    >
+                </com.core.widget.MyListView>
+            </LinearLayout>
+        </com.core.widget.CustomerScrollView>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

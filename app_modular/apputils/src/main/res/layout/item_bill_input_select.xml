@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="45dp"
+    android:padding="@dimen/padding">
+
+
+    <TextView
+        android:id="@+id/captionTv"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="商机阶段"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/muchInputTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="8dp"
+        android:text="*"
+        android:textColor="@color/red"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@id/captionTv" />
+
+    <ImageView
+        android:id="@+id/selectIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/oa_next"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/valuesEd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:background="@null"
+        android:gravity="right|center"
+        android:hint="请输入"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/muchInputTv"
+        app:layout_constraintRight_toLeftOf="@id/selectIv"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

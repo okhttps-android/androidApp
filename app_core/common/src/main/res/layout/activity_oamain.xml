@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?><!--com.handmark.pulltorefresh.library.PullToRefreshScrollView -->
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView
+    android:id="@+id/oamain_ptrsv"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/oamain_head_menu_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <!--头布局-->
+            <LinearLayout
+                android:id="@+id/oa_rl_choose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toobar"
+                android:background="#6A6A6A"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_signin_num"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/signin"
+                            android:layout_gravity="top|right"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/hongdian"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@android:color/white"
+                            android:textSize="10.0dip" />
+
+                        <TextView
+                            android:id="@+id/signin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:drawablePadding="@dimen/drawable_padding"
+                            android:drawableTop="@drawable/oa_1"
+                            android:text="@string/oasign_title"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_signout_num"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="top|right"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/hongdian"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@android:color/white"
+                            android:textSize="10.0dip" />
+
+                        <TextView
+                            android:id="@+id/outoffice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:drawablePadding="@dimen/drawable_padding"
+                            android:drawableTop="@drawable/oa_2"
+                            android:gravity="center"
+                            android:text="@string/oaoutplan_title"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/worklog"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/drawable_padding"
+                        android:drawableTop="@drawable/oa_4"
+                        android:gravity="center"
+                        android:text="@string/oaworkdaily_title"
+                        android:textColor="@color/white" />
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/oamain_more_menu_ll"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="2dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/oamain_more_menu_iv"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:src="@drawable/ic_oa_more" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/more_menu_tv"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/oamore_tltle"-->
+                    <!--android:textColor="@color/white" />-->
+                    <!--</LinearLayout>-->
+                    <LinearLayout
+                        android:id="@+id/oamain_more_menu_ll"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:visibility="visible">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:id="@+id/oamain_more_menu_iv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@drawable/ic_oa_more" />
+
+                            <TextView
+                                android:id="@+id/oamain_more_menu_hd_tv"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="top|right"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/hongdian"
+                                android:textColor="@android:color/white"
+                                android:textSize="10.0dip"
+                                />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/more_menu_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="@string/oamore_tltle"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+
+                    <!--<TextView
+                        android:id="@+id/stroke"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/drawable_padding"
+                        android:drawableTop="@drawable/oa_6"
+                        android:gravity="center"
+                        android:text="我的行程"
+                        android:textColor="@color/white" />-->
+
+
+                    <TextView
+                        android:id="@+id/meeting"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/drawable_padding"
+                        android:drawableTop="@drawable/oa_3"
+                        android:gravity="center"
+                        android:text="@string/oametting_title"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/erp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/drawable_padding"
+                        android:drawableTop="@drawable/oa_5"
+                        android:gravity="center"
+                        android:text="@string/oavacation_apply"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/outtask"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/drawable_padding"
+                        android:drawableTop="@drawable/oa_chuchai"
+                        android:gravity="center"
+                        android:text="@string/oatravel_apply"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/oamain_overtime_apply_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/drawable_padding"
+                        android:drawableTop="@drawable/oa_jiaban"
+                        android:gravity="center"
+                        android:text="@string/oaovertime_apply"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--end 头布局-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+
+            <!--标签布局-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/subord_log"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/oasubordinate_work_calendar"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@color/default_shadow_color" />
+
+                    <TextView
+                        android:id="@+id/my_log"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/oamy_work_calender"
+                        android:textCursorDrawable="@color/yellow_home"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <View
+                        android:id="@+id/subord_log_tag"
+                        android:layout_width="0dp"
+                        android:layout_height="4px"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:background="@color/darkorange" />
+
+                    <View
+                        android:id="@+id/my_log_tag"
+                        android:layout_width="0dp"
+                        android:layout_height="4px"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:background="@color/item_line" />
+                </LinearLayout>
+                <!--end 标签布局-->
+
+                <!--年月日布局-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/yeas_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <TextView
+                        android:id="@+id/day_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <TextView
+                        android:id="@+id/week_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line"
+                    android:visibility="gone" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/item_line" />
+                <!--end 年月日布局-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/all_task_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:text="@string/work_calender"
+                        android:textSize="@dimen/text_hine" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/item_line" />
+
+                    <TextView
+                        android:id="@+id/ok_task_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="12dp"
+                        android:text="@string/done"
+                        android:textSize="@dimen/text_hine" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/item_line" />
+
+                    <TextView
+                        android:id="@+id/uok_task_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="12dp"
+                        android:text="@string/undone"
+                        android:textSize="@dimen/text_hine" />
+
+                    <ImageView
+                        android:id="@+id/ok_scale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:src="@drawable/filter" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="@color/item_line" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+
+                <com.core.widget.MyListView
+                    android:id="@+id/oa_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:divider="@color/item_line"
+                    android:dividerHeight="2px"
+                    android:focusableInTouchMode="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oa_more_menu_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#6A6A6A"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/oamain_special_attendance_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="@dimen/drawable_padding"
+                        android:drawableTop="@drawable/oa_8"
+                        android:gravity="center"
+                        android:text="@string/oaspecial_attendance_apply"
+                        android:textColor="@color/white" />
+
+
+                    <LinearLayout
+                        android:id="@+id/oamain_sign_statistical_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:visibility="visible">
+
+                        <FrameLayout
+                            android:id="@+id/notice_head_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp">
+
+                            <ImageView
+                                android:id="@+id/notice_avatar_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:contentDescription="@string/app_name"
+                                android:padding="0dp"
+                                android:src="@drawable/kaoqintongji" />
+
+                            <TextView
+                                android:id="@+id/oamain_sign_statistical_notice_tv"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="top|right"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/hongdian"
+                                android:textColor="@android:color/white"
+                                android:textSize="10.0dip"
+                                />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="@string/work_statistics"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/oamain_expense_reimbursement_ll"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:visibility="visible">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:contentDescription="@string/app_name"
+                                android:padding="0dp"
+                                android:src="@drawable/reimbursement" />
+
+                            <TextView
+                                android:id="@+id/expense_reimbursement_hd_tv"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:layout_gravity="top|right"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/hongdian"
+                                android:textColor="@android:color/white"
+                                android:textSize="10.0dip"
+                                />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="@string/Expense_reimbursement"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/release_switch_tv3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/oa_more_cancel_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#40000000"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView><!---->

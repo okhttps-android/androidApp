@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/item_delete_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/misson_item_height"
+        android:background="@color/item_line"
+        android:paddingLeft="@dimen/misson_item_pl"
+        android:paddingRight="@dimen/misson_item_pr">
+
+        <TextView
+            android:id="@+id/item_delete_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/common_delete"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textColor="@color/btn_orange_normal"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/misson_item_height"
+        android:paddingLeft="@dimen/misson_item_pl"
+        android:paddingRight="@dimen/misson_item_pr">
+
+        <TextView
+            android:id="@+id/company_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/visit_company"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/item_company_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/company_tag"
+            android:drawableRight="@drawable/company"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:hint="@string/common_select"
+            android:maxLines="2"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/misson_item_height"
+        android:paddingLeft="@dimen/misson_item_pl"
+        android:paddingRight="@dimen/misson_item_pr">
+
+        <TextView
+            android:id="@+id/item_companyaddr_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/visit_address"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+        <!--android:drawableRight="@drawable/addr_bule"-->
+        <TextView
+            android:id="@+id/item_companyaddr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/item_companyaddr_tag"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:lines="1"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/misson_item_height"
+        android:minHeight="@dimen/misson_item_height"
+        android:paddingLeft="@dimen/misson_item_pl"
+        android:paddingRight="@dimen/misson_item_pr">
+
+        <TextView
+            android:id="@+id/remark_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:minHeight="@dimen/misson_item_height"
+            android:text="@string/visit_aim"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/item_remark_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/remark_tag"
+            android:drawableRight="@drawable/oa_next"
+            android:gravity="center|right"
+            android:hint="@string/common_select"
+            android:minHeight="@dimen/misson_item_height"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/misson_item_height"
+        android:paddingLeft="@dimen/misson_item_pl"
+        android:paddingRight="@dimen/misson_item_pr">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/times"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/item_half_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/item_half_rb_d"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+            <RadioButton
+                android:id="@+id/item_all_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/item_all_rb_d"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+        </RadioGroup>
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/item_type_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:drawableRight="@drawable/oa_next"-->
+        <!--android:gravity="center"-->
+        <!--android:hint="选择"-->
+        <!--android:text="半天"-->
+        <!--android:textColor="@color/text_main"-->
+        <!--android:textSize="@dimen/text_main" />-->
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/misson_item_height"
+        android:paddingLeft="@dimen/misson_item_pl"
+        android:paddingRight="@dimen/misson_item_pr">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/longs"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/item_length_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/misson_item_height"
+        android:paddingLeft="@dimen/misson_item_pl"
+        android:paddingRight="@dimen/misson_item_pr">
+
+        <TextView
+            android:id="@+id/time_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/creat_time"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+
+        <TextView
+            android:id="@+id/item_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/time_tag"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:maxLines="2"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/misson_item_height"
+        android:paddingLeft="@dimen/misson_item_pl"
+        android:paddingRight="@dimen/misson_item_pr">
+
+        <TextView
+            android:id="@+id/location_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="@string/create_addree"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+
+        <TextView
+            android:id="@+id/item_location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/location_tag"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:maxLines="2"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/misson_item_height"
+        android:paddingLeft="@dimen/misson_item_pl"
+        android:paddingRight="@dimen/misson_item_pr">
+
+        <TextView
+            android:id="@+id/item_long_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/realtime_distance"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/navigation_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/navigation"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/navigation"
+            android:textColor="#1296db"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/item_long_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/navigation_tv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/misson_item_height"
+        android:paddingLeft="@dimen/misson_item_pl"
+        android:paddingRight="@dimen/misson_item_pr">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/expected_arrival_time"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/item_reckontime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/oa_next"
+            android:gravity="center"
+            android:hint="@string/common_select"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/misson_item_height"
+        android:alpha="0.30"
+        android:paddingLeft="@dimen/misson_item_pl"
+        android:paddingRight="@dimen/misson_item_pr">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/real_arrival_time"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/item_realtime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/misson_item_height"
+        android:alpha="0.30"
+        android:paddingLeft="@dimen/misson_item_pl"
+        android:paddingRight="@dimen/misson_item_pr">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/recent_record_time"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/item_realleave_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+</LinearLayout>

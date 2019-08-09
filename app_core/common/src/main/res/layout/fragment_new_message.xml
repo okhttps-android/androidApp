@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebe9e9"
+    android:orientation="vertical" >
+
+
+    <com.core.widget.VoiceSearchView
+        android:id="@+id/voiceSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <com.core.widget.DrawableCenterTextView
+        android:id="@+id/message_net_set"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#fcd8d8"
+        android:text="当前网络不可用，请检查您的网络设置"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_net_noticce"
+        android:drawablePadding="10dp"
+        android:visibility="gone"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:slide="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        app:ptrAnimationStyle="flip"
+        app:ptrDrawableEnd="@drawable/default_ptr_rotate"
+        app:ptrDrawableStart="@drawable/default_ptr_flip"
+        app:ptrHeaderTextColor="@color/black"
+        app:ptrMode="both"
+        app:ptrOverScroll="false"
+        app:ptrScrollingWhileRefreshingEnabled="true"
+        app:ptrShowIndicator="false"
+        slide:slideAnimationTime="200"
+        slide:slideLeftAction="scroll"
+        slide:slideMode="right"
+        slide:slideRightAction="scroll"/>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/selector_me_menu_item_bg">
+
+    <TextView
+        android:id="@+id/tv_menu_name"
+        style="@style/text_black_16"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height"
+
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/go"
+        android:gravity="center_vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="16dp"
+        android:text="菜单"
+         />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/line"
+    android:background="@color/item_line"/>
+</LinearLayout>

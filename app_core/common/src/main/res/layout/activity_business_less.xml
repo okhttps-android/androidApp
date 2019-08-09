@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.crm.BusinessLessActivity">
+    <LinearLayout
+        style="@style/crm_ll_card"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+       >
+
+        <LinearLayout
+            android:id="@+id/ll_result"
+            style="@style/LinearLayout_horizontal">
+
+            <TextView
+                style="@style/TextView_Basic"
+                android:layout_margin="10dp"
+                android:text="处理结果"></TextView>
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="260dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/shape_from_edit"
+                android:gravity="left|top" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_leader"
+            style="@style/LinearLayout_horizontal">
+
+            <TextView
+                style="@style/TextView_Basic"
+                android:layout_margin="10dp"
+                android:text="直属领导" />
+
+            <TextView
+                android:id="@+id/tv_leader"
+                style="@style/TextView_Basic"
+                android:layout_width="260dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_from_edit"
+                android:drawableRight="@drawable/nav_icon_search_default"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout 
+            android:id="@+id/ll_date"
+            android:visibility="gone"
+            style="@style/LinearLayout_horizontal">
+
+            <TextView
+                style="@style/TextView_Basic"
+                android:layout_margin="10dp"
+                android:text="处理时间" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                style="@style/TextView_Basic"
+                android:layout_width="260dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_from_edit"
+                android:drawableRight="@drawable/nav_icon_search_default"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_moment"
+            style="@style/LinearLayout_horizontal">
+
+            <TextView
+                style="@style/TextView_Basic"
+                android:layout_margin="10dp"
+                android:text="商机阶段" />
+
+            <TextView
+                android:id="@+id/tv_business_state"
+                style="@style/TextView_Basic"
+                android:layout_width="260dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_from_edit"
+                android:drawableRight="@drawable/nav_icon_search_default"
+                android:padding="5dp"
+                android:hint="请选择(必填)" />
+        </LinearLayout>
+        
+        <com.xzjmyk.pm.activity.ui.erp.view.ListViewInScroller
+            android:id="@+id/lv_datas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</ScrollView>
+
+

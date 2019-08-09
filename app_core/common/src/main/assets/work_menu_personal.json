@@ -1,0 +1,72 @@
+[
+  {
+    "moduleName": "str_uu_application",
+    "isLocalModule": true,
+    "moduleTag": "uu_application",
+    "moduleId": "",
+    "moduleVisible": true,
+    "moduleList": [
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_subscribe_secretary",
+        "menuIcon": "ic_work_subscribe_secretary",
+        "menuActivity": "com.modular.booking.BookingListActivity",
+        "menuTag": "local_subscribe_secretary",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_uu_sports",
+        "menuIcon": "ic_work_uu_sports",
+        "menuActivity": "com.modular.appme.UURanking",
+        "menuTag": "local_uu_sports",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "charitable",
+        "menuIcon": "ic_work_charitable_donations",
+        "menuActivity": "com.modular.work.CharitableActivity",
+        "menuTag": "local_charitable_donations",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_invite_register",
+        "menuIcon": "ic_work_invite_register",
+        "menuActivity": "com.modular.work.InviteRegisterMainActivity",
+        "menuTag": "local_invite_register",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_uu_education",
+        "menuIcon": "ic_work_uu_education",
+        "menuActivity": "com.modular.apputils.activity.SimpleWebActivity",
+        "menuTag": "local_uu_education",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      }
+    ,
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_yingtang_song",
+        "menuIcon": "icon_music_yingtang",
+        "menuActivity": "com.usoftchina.pay.MainMusicActivity",
+        "menuTag": "local_yingtang_song",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/name_rl"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/tag_book_name"
+                style="@style/item_menu_tag"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="@string/service_name" />
+
+            <EditText
+                android:id="@+id/et_book_name"
+                style="@style/item_menu_input"
+                android:layout_width="290dp"
+                android:layout_toRightOf="@id/tag_book_name"
+                android:drawablePadding="6dp"
+                android:ellipsize="end"
+                android:hint="@string/common_input2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sex_rl"
+     
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/tag_book_sex"
+                style="@style/item_menu_tag"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="性别" />
+
+            <RadioGroup
+                android:id="@+id/rg_sex"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+             
+                android:layout_toRightOf="@+id/tag_book_sex"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_boy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:checked="true"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/oa_rb_button_bg"
+                    android:text="先生" />
+
+                <RadioButton
+                    android:id="@+id/rb_girl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginLeft="20dp"
+
+                    android:button="@null"
+                    android:drawableLeft="@drawable/oa_rb_button_bg"
+                    android:text="女士" />
+            </RadioGroup>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/phone_rl"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/tag_book_phone"
+                style="@style/item_menu_tag"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="@string/service_phone" />
+
+            <EditText
+                android:id="@+id/et_book_phone"
+                style="@style/item_menu_input"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/icon_tel"
+                android:drawablePadding="2dp"
+                android:ellipsize="end"
+            
+                android:hint="@string/common_input2"
+                android:inputType="phone"
+                android:textColor="#0CB88C" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/notes_rl"
+            android:layout_marginTop="17dp"
+            android:layout_height="wrap_content"
+            style="@style/item_menu"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tag_book_notes"
+                style="@style/item_menu_tag"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="@string/service_notes" />
+
+            <EditText
+                android:id="@+id/et_book_notes"
+                style="@style/item_menu_input"
+                android:gravity="top|left"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingTop="2dp"
+                android:layout_toRightOf="@id/tag_book_notes"
+                android:drawablePadding="6dp"
+                android:hint="请输入您的要求，我们会尽量满足" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_bule_btn"
+            android:padding="10dp"
+            android:text="@string/app_button_commit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+</LinearLayout>

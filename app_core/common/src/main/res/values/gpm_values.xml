@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--String-->
+
+    <!--end String-->
+
+    <!--Color-->
+    <color name="oa_main">#f4f4f5</color>
+    <!--listView 中对于 contentView的settag方法参数定义 -->
+    <item name="position" type="id"></item>
+    <!--end Color-->
+
+
+    <!--Style-->
+    <!--共有对象-->
+    <style name="oa_btn_style">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <!-- 进度条-->
+    <style name="StyleProgressBarMini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">14dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini</item>
+    </style>
+
+    <!-- 考勤统计通通用属性-->
+    <style name="statistics_style">
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <!-- 会议-->
+    <style name="add_meeting">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <!-- 添加考勤组-->
+    <style name="add_signin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_height</item>
+        <item name="android:background">@color/item_color2</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="add_signin_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/oa_signin_rl</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="add_signin_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="add_signin_tv_main" parent="@style/add_signin_tv">
+        <item name="android:textSize">@dimen/text_main</item>
+        <item name="android:textColor">@color/text_main</item>
+        <item name="android:drawablePadding">8dp</item>
+
+    </style>
+
+    <style name="add_signin_tv_hine" parent="@style/add_signin_tv">
+        <item name="android:textSize">@dimen/text_hine</item>
+        <item name="android:textColor">@color/text_hine</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="add_meet_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">left</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--工作日志-->
+    <style name="style0">  
+            <item name="android:textSize">19dip</item>  
+            <item name="android:textColor">@color/text_main</item>  
+    </style>
+
+    <style name="style1">  
+            <item name="android:textSize">23dip</item>  
+            <item name="android:textColor">@color/text_hine</item>  
+            <item name="android:textStyle">italic</item>  
+    </style>
+
+    <style name="style_calender">  
+        <item name="android:layout_width">0dp</item>
+
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:scrollbarSize">0dp</item>
+    </style><!--end Style-->
+
+    <dimen name="drawable_padding">5dp</dimen>
+
+    <style name="text_color">  
+        <item name="android:textColor">#268508</item>
+        <item name="android:textSize">@dimen/text_main</item>
+    </style>
+</resources>

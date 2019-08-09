@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/antionbarcolor">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/btn_back"
+            android:gravity="center_vertical"
+            android:text="我的好友"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/btn_mutual"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:background="@drawable/bg_aguanzu"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="true" />
+
+            <RadioButton
+                android:id="@+id/btn_Unilateral"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_toRightOf="@+id/btn_guanzu"
+                android:background="@drawable/bg_guanzu"
+                android:button="@null"
+                android:clickable="false" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top" />
+</RelativeLayout>

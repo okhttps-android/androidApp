@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE9E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBE9E9"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/form_relative_customer"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/task_title" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/tv_title"
+                android:text="*"
+                android:textColor="@color/red" />
+            <EditText
+                android:id="@+id/et_title"
+                style="@style/form_relative_right_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_title"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/common_input2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/form_relative_customer"
+            android:layout_height="30dp"
+            android:paddingLeft="@dimen/padding"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/detailsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="@string/task_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/detailsTV"
+                android:text="*"
+                android:textColor="@color/red" />
+            <ImageView
+                android:id="@+id/voice_search_iv"
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btn_yuyin_nor"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_task_detail"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/common_input2"
+            android:paddingLeft="10dp"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            style="@style/form_relative_customer"
+            android:layout_height="90dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_task_peoples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/task_executor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"      
+                android:layout_marginTop="31dp"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@id/tv_task_peoples"
+                android:text="*"
+                android:textColor="@color/red" />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/iv_find"
+                android:layout_toRightOf="@+id/tv_task_peoples"
+                android:scrollbars="none">
+
+                <TextView
+                    android:id="@+id/et_task_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:textColor="#49C120" />
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/iv_find"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/icon_find_voice" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/light_grey" />
+
+        <RelativeLayout
+            style="@style/form_relative_customer"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_startime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/task_starttime" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/tv_startime"
+                android:text="*"
+                android:textColor="@color/red" />
+            <TextView
+                android:id="@+id/et_startime"
+                style="@style/form_relative_right_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_startime"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/common_select1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/light_grey" />
+
+        <RelativeLayout
+            android:id="@+id/task_startime_rl"
+            style="@style/form_relative_customer"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_task_startime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/task_endtime" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/tv_task_startime"
+                android:text="*"
+                android:textColor="@color/red" />
+            <TextView
+                android:id="@+id/et_endtime"
+                style="@style/form_relative_right_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_task_startime"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="@string/common_select1" />
+
+        </RelativeLayout>
+        <!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/light_grey" />-->
+        <!-- 语音 -->
+        <LinearLayout
+            android:id="@+id/lay_voice_layout"
+            style="@style/form_relative_customer"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="语音" />
+
+            <LinearLayout
+                android:id="@+id/voice_display_voice_layout"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/globle_player_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/voice_display_voice_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/globle_player_btn_play" />
+
+                <ProgressBar
+                    android:id="@+id/voice_display_voice_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="6dip"
+                    android:layout_margin="8dip"
+                    android:layout_weight="1"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/globle_player_progress_bar_bg" />
+
+                <TextView
+                    android:id="@+id/voice_display_voice_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_delete_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/iconfont_shanchu" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/light_grey"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/form_relative_customer"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_task_chaosong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="   抄送人" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/iv_find_chaosong"
+                android:layout_toRightOf="@+id/tv_task_chaosong"
+                android:scrollbars="none">
+
+                <com.core.widget.view.TagGroup
+                    android:id="@+id/et_task_chaosong"
+                    style="@style/TagGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@null" />
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/iv_find_chaosong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/icon_find_voice" />
+
+        </RelativeLayout>
+
+        <!-- <View
+             android:layout_width="match_parent"
+             android:layout_height="0.5dp"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+             android:background="@color/light_grey" />-->
+
+        <LinearLayout style="@style/form_linear_customer">
+
+            <Button
+                android:id="@+id/bt_task_add"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_index_selector"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_recode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:padding="20dp"
+        android:src="@drawable/icon_voice_black"
+        android:visibility="gone" />
+</RelativeLayout>

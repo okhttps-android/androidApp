@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ListView
+        android:id="@+id/list_yeas"
+        style="@style/style_calender"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="年"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/list_month"
+        style="@style/style_calender"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="月"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/list_day"
+        style="@style/style_calender"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="日"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/list_hh"
+        style="@style/style_calender"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="时"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/list_mm"
+        style="@style/style_calender"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="分"
+        android:textSize="20dp" />
+
+
+</LinearLayout>

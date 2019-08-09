@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebe9e9">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#ebe9e9"/>
+            <EditText
+                android:id="@+id/text_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="@string/qzone_sendshuo_now_think"
+                android:inputType="textMultiLine"
+                android:minHeight="250dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="#969695"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:id="@+id/select_img_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <com.core.widget.view.MyGridView
+                    android:id="@+id/grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:horizontalSpacing="3dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="3dp" >
+                </com.core.widget.view.MyGridView>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#ebe9e9"
+                android:textColor="@color/gray"/>
+            <RelativeLayout
+                android:id="@+id/location_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="10dp"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/location_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_dingwei1_nor"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/qzone_now_location"
+                    android:textColor="#575757"
+                    android:textSize="@dimen/text_main"
+                    android:paddingRight="20dp"
+                    android:layout_toRightOf="@+id/location_iv"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/oa_next" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/display_rl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="谁能看见"
+                    android:textColor="@color/text_hine"
+                    android:textSize="@dimen/text_main" />
+
+                <TextView
+                    android:id="@+id/display_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@drawable/oa_next"
+                    android:gravity="center"
+                    android:text="所有人可见" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab_bg"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/release_btn"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/circle_release"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

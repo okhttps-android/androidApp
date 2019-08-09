@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xzjmyk.pm.activity.MainActivity" >
+
+    <item
+        android:id="@+id/personal_qzone_center_message"
+        android:icon="@drawable/ic_msg_friend"
+        android:title="发动态"
+        app:showAsAction="ifRoom"/>
+
+</menu>

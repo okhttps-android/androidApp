@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_wxPay"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+             android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_blue_button"
+            android:layout_weight="1"
+            android:text="微信支付" />
+
+        <Button
+            android:id="@+id/btn_wxRefund"
+            android:background="@drawable/bg_blue_button"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:text="微信退款" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_wxPay"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:divider="@color/gray_light">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_aliPay"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_blue_button"
+            android:layout_weight="1"
+            android:text="支付宝支付" />
+
+        <Button
+            android:id="@+id/btn_aliRefund"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_blue_button"
+            android:layout_weight="1"
+            android:text="支付宝退款" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_aliPay"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:divider="@color/gray_light">
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            style="@style/expense_table_v_1dp"/>
+        <TextView
+            android:id="@+id/details_type_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/text_main"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+        <View
+            style="@style/expense_table_v_1dp"/>
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/details_money_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:hint="@string/enter_details_money"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/text_main"
+            android:textSize="14sp"
+            android:paddingLeft="10dp"
+            whatever:customRegexp="^[0-9]+(.[0-9]{2})?$"
+            whatever:testType="regexp"
+            whatever:testErrorString="限制输入8位有效正实数（保留两位小数）"
+        />
+
+        <View
+            style="@style/expense_table_v_1dp"/>
+        <ImageView
+            android:id="@+id/details_delete_im"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/delete"/>
+        <View
+            style="@style/expense_table_v_1dp"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/expense_table_h_1dp"/>
+</LinearLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.core.widget.CustomerScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--top layout-->
+        <LinearLayout
+            style="@style/crm_ll_card"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_book_me"
+                style="@style/TextView_Basic"
+                android:layout_weight="1"
+                android:background="@drawable/shape_brounds_bottom"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/booking_me" />
+
+            <View style="@style/app_line_v_1dp" />
+
+            <TextView
+                android:id="@+id/tv_book_shared"
+                style="@style/TextView_Basic"
+                android:layout_weight="1"
+                android:background="@drawable/shape_brounds_bottom"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/booking_shared" />
+        </LinearLayout>
+
+        <!--new layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#F4F4F4"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_personal_num"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/hongdian"
+                    android:layout_gravity="top|right"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="10.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/signin" />
+                <TextView
+                    android:id="@+id/mBookPersonal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:drawablePadding="@dimen/padding"
+                    android:drawableTop="@drawable/booking_personal"
+                    android:layout_centerInParent="true"
+                    android:text="@string/booking_personal"
+                    android:layout_marginTop="2dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_business_num"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/hongdian"
+                    android:layout_gravity="top|right"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="10.0dip"
+                    />
+                <TextView
+                    android:id="@+id/mBookBusiness"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+
+                    android:drawablePadding="@dimen/padding"
+                    android:drawableTop="@drawable/booking_business"
+                    android:layout_centerInParent="true"
+                    android:text="@string/booking_business"
+                    android:layout_marginTop="2dp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/mBookService"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/padding"
+                android:drawableTop="@drawable/booking_service"
+                android:gravity="center"
+                android:text="@string/booking_service"
+                />
+            <TextView
+                android:id="@+id/mBookShares"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/padding"
+                android:drawableTop="@drawable/booking_share"
+                android:gravity="center"
+                android:text="@string/booking_shared"
+             />
+            <LinearLayout
+                android:id="@+id/oamain_more_menu_ll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/oamain_more_menu_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:src="@drawable/ic_oa_more" />
+
+                    <TextView
+                        android:id="@+id/oamain_more_menu_hd_tv"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/hongdian"
+                        android:textColor="@android:color/white"
+                        android:textSize="10.0dip"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/more_menu_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/oamore_tltle"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--年月日布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/yeas_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                android:id="@+id/day_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                android:id="@+id/week_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+        </LinearLayout>
+
+        
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/white" />
+
+        <com.core.widget.MyListView
+            android:id="@+id/lv_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/item_line"
+            android:dividerHeight="2px" />
+    </LinearLayout>
+</com.core.widget.CustomerScrollView>

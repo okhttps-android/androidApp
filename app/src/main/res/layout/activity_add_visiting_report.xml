@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hine_bg"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.oa.AddVisitReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/date_rl"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/date_tag"
+                style="@style/item_menu_tag"
+                android:gravity="center_vertical"
+                android:text="@string/visit_date" />
+
+            <TextView
+                android:id="@+id/date_tv"
+                style="@style/item_menu_input"
+                android:layout_toRightOf="@id/date_tag"
+                android:drawablePadding="6dp"
+                android:hint="@string/common_select_not_must"
+                android:paddingRight="10dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/company_rl"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/company_tag"
+                style="@style/item_menu_tag"
+                android:gravity="center_vertical"
+                android:text="@string/visit_company" />
+
+            <TextView
+                android:id="@+id/company_tv"
+                style="@style/item_menu_input"
+                android:layout_toRightOf="@id/company_tag"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/oa_next"
+                android:hint="@string/common_select" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/company_add_rl"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/company_add_tag"
+                style="@style/item_menu_tag"
+                android:gravity="center_vertical"
+                android:text="@string/visit_address"
+                android:textColor="@color/hintColor" />
+
+            <TextView
+                android:id="@+id/company_add_tv"
+                style="@style/item_menu_input"
+                android:layout_toRightOf="@id/company_add_tag"
+                android:textColor="@color/hintColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remark_rl"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/remark_tag"
+                style="@style/item_menu_tag"
+                android:gravity="center_vertical"
+                android:text="@string/visit_aim" />
+
+            <TextView
+                android:id="@+id/remark_tv"
+                style="@style/item_menu_input"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/oa_next"
+                android:hint="@string/common_input_or_select_much" />
+        </RelativeLayout>
+
+        <com.core.widget.MyListView
+            android:id="@+id/contact_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin_top"
+            android:background="@color/me_menu_item_normal"
+            android:divider="@color/item_line"
+            android:dividerHeight="@dimen/line" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line" />
+
+        <TextView
+            android:id="@+id/additem_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/misson_item_height"
+            android:background="@color/me_menu_item_normal"
+            android:gravity="center"
+            android:text="@string/add_contacts"
+            android:textColor="@color/button_focus" />
+
+        <RelativeLayout
+            android:id="@+id/content_rl"
+            style="@style/item_edit_long_menu"
+            android:layout_marginTop="@dimen/item_margin_top">
+
+            <TextView
+                android:id="@+id/content_tag"
+                style="@style/item_menu_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/visit_content" />
+            <ImageView
+                android:id="@+id/voice_search_iv"
+                android:layout_width="20dp"
+                android:layout_toRightOf="@+id/content_tag"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/btn_yuyin_nor"
+                android:visibility="visible" />
+            <EditText
+                android:id="@+id/content_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/content_tag"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:gravity="top|left"
+                android:hint="@string/common_input"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_hine" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_bule_btn"
+                android:padding="10dp"
+                android:text="@string/common_save_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_main" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_border_withe">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_border_bule"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/app_find_version"/>
+    
+   <!-- <ImageView
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>-->
+
+</RelativeLayout>
+    <View style="@style/app_line_gray_1dp"></View> 
+    <TextView
+        android:id="@+id/tv_apkVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/blue_seats_num"
+        android:text="V1.0-->V3.0 / 50.04MB"/>
+    
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="@dimen/dp_10"
+    android:text="更新内容："/>
+
+    <TextView
+        android:id="@+id/tv_update_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="1：修复若干bug \n2：优化app性能\n2：**********\n2：**********"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+        <Button
+            android:id="@+id/bt_noUpdate"
+            android:layout_width="120dp"
+            android:layout_height="45dp" 
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/selector_cancel_bg"
+            android:text="暂不升级"/>
+        <Button
+            android:id="@+id/bt_update"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_confirm_bg"
+            android:text="升级下载"/>
+    </RelativeLayout>
+</LinearLayout>

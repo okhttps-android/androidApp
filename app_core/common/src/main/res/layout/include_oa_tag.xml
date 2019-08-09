@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/subord_log_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="4px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/item_line" />
+
+                <TextView
+                    android:id="@+id/subord_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="下属工作日历"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/default_shadow_color" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <View
+                    android:id="@+id/my_log_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="4px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/item_line" />
+
+                <TextView
+                    android:id="@+id/my_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="我的工作日历"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/more_table_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6A6A6A"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/attendance_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:drawableTop="@drawable/oa_8"
+            android:gravity="center"
+            android:text="特殊考勤"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </LinearLayout>
+</FrameLayout>

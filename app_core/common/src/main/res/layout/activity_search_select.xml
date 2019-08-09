@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.oa.SearchSelectActivity">
+
+    <com.core.widget.VoiceSearchView
+        android:id="@+id/voiceSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <RelativeLayout
+        android:id="@+id/empty_rl"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/tip"
+            android:drawablePadding="5dp"
+            android:text="@string/not_search_message"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pullToRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/item_line"
+        android:dividerHeight="@dimen/line"
+        android:scrollbars="none" />
+
+</LinearLayout>

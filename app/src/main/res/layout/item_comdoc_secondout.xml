@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line"/>
+    <TextView
+        android:id="@+id/item_comdoc_secondout_detail_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="明细1"
+        android:textColor="#FF3300"/>
+
+    <com.core.widget.MyListView
+        android:id="@+id/item_comdoc_secondout_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false">
+    </com.core.widget.MyListView>
+</LinearLayout>

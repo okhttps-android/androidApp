@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/padding"
+    android:paddingTop="@dimen/padding">
+
+    <ImageView
+        android:id="@+id/contantImg"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="19dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/uuu" />
+
+    <TextView
+        android:id="@+id/statusTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/contantImg"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="statusTv"
+        android:textColor="@color/indianred"
+        android:textSize="@dimen/text_hine" />
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@id/statusTv"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/contantImg"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_toRightOf="@id/contantImg"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="titleTv"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/BigTextSize" />
+
+    <TextView
+        android:id="@+id/subTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/titleTv"
+        android:layout_below="@id/titleTv"
+        android:layout_toRightOf="@id/contantImg"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="4"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+
+</RelativeLayout>

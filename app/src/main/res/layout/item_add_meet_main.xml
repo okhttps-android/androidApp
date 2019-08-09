@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/selector_me_menu_item_bg"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            style="@style/add_meeting"
+            android:background="@color/item_color2">
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:text="异程1"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <ImageView
+                android:id="@+id/remove_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/close_agenda" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/item_line" />
+
+        <RelativeLayout
+            style="@style/add_meeting"
+            android:background="@color/item_color2">
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:text="议题："
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:id="@+id/main_et"
+                style="@style/add_meet_tv" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/item_line" />
+
+        <RelativeLayout
+            style="@style/add_meeting"
+            android:background="@color/item_color2">
+
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:text="开始时间："
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:id="@+id/start_et"
+                style="@style/add_meet_tv" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/item_line" />
+
+        <RelativeLayout
+            style="@style/add_meeting"
+            android:background="@color/item_color2">
+
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:text="结束时间："
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <EditText
+                android:id="@+id/end_et"
+                style="@style/add_meet_tv" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/add_meeting"
+            android:background="@color/item_color2">
+
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:text="附件："
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                style="@style/add_meet_tv"
+                android:text="点击添加" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/item_color2"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/add_agenda"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="新增议程"
+            android:textColor="#56abe4"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</FrameLayout>

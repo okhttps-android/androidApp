@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppMessages</string>
+    <string name="real_time_form">实时看板</string>
+    <string name="industry_access_failure">所属行业获取失败</string>
+    <string name="company_business_targets">商家营业指标</string>
+    <string name="statistical_data_acquisition_failed">统计数据获取失败</string>
+
+
+</resources>

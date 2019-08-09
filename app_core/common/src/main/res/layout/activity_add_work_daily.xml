@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <com.core.widget.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ly_head_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/gainsboro" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/HalfBlack"
+                    android:visibility="gone"/>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:text="@string/wd_summary_title"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    />
+                    <ImageView
+                        android:id="@+id/voice_summary_iv"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/btn_yuyin_nor"
+                        android:visibility="visible"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="3dp"
+                        />
+                <TextView
+                    android:id="@+id/summary_limit_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/wd_summary_error"
+                    android:textColor="@color/no_approval"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+                <com.andreabaccega.widget.FormEditText
+                    android:id="@+id/add_work_daily_summary_et"
+                    style="@style/form_relative_right_text2"
+                    android:hint="@string/wd_summary_descrition"
+                    whatever:testType="regexp"
+                    whatever:customRegexp="^[\\s\\S]{0,500}$"
+                    whatever:testErrorString="@string/wd_summary_error"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/gainsboro" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/HalfBlack"
+                    android:visibility="gone"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="@string/wd_plan_title"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/voice_plan_iv"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/btn_yuyin_nor"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="visible"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="3dp"
+                        />
+                    <TextView
+                        android:id="@+id/plan_limit_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="@string/wd_plan_error"
+                        android:textColor="@color/no_approval"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/add_work_daily_plan_et"
+                    style="@style/form_relative_right_text2"
+                    android:hint="@string/wd_plan_descrition"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/gainsboro" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/HalfBlack"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wd_experience_title"
+                        android:paddingLeft="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp"
+                        />
+                    <ImageView
+                        android:id="@+id/voice_experience_iv"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/btn_yuyin_nor"
+                        android:layout_gravity="right"
+                        android:visibility="visible"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        />
+                    <ImageView
+                        android:id="@+id/add_work_daily_sharing_experience_im"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ex_icon_share_nor"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="10dp"
+                        android:visibility="visible"
+                        android:layout_toLeftOf="@+id/voice_experience_iv"
+                        />
+
+                    <TextView
+                        android:id="@+id/experience_limit_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:text="字数超限300了喔,亲!"
+                        android:textColor="@color/no_approval"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/add_work_daily_sharing_experience_im"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+                <EditText
+                    android:id="@+id/add_work_daily_experience_et"
+                    style="@style/form_relative_right_text2"
+                    android:hint="@string/wd_experience_descrition"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bottom_submit"
+                style="@style/form_linear_customer">
+
+                <Button
+                    android:id="@+id/add_work_daily_submit_iv"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/bg_bule_btn"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main"
+                    android:text="@string/common_save_button" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.core.widget.CustomerScrollView>
+
+
+</LinearLayout>

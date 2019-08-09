@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="next_height">15.0dp</dimen>
+    <dimen name="next_width">10.0dp</dimen>
+    <dimen name="line">1px</dimen>
+    <dimen name="line_big">7.0dp</dimen>
+    <dimen name="line_min">2.0dp</dimen>
+    <dimen name="item_height_edit">100.0dp</dimen>
+    <dimen name="item_height">60.0dp</dimen>
+    <dimen name="item_height_min">45.0dp</dimen>
+    <dimen name="item_me_height">80.0dp</dimen>
+    <dimen name="text_main">16.0sp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="SmallerTextSize">13.0sp</dimen>
+    <dimen name="NormalTextSize">16.0dp</dimen>
+</resources>

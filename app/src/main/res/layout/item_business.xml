@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebe9e9">
+
+    <LinearLayout
+        android:id="@+id/business_detail_ll"
+        style="@style/crm_ll_card"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:paddingBottom="10dp">
+
+
+        <LinearLayout style="@style/crm_ll_sale_item">
+
+            <TextView
+                style="@style/TextView_Basic"
+                android:minWidth="90dp"
+                android:text="@string/Company_Name"
+                android:textColor="@color/gray_light" />
+
+            <TextView
+                android:id="@+id/companyname_tv"
+                style="@style/TextView_Basic"
+                android:text="XXXXXXX" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/crm_ll_sale_item">
+
+            <TextView
+                style="@style/TextView_Basic"
+                android:minWidth="90dp"
+                android:text="@string/describe"
+                android:textColor="@color/gray_light" />
+
+            <TextView
+                android:id="@+id/describe_tv"
+                style="@style/TextView_Basic" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            style="@style/crm_ll_sale_item"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/tv_crm_business_datetv"
+                style="@style/TextView_Basic"
+                android:layout_gravity="center_vertical"
+                android:minWidth="90dp"
+                android:text="@string/create_date"
+                android:textColor="@color/gray_light" />
+
+            <TextView
+                android:id="@+id/create_date_tv"
+                style="@style/TextView_Basic"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/tv_crm_business_datetv"
+                android:text="XXXXXXX" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/business_stage"
+            android:textColor="@color/gray_light"
+            android:textSize="15sp" />
+
+        <com.core.widget.view.HorizontalStepsView
+            android:id="@+id/stepsView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

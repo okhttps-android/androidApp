@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/approvalStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/paddingApp">
+
+    <TextView
+        android:id="@+id/captionTV"
+        style="@style/approvalItemStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textSize="13sp"
+        android:textColor="#999999"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/valuesFl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        tools:ignore="WebViewLayout">
+
+        <EditText
+            android:id="@+id/valueEt"
+            style="@style/approvalItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_edit_shape_10dp"
+            android:hint="@string/common_input2"
+            android:textColor="@color/text_main" />
+
+        <WebView
+            android:id="@+id/valueWeb"
+            style="@style/approvalItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/valueLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/oldValueTv"
+                style="@style/approvalItemStyle"
+                android:textSize="13sp"
+                android:layout_width="match_parent"
+                android:gravity="center|left"
+                android:textColor="@color/text_main"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/valueTv"
+                android:textSize="13sp"
+                style="@style/approvalItemStyle"
+                android:layout_width="match_parent"
+                android:gravity="center|left"
+                android:textColor="@color/text_main" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/valuesRG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/yesRB"
+                android:button="@drawable/oa_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="@dimen/padding"
+                android:layout_height="wrap_content"
+                android:text="是" />
+
+            <RadioButton
+                android:id="@+id/notRB"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_width="wrap_content"
+                android:button="@drawable/oa_checkbox"
+                android:layout_height="wrap_content"
+                android:text="否" />
+        </RadioGroup>
+    </FrameLayout>
+</LinearLayout>

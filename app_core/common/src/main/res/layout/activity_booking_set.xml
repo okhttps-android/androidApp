@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oa_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/commonSettingItem"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/taskdetail_startime"
+            android:textColor="@color/black"
+            android:textSize="@dimen/commonSettingItemTextSize" />
+
+        <TextView
+            android:id="@+id/tv_startTime"
+            style="@style/IMTbleLine_TextValue"
+            android:layout_toLeftOf="@+id/iv_name"
+            android:layout_toRightOf="@+id/tv_name"
+            android:textColor="@color/dark_dark_grey"
+            tools:text="08:00" />
+
+        <ImageView
+            android:id="@+id/iv_name"
+            android:layout_width="@dimen/next_width"
+            android:layout_height="@dimen/next_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:background="@drawable/oa_next"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        style="@style/commonSettingItem">
+
+        <TextView
+            android:id="@+id/tv_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/taskdetail_endtime"
+            android:textColor="@color/black"
+            android:textSize="@dimen/commonSettingItemTextSize" />
+
+        <TextView
+            android:id="@+id/tv_endTime"
+            style="@style/IMTbleLine_TextValue"
+            android:layout_toLeftOf="@+id/iv_function"
+            android:layout_toRightOf="@+id/tv_function"
+            android:textColor="@color/dark_dark_grey"
+            tools:text="20:00" />
+
+        <ImageView
+            android:id="@+id/iv_function"
+            android:layout_width="@dimen/next_width"
+            android:layout_height="@dimen/next_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/oa_next"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        style="@style/commonButtonStyle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/app_button_commit" />
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    tools:context="com.uas.appworks.OA.platform.activity.BusinessTravelActivity">
+
+    <RelativeLayout
+        android:id="@+id/remainRl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+       >
+
+        <ImageView
+            android:id="@+id/remainImg"
+            android:src="@drawable/icon_empty_lamp"
+            android:layout_width="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/remainTag"
+            android:layout_below="@id/remainImg"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_min"
+            android:paddingLeft="@dimen/padding"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/remainTv"
+            android:layout_below="@id/remainTag"
+            android:layout_width="wrap_content"
+            android:textColor="#D13F57"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="@dimen/padding"
+            android:paddingRight="@dimen/padding"
+            android:textSize="@dimen/text_min"
+            android:layout_marginLeft="@dimen/paddingMin"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/item_bus_travel_leader"/>
+        <com.module.recyclerlibrary.ui.refresh.simlpe.SimpleRefreshLayout
+            android:id="@+id/mRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:enablePullDown="true"
+            android:visibility="gone"
+            app:enablePullUp="true">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.module.recyclerlibrary.ui.refresh.simlpe.SimpleRefreshLayout>
+    </LinearLayout>
+
+</FrameLayout>

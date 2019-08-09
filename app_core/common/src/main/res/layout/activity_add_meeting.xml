@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextFormExample="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ry_leave_man"
+            style="@style/add_meeting"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/name_tag"
+                style="@style/form_relative_left_text"
+                android:text="@string/meeting_name"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_hine" />
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/name_tag"
+                android:text="*"
+                android:textColor="@color/red" />
+            <ImageView
+                android:id="@+id/voice_name_iv"
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/padding"
+                android:background="@drawable/btn_yuyin_nor"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/name_et"
+                style="@style/add_meet_tv"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/name_tag"
+                android:layout_toLeftOf="@+id/voice_name_iv"
+                android:hint="@string/common_input2"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_hine"
+                android:gravity="right|center"
+                android:inputType="text" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/item_line"
+            android:layout_height="0.1dp" />
+
+        <RelativeLayout
+            android:id="@+id/start_rl"
+            style="@style/add_meeting"
+            android:background="@color/item_color2">
+
+
+            <TextView
+                android:id="@+id/start_tag"
+                style="@style/form_relative_left_text"
+                android:text="@string/task_starttime"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/start_tag"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/start_tv"
+                style="@style/add_meet_tv"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/start_tag"
+                android:drawableRight="@drawable/oa_next"
+                android:gravity="center|right"
+                android:textSize="@dimen/text_hine"
+                android:textColor="@color/text_main"
+                android:hint="@string/common_select1" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/item_line"
+            android:layout_height="0.1dp" />
+
+        <RelativeLayout
+            android:id="@+id/end_rl"
+            style="@style/add_meeting"
+            android:background="@color/item_color2">
+
+            <TextView
+                android:id="@+id/end_tag"
+                style="@style/form_relative_left_text"
+                android:text="@string/task_endtime"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/end_tag"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/end_tv"
+                style="@style/add_meet_tv"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/end_tag"
+                android:gravity="center|right"
+                android:textSize="@dimen/text_hine"
+                android:textColor="@color/text_main"
+                android:drawableRight="@drawable/oa_next"
+                android:hint="@string/common_select1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/item_line"
+            android:layout_height="0.1dp" />
+        <RelativeLayout
+            android:id="@+id/location_rl"
+            style="@style/add_meeting"
+            android:background="@color/item_color2">
+
+            <TextView
+                android:id="@+id/location_tag"
+                style="@style/form_relative_left_text"
+                android:text="@string/meet_position"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/location_tag"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/location_et"
+                style="@style/add_meet_tv"
+                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/text_hine"
+                android:layout_toRightOf="@id/location_tag"
+                android:textColor="@color/text_main"
+                android:drawableRight="@drawable/oa_next"
+                android:gravity="center|right"
+                android:hint="@string/common_select1"
+                android:lines="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ry_leave_type"
+            style="@style/add_meeting"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_leave_type"
+                style="@style/form_relative_left_text"
+                android:text="请假类型：" />
+
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/et_leave_type"
+                style="@style/form_relative_right_text"
+                android:focusableInTouchMode="false"
+                editTextFormExample:testType="nocheck" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/users_rl"
+            style="@style/add_meeting"
+            android:background="@color/item_color2">
+
+            <TextView
+                android:id="@+id/users_tag"
+                style="@style/form_relative_left_text"
+                android:text="@string/join_numer"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/users_tag"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/users_tv"
+                style="@style/add_meet_tv"
+                android:textSize="@dimen/text_hine"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/users_tag"
+                android:drawableRight="@drawable/oa_next"
+                android:gravity="center|right"
+                android:textColor="@color/text_main"
+                android:ellipsize="end"
+                android:hint="@string/common_select1"
+                android:maxLines="4"
+                android:minLines="1"
+
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/item_line"
+            android:layout_height="0.1dp" />
+
+        <RelativeLayout
+            android:id="@+id/user_rl"
+            style="@style/add_meeting"
+            android:background="@color/item_color2">
+
+            <TextView
+                android:id="@+id/user_tag"
+                style="@style/form_relative_left_text"
+                android:text="@string/administrators"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                android:id="@+id/user_tv"
+                style="@style/add_meet_tv"
+                android:textColor="@color/text_main"
+                android:layout_marginLeft="40dp"
+                android:textSize="@dimen/text_hine"
+                android:gravity="center|right"
+                android:layout_toRightOf="@id/user_tag" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/tag_rl"
+            style="@style/add_meeting"
+            android:background="@color/item_color2"
+            android:clickable="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/item_line" />
+
+            <TextView
+                android:id="@+id/tag_tag"
+                style="@style/form_relative_left_text"
+                android:text="@string/meet_tag"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                android:id="@+id/tag_et"
+                style="@style/add_meet_tv"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_hine"
+                android:layout_toRightOf="@+id/tag_tag"
+                android:drawableRight="@drawable/oa_next"
+                android:gravity="center|right"
+                android:hint="@string/common_select1" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/item_line" />
+        <RelativeLayout
+            android:id="@+id/meet_about"
+            style="@style/add_meeting"
+            android:background="@color/item_color2">
+
+            <TextView
+                android:id="@+id/about_tag"
+                style="@style/form_relative_left_text"
+                android:text="@string/meet_show"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_hine" />
+
+
+            <ImageView
+                android:id="@+id/voice_introduce_iv"
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/padding"
+                android:background="@drawable/btn_yuyin_nor"
+                android:visibility="visible" />
+            <EditText
+                android:id="@+id/about_et"
+                style="@style/add_meet_tv"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|right"
+                android:layout_toLeftOf="@+id/voice_introduce_iv"
+                android:textSize="@dimen/text_hine"
+                android:textColor="@color/text_main"
+                android:layout_toRightOf="@id/about_tag"
+                android:hint="@string/common_input2" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <RelativeLayout
+            style="@style/add_meeting"
+            android:background="@color/item_color2">
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:text="@string/add_schedule_for_meeter"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_hine" />
+
+            <com.core.widget.view.SwitchView
+                android:id="@+id/create_ric_sv"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_save"
+            style="@style/commonButtonStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/common_save_button"
+        />
+    </LinearLayout>
+</ScrollView>

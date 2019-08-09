@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.modular.appmessages.activity.MessageWebActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:animationResolution="100"
+        android:indeterminate="false"
+        android:indeterminateDuration="500"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/webview_progress_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/progressBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#38373e">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="此网页由www.ubtob.com 提供"
+                android:textColor="@color/ivory"
+                android:textSize="@dimen/text_main" />
+        </RelativeLayout>
+
+        <com.module.recyclerlibrary.ui.refresh.webempty.EmptyRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/mEmptyRefreshLayout"
+            android:layout_height="match_parent"
+            app:fectiveScroll="0dp">
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.module.recyclerlibrary.ui.refresh.webempty.EmptyRefreshLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

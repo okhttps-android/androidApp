@@ -1,0 +1,1703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- start公用部分-->
+    <string name="uas_company_name"> Shenzhen Youyou Technology Co., Ltd. </string>
+    <string name="common_save_button"> Save </string>
+    <string name="common_dialog_title"> UU Prompt </string>
+    <string name="common_update_button"> Update </string>
+    <string name="common_submit_button"> Commit </string>
+    <string name="common_reset"> Reset </string>
+    <string name="common_select_all"> All </string>
+    <string name="common_resubmit_button"> Resubmit </string>
+    <string name="common_search"> Search </string>
+    <string name="common_input"> Required Field </string>
+    <string name="common_input1"> Non mandatory </string>
+    <string name="common_input_or_select_much">enter or select (much)</string>
+    <string name="common_input2"> Input </string>
+    <string name="common_select"> Select (Required) </string>
+    <string name="common_select_not_must"> Select (Non-Mandatory) </string>
+    <string name="common_sure"> Confirm </string>
+    <string name="common_cancel"> Cancel </string>
+    <string name="common_date"> date </string>
+    <string name="common_year"> year </string>
+    <string name="common_month"> month </string>
+    <string name="common_day"> day </string>
+    <string name="common_basicinfo">  Basic Information </string>
+    <string name="common_Contact_information"> Contact </string>
+    <string name="common_Contact_person"> Contacts </string>
+    <string name="common_tel"> Telphone </string>
+    <string name="common_department"> Department </string>
+    <string name="common_post"> Post </string>
+    <string name="common_up_finish"> loaded </string>
+    <string name="common_down_finish"> refresh completion </string>
+    <string name="common_refresh_finish"> refresh succeed </string>
+    <string name="common_agree"> agree </string>
+    <string name="common_disagree"> do not agree </string>
+    <string name="common_changedealman"> change handler </string>
+    <string name="common_noinput"> not filled in </string>
+    <string name="common_camera"> take pictures </string>
+    <string name="common_photo"> select </string>
+    from the album
+    <string name="common_notlinknet">The current network is not available, please try again later</string>
+    <string name="common_notice"> Warm Tips </string>
+    <string name="common_save_failed"> save failed </string>
+    <string name="common_save_success"> save successfully </string>
+
+    <!-- end公用部分-->
+
+    <!-- start行政办公OA界面-->
+    <string name="oamain_title"> OA </string>
+    <string name="oasign_title"> Sign in </string>
+    <string name="oaoutplan_title">Outwork </string>
+    <string name="oaworkdaily_title"> Daily </string>
+    <string name="oaworkweekly_title"> Weekly </string>
+    <string name="oaworkmonthly_title"> Monthly </string>
+    <string name="oapackup_title"> Retract </string>
+    <string name="oamore_tltle"> More </string>
+    <string name="oametting_title"> Meetings </string>
+    <string name="oavacation_apply">Leave</string>
+    <string name="oaovertime_apply">Overtime</string>
+    <string name="oatravel_apply">Business trip</string>
+    <string name="oaspecial_attendance_apply">Special Attendance</string>
+    <string name="oasubordinate_work_calendar">Subordinates work</string>
+    <string name="oamy_work_calender"> My Work</string>
+    <string name="oamaterials_apply"> Material Requisition </string>
+    <string name="oaservice_apply"> Maintenance Requisition </string>
+    <string name="oaStandby_machine_apply"> Backup Machine Requisition </string>
+    <!-- end 行政办公OA界面-->
+
+    <!-- start 打卡签到 oasign_title-->
+    <string name="super_setting"> Sdvanced Settings </string>
+    <string name="work_setting">Class setting </string>
+    <string name="office_addr_setting"> Office Setting </string>
+    <string name="my_rule_setting">My attendance regulations </string>
+    <string name="sm_cancel_title"> Cancel </string>
+    <!-- end 打卡签到 -->
+
+    <!-- start -高级设置 seniorsettings-->
+    <string name="ss_autosign_switch"> Auto sign </string>
+    <string name="ss_signnotice_switch"> Clock reminde </string>
+    <string name="ss_autosign_description"> How long to punch after work are calculated as late, serious late, leave early, absenteeism </string>
+    <string name="ss_latetime_settings"> Lateness </string>
+    <string name="ss_seniouslatetime_settings">Serious lateness </string>
+    <string name="ss_leaveearlytime_settings"> Leave early </string>
+    <string name="ss_absenteeismtime_settings"> Absenteeism </string>
+    <string name="close_sign_notice1"> turn off automatic punch, save the system will not help you automatically punch card </string>
+    <string name="open_sign_notice1"> open the automatic punch card, save the system will help you automatically punch card </string>
+    <string name="ss_select_time"> Select Time </string>
+    <string name="ss_sign_seted"> Auto Picking </string>
+    is set
+    <string name="ss_sign_closed"> You have turned off auto punch, the system will not be able to automatically punch your card </string>
+    <string name="ss_sign_close_notice2"> After shutdown, the system can not automatically punch the clock for you to confirm the shutdown? </string>
+    <string name="ss_time_notice1"> Lateness must be less than the serious lateness! </string>
+    <string name="ss_time_notice2"> Serious lateness must be less than absenteeism! </string>
+    <string name="ss_time_notice3"> Departure time must be less than absenteeism! </string>
+    <string-array name="late_time">    
+        <item> 0 minutes </item>
+        <item> 1 minute </item>
+        <item> 2 minutes </item>
+        <item> 3 minutes </item>
+        <item> 4 minutes </item>
+        <item> 5 minutes </item>    
+        <item> 6 minutes </item>
+        <item> 7 minutes </item>
+        <item> 8 minutes </item>
+        <item> 9 minutes </item>
+        <item> 10 minutes </item>
+        <item> 11 minutes </item>    
+        <item> 12 minutes </item>
+        <item> 13 minutes </item>
+        <item> 14 minutes </item>
+        <item> 15 minutes </item>
+        <item> 16 minutes </item>
+        <item> 17 minutes </item>    
+        <item> 18 minutes </item>
+        <item> 19 minutes </item>
+        <item> 20 minutes </item>
+        <item> 21 minutes </item>
+        <item> 22 minutes </item>
+        <item> </item>    
+        <item> 24 minutes </item>
+        <item> 25 minutes </item>
+        <item> 26 minutes </item>
+        <item> 27 minutes </item>
+        <item> 28 minutes </item>
+        <item> 29 minutes </item>
+        <item> 30 minutes </item>
+    </string-array>
+    <string-array name="serious_late_time">    
+        <item> 10 minutes </item>
+        <item> 15 minutes </item>
+        <item> 20 minutes </item>
+        <item> 25 minutes </item>
+        <item> 30 minutes </item>
+        <item> 35 minutes </item>
+        <item> 40 minutes </item>
+        <item> 45 minutes </item>
+        <item> 50 minutes </item>
+        <item> 55 minutes </item>
+        <item> 60 minutes </item>
+    </string-array>
+    <string-array name="serious_leave_early_time">    
+        <item> 10 minutes </item>
+        <item> 15 minutes </item>
+        <item> 20 minutes </item>
+        <item> 25 minutes </item>
+        <item> 30 minutes </item>
+        <item> 35 minutes </item>
+        <item> 40 minutes </item>
+        <item> 45 minutes </item>
+        <item> 50 minutes </item>
+        <item> 55 minutes </item>
+        <item> 60 minutes </item>
+    </string-array>
+    <string-array name="absenteeism_time">    
+        <item> 30 minutes </item>
+        <item> 40 minutes </item>
+        <item> 50 minutes </item>
+        <item> 60 minutes </item>
+        <item> 70 minutes </item>
+        <item> 80 minutes </item>
+        <item> 90 minutes </item>
+        <item> 100 minutes </item>
+        <item> 110 minutes </item>
+        <item> 120 minutes </item>
+    </string-array>
+    <!-- end -高级设置-->
+
+
+    <!-- start 办公地址设置 office_settings_title-->
+    <string name="os_headerdescription1"> You can set multiple office addresses </string>
+    <string name="os_headerdescription2"> employees can punch in any of the following addresses: </string>
+    <string name="os_signrange"> Sign distance </string>
+    <string name="os_workrange"> Office Range </string>
+    <string name="os_add_address"> + Add Office Address </string>
+    <string name="os_range_notice1"> Address distance update succeed </string>
+    <string name="os_address_notice1"> office address saved successfully </string>
+    <string name="delete_succeed_notice1"> delete success </string>
+    <string name="delete_failed_notice1"> delete failed </string>
+    <string name="add_address_first"> Please add the office address </string>
+    <string name="add_office_address"> Add Office Address </string>
+    <string name="select_range"> Select The Range </string>
+    <string name="edit_office_address_name"> Perfect office address name </string>
+    <string name="detail_address"> Full Address </string>
+    <string name="delete_address_notice1"> Make sure to delete this office address? </string>
+    <!-- end 办公地址设置 -->
+
+    <!-- start工作日报 oaworkdaily-->
+    <string name="wd_summary_title"> Work Summary </string>
+    <string name="wd_summary_descrition"> Please enter today work summary (required, limited to 500 words) </string>
+    <string name="wd_summary_error"> "the number of overrun 500 Oh, pro! </string>
+    <string name="wd_plan_title"> Work Plan </string>
+    <string name="wd_plan_descrition"> Please enter tomorrow work plan (not required, limited to 300 words) </string>
+    <string name="wd_plan_error"> the number of words overrun 300 Oh, pro! </string>
+    <string name="wd_experience_title"> Work Experience </string>
+    <string name="wd_experience_descrition"> Click the Share button to share the work experience to the work circle (optional, limited to 300 words) </string>
+    <string name="wd_experience_error"> the number of words overrun 300 Oh, pro! </string>
+    <string name="wd_recording_title"> Daily Record </string>
+    <string name="daily_submit_success"> Working Daily submission is successful </string>
+    <string name="daily_submit_failed"> Working Daily submission failed </string>
+    <string name="daily_update_success"> Workday update is successful </string>
+    <string name="daily_update_failed"> Workday update failed </string>
+    <string name="daily_resubmit_success"> Work Daily Resubmit Success </string>
+    <string name="daily_resubmit_failed"> Workday Resubmission failed </string>
+    <string name="workcontext_grap_success"> Work content crawl success </string>
+    <string name="submit_success"> Commit Successful </string>
+    <string name="select_approvel_people"> Select The Approver </string>
+    <string name="submited"> Committed </string>
+    <string name="daily_exit_notice"> Your current page exists without submitting data, exit data will be cleared, do you continue to exit? </string>
+    <string name="work_report_exit_notice"> Is leaving the input page, whether to save in the entry state? </string>
+    <string name="share_experience_notice"> Please fill in the work experience and then share </string>
+    <string name="daily_submit_notice"> Confirm Submit Daily News </string>
+    <string name="daily_delate_success"> Working Daily Delete </string>
+    <string name="delete_notice1"> Confirm that the saved daily has been saved? </string>
+    <string name="daily_detaily"> Daily Details </string>
+    <string name="delete_sumited_notice1"> Make sure to delete the daily that has been submitted? </string>
+    <string name="daily_resumit_success"> Workday Anti-commit successful </string>
+    <string name="daily_resubmit_notice1"> Confirm the submission of the daily? </string>
+    <string name="daily_approve_notice1"> Please enter the approval advice, or skip this step directly for approval </string>
+    <string name="select_doman"> Select Executor </string>
+    <string name="doc_detaily_deleted"> The document details have been deleted </string>
+    <string name="make_adeal_success"> Operation succeeded </string>
+    <string name="delete_doc_notice2"> Confirm to delete the entry in the entry document </string>
+    <!-- end工作日报 oaworkdaily-->
+
+    <!-- start 考勤单据、详情  -->
+
+    <string name="status_approved"> Approved </string>
+    <string name="status_pending">Pending</string>
+    <string name="status_unsubmit"> In Entry </string>
+    <string name="wd_completed_task"> Completed Task </string>
+    <string name="wd_undone_task"> Incomplete Task </string>
+    <string name="common_resubmit"> Resubmit </string>
+    <string name="common_delete"> Delete </string>
+    <string name="vacation_doc"> Leave a single </string>
+    <string name="travel_doc"> Travel alone </string>
+    <string name="overtime_doc"> Overtime </string>
+    <!-- end 考勤单据、详情 -->
+
+    <!-- start 客户关系管理界面CRM -->
+    <string name="crmmain_business"> Niche</string>
+    <string name="crmmain_client"> Customer </string>
+    <string name="crmmain_customer_visit"> Customer visit </string>
+    <string name="crmmain_wall_of_fame"> Honor Wall </string>
+    <string name="crmmain_dayasale"> Daily Sales </string>
+    <string name="sz_zong"> Shenzhen headquarters </string>
+    <string name="zong"> General Manager </string>
+    <!-- 我的排名-->
+    <string name="crm_myranking"> My Ranking </string>
+    <string name="crm_filter"> filter </string>
+    <string name="crm_sales"> Sales Amount </string>
+    <string name="crm_Gross_profit">Gross Profit</string>
+    <string name="crm_Numberofcustome_visits"> Visits </string>
+    <string name="crm_Excessive_receivable"> Overdue Receivable</string>
+    <string name="crm_di"> </string>
+    <string name="crm_ming"> name </string>
+    <string name="crm_wyuan"> Million </string>
+    <string name="crm_ge"> Count </string>
+    <string name="crm_extra_get"> expired receivable </string>
+    <string name="crm_newadd_c"> _ new customer </string>
+    <string name="crm_visit_record"> visit the record </string>
+    <string name="crm_out_doc"> shipper </string>
+    <string name="crm_plansales_dec1"> planned sale / gross profit (million) </string>
+    <string name="crm_realsales_dec2"> effective sale / gross profit (million) </string>
+    <string name="crm_di_ming"> first name </string>
+    <string name="crm_nodatas"> There is no data </string>
+    <string name="crm_wwyuan"> million </string>
+    <string name="crm_back0wyuan"> back to 0 million </string>
+    <string name="crm_out0wyuan"> shipping 0 million </string>
+    <string-array name="month_list">    
+        <item> actual sale </item>    
+        <item> planned sale </item>    
+        <item> effective sale </item>    
+        <item> plan gross profit </item>
+    </string-array>
+    <string-array name="sale_list">    
+        <item> customer </item>    
+        <item> contact </item>    
+        <item> niche count </item>    
+        <item> business change </item>    
+        <item> sales</item>    
+        <item> number of visitors </item>    
+        <item> visits </item>    
+        <item> Aug </item>    
+        <item> Sep </item>    
+        <item> Okt </item>    
+        <item> Nov </item>    
+        <item> Dec </item>
+    </string-array>
+    <!-- 本月销售简报-->
+    <string name="crm_Sales_briefing_this_month"> this month sales brochure </string>
+    <string name="crm_Back_money">Received Payments </string>
+    <string name="crm_Shipments">Payment of goods </string>
+    <string name="crm_Numberofbusiness"> number of Niche </string>
+    <string name="crm_change_business"> business change </string>
+    <string name="crm_Sales_order"> sales order </string>
+    <string name="crm_Numberofvisitors"> Visiting customers </string>
+    <string name="crm_Numberofvisited"> number of visits </string>
+    <string name="crm_unit_one"> quantity (unit:) </string>
+    <!--我的指标 -->
+    <string name="crm_My_indicators">My sales target</string>
+    <string name="crm_Actual_sales"> actual sales </string>
+    <string name="crm_Plan_sales"> planned sales </string>
+    <string name="crm_Actual_gross_profit"> actual gross profit </string>
+    <string name="crm_Plan_gross_profit"> plan gross profit </string>
+    <string name="crm_Monthly_sales_unit"> Monthly sales (in RMB million) </string>
+    <string name="crm_Forgotten_customers"> forgotten customers </string>
+    <string name="crm_creat_business"> Create Niche </string>
+    <string name="crm_add_business">Create Customer</string>
+    <string name="crm_add_visitrecord"> Visit record </string>
+    <!-- end 客户关系管理界面CRM -->
+
+    <!-- start 商机界面-->
+    <string name="business_get_split"> can receive assignable </string>
+    <string name="business_common"> public </string>
+    <string name="business_Selling_funnel"> Sales Funnel </string>
+    <string name="business_seize"> Seize Niche </string>
+    <string name="business_distribution"> Assign Niche </string>
+    <string name="business_followup">My Niche</string>
+    <string name="business_followup_people"> business followers </string>
+    <string name="color_text"> color </string>
+    <string name="business_number">count/money</string>
+    <string name="business_Conversion_rate"> Percent</string>
+    <string name="business_stage"> Step </string>
+    <string name="First_communication"> Initial communication </string>
+    <string name="Product_show"> Product demonstration </string>
+    <string name="Project_evaluation"> Project evaluation </string>
+    <string name="demand_analysis"> Demand analysis  </string>
+    <string name="Sample_offer"> Sample quotation </string>
+    <string name="Business_negotiation"> Business negotiation </string>
+    <string name="Contract_signing"> Sign contract </string>
+    <string name="Seal_the_deal"> Finish transaction </string>
+    <string name="Many_transactions"> Multiple transactions </string>
+    <string name="click_more"> op three quota,Link more </string>
+    <string name="length_last_gj"> distance from last follow </string>
+    <!-- end 商机界面-->
+
+    <!-- start 创建商机-->
+    <string name="no_"> no </string>
+    <string name="enterprise_license">Business licence</string>
+    <string name="business_add_success"> add business success </string>
+    <string name="business_name"> Niche name </string>
+    <string name="business_id"> Niche number </string>
+    <string name="business_from"> Niche Source </string>
+    <string name="business_Library"> Business library </string>
+    <string name="current_stage"> Nichestep </string>
+    <string name="Company_Name"> Corporation </string>
+    <string name="business_license"> Business license </string>
+    <string name="Estimated_cost"> Estimated cost amount </string>
+    <string name="Expected_transaction_time"> Expected transaction time </string>
+    <string name="Follow_up_persosn"> follow-up </string>
+    <string name="Remarks"> Remarks </string>
+    <string name="this_month"> current  month </string>
+    <string name="last_month"> laster  month </string>
+    <string name="this_Quarterly"> current season </string>
+    <string name="last_Quarterly"> last season </string>
+    <string name="this_year"> current year </string>
+    <string name="last_year"> last year </string>
+    <string name="enterprise_address">  Address </string>
+    <string name="Unscheduled_schedule"> No schedule </string>
+    <string name="Has_been_scheduled"> On schedule </string>
+    <string name="Will_time_out"> Upcoming timeout</string>
+    <string name="Has_switched_customers"> In Customer</string>
+    <string name="qiang_business_success"> Operation succeeded </string>
+    <string name="split_business_success"> Successfully assign business Niche </string>
+    <string name="business_limit"> You have exceeded the maximum number of business Niche </string>
+    <string name="business_notice1"> View the niche in the niche list </string>
+    <!-- start 商机来源-->
+    <string name="Come_to_visit"> come to visit </string>
+    <string name="tel_to_visit"> phone call </string>
+    <string name="Others_introduced"> others introduce </string>
+    <string name="Internet_advertising"> Internet ads </string>
+    <string name="Print_Ads"> print ads </string>
+    <string name="others"> other </string>
+    <!-- end 商机来源-->
+
+    <!-- start 商机库-->
+    <string name="UAS_public_business_library"> UAS common business library </string>
+    <string name="yf_Department_private_business_library"> R and D private business library </string>
+    <string name="UAS_private_business_library"> UAS private business library </string>
+    <string name="Test_Department_Private_Business_Library"> Test Department Private Business Library </string>
+    <!-- end 商机库-->
+    <string name="business_detail"> Niche Details </string>
+    <string name="creat_time"> Creation time </string>
+    <string name="last_followup_time"> last follow up time </string>
+    <string name="Stage_requirements"> phase request </string>
+    <string name="grab"> grab </string>
+    <string name="realtime_distance">Real-time distance</string>
+    <!-- start 创建商机-->
+
+    <!-- start 客户-->
+    <string name="client_search"> query </string>
+    <string name="client_myself"> my own </string>
+    <string name="client_subordinate"> my subordinate </string>
+    <string name="client_Not_traded"> not traded </string>
+    <string name="client_Deal_done"> traded </string>
+    <string name="client_All_customers"> all customers </string>
+    <string name="client_current_stage"> current phase </string>
+    <string name="client_Clerk"> Salesman </string>
+    <string name="client_status"> audit status </string>
+    <string name="client_Switch"> toggle </string>
+    <string name="un_deal"> 0 \ n not traded </string>
+    <string name="dealed"> 0 \ n has traded </string>
+    <string name="all_client"> 0 \ n all clients </string>
+    <string name="client_Number"> number: </string>
+    <string name="thismonth_prediction"> this month forecast (yuan): </string>
+    <string name="client_Customer_Number"> CustomerID </string>
+    <string name="client_Customer_name">Name </string>
+    <string name="client_Referred_to">ShortName</string>
+    <string name="client_customer_address"> Address </string>
+    <string name="client_district_belong_to"> Area </string>
+    <string name="client_payment_method"> Payment Method </string>
+    <string name="client_Currency"> Currency </string>
+    <string name="client_tax_rate"> taxrate </string>
+    <!-- start 所属地区-->
+    <string name="client_Huadong_Region"> East China </string>
+    <string name="client_Huanan_Region"> South China </string>
+    <string name="client_Huabei_Region"> North China </string>
+    <string name="client_Huazhong_Region"> Central China </string>
+    <string name="client_Southwest_Region"> Southwest China</string>
+    <string name="client_North_west_region"> Northwest China</string>
+    <string name="client_North_east_area"> Northeastern China </string>
+    <string name="client_HongKong_Macao_and_Taiwan_regions"> Hong Kong, Macau and Taiwan </string>
+    <string name="client_other_areas"> other areas </string>
+    <!-- end 所属地区-->
+    <!-- end 客户-->
+    <string name="Wall_of_Fame_description"> if your name is not in the honor wall,please come on,guys!</string>
+
+    <string name="not_addr_to_select"> no address can be selected </string>
+    <string name="unoffice"> Select location</string>
+    <string name="rice"> meters </string>
+    <string name="not_addr_message"> The system has not yet found your punch address information, please contact the administrator </string>
+    <string name="not_work_message"> Your flight has not been found. Please contact the administrator to set the frequency. </string>
+    <string name="not_find_work"> Your frequency has not been found </string>
+    <string name="not_signin_agin"> Please do not punch frequently </string>
+    <string name="too_long"> Your current location is too far from the attendance location. Please move to the target or reposition </string>
+    <string name="signin_ok"> sign in success </string>
+    <string name="signin_error"> check in failed </string>
+    <string name="mac_changing"> is changing the usual device, do not punch </string>
+    <string name="mac_other"> The device has been bound by someone else </string>
+    <string name="activity_signing"> Sign in </string>
+    <string name="other_phone_error"> Please sign in frequently used mobile phone! If the phone replacement, please fill out the mobile phone replacement form and then sign </string>
+    <string name="not_today"> The current date can not sign in </string>
+    <string name="show_frist_mac"> This punch will be set to the usual sign phone, whether to continue to sign? </string>
+    <string name="allow_location"> open the "location service" to allow "UU interconnection" to determine your location </string>
+    <string name="free_work"> Free punch </string>
+    <string name="this_position">Location</string>
+    <string name="long_company"> distance to  company </string>
+    <string name="meet_position">Address</string>
+    <string name="meet_details"> Minutes </string>
+    <string name="recorder"> Sponsor </string>
+    <string name="doing"> Doing </string>
+    <string name="not_bigan"> not started </string>
+    <string name="meet_manage"> conference management </string>
+    <string name="meet_detail"> Conference Detai </string>
+    <string name="meet_success_end"> The meeting ends successfully </string>
+    <string name="ended"> Done </string>
+    <string name="meet_signin_success"> Meeting sign successful </string>
+    <string name="signin_number">Numbers </string>
+    <string name="signined"> checked in </string>
+    <string name="already_signined"> You have checked in </string>
+    <string name="to_end_meet"> Are you sure you want to end the meeting? </string>
+    <string name="not_power_edit_tag"> You are not a meeting administrator and have no permission to write a meeting memo </string>
+    <string name="not_power_end_meet"> You are not a meeting administrator and do not have permission to end a meeting </string>
+    <string name="meet_ended_not_signin"> The meeting is over and can no longer sign in </string>
+    <string name="push_task"> Send task</string>
+    <string name="meet_show">Introduce </string>
+    <string name="meet_tag">Tag </string>
+    <string name="signin_new">Sign </string>
+    now
+    <string name="agare"> <u> Relocation </u> </string>
+    <string name="new_meet"> New Conference </string>
+    <string name="add_meet_success_adding_task"> add meeting success, creating schedule for meeting members </string>
+    <string name="add_meet_success"> add conference success! </string>
+    <string name="error_try_agen"> internal error, please try or contact staff later </string>
+    <string name="meet_add_task_success"> Add a schedule to the attendees </string>
+    <string name="not_time_start_biger_end"> The start time can not be greater than or equal to the cutoff time </string>
+    <string name="please_input_start_time"> Please fill in the start time </string>
+    <string name="meet_name_error"> The conference name is empty or formatted incorrectly </string>
+    <string name="start_time_error"> start time is empty or formatted incorrectly </string>
+    <string name="end_time_error"> The cutoff time is empty or the format is incorrect </string>
+    <string name="position_error"> location is empty or formatted incorrectly </string>
+    <string name="meet_manager_error"> The meeting administrator is empty or formatted incorrectly </string>
+    <string name="join_numer_error"> Participants do not match </string>
+    <string name="not_power_check_bill"> You do not have permission to view documents </string>
+    <string name="resourcer"> Executor </string>
+    <string name="networks_out"> The current network is not available, please try again later </string>
+    <string name="half_day"> half </string>
+    <string name="all_day"> whole day </string>
+    <string name="recent_record_time">Latest record time</string>
+    <string name="longs">Distance</string>
+    <string name="not_save_illegal_bill"> The current single address is illegal and can not be saved </string>
+    <string name="you_destination"> your destination </string>
+    <string name="not_edit"> not filled in </string>
+    <string name="visit_company"> Company</string>
+    <string name="visit_address"> Address </string>
+    <string name="visit_aim">Objective </string>
+    <string name="expected_arrival_time"> Estimated arrival time</string>
+    <string name="real_arrival_time">Actual time arriva</string>
+    <string name="location_error_try_agen"> location information is incorrect, please re-select address </string>
+    <string name="save_ok"> save successfully </string>
+    <string name="sure_delete_mission"> Are you sure you want to delete the field plan? </string>
+    <string name="maintain_customers"> Guest Maintenance </string>
+    <string name="business_process"> business handling </string>
+    <string name="other_vivit"> other visits </string>
+    <string name="sure_input_valid"> Please enter valid data </string>
+    <string name="too_long_edit_twenty"> The number of words can not exceed 20 characters </string>
+    <string name="activity_select_aims"> select destination </string>
+    <string name="activity_flights"> Scheduling Settings </string>
+    <string name="activity_visit_aims"> visit destination </string>
+    <string name="activity_mission_set"> Outwork Setting </string>
+    <string name="activity_mission_plan">Visiting plan</string>
+    <string name="minute"> minutes </string>
+    <string name="effective_range"> Signing range </string>
+    <string name="reserve_time"> Reserve time </string>
+    <string name="auto_mission"> Automatic signing </string>
+    <string name="remind_time"> reminder time </string>
+    <string name="neer_submit_able"> Whether need approval </string>
+    <string name="meet_signin"> meeting sign </string>
+    <string name="signin_setting"> check in settings </string>
+    <string name="signin_detail"> sign in details </string>
+    <string name="select_user"> select person </string>
+    <string name="meet_task"> Conference Task </string>
+    <string name="my_mission"> my field </string>
+    <string name="add_mission_plan"> + increase field plan </string>
+    <string name="perfect_company_name"> Perfect unit name </string>
+    <string name="company_name"> company name </string>
+    <string name="skip_operation"> Skip this step </string>
+    <string name="delete_back_default_work"> After deleting a member, the member automatically returns to the default shift, does it continue? </string>
+    <string name="a_person"> Personal </string>
+    <string name="a"> </string>
+    <string name="a_department"> department </string>
+    <string name="department"> department </string>
+    <string name="default_work"> default layout </string>
+    <string name="member"> Member </string>
+    <string name="fixed_shift"> Fixed shift </string>
+    <string name="user_work"> use this shift </string>
+    <string name="conflict_personnel"> conflicting personnel </string>
+    <string name="conflict_department"> conflict conflict </string>
+    <string name="default_not_edit_department"> default shift can not modify department </string>
+    <string name="default_not_edit_member"> default shift can not modify people </string>
+    <string name="not_null_name"> rule name can not be empty </string>
+    <string name="not_null_work_time"> Attendance time can not be empty </string>
+    <string name="not_null_work_day"> Attendance date can not be empty </string>
+    <string name="will_save_conflict"> save this shift will join the conflict department staff, whether to continue? </string>
+    <string name="add_flihts"> New shift </string>
+    <string name="edit_flihts"> Modify The Punch Table </string>
+    <string name="work_name"> Shift Name </string>
+    <string name="work_time"> Attendance Time </string>
+    <string name="work_day"> Attendance Date </string>
+    <string name="work_department"> Participating In The Department </string>
+    <string name="and_join_member"> Participant </string>
+    <string name="earliest_work_time"> the earliest working time </string>
+    <string name="most_input_three_time"> Half or Whole day </string>
+    <string name="select_earliest_work_time"> Please select the oldest working time </string>
+    <string name="work_not_complete"> working hours are not filled in complete </string>
+    <string name="off_not_complete"> working hours did not fill in complete </string>
+    <string name="work_up_time">working time</string>
+    <string name="selected"> Selected </string>
+    <string name="cancel_select_all"> Cancel Select All </string>
+    <string name="not_load_ok_fefresh"> did not get the data, try refreshing contacts </string>
+    <string name="select_all"> Select all </string>
+    <string name="not_data_to_select_number"> data is empty, no selectable person </string>
+    <string name="time_include_time"> The selected time has a cross, please re-check after submit </string>
+    <string name="work_time_setting"> Time setting </string>
+    <string name="work_day_setting"> Date setting </string>
+    <string name="holidays"> Legal holiday </string>
+    <string name="work_statistics">Attendance Statistics </string>
+    <string name="select_join_department"> Select department </string>
+    <string name="select_join_number"> Select employee </string>
+    <string name="navigation"> Navigation </string>
+    <string name="outoff_work_alert"> leave office scope reminder </string>
+    <string name="not_allowed_name"> If the rule name is empty or contains special characters, please check </string>
+    <string name="outoff_work"> The system has detected that you have left the office area </string>
+    <string name="work_up_alert"> work time is coming, please punch! </string>
+    <string name="work_off_alert"> get off work time has come, please punch card </string>
+    <string name="out_net_signin"> The network is not connected and can not sign in for you automatically </string>
+    <string name="auto_mission_signinup"> Auto attendance sign </string>
+    <string name="auto_mission_alert"> Auto Field Reminder </string>
+    <string name="uu_auto_signined_down"> The UU helps you sign in automatically </string>
+    <string name="uu_auto_signined_up"> The UU helps you sign in automatically for outwork </string>
+    <string name="visit"> visit </string>
+    <string name="auto_mission_signindown"> The UU helps you sign out automatically for outwork </string>
+    <string name="auto_work_signin_log"> Auto sign record </string>
+    <string name="auto_signin"> The system has been punching for you automatically </string>
+    <string name="success_signin_down_mission"> Field signout succeeds </string>
+    <string name="success_signin_up_mission"> Auto attendance sign </string>
+    <string name="success_signin_down"> sign out successfully </string>
+    <string name="success_signin_up"> sign in success </string>
+    <string name="is_not_common_device"> This device is not a frequently used device for attendance punch </string>
+    <string name="is_not_common_device_not_signin"> This device is not a frequently used device for attendance and can not automatically punch your card </string>
+    <string name="is_changeing_not_signin"> The device is in the process of applying for a change binding and can not automatically punch your card </string>
+    <string name="is_binded_other_not_signin"> The device has been bound by someone else and can not punch your card automatically </string>
+    <string name="to"> on </string>
+    <string name="auto_work_signin_alert"> Auto punch card reminder </string>
+    <string name="uu_auto_work_signined_up"> UU has helped you punch card automatically </string>
+    <string name="success_signin_down_can_back"> field signout successful, you still have time to return to the company, please go back to the company sign </string>
+    <string name="success_signin_down_task_ok"> Field signout is successful, the day the task has ended </string>
+    <string name="add_contacts"> Add Contact </string>
+    <string name="name"> name </string>
+    <string name="position"> posts </string>
+    <string name="company_address"> company address </string>
+    <string name="add_card"> add business card </string>
+    <string name="detailed_address"> full address </string>
+    <string-array name="one_five_hour">    
+        <item> 1 hour before work </item>    
+        <item> 2 hours before work </item>    
+        <item> 3 hours before work </item>    
+        <item> 4 hours before work </item>    
+        <item> 5 hours before work </item>
+    </string-array>
+
+    <string name="app_name">UU</string>
+    <string name="app_dialog_title"> system prompt </string>
+    <string name="app_dialog_ok"> confirm </string>
+    <string name="app_dialog_cancle"> Cancel </string>
+    <string name="app_dialog_close"> close </string>
+    <string name="app_button_commit"> commit </string>
+    <string name="app_button_save"> save </string>
+    <string name="login_button"> Login </string>
+    <string name="login_account"> Account | </string>
+    <string name="login_password"> Password | </string>
+    <string name="login_losspwd"> Forget Password </string>
+    <string name="login_getpwd"> password to retrieve </string>
+    <string name="login_register"> Register </string>
+    <string name="please_input_phone_number"> Please enter your phone number </string>
+    <string name="please_input_password"> Please enter your password </string>
+    <string name="login_exit"> logout </string>
+    <string name="data_update"> Data Update </string>
+    <string name="data_not_update_exit"> user data has not yet been updated, exit will give up landing, do you want to exit? </string>
+    <string name="message"> Message </string>
+    <string name="find"> Contacts </string>
+    <string name="nearby"> Jobs </string>
+    <string name="group_chat"> group chat </string>
+    <string name="me"> Me </string>
+    <string name="msg_title"> message </string>
+    <string name="msg_approval"> Approval Workflow </string>
+    <string name="msg_work"> Backlog </string>
+    <string name="msg_subscribe"> Subscription </string>
+    <string name="friendly_time_just_now"> just </string>
+    <string name="mark_readed"> marked as unread </string>
+    <string name="mark_unread"> marked as read </string>
+
+    <string name="contact_title"> Contacts </string>
+    <string name="contact_company"> Enterprise architecture </string>
+    <string name="contact_business">Groups</string>
+    <string name="contact_friend">Friends</string>
+    <string name="contact_often">General Contact</string>
+      
+    <string name="work_title"> Jobs </string>
+    <string name="work_customer"> CRM </string>
+    <string name="work_oa"> OA </string>
+    <string name="work_business_manage"> B2B</string>
+    <string name="work_business_mall"> UsoftMall </string>
+    <string name="user_title"> Me </string>
+    <string name="user_firend_cirle"> My moments </string>
+    <string name="user_company"> Company </string>
+    <string name="user_account">System </string>
+    <string name="user_setting"> Settings </string>
+    <string name="user_scan"> scan </string>
+    <string name="user_dialog_company"> Choose to log in UAS A / C set </string>
+    <string name="user_dialog_master"> Switch A / C set </string>
+    <string name="user_master_success"> A / C Set to success </string>
+    <string name="user_master_fai"> A / C set</string>
+
+      
+    <!-- <string name = "set_title"> set </ string> -->
+    <string name="set_sport"> UURun </string>
+    <string name="set_push">Push </string>
+    <string name="set_clear"> Clear Cache </string>
+    <string name="set_sigin"> Sign settings</string>
+    <string name="set_suggest">Feedback </string>
+    <string name="set_about"> About UU</string>
+    <string name="set_version"> Current Version </string>
+    <string name="set_login_out">Logout</string>
+      
+    <string name="update_load"> Current Version </string>
+    <string name="update_msg"> is the latest version, no need to update </string>
+     
+    <string name="about_remark"> To Evaluate </string>
+    <string name="about_function"> New Features Introduced </string>
+    <string name="about_qcode"> QR Code </string>
+    <string name="about_qcode_msg"> UU interconnection latest version of the two-dimensional code
+      Long press to recognize </string>
+    <string name="about_us_company"> Shenzhen Youyou Soft Technology Co., Ltd. All rights reserved </string>
+    <string name="about_us_copyright"> Copyright @ 2014-2016 UAS.All Rights Reserved </string>
+    <string name="about_share"> Share </string>
+    <string name="suggest_hink"> Please input your question ... (within 400 words) </string>
+    <string name="cache_msg"> Clear the local cache? </string>
+    <string name="sports_recode"> Sports Record </string>
+    <string name="sports_recode_distance"> Walking+Running Distance(estimated) </string>
+    <string name="sports_kilometre"> km </string>
+    <string name="sports_tody"> today </string>
+    <string name="sports_step"> steps </string>
+    <string name="sports_step_tody"> Steps </string>
+    <string name="sports_recode_more"> More history </string>
+    <string name="sports_dialog_content"> More history </string>
+    <string name="user_info_title"> My Profile </string>
+    <string name="user_birthday"> Birthday </string>
+    <string name="user_sex"> gender </string>
+    <string name="user_nickname"> Nickname </string>
+    <string name="user_images"> Profile Photo </string>
+    <string name="user_area"> region </string>
+    <string name="user_body"> male </string>
+    <string name="user_girl"> female </string>
+    <string name="user_position"> Position </string>
+    <string name="user_conpany_info"> Information of Company</string>
+    <string name="user_minage"> Min </string>
+    <string name="user_maxage"> Max </string>
+    <string name="user_appear"> Last Date </string>
+    <string name="select_sex_title"> select gender </string>
+    <string name="select_date_title"> select date </string>
+    <string-array name="array_select_date">    
+        <item> All </item>    
+        <item> In one day </item>    
+        <item> In two day </item>    
+        <item> In three day </item>    
+        <item> In one week </item>    
+        <item> In two week </item>    
+        <item> In one month </item>    
+        <item> In six week </item>    
+        <item> In two month </item>
+    </string-array>
+    <string name="user_phone"> Mobile </string>
+    <string name="user_email"> Email </string>
+    <string name="dialog_confim_phone"> confirm whether to call </string>
+    <string name="dialog_phone"> phone number </string>
+    <string name="dialog_phone_action"> dial </string>
+    <string name="friend_add"> Add Friend </string>
+    <string name="task_unconfim"> Pending </string>
+    <string name="task_confimed"> Approved </string>
+    <string name="task_request_me"> Mine </string>
+    <string name="task_add"> New Task  </string>
+    <string name="task_send"> Save </string>
+    <string name="task_title"> Title </string>
+    <string name="task_detail"> Detail </string>
+    <string name="task_executor"> Executor </string>
+    <string name="task_starttime"> Start time </string>
+    <string name="task_endtime"> End time </string>
+    <string name="taskdetail_title"> task handling </string>
+    <string name="taskdetail_info"> task info </string>
+    <string name="taskdetail_name"> task name </string>
+    <string name="taskdetail_sponsor"> Producer </string>
+    <string name="taskdetail_executor"> Executor </string>
+    <string name="taskdetail_startime"> Start Time </string>
+    <string name="taskdetail_endtime"> End Time </string>
+    <string name="taskdetail_state"> status </string>
+    <string name="taskdetail_desc"> task description </string>
+    <string name="taskdetail_content_title"> reply to content </string>
+    <string name="taskdetail_inputman"> entry person </string>
+    <string name="taskdetail_time"> time </string>
+    <string name="taskdetail_content"> content </string>
+    <string name="subscribe_time"> subscription number </string>
+    <string name="subscribe_manager"> subscription management </string>
+    <string name="subscribe_unsure"> not subscribed </string>
+    <string name="subscribe_confirmed"> subscribed </string>
+    <string name="subscribe_setting"> set </string>
+    <string name="subscribe_unsetting"> Unsubscribed settings </string>
+    <string name="subscribe_hide_nodata"> You do not have a hidden subscription number </string>
+    <string name="umeng_socialize_network_break_alert" translatable="false"> Please try to connect to the network! </string>
+    <string name="umeng_socialize_comment" translatable="false"> comments </string>
+    <string name="umeng_socialize_comment_detail" translatable="false"> comment details </string>
+    <string name="umeng_socialize_back" translatable="false"> returns </string>
+    <string name="umeng_socialize_near_At" translatable="false"> recent @ @ friends </string>
+    <string name="umeng_socialize_friends" translatable="false"> concern friends </string>
+    <string name="umeng_socialize_send" translatable="false"> release </string>
+    <string name="umeng_socialize_tip_blacklist" translatable="false"> Sorry, you have been banned because of a violation of the user agreement. </string>
+    <string name="umeng_socialize_tip_loginfailed" translatable="false"> login failed ... </string>
+    <string name="umeng_socialize_msg_sec" translatable="false"> seconds ago </string>
+    <string name="umeng_socialize_msg_min" translatable="false"> minutes ago </string>
+    <string name="umeng_socialize_msg_hor" translatable="false"> hours ago </string>
+    <string name="umeng_socialize_ucenter_login_title_guide" translatable="false"> visitor login </string>
+    <string name="umeng_socialize_ucenter_login_title_platform" translatable="false"> login account </string>
+    <dimen name="alphabet_size">12dip</dimen>
+    <dimen name="umeng_socialize_pad_window_height">350dip</dimen>
+    <dimen name="umeng_socialize_pad_window_width">580dip</dimen>
+    <string name="umeng_socialize_share_content"> AUO Socialization Component (SDK) allows mobile applications to quickly integrate social sharing, and we simplify the access of social platforms and provide developers with a solid foundation of services. (A) to support the major mainstream social platform,
+    (B) support pictures, text, gif moving picture, audio, video; @ friends, concerned about the official microblogging and other functions.
+    (C) to provide a detailed background user social behavior analysis. Www.umeng.com/social </string>
+    <string name="umeng_socialize_login_qq"> QQ space </string>
+    <string name="umeng_socialize_login"> login </string>
+    <string name="umeng_socialize_text_choose_account"> select an existing account login </string>
+    <string name="umeng_socialize_text_authorize"> authorization </string>
+    <string name="umeng_socialize_text_unauthorize"> Unauthorized </string>
+    <string name="umeng_socialize_text_ucenter"> Personal Center </string>
+    <string name="umeng_socialize_text_login_fail"> login failed, please try again </string>
+    <string name="umeng_socialize_text_comment_hint"> say something ... </string>
+    <string name="umeng_socialize_text_friend_list"> buddy list </string>
+    <string name="umeng_socialize_text_visitor"> visitors </string>
+    <string name="umeng_socialize_text_tencent_no_connection"> can not connect to Tencent microblogging client </string>
+    <string name="umeng_socialize_text_tencent_oauth_login_fail"> Authorization login failed </string>
+    <string name="umeng_socialize_text_tencent_version_no_match"> version does not match, SSO only supports microblogging client V3.8.1 and above </string>
+    <string name="umeng_socialize_text_tencent_no_install"> not installed Tencent microblogging client </string>
+    <string name="umeng_socialize_text_waitting"> Please wait ... </string>
+    <string name="umeng_socialize_text_waitting_weixin"> jump micro letter, please wait ... </string>
+    <string name="umeng_socialize_text_waitting_weixin_circle"> Jump friends circle please wait ... </string>
+    <string name="umeng_socialize_text_waitting_yixin"> jump in easy letter, please wait ... </string>
+    <string name="umeng_socialize_text_waitting_yixin_circle"> jump in easy letter friends circle, please wait ... </string>
+    <string name="umeng_socialize_text_waitting_qq"> jump qq, please wait ... </string>
+    <string name="umeng_socialize_text_waitting_qzone"> Jump QZone, please wait ... </string>
+    <string name="umeng_socialize_text_waitting_redirect"> jump </string>
+    <string name="umeng_socialize_text_waitting_message">, please wait ... </string>
+    <string name="umeng_socialize_text_loading_message"> loading, please wait ... </string>
+      
+    <string name="umeng_socialize_text_tencent_key"> Tencent microblogging </string>
+    <string name="umeng_socialize_text_wenxin_fav"> WeChat collection </string>
+    <string name="umeng_socialize_text_sina_key"> microblogging </string>
+    <string name="umeng_socialize_text_qq_key"> QQ </string>
+    <string name="umeng_socialize_text_qq_zone_key"> QQ space </string>
+    <string name="umeng_socialize_text_renren_key"> Everyone </string>
+    <string name="umeng_socialize_text_douban_key"> watercress </string>
+    <string name="umeng_socialize_text_weixin_key"> WeChat </string>
+    <string name="umeng_socialize_text_weixin_circle_key"> WeChat friend circle </string>
+    <string name="umeng_socialize_text_weixin_fav_key"> WeChat collection </string>
+    <string name="umeng_socialize_text_add_custom_platform"> Please configure the user platform </string>
+    <string name="umeng_example_home_btn_plus"> social sharing </string>
+    <string name="umeng_socialize_text_waitting_share"> Share ... </string>
+    <string name="umeng_socialize_content_hint"> say something ... </string>
+    <string name="umeng_socialize_cancel_btn_str"> Cancel </string>
+    <string name="umeng_socialize_send_btn_str"> Save </string>
+    <string name="umeng_socialize_img_des"> </string>
+    <string name="umeng_socialize_share"> Share </string>
+    <string name="umeng_socialize_mail"> Mail </string>
+    <string name="umeng_socialize_sms"> SMS </string>
+    <string name="umeng_socialize_sina"> Sina </string>
+    <string name="umeng_socialize_text_yixin_key"> easy letter </string>
+    <string name="umeng_socialize_text_yixincircle_key"> Easy letter friends circle </string>
+    <string name="umeng_socialize_text_laiwangdynamic_key"> traffic dynamic </string>
+    <string name="umeng_socialize_text_evernote_key"> impression note </string>
+    <string name="umeng_socialize_text_ydnote_key"> has a cloud note </string>
+    <string name="umeng_socialize_text_facebook_key"> facebook </string>
+    <string name="umeng_socialize_text_twitter_key"> twitter </string>
+    <string name="umeng_socialize_text_instagram_key"> instagram </string>
+    <string name="umeng_socialize_text_pinterest_key"> pinterest </string>
+    <string name="umeng_socialize_text_pocket_key"> pocket </string>
+    <string name="umeng_socialize_text_linkedin_key"> Linkedin </string>
+    <string name="umeng_socialize_text_foursquare_key"> Foursquare </string>
+    <string name="umeng_socialize_text_whatsapp_key"> WhatsApp </string>
+    <string name="umeng_socialize_text_line_key"> LINE </string>
+    <string name="umeng_socialize_text_flickr_key"> Flickr </string>
+    <string name="umeng_socialize_text_tumblr_key"> Tumblr </string>
+    <string name="umeng_socialize_text_alipay_key"> Alipay </string>
+    <string name="umeng_socialize_text_kakao_key"> Kakao Talk </string>
+    <string name="umeng_socialize_text_googleplus_key"> GooglePlus </string>
+    <string name="umeng_socialize_text_more_key"> more </string>
+
+    <!--     - TODO PLAT section: write below -->
+    <!--     - start platform part -->
+    <string-array name="platLeave_type_list">    
+        <item> sick leave </item>    
+        <item> maternity leave </item>    
+        <item> leave </item>    
+        <item> marriage leave </item>    
+        <item> funeral leave </item>    
+        <item> annual leave </item>    
+        <item> production leave </item>    
+        <item> paternity leave </item>    
+        <item> prenatal leave </item>    
+        <item> tune </item>    
+        <item> breastfeeding </item>
+    </string-array>
+    <string name="add_new_people"> Add employee </string>
+    <string name="leave_type"> leave type </string>
+    <string name="leave_reason"> Leave  Application </string>
+    <string name="start_time"> start time </string>
+    <string name="end_time"> End time </string>
+    <string name="endT_large_startT"> end time must be greater than start time </string>
+    <string name="doc_detail"> details </string>
+    <string name="travel_reason"> business trip </string>
+    <string name="travel_destination"> trip destination </string>
+    <string name="ming_detail"> details </string>
+    <string name="doc_resubmit_success"> resubmit successful </string>
+    <string name="doc_id"> document number </string>
+    <string name="doc_record_time"> entry time </string>
+    <string name="doc_status"> Status </string>
+    <string name="Expected_startT"> expected start time </string>
+    <string name="Expected_endT"> Expected end time </string>
+    <string name="overwork_purpose"> overtime destination </string>
+    <string name="overwork_hours"> Overtime </string>
+    <string name="overwork_detail"> overtime detail </string>
+    <string name="travel_detail"> travel details </string>
+    <string name="overwork_detail1"> overtime detail </string>
+    <string name="travel_detail1"> travel details </string>
+    <string name="complaint_doc"> petition </string>
+    <string name="complaint_hour_T"> appeals time </string>
+    <string name="complaint_reson"> complaint reason </string>
+    <string name="complaint_photo"> appeal to phone </string>
+    <string name="complaint_addres"> complaint address </string>
+    <string name="approvel_detail"> approval details </string>
+    <string name="update_failed"> update failed </string>
+    <string name="Subordinates_visit">Subordinates record </string>
+    <string name="my_visit"> My record </string>
+    <string name="talking_lost"> The session has been broken </string>
+    <string name="Program_error"> program error </string>
+    <string name="error_notice1"> data fetch failed, please try again </string>
+    <string name="outplan_undone"> Field plan has not yet completed </string>
+    <string name="work_calender">Working calendar</string>
+    <string name="done"> Done </string>
+    <string name="undone"> unfinished </string>
+    <string name="oacreat_task"> create task </string>
+    <string name="oacreat_calender"> create schedule </string>
+    <string name="account_notice1"> the current account is not subordinate, if you have questions please contact the system administrator </string>
+    <string name="nothing_now"> No more </string>
+    <string name="set_close_step_notice1"> You have pre-closed UuRun, the next time you restart the application will no longer open UuRun </string>
+    <string name="set_close_step_notice2"> UU has not been opened or has been pre-closed </string>
+    <string name="close_step_notice3"> Tip: UU can not continue to count your step data after closing </string>
+    <string name="set_check_update_wait"> Checking for updates, please wait ... </string>
+    <string name="set_isnewVersion"> is the latest version, do not need to update </string>
+    <string name="set_share_to"> Share to </string>
+    <string name="device_nosupport_step"> set the device does not support UU step, sorry </string>
+    <string name="uu_step_Running_in_the_background"> ​​UuRun is running in the background </string>
+    <string name="comeon_more_sport"> Refueling, remember to pay attention to exercise </string>
+    <string name="uu_friend_notice"> little UU tips </string>
+    <string name="uu_love_notice"> If you want me and WeChat as accurately record your movement steps, please keep me and WeChat has been running in the background Oh, master, O_O! </string>
+    <string name="i_known"> I know </string>
+    <string name="send_words"> post text </string>
+    <string name="please_waitting"> Please wait </string>
+    <string name="ask_submit_success"> The problem was submitted successfully </string>
+    <string name="look_over"> view </string>
+    <string name="pictures"> picture </string>
+    <!--     - call the system to take pictures of the string -->
+    <string name="c_take_picture"> take pictures </string>
+    <string name="c_take_picture_failed"> camera failed </string>
+    <string name="c_photo_album"> album </string>
+    <string name="c_photo_album_failed"> select failed </string>
+    <string name="c_crop_failed"> crop failed </string>
+    <string name="exit_tips"> Are you sure you want to exit this account? </string>
+    <string name="watting"> wait </string>
+    <string name="approvel"> approval </string>
+    <string name="Did_not_pass"> not passed </string>
+    <string name="task_done_deal">Done </string>
+    <string name="task_wait_todo"> Pending </string>
+    <string name="task_refresh_again"> Please refresh retry </string>
+    <string name="new_add"> add </string>
+    <string name="task_sended"> initiated </string>
+    <string name="task_Reply_to_your_task_completiong"> reply to your task completion ... </string>
+    <string name="task_reply"> reply </string>
+    <string name="task_turn_down"> reject </string>
+    <string name="task_go_on_time"> duration </string>
+    <string name="task_input_detail_info"> enter the complete message </string>
+    <string name="task_title_must_input"> task title is required </string>
+    <string name="task_detail_must_input"> The task details are required </string>
+    <string name="task_doman_must_input"> Execute man-made option </string>
+    <string name="task_limit_doman"> too many executions, over 1000 characters </string>
+    <string name="task_startT_must_input"> start time is required </string>
+    <string name="task_endT_must_input"> The end time is required </string>
+    <string name="task_send_success"> Save successfully </string>
+    <string name="common_send"> Save </string>
+    <string name="make_adeal_failed"> Operation failed </string>
+    <string name="rest"> rest </string>
+    <string name="sign_flights"> Shift </string>
+    <string name="select_department_first"> Please select department </string>
+    first
+    <string name="select_jobs"> select the job </string>
+    <string name="select_department"> select department </string>
+    <string name="Please_imput_the_correct_email_format"> Please enter the correct mailbox format </string>
+    <string name="people_add_success"> People added successfully </string>
+    <string name="add_success"> Add success </string>
+    <string-array name="plat_department_list">    
+        <item> Zongjing Ban </item>    
+        <item> Purchasing Department </item>    
+        <item> sales </item>    
+        <item> finance department </item>    
+        <item> Personnel Administration </item>    
+        <item> R and D </item>
+    </string-array>
+    <string name="plat_department1"> Zongjing Ban </string>
+    <string name="plat_department2"> Purchasing Department </string>
+    <string name="plat_department3"> Sales </string>
+    <string name="plat_department4"> Finance Department </string>
+    <string name="plat_department5"> Personnel Administration </string>
+    <string name="plat_department6"> R and D </string>
+    <string-array name="plat_job1">    
+        <item> general manager </item>    
+        <item> deputy general manager </item>    
+        <item> secretary </item>
+    </string-array>
+    <string-array name="plat_job2">
+        <item> manager </item>
+        <item> buyer </item>
+    </string-array>
+    <string-array name="plat_job3">
+        <item> manager </item>
+        <item> Salesman </item>
+    </string-array>
+    <string-array name="plat_job4">
+        <item> manager </item>
+        <item> Accounting </item>
+        <item> Cashier </item>
+    </string-array>
+    <string-array name="plat_job5">
+        <item> manager </item>
+        <item> Personnel officer </item>
+        <item> Administrative commissioner </item>
+    </string-array>
+    <string-array name="plat_job6">
+        <item> manager </item>
+        <item> engineer </item>
+    </string-array>
+    <!-- - end platform part -->
+
+    <string name="qzone_send_word">  Share  Text </string>
+    <string name="qzone_send_picture"> Share  a Picture </string>
+    <string name="qzone_send_video"> Share  video </string>
+    <string name="qzone_location_city"> where city </string>
+    <string name="qzone_out_share"> External sharing </string>
+    <string name="qzone_praise"> praise </string>
+    <string name="qzone_comment"> comments </string>
+    <string name="qzone_change_picture"> </string>
+    <string name="qzone_copy"> copy </string>
+    <string name="qzone_message_detail"> Qzone details </string>
+    <string name="qzone_saveto_phone"> Save to phone </string>
+    <string name="qzone_cancel"> Cancel </string>
+    <string name="qzone_send_notice1"> You have not entered anything </string>
+    <string name="qzone_notshow_location"> does not show location </string>
+    <string name="qzone_ishare_too"> I also share </string>
+    <string name="qzone_share_success"> share success </string>
+    <string name="qzone_enter_qzone_now"> whether to immediately enter the circle of friends see </string>
+    <string name="qzone_edit_daily"> Write daily </string>
+    <string name="qzone_enter_atnow"> Go to </string>
+    now
+    <string name="qzone_upload_failed"> upload failed </string>
+    <string name="qzone_add_picture"> add picture </string>
+    <string name="qzone_sendshuo_now_think"> this moment of idea ... </string>
+    <string name="qzone_now_location"> where </string>
+    is located
+    <string name="qzone_say_something"> say something .. </string>
+    <string name="qzone_select_image"> Select the image, up to 9 </string>
+    <string name="qzone_select_video"> select video, up to 1 </string>
+    <string name="qzone_addd_nothing_video"> You have not added any video files </string>
+    <string name="qzone_add_video"> add video </string>
+    <string name="qzone_select_failed"> select failed </string>
+    <string name="qzone_video_file_not_exist"> video file does not exist </string>
+    <string name="qzone_send"> Send </string>
+    <string name="sign_teams"> team attendance </string>
+    <string name="my_sign"> my attendance </string>
+    <string name="sign_late"> late </string>
+    <string name="sign_leave"> early leave </string>
+    <string name="sign_Absenteeism"> Absence</string>
+    <string name="sign_actualtime"> actual work </string>
+    <string name="sign_Times"> times </string>
+    <string name="sign_hour_day"> hours / day </string>
+    <string name="sign_look_alldatas"> view the full form </string>
+    <string name="sign_the_first"> first </string>
+    <string name="sign_the_second"> second </string>
+    <string name="sign_the_third"> third </string>
+    <string name="sign_teams_rank"> Team Hardline </string>
+    <string name="sign_calendar"> calendar </string>
+    <string name="sign_Average_hours"> average work time </string>
+    <string-array name="sign_distance">
+        <item>200meters</item>
+        <item>300meters</item>
+        <item>500meters</item>
+        <item>1000meters</item>
+        <item>1500meters</item>
+    </string-array>
+    <string-array name="work_distance">
+        <item>200meters</item>
+        <item>300meters</item>
+        <item>500meters</item>
+        <item>1000meters</item>
+        <item>1500meters</item>
+    </string-array>
+    <string name="daily_record">Daily Record</string>
+    <string name="search1"> find </string>
+    <string name="formal_customer"> Formal customer </string>
+    <string name="client_yu_luru"> customer pre-entry </string>
+    <string name="client_type"> Type </string>
+    <string name="common_select1"> Please select </string>
+    <string name="only_input_Positive_real_number"> can only enter a positive real number </string>
+    <string name="only_imput_aaa"> can only enter numbers and uppercase English and Chinese, limited character length is not greater than 100 </string>
+    <string name="only_imput_aaa1"> limited character length is not greater than 100 </string>
+    <string name="only_imput_aaa2"> limited character length is not greater than 300 </string>
+    <string name="error_system_findunknow_error">Sorry! The system found an unknown error!</string>
+    <string name="select_flights">Choose a punch table</string>
+    <string name="delete_prompt">You sure you want to delete it？</string>
+    <string name="work_business_me">My business</string>
+    <string name="work_business_find">Commodity inquiry</string>
+    <string-array name="step_week1">
+        <item>SUN</item>
+        <item>MON</item>
+        <item>TUE</item>
+        <item>WED</item>
+        <item>THU</item>
+        <item>FRI</item>
+        <item>SAT</item>
+    </string-array>
+    <string-array name="step_week2">
+        <item>Sunday </item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string name="step_Sunday">SUN</string>
+    <string name="step_Monday">MON</string>
+    <string name="step_Tuesday">TUE</string>
+    <string name="step_Wednesday">WED</string>
+    <string name="step_Thursday">THU</string>
+    <string name="step_Friday">FRI</string>
+    <string name="step_Saturday">SAT</string>
+    <string name="set_language">Language</string>
+    <string name="search">Search</string>
+    <string name="msg_offline">Message (offline)</string>
+    <string name="msg_connect">Message (in connection)</string>
+    <string name="title_friend_add">Add Friend</string>
+    <string name="all_date">All</string>
+    <string name="visitrecord">Visit report</string>
+    <string name="visit_date">Date</string>
+    <string name="update_success">update completed</string>
+    <string name="visitting_type">Type of visit</string>
+    <string name="connect_businedd">Related Niche</string>
+    <string name="visit_content">Content</string>
+    <string name="startT_cannott_big_sT">Start time can not be greater than the current system time </string>
+    <string name="endT_cannott_big_sT">The cutoff time can not be greater than the current system time</string>
+    <string name="input_vist_context"> Please enter the content </string>
+    <string name="limit_unno_zijie"> Can not enter special characters</string>
+    <string name="Original_visit">Original visit</string>
+    <string name="ws_client_address_name">Edit customer address name</string>
+    <string name="msg_online">Message</string>
+    <string name="subscribe_detail_title">Subscribe to details</string>
+    <string name="user_noOpen_app">The user has not yet opened app</string>
+    <string name="select_form_phoneablum">Choose from the phone album</string>
+    <string name="select">select</string>
+    <string name="country">country</string>
+    <string name="province">province</string>
+    <string name="city">city</string>
+    <string name="county">county</string>
+    <string name="locationing">In positioning</string>
+    <string name="current_location">Location</string>
+    <string name="hot_city">hot city</string>
+    <string name="select_city_by_province">select city</string>
+    <string name="location_failed">positioning failed</string>
+    <string name="please_unput_yourP"> Please input your question ... (within 400 words) </string>
+    <string name="local_video">Local video</string>
+    <string name="Business_license_number">Business License No</string>
+    <string name="crm_branch">My subordinates</string>
+    <string name="crm_niche_notice1">A customer is displayed by default，Link More</string>
+    <string name="create_business">Create</string>
+    <string name="describe">Description</string>
+
+    <!--翻译补漏-->
+    <!--翻译补漏-->
+    <string name="language_sys">跟随系统</string>
+    <string name="language_rCN">简体中文</string>
+    <string name="language_rTW">繁體中文</string>
+    <string name="language_en">English</string>
+
+    <string name="Rated_UU">Rated UU</string>
+    <string name="Rated_notice1">Please give you a score for UU, you only need to spend your little time, thank you for your support!</string>
+    <string name="Rated_now">Now to score</string>
+    <string name="Rated_suggest">Feedback</string>
+    <string name="Rated_next">Next time</string>
+    <string name="fangkui_success">Submitted success, we will be the first time to view your question, thank you for your cooperation!</string>
+    <string name="Uploaded_successfully">Uploaded successfully</string>
+    <string name="create_date">Create date</string>
+    <string name="select_contact">select contact</string>
+    <string name="delete_business_ok">delete business success</string>
+    <string name="input_visit_remark">imput the destination</string>
+    <string name="input_contact">input the contac</string>
+    <string name="update_business">modify niche</string>
+    <string name="search_select_hint">search for items, brands, materials, models, etc. </string>
+    <string name="not_search_message">no matching results</string>
+    <string name="sign_to">to</string>
+    <string name="shorthand_year">Y</string>
+    <string name="sShorthand_month">M</string>
+    <string name="shorthand_day">D</string>
+    <string name="subscribe_title">Subscribe</string>
+    <string name="creater">creator</string>
+    <string name="address">address</string>
+    <string name="assign">assign</string>
+    <string name="transfer">transfer</string>
+    <string name="contect_is_much"> contact is required</string>
+    <string name="context_is_much">context required</string>
+    <string name="times">period</string>
+    <string name="create_addree">create place</string>
+    <string name="Follow_up_person"> follow-up</string>
+    <string name="add_schedule">add the schedule</string>
+    <string name="add_mission">add outplan</string>
+    <string name="stage_follow">Update step</string>
+    <string name="more_operation">more actions</string>
+    <string name="sure_delete_bc"> Confirm to delete this niche? </string>
+    <string-array name="crm_dialog_followup">
+        <item> release niche</item>
+        <item> niche invalid</item>
+        <item> to new customer</item>
+        <item> associated with existing customer</item>
+    </string-array>
+    <string name="is_must_input">is required</string>
+    <string name="work_off_time">off time</string>
+    <string name="work_sign">Clock in</string>
+    <string name="off_sign">Clock off </string>
+    <string name="CRM_grabBusinessFaild">Operation failed </string>
+    <string name="CRM_sorryYouHaveOverTheBiggestBusinessQuantity">Exceed maximum quantity</string>
+    <string name="CRM_addDate_sorryThisBusinessHaveAdd">Sorry, this business opportunity has been added to the agenda</string>
+    <string name="CRM_businessLose_leaderGetFaild">Operation failed ,try again later</string>
+    <string name="CRM_businessLose_treatmentTime">Deal time</string>
+    <string name="CRM_businessLose_leader">Leader</string>
+    <string name="select_client">Select Customer</string>
+    <string name="CRM_sorryOnlyPickOneClient">>Sorry,you can only select one customer!</string>
+    <string name="CRM_pleasePickClientFirst">Please select a customer firstly</string>
+    <string name="CRM_current_page_change_ecet">The current page data has been changed, please update first and then submit</string>
+    <string name="CRM_unable_ecet">Unable to access the server,try again later</string>
+    <string name="over_latetime">Serious late</string>
+    <string name="work_signin">Clock in</string>
+    <string name="unwork_signin">Clock off</string>
+    <string name="add_work_times">+Add time</string>
+    <string name="all_work_time">Total working hours</string>
+    <string name="two_hour_before">2 hours before work</string>
+    <string name="earliest_work_signin_time">Earliest time to sign</string>
+    <string name="mobile_signcard">Appeals</string>
+    <string name="mobile_mac">Phone mac address</string>
+    <string name="mobile_change_name">Reason for change</string>
+    <string name="input_reason">Please fill in the reason</string>
+    <string name="change_signin_ok">Complaint Success!</string>
+    <string name="personnel">personnel</string>
+
+    <string name="MyAttendanceRules_legalHoliday">Follow statutory holidays</string>
+    <string name="MyAttendanceRules_newYearsDay">New Year Day</string>
+    <string name="MyAttendanceRules_SpringFestival">Spring Festival</string>
+    <string name="MyAttendanceRules_QingmingFestival">Qingming Festival</string>
+    <string name="MyAttendanceRules_LaborDay">International Labour Da</string>
+    <string name="MyAttendanceRules_TheDragonBoatFestival">Dragon Boat Festival</string>
+    <string name="MyAttendanceRules_nationalDay">National Day</string>
+    <string name="MyAttendanceRules_MidAutumnFestival">Mid-Autumn Festiva</string>
+    <string name="SchedulingSetting_DeleteTitle">Delete?</string>
+    <string name="SchedulingSetting_ConflictDepartment">There are one conflicting departments to view settings</string>
+    <string name="SchedulingSetting_ConflictPerson1">Participant </string>
+    <string name="SchedulingSetting_ConflictPerson2">view the setting</string>
+    <string name="WorkingTime1">WorkingTime1</string>
+    <string name="WorkingTime2">WorkingTime2</string>
+    <string name="WorkingTime3">WorkingTime3</string>
+    <string name="SchedulingTime_SelectReminder">choice is over time</string>
+    <string name="SchedulingTime_SelectBestWorking1">An hour</string>
+    <string name="SchedulingTime_SelectBestWorking2">two hour</string>
+    <string name="SchedulingTime_SelectBestWorking3">three hour</string>
+    <string name="SchedulingTime_SelectBestWorking4">four hour</string>
+    <string name="SchedulingTime_SelectBestWorking5">five hour</string>
+    <string name="SchedulingTime_SelectBestWorking6">six hour</string>
+    <string name="SchedulingTime_SelectBestWorking7">seven hour</string>
+    <string name="ParticipatingPerson_selectedPerson2">employee</string>
+    <string name="rule_name">Rule name</string>
+    <string name="Set_Scheduling">Set Scheduling</string>
+    <string name="Scheduling_type"> shift type </string>
+    <string name="Normal_frequency"> normal shifts </string>
+    <string name="no_flights"> no shifts, contact the administrator </string>
+    <string name="Monday"> Monday </string>
+    <string name="Tuesday"> Tuesday </string>
+    <string name="Wednesday"> Wednesday </string>
+    <string name="Thursday"> Thursday </string>
+    <string name="Friday"> Friday </string>
+    <string name="Saturday"> Saturday </string>
+    <string name="Sunday"> Sunday </string>
+    <string name="holiday_date1"> December 31 to January 2 for 3 days </string>
+    <string name="holiday_date2"> January 27 ~ February 2 a total of 7 days off; February 4 to work </string>
+    <string name="holiday_date3"> April 2 ~ April 4 a total of 3 days off; April 1 to work </string>
+    <string name="holiday_date4"> April 29 ~ May 1 for 3 days </string>
+    <string name="holiday_date5"> May 28 to May 30 for a total of 3 days off; May 27 to work </string>
+    <string name="holiday_date6"> October 1 ~ October 8 a total of 8 days of retreat; September 30 to work </string>
+    <string name="hour">hour</string>
+    <string name="remove_blacklist"> remove the blacklist </string>
+    <string name="say_hello"> Say hello </string>
+    <string name="send_msg"> send a message </string>
+    <string name="say_hello_succ"> Say hello success </string>
+    <string name="add_friend_succ"> add friends success </string>
+    <string name="error_phone"> phone format is not correct </string>
+    <string name="say_hello_dialog_title"> Verify the message </string>
+    <string name="say_hello_dialog_hint"> pro, give me a reason to add you! </string>
+    <string name="say_hello_default"> Hey, hello! </string>
+    <string name="add_attention_succ"> Attention to success </string>
+    <string name="add_attention_failed"> Attention Failed, you have been blacklisted by each other </string>
+    <string name="set_remark_name"> set the note name </string>
+    <string name="remove_blacklist_succ"> remove the blacklist succeed </string>
+    <string name="cancel_attention_prompt"> Are you sure you want to cancel your attention? </string>
+    <string name="delete_all_prompt"> completely delete the operation, if the other side is also concerned about you, then it will cancel the other side of your concern, sure to completely delete it? </string>
+    <string name="cancel_attention_succ"> cancel attention successfully </string>
+    <string name="prompt_title"> prompt </string>
+    <string name="delete_all_succ"> delete success </string>
+    <string name="remove_blacklist_prompt"> Are you sure you want to remove the blacklist? </string>
+    <string name="add_blacklist_prompt"> Are you sure you want to add a blacklist? </string>
+    <string name="add_blacklist_succ"> add blacklist success </string>
+
+    <string name="not_message_and_add">no data, please click on the top right corner to add </string>
+    <string name="change_mobile">Change mobile</string>
+    <string name="supple_signin">Supple_signin </string>
+    <string name="last_visit">Last visit</string>
+    <string name="visit_num"> General visit</string>
+    <string name="search_address_input_company">Please perfect unit name  after search for the address</string>
+    <string name="enterprise"> Enterprise</string>
+    <string name="map">Map</string>
+    <string name="other_map">Use other map</string>
+    <string name="click_finds">Click to view</string>
+    <string name="unsignined"> not signed in</string>
+    <string name="input_meeting_note"> meeting minutes do not fill in </string>
+    <string name="input_meeting_resolution">The meeting resolution does not fill in</string>
+    <string name="input_meeting_left">legacy issues are not required to fill in</string>
+    <string name="input_meeting_next"> follow-up does not fill in </string>
+
+
+    <string name="crm_icon1">My rankings</string>
+    <string name="crm_icon2">Sales briefing</string>
+    <string name="crm_icon3">My subordinates</string>
+    <string name="crm_icon4">My indicators</string>
+    <string name="crm_icon5">Forgotten customers</string>
+    <string name="leave">Leave</string>
+    <string name="overtime">Overtime</string>
+    <string name="ychuqin">Should attend</string>
+    <string name="achuqin">Actual attendance</string>
+    <string name="nday">Normal punch</string>
+    <string name="outdays">Business trip</string>
+    <string name="signcard">Supplemental card</string>
+    <string name="sure_delete_content">Are you sure you want to delete the contact?</string>
+    <!--Im方面的翻译-->
+    <string name="add_blacklist">加入黑名单</string>
+    <string name="cancel_attention">取消关注</string>
+    <string name="delete_all">彻底删除</string>
+    <string name="remark_name_format_error">备注名不合法，只允许中文、英文、字母和下划线，且长度为3至10个字符</string>
+    <string name="not_find_company_search">未找到公司位置，请搜索地址</string>
+    <string name="visited">已拜访</string>
+    <string name="create_meet_task">创建会议任务</string>
+    <string name="meeting_name">会议名称</string>
+    <string name="join_numer">参会人员</string>
+    <string name="administrators">管理员</string>
+    <string name="add_schedule_for_meeter">为参会人员创建日程</string>
+    <string name="select_locaton">选择位置</string>
+    <string name="friend_to_chat">你们已经是好友了，开始聊天吧</string>
+    <string name="not_system_permission">应用没有获取到权限</string>
+    <string name="chat_poto">照片</string>
+    <string name="chat_camera">拍照</string>
+    <string name="chat_video">录像</string>
+    <string name="chat_audio">语音通话</string>
+    <string name="chat_loc">位置</string>
+    <string name="chat_file">文件</string>
+    <string name="chat_card">名片</string>
+    <string name="send">发送 </string>
+    <string name="motalk_voice_chat_tip_1">按住说话</string>
+    <string name="motalk_voice_chat_tip_2">松开发送</string>
+    <string name="motalk_voice_chat_tip_3">上滑取消发送</string>
+    <string name="motalk_voice_chat_tip_4">松开取消发送</string>
+    <string name="motalk_voice_chat_tip_5">重新录制</string>
+    <string name="motalk_voice_chat_tip_6">松开结束</string>
+    <string name="msg_picture">[图片]</string>
+    <string name="msg_voice">[语音]</string>
+    <string name="msg_location">[位置]</string>
+    <string name="msg_animation">[动画]</string>
+    <string name="msg_video">[视频]</string>
+    <string name="msg_file">[文件]</string>
+    <string name="msg_be_add_attention">有人关注了你</string>
+    <string name="msg_be_say_hello">有人给你打招呼</string>
+    <string name="msg_be_passed">你通过了好友验证</string>
+    <string name="msg_has_new_friend">你有新朋友了</string>
+    <string name="msg_has_new_recommend_friend">你有新的推荐朋友</string>
+    <string name="add_chat_ok_btn">确定</string>
+    <string name="select_contacts">选择联系人</string>
+    <string name="please_input_room_name">请输入群名</string>
+    <string name="please_input_room_desc">请输入群描述</string>
+    <string name="service_start_failed">您当前处于离线状态，请检查网络或重新登陆</string>
+    <string name="create_room">创建群</string>
+    <string name="room_name_empty_error">群名不能为空</string>
+    <string name="room_des_empty_error">群描述不能为空</string>
+    <string name="create_room_failed">创建群失败</string>
+    <string name="room_name">群名称</string>
+    <string name="room_description">群说明</string>
+    <string name="room_number">人&#160;&#160;&#160;&#160;数</string>
+    <string name="new_join_son_to_chating">新加入的小伙伴们,快来聊天吧!</string>
+    <string name="no_notice">暂时无公告</string>
+    <string name="no_block_room_message">取消屏蔽群消息</string>
+    <string name="block_room_message">屏蔽群消息</string>
+    <string name="delete_room">删除商务群</string>
+    <string name="exit_room">退出商务群</string>
+    <string name="add_administrators">添加管理员</string>
+    <string name="remove_administrators">移除管理员</string>
+    <string name="room_info">群信息</string>
+    <string name="notice">群内公告</string>
+    <string name="room_desc">群说明</string>
+    <string name="creator">创建者</string>
+    <string name="people_count">成员上限</string>
+    <string name="my_nick_name">我的群昵称</string>
+    <string name="can_not_remove_self">你不能移除你自己</string>
+    <string name="can_not_banned_self">你不能禁言你自己</string>
+    <string name="banned_voice">禁言</string>
+    <string name="banned_exit_room">退出群</string>
+    <string name="banned_delete_room">解散群</string>
+    <string name="create_chat_time">创建时间</string>
+    <string name="shield_chat">屏蔽群消息</string>
+    <string name="change_room_name">修改群名</string>
+    <string name="change_room_des">修改群说明</string>
+    <string name="change_my_nickname">修改我的群昵称</string>
+    <string name="add_notice">添加公告</string>
+    <string name="please_wait">请稍等&#8230;</string>
+    <string name="gag_success">禁言成功</string>
+    <string name="no_gag_success">取消禁言成功</string>
+    <string name="to_this_day">至今</string>
+    <string name="friendly_time_before_seconds">秒前</string>
+    <string name="friendly_time_before_minute">分钟前</string>
+    <string name="friendly_time_yesterday">昨天</string>
+    <string name="friendly_time_before_yesterday">前天</string>
+    <string name="copy">复&#160;&#160;制</string>
+    <string name="forward">转&#160;&#160;发</string>
+    <string name="delete">删&#160;&#160;除</string>
+    <string name="more">更&#160;&#160;多</string>
+    <string-array name="gags_select">
+        <item>不禁言</item>
+        <item>禁言一天</item>
+        <item>禁言3天</item>
+        <item>禁言一周</item>
+        <item>禁言半个月</item>
+        <item>禁言一个月</item>
+    </string-array>
+    <string name="missing_card">缺卡</string>
+    <string name="before_work">上班前</string>
+    <string name="confirmed">待确认</string>
+    <string name="readed">已读</string>
+    <string name="unreaded">未读</string>
+    <string name="web_next_tv">下一条＞</string>
+    <string name="web_previous_tv">＜上一条</string>
+    <string name="subscription_number">隐藏该订阅号</string>
+    <string name="subscription_class">隐藏该订阅类</string>
+    <string name="unsubscribe">－退订</string>
+    <string name="not_unsubscribe_able">该订阅号不可退订</string>
+    <string name="unsubscribe_able">不可退订</string>
+    <string name="sure_business_release">确定释放这个商机?</string>
+    <string name="add_contact">新增联系人</string>
+    <string name="common_list_empty">No data</string>
+    <string name="info_2dcode">My QR Code</string>
+    <string name="scan_2dcode_addme">Scan the QR Code to add me as a friend </string>
+    <string name="share_2code"> Share QR Code </string>
+    <string name="change_style"> Change Style </string>
+    <string name="save_to_MBphone"> Save to Phone </string>
+    <string name="scan_2dcode"> Scan QR Code </string>
+    <string name="common_title">Title</string>
+    <string name="Reimbursement_type">Reimbursement type</string>
+    <string name="Consumer_details">Consumer details</string>
+    <string name="Add_invoice">Add invoice</string>
+    <string name="Results_of_scan">Results</string>
+    <string name="Expense_reimbursement">Reimbursement</string>
+    <string name="RMB">RMB</string>
+    <string name="currency">Currency</string>
+    <string name="more_length">size exceeds the maximum length</string>
+    <string name="work_name_not_be_null">Flight name cannot be empty</string>
+
+    <string name="my_data">My data</string>
+    <string name="clear_completed">Clear Completed</string>
+
+    <!--login-->
+    <string name="login_success_erp">UAS validation successful!</string>
+    <string name="login_success_b2b">B2B validation successful!</string>
+    <string name="login_error_b2b">B2B validation failed!</string>
+    <string name="login_error_erp">UAS validation failed!</string>
+    <string name="login_error_info">Mobile phone number or password error!</string>
+    <string name="login_progress_b2b">Validating B2B...</string>
+    <string name="login_progress_erp">Validating UAS...</string>
+    <string name="login_company_select">Select company</string>
+    <string name="invoice_submitted_successfully"> Invoice Submission Successful </string>
+    <string name="sending_picture"> uploading picture </string>
+    <string name="select_cost_type"> Please select reimbursement type </string>
+    <string name="select_money_type"> Please select the currency </string>
+    <string name="add_cost_details"> Please add consumption details </string>
+    <string name="sure_delete_this_details">Are you sure you want to delete the consumption details? </string>
+
+    <!--本地通讯录-->
+    <string name="app_local_contacts">手机通讯录</string>
+    <string name="input_cost_name"> Enter the consumption detail name </string>
+    <string name="add_cost_details1"> add a consumption detail </string>
+    <string name="invoice">Invoice</string>
+    <string name="please_add_image"> Please add picture</string>
+
+    <string name="person_register"> personal registration </string>
+    <string name="phone_number"> phone number </string>
+    <string name="rpassword"> password </string>
+    <string name="input_person_sign"> Please enter a personal signature </string>
+    <string name="to_login"> existing account? Login </string>
+    <string name="input_phone_number"> Please enter the phone number </string>
+    <string name="input_name"> Please enter a name </string>
+
+    <string name="give_up">放弃</string>
+    <string name="app_time_selecting">选择时间</string>
+    <string name="qzone_edit_weekly">编写周报</string>
+    <string name="qzone_edit_monthly">编写月报</string>
+    <string name="business_statistics">商家统计</string>
+    <string name="usoft_science">优软科技</string>
+    <string name="work_plat_setting">工作面板设置</string>
+    <string name="complete">完成</string>
+
+    <!--工作台菜单-->
+    <string name="str_work_add_func">add application</string>
+
+    <string name="str_uu_application">UU application</string>
+    <string name="str_work_subscribe_secretary">Appointment Assistant</string>
+    <string name="str_work_uu_sports">UU Sport</string>
+    <string name="str_work_invite_register">invitation to register</string>
+    <string name="str_work_uu_education">UU education</string>
+    <string name="str_work_yingtang_song">yingtang song</string>
+
+    <string name="str_administrative_office">OA</string>
+    <string name="str_work_work_approval">my reviews</string>
+    <string name="str_work_backlog">undone work</string>
+    <string name="str_work_work_calendar">work calendar</string>
+    <string name="str_work_work_report">work reports</string>
+    <string name="str_work_punch_clock">check in</string>
+    <string name="str_work_outwork_sign">fieldwork</string>
+    <string name="str_work_attendance_statistics">attendance statistics</string>
+    <string name="str_work_overtime_request">overtime</string>
+    <string name="str_work_leave_request">leave</string>
+    <string name="str_work_travel_request">trip</string>
+    <string name="str_work_expense_account">reimbursement</string>
+    <string name="str_work_meeting_manage">meetings</string>
+    <string name="str_work_special_attendance">special attendance</string>
+    <string name="str_work_device_manage">Device management</string>
+
+    <string name="str_customer_relationship">CRM</string>
+    <string name="str_work_business_manage">business</string>
+    <string name="str_work_customer_manage">customer</string>
+    <string name="str_work_customer_visit">visits</string>
+    <string name="str_work_sales_data">sales board</string>
+    <string name="str_work_honor_rank">honor wall</string>
+
+    <string name="str_enterprise_application">enterprise application</string>
+    <string name="str_work_data_inquiry">data search</string>
+    <string name="str_work_report_statistics">report statistics</string>
+    <string name="str_work_real_time_subs">realtime board</string>
+    <string name="str_work_subs_manage">subscription</string>
+    <string name="str_work_salary_bill">salary</string>
+
+    <string name="str_usoft_cloud_platform">usoft cloud platform</string>
+    <string name="str_work_b2b_commerce">B2B commerce</string>
+    <string name="str_work_usoft_mall">usoft mall</string>
+    <string name="str_work_charitable_donations">love donation</string>
+    <!--工作台菜单-->
+
+    <string name="str_search_history">搜索历史</string>
+    <string name="str_clear">清空</string>
+    <string name="str_company_salary">payroll</string>
+    <!--工作台菜单-->
+    <string name="who_is_champion">is the champion</string>
+    <string name="all_Amount_of_money">total amount</string>
+
+    <string name="get_again">get again</string>
+    <string name="msg_send_success">SMS sent successfully, please complete the query within one minute</string>
+    <string name="input_search_date">Please enter the inquiry date</string>
+    <string name="input_search_ycode">please enter verification code</string>
+    <string name="input_search_password">please input the query password</string>
+    <string name="please_settting_password">Please set at least 6 digits to check the password</string>
+    <string name="setting_password_success">Set the password successfully</string>
+    <string name="code_outtime">Verification code timeout, please obtain again</string>
+    <string name="please_settting_password1">Please input the 6 digit verification code
+</string>
+    <string name="get_code">get VCode</string>
+    <string name="salary_search">Salary inquiry</string>
+    <string name="cannot_sign">Wage data is blank and can not be signed</string>
+    <string name="input_your_error">Please enter your error problem</string>
+    <string name="not_sign">You do not have a signature</string>
+    <string name="salary">wage</string>
+    <string name="send_error_ok">Error reported</string>
+    <string name="ss_send_success">Payroll signature submitted successfully</string>
+    <string name="no_salary_data">No salary information this month</string>
+    <string name="error_msg">No salary information</string>
+    <string name="salary_sign">sign</string>
+    <string name="confirm_phone">Please confirm the phone number</string>
+    <string name="code_send_phone">The verification code has been sent to the cell phone</string>
+    <string name="please_set_pw">Please set a password</string>
+    <string name="password">password</string>
+    <string name="input_6_pw">Please enter a new password (6-20 limit)</string>
+    <string name="need_6_str">6-20 characters are required</string>
+    <string name="firstused_setpw">for the first time, please set the password</string>
+    <string name="input_qpw">please input the query password(limit 20 characters)</string>
+    <string name="next_step">next step</string>
+    <string name="change_qpw">modify the query password </string>
+    <string name="telephone"> phone number </string>
+
+
+    <string name="business_setting"> Merchant Settings </string>
+        
+    <string name="ranking"> leaderboard </string>
+        
+    <string name="information_photo"> image photo </string>
+        
+    <string name="set_e_relax"> Set employee rest days </string>
+        
+    <string name="set_c_relax"> Set business day </string>
+        
+    <string name="set_location"> set service / site / room </string>
+        
+    <string name="click_change_img"> click to change photo </string>
+        <string name="cur_no_room"> Department / department </string> has not been obtained yet
+        
+    <string name="select_room"> select department </string>
+        
+    <string name="please_add_headerimg"> Please add photo </string>
+        
+    <string name="room"> department </string>
+        
+    <string name="tel_number"> number </string>
+        
+    <string name="input_name_date"> Please enter a full name / rest date </string>
+        
+    <string name="hava_save_detail"> There is duplicate item details </string>
+        
+    <string name="input_person_name"> Please enter the person name </string>
+        
+    <string name="cannot_select_beforedate"> Can not select past time </string>
+        
+    <string name="relax_time_rapeat"> rest time is not repeatable </string>
+        
+    <string name="input_all_date"> Please enter the complete rest date </string>
+        
+    <string name="update_room"> Update Service / Site / Room </string>
+        
+    <string name="input_name1"> Please enter a name </string>
+        
+    <string name="add_img"> Please add photos </string>
+        
+    <string name="please_input_room"> Please enter service / site / room name </string>
+        
+    <string name="please_input_time"> Please enter the service time / minute </string>
+        
+    <string name="add"> New </string>
+        
+    <string name="setting_worktime"> set business hours </string>
+        
+    <string name="setting_time_type"> Set the reservation time type </string>
+        
+    <string name="business_detail1"> business details </string>
+        
+    <string name="room_type"> Set private room reservation type </string>
+        
+    <string name="please_select_room_type"> Please select Private Reservation </string>
+        
+    <string name="please_input_bdi"> Please enter Merchant Listing </string>
+        
+    <string name="unlaw_str"> Contains a violation character </string>
+        
+    <string name="select_bookT_type"> Please select the reservation time type </string>
+        
+    <string name="time_canot_empty"> The time period can not be empty </string>
+        
+    <string name="booking_times"> time period: </string>
+        
+    <string name="book_time_type"> reservation time type </string>
+        
+    <string name="time_d"> by time </string>
+        
+    <string name="time_p"> by time </string>
+        
+    <string name="room_book_type"> </string>
+        
+    <string name="zzw"> early midnight </string>
+        
+    <string name="zw"> midnight </string>
+        
+    <string name="please_inpuy_bi"> Please enter the merchant details introduction limit 400 words </string>
+        
+    <string name="table_set"> table setting </string>
+        
+    <string name="net_expection"> Server Error Please try again later </string>
+        
+    <string name="input_all_msg"> Please drop all settings </string>
+        
+    <string name="table_setting"> table setting </string>
+        
+    <string name="pi_tablecode"> Please enter the table code </string>
+        
+    <string name="pi_number"> Please enter the number </string>
+        
+    <string name="pi_remark"> Please enter a comment </string>
+        
+    <string name="pi_bookdays"> Please enter the amount can be reserved / day </string>
+        
+    <string name="pi_seatnumber"> Please enter the maximum number of seats </string>
+        
+    <string name="pi_tabletype"> Please select the table type </string>
+        
+    <string name="b_table"> big table </string>
+        
+    <string name="m_table"> table </string>
+        
+    <string name="s_table"> little table </string>
+        
+    <string name="table_repeat"> table can not be set repeatedly </string>
+    <string name="room_set"> department settings </string>
+        
+    <string name="person_set"> Personnel Settings </string>
+        
+    <string name="e_relax_set"> Staff rest day settings </string>
+    <string name="person_list"> list of people </string>
+        
+    <string name="e_relaxday"> employee rest day </string>
+        
+    <string name="c_relaxday"> business break </string>
+        
+    <string name="room_location"> service / site / room </string>
+        
+    <string name="relax_time"> rest time </string>
+    <string name="booking_time_set"> Reservation time period setting </string>
+    <string name="enter_details_money"> Please enter the details amount </string>
+    <string name="host_null_please_login_retry">站点地址获取失败，请重新登录后重试</string>
+    <string name="str_common_empty_text">暂无记录</string>
+    <string name="str_system_admin">系统管理员</string>
+    <string name="font_size">字体大小</string>
+    <string name="project_business_chance">项目商机</string>
+    <string name="work_out_face_sign">人脸打卡</string>
+</resources>

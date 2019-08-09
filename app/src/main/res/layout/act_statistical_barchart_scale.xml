@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/rl_dateSelect"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/white" >
+                <TextView
+                    android:id="@+id/tv_premonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp"
+                    android:text="上一月"
+                    android:textColor="@color/gray_light" />
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="10dp"
+                    android:text="2015年07月"
+                    android:textColor="@color/blue"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/tv_nextmonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text="下一月"
+                    android:textColor="@color/gray_light" />
+                <View
+                    android:id="@+id/blend_dialog_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/blend_item_divider_color" />
+            </RelativeLayout>
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bc_scale_chart_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/lightgray" >
+            </com.github.mikephil.charting.charts.BarChart>
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/bc_scale_piechart_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/lightgray"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/tv_message_chart"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="统计数据展示" />
+            <!-- 统计信息表格展示控件 -->
+            <include layout="@layout/inculde_grid_view"></include>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

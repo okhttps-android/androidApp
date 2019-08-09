@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.uas.appworks.crm3_0.activity.ContactSearchActivity">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/action_device_cycle_count"/>
+    <TextView
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/tv_contact_header"
+        android:layout_below="@+id/cycleCountToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" 
+        android:textSize="@dimen/sp_16"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="我的联系人"/>
+    <View style="@style/app_line_horizontal_05p"></View>
+    <ListView
+        android:id="@+id/lv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0.5dp"
+        android:divider="@color/item_line">
+    </ListView>
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_10"
+        android:id="@+id/tv_local_header"
+        android:layout_below="@+id/lv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="@dimen/sp_16"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="通讯录"/>
+    <ListView
+        android:id="@+id/lv_local"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

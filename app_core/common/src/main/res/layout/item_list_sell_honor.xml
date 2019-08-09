@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sell_honor_head_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sell_honor_name_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FF333333"
+                android:textSize="15sp"
+                tools:text="饶猛" />
+
+            <TextView
+                android:id="@+id/sell_honor_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF8F00"
+                android:textSize="18sp"
+                tools:text="35.7万元" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sell_honor_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="#FF666666"
+            android:textSize="14sp"
+            tools:text="销售总额冠军" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/sell_honor_position_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFA7A7A7"
+                android:textSize="12sp"
+                tools:text="销售工程师" />
+
+            <TextView
+                android:id="@+id/sell_honor_branch_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textColor="#FFA7A7A7"
+                android:textSize="12sp"
+                tools:text="创泰华东销售二部" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_toolbar"
+    android:layout_width="match_parent"
+    android:background="@drawable/common_toolbar_message_bg"
+    android:layout_height="?attr/actionBarSize">
+
+    <TextView
+        android:id="@+id/common_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/cadetblue" />
+
+</android.support.v7.widget.Toolbar>

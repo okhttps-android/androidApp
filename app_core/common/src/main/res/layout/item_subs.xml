@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/subs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="沈佳" />
+
+        <TextView
+            android:id="@+id/plan"
+            style="@style/TextView_VerticalCenter"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text=" 万元" />
+
+        <TextView
+            android:id="@+id/salea"
+            style="@style/TextView_VerticalCenter"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:text=" 万元" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/custs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/TextView_Basic"
+            android:layout_marginLeft="10dp"
+            android:text="深圳优软科技有限公司" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tag"
+                style="@style/TextView_Basic"
+                android:layout_marginLeft="10dp"
+                android:text="最后跟进时间  " />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最后跟进时间" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="距离上次跟进188天" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:gravity="center_horizontal"
+    android:background="@color/bg_main"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+   >
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/select_flights"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main"
+        android:layout_marginTop="10dp"
+        />
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="5dp"
+           android:orientation="vertical">
+
+           <com.core.widget.MyListView
+               android:id="@+id/flihts_list"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               >
+           </com.core.widget.MyListView>
+
+           <TextView
+               android:id="@+id/rest_tv"
+               android:background="#c9e2fd"
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:text="@string/rest"
+               android:gravity="center"
+               android:textSize="17sp"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               />
+       </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

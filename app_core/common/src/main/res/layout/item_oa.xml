@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/statys_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="status_tv"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_min" />
+
+        <ImageView
+            android:id="@+id/status_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:src="@drawable/oa_doit" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/title_remak_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/statys_rl"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="name_remak_tv"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/addr_time_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_remak_tv"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/statys_rl"
+        android:text="addr_time_tv" />
+
+    <TextView
+        android:id="@+id/object_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addr_time_tv"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/statys_rl"
+        android:text="addr_time_tv" />
+</RelativeLayout>

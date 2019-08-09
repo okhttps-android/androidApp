@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/pop_round_bg"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入你的问题"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main"
+        android:layout_gravity="left"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/msg_et"
+                style="@style/form_relative_right_text"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:maxLength="99"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/editname_et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:hint="@string/common_input2"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main"
+            android:gravity="center_horizontal"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_error_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_invalid"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/sure_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bule_btn"
+            android:padding="10dp"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

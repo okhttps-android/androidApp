@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:sl_cornerRadius="0dp"
+    app:sl_dx="0dp"
+    app:sl_dy="-2dp"
+    app:sl_shadowColor="@color/shadow"
+    app:sl_shadowRadius="1dp">
+        <ListView
+            android:id="@+id/mList"
+            style="@style/ListViewBasic"
+         android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0dp">
+        </ListView>
+</RelativeLayout>

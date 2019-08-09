@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/mPullToRefreshScrollView"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/paddingMin"
+        android:paddingBottom="@dimen/padding"
+        android:orientation="vertical">
+
+        <!--start 添加按钮-->
+        <com.core.widget.view.MyGridView
+            android:id="@+id/addGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:numColumns="4"
+            android:padding="@dimen/padding"
+            android:verticalSpacing="@dimen/padding" />
+        <!--end 添加按钮-->
+        <!--start 客户看板-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingMin">
+
+            <TextView
+                android:id="@+id/showCustomerTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_show_customer"
+                android:drawablePadding="@dimen/paddingMin"
+                android:gravity="center"
+                android:text="客户看板"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/showCustomerTv"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/oa_next"
+                android:text="2018-08"
+                android:textColor="#FF666666"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <com.core.widget.view.MyLineGridView
+            android:id="@+id/showCustomerGv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:numColumns="2"
+            android:padding="@dimen/padding" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingRight="@dimen/paddingMin">
+            <!--ic_business_refresh-->
+            <ImageView
+                android:id="@+id/showCustomerRefIv"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_business_refresh" />
+
+            <TextView
+                android:id="@+id/showCustomerRefTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/showCustomerRefIv"
+                android:text="2018-09-23 17:45"
+                android:textColor="#FF666666"
+                android:layout_centerVertical="true"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <!--end 客户看板-->
+        <!--start 遗忘客户-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingMin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_forget_customer"
+                android:drawablePadding="@dimen/paddingMin"
+                android:gravity="center"
+                android:text="遗忘客户"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/forgetCustomerTv"
+                android:layout_width="wrap_content"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/oa_next"
+                android:text="@string/more_info"
+                android:textColor="#FF666666"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <com.core.widget.MyListView
+            android:id="@+id/forgetCustomerLv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="200dp"
+            android:dividerHeight="0dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingRight="@dimen/paddingMin">
+            <!--ic_business_refresh-->
+            <ImageView
+                android:id="@+id/forgetCustomerRefIv"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_business_refresh" />
+
+            <TextView
+                android:id="@+id/forgetCustomerRefTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/forgetCustomerRefIv"
+                android:text="2018-09-23 17:45"
+                android:textColor="#FF666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <!--end 遗忘客户-->
+
+
+        <!--start 客户关怀-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingMin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_customer_care"
+                android:drawablePadding="@dimen/paddingMin"
+                android:text="客户关怀"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/customerCareTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/oa_next"
+                android:text="@string/more_info"
+                android:textColor="#FF666666"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <com.core.widget.MyListView
+            android:id="@+id/customerCareLv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:dividerHeight="0dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingRight="@dimen/paddingMin">
+            <!--ic_business_refresh-->
+            <ImageView
+                android:id="@+id/customerCareRefIv"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_business_refresh" />
+
+            <TextView
+                android:id="@+id/customerCareRefTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/customerCareRefIv"
+                android:text="2018-09-23 17:45"
+                android:textColor="#FF666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <!--end 客户关怀-->
+
+
+        <!--start 拜访统计-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingMin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_customer_visit"
+                android:drawablePadding="@dimen/paddingMin"
+                android:text="拜访统计"
+                android:textColor="#FF333333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/visitTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:drawableRight="@drawable/oa_next"
+                android:text="@string/more_info"
+                android:textColor="#FF666666"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <com.core.widget.MyListView
+            android:id="@+id/visitLv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:dividerHeight="0dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingRight="@dimen/paddingMin">
+            <!--ic_business_refresh-->
+            <ImageView
+                android:id="@+id/visitRefIv"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_business_refresh" />
+
+            <TextView
+                android:id="@+id/visitRefTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/visitRefIv"
+                android:text="2018-09-23 17:45"
+                android:textColor="#FF666666"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <!--end 拜访统计-->
+    </LinearLayout>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

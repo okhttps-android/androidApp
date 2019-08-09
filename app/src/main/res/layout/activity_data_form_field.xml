@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ebe9e9"
+            android:orientation="vertical"
+            tools:context="com.xzjmyk.pm.activity.ui.erp.activity.form.DataFormFieldActivity">
+
+            <LinearLayout
+                android:id="@+id/ll_add"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:background="#f5f4f4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="添加字段"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:text="点击即为添加..." />
+            </LinearLayout>
+
+            <com.core.widget.view.MyStickyGridHeadersGridView
+                android:id="@+id/asset_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp"
+                android:background="#faf9f9"
+                android:clipToPadding="false"
+                android:columnWidth="90dip"
+                android:horizontalSpacing="15dip"
+                android:listSelector="@color/light_grey"
+                android:numColumns="auto_fit"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:scrollbars="none"
+                android:verticalSpacing="10dip"
+                />
+
+            <LinearLayout
+                android:id="@+id/ll_hide"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:background="#f5f4f4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="隐藏字段"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:text="点击即为隐藏..." />
+            </LinearLayout>
+
+            <com.core.widget.view.MyStickyGridHeadersGridView
+                android:id="@+id/asset_grid_delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp"
+                android:background="#faf9f9"
+                android:clipToPadding="false"
+                android:columnWidth="90dip"
+                android:horizontalSpacing="15dip"
+                android:listSelector="@color/light_grey"
+                android:numColumns="auto_fit"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:scrollbars="none"
+                android:verticalSpacing="10dip" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!---->
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_bule_btn"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:text="确定"
+        android:textColor="@color/white" />
+</RelativeLayout>
+
+
+

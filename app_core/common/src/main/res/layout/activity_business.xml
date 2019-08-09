@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/sv_funnel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.xzjmyk.pm.activity.ui.erp.activity.crm.BusinessActivity">
+
+            <TextView
+                android:id="@+id/business_funnel_type_tv"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:textColor="#FF139EFE"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_funnel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/business_funnel_type_tv">
+
+                <LinearLayout
+                    android:id="@+id/ll_funnel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.uas.appworks.CRM.erp.view.FunnelView
+                        android:id="@+id/funnelview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:maxHeight="10000dp"
+                        android:minHeight="200dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/business_funnel_switch_left"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_switch_left"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/business_funnel_switch_right"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_switch_right"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_funnel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rl_funnel"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="-20dp"
+                android:text="@string/business_Selling_funnel" />
+
+            <include
+                android:id="@+id/inc_grid"
+                layout="@layout/inculde_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_funnel"></include>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        style="@style/LinearLayout_horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/bt_create"
+            style="@style/crm_business_btn"
+            android:text="@string/crm_creat_business" />
+
+        <Button
+            android:id="@+id/bt_qiang"
+            style="@style/crm_business_btn"
+            android:text="@string/business_seize" />
+
+        <Button
+            android:id="@+id/bt_manage"
+            style="@style/crm_business_btn"
+            android:text="@string/business_distribution" />
+
+        <Button
+            android:id="@+id/bt_go"
+            style="@style/crm_business_btn"
+            android:text="@string/business_followup" />
+    </LinearLayout>
+</RelativeLayout>
+

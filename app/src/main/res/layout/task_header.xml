@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/antionbarcolor">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:id="@+id/ll_top_state"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/shape_process_linear"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/wait_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/shape_process_item"
+            android:gravity="center"
+            android:text="@string/task_wait_todo"
+            android:textColor="@color/selector_schedule_text" />
+
+        <TextView
+            android:id="@+id/done_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_process_item"
+            android:gravity="center"
+            android:text="@string/task_done_deal"
+            android:textColor="@color/selector_schedule_text" />
+
+        <TextView
+            android:id="@+id/isend_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/shape_process_item"
+            android:gravity="center"
+            android:text="@string/task_request_me"
+            android:textColor="@color/selector_schedule_text" />
+
+    </LinearLayout>
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:drawableRight="@drawable/down"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/text_main" />-->
+
+     <!--<ImageView-->
+          <!--android:id="@+id/seting"-->
+          <!--android:layout_width="40dp"-->
+          <!--android:layout_height="match_parent"-->
+          <!--android:layout_alignParentRight="true"-->
+          <!--android:padding="8dp"-->
+          <!--android:src="@drawable/setting" />-->
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <com.core.widget.VoiceSearchView
+        android:id="@+id/voiceSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone" />
+
+    <com.core.widget.DrawableCenterTextView
+        android:id="@+id/message_net_set"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#fcd8d8"
+        android:drawableLeft="@drawable/ic_net_noticce"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="当前网络不可用，请检查您的网络设置"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+
+    <com.modular.appmessages.widget.SignRefreshLayout
+        android:id="@+id/mSignRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.modular.appmessages.widget.SignRefreshLayout>
+
+</LinearLayout>

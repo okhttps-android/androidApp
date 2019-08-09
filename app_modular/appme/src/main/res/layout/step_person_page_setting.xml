@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/cancel_attention_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/text_click_bg"
+        android:gravity="center"
+        android:text="取消关注"
+        android:textColor="@color/text_main"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/not_rankingwith_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/text_click_bg"
+        android:gravity="center"
+        android:text="不与他(她)排行"
+        android:textColor="@color/text_main"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/share_friend_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/text_click_bg"
+        android:gravity="center"
+        android:text="分享给朋友"
+        android:textColor="@color/text_main"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/share_monments_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/text_click_bg"
+        android:gravity="center"
+        android:text="分享到工作圈"
+        android:textColor="@color/text_main"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/black_gray"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/cancel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/text_click_bg"
+        android:gravity="center"
+        android:text="@string/common_cancel"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+</LinearLayout>

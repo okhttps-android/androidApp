@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:whatever="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="@color/item_line" />
+
+            <RelativeLayout
+                style="@style/IMTbleLine2"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    style="@style/form_relative_left_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/common_title"
+                    android:textColor="@color/text_main"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/name_tv"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <com.andreabaccega.widget.FormEditText
+                    android:id="@+id/reimbursement_title_fet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/name_tv"
+                    android:layout_alignBottom="@+id/name_tv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/name_tv"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/common_input2"
+                    android:maxLength="30"
+                    android:textColor="@color/dark_dark_grey"
+                    android:textSize="15sp"
+                    whatever:customRegexp="^[A-Za-z\u4e00-\u9fa5]{1,30}+$"
+                    whatever:testErrorString="限制30个之内有效中英文字符"
+                    whatever:testType="regexp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+            <RelativeLayout
+                style="@style/IMTbleLine2"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/type_left"
+                    style="@style/form_relative_left_text"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/Reimbursement_type"
+                    android:textColor="@color/text_main"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/type_left"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/reimbursement_type_fet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/type_left"
+                    android:background="@null"
+                    android:layout_marginRight="@dimen/next_width"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/common_select1"
+                    android:singleLine="true"
+                    android:textColor="@color/dark_dark_grey"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    style="@style/IMTbleLine_ArrowImg"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/app_name" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+            <RelativeLayout
+                android:id="@+id/currency_rl"
+                style="@style/IMTbleLine2"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/reimbursement_type"
+                    style="@style/form_relative_left_text"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/currency"
+                    android:textColor="@color/text_main"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/reimbursement_type"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/reimbursement_currency_fet"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:layout_marginRight="@dimen/next_width"
+                    android:gravity="center_vertical|right"
+                    android:text="RMB"
+                    android:textColor="@color/dark_dark_grey"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    style="@style/IMTbleLine_ArrowImg"
+                    android:layout_alignParentRight="true"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="@color/item_line" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/item_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/Consumer_details"
+                    android:textColor="@color/text_main" />
+
+                <TextView
+                    android:id="@+id/add_details_tv"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="@string/new_add"
+                    android:textColor="@color/blue" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/detail_table_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/detail_table_top_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <View style="@style/expense_table_h_1dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View style="@style/expense_table_v_1dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:paddingLeft="10dp"
+                            android:text="@string/type" />
+
+                        <View style="@style/expense_table_v_1dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="2"
+                            android:paddingLeft="10dp"
+                            android:text="@string/Amount_of_money" />
+
+                        <View style="@style/expense_table_v_1dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/common_delete" />
+
+                        <View style="@style/expense_table_v_1dp" />
+                    </LinearLayout>
+
+                    <View style="@style/expense_table_h_1dp" />
+                </LinearLayout>
+
+                <com.core.widget.MyListView
+                    android:id="@+id/table_details_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"></com.core.widget.MyListView>
+
+                <LinearLayout
+                    android:id="@+id/detail_table_bottom_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:id="@+id/left_view_v"
+                            style="@style/expense_table_v_1dp" />
+
+                        <View
+                            android:id="@+id/right_view_v"
+                            style="@style/expense_table_v_1dp"
+                            android:layout_alignParentRight="true" />
+
+                        <TextView
+                            android:id="@+id/automatic_calculation_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/left_view_v"
+                            android:text="自动计算"
+                            android:textColor="@color/blue"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/i_calculation_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@id/automatic_calculation_tv"
+                            android:text="@string/calculator_name"
+                            android:textColor="@color/blue"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/sum_money_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_toLeftOf="@+id/right_view_v"
+                            android:textColor="@color/red" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/sum_money_tv"
+                            android:text="@string/all_Amount_of_money"
+                            android:textColor="@color/text_main" />
+                    </RelativeLayout>
+
+                    <View style="@style/expense_table_h_1dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:layout_marginTop="10dp"
+                android:background="@color/item_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/Add_invoice"
+                android:textColor="@color/text_main" />
+
+            <LinearLayout
+                android:id="@+id/select_img_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <com.core.widget.view.MyGridView
+                    android:id="@+id/grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:horizontalSpacing="3dp"
+                    android:listSelector="#00000000"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="3dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:baselineAligned="false"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_bule_btn"
+                    android:padding="10dp"
+                    android:text="@string/common_submit_button"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

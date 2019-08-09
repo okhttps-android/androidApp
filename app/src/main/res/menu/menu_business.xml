@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xzjmyk.pm.activity.MainActivity" >
+
+    <item
+        android:id="@+id/send_qzone"
+        android:icon="@drawable/icon_camera_nor"
+        android:title="@string/qzone_send"
+        app:showAsAction="ifRoom"/>
+
+</menu>

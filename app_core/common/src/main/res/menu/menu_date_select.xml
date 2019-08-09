@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/oa_signin_set"
+        android:title="切换"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/oa_leave"
+        android:title="切换"
+        android:icon="@drawable/qiehuan2"
+        app:showAsAction="ifRoom"  />
+
+</menu>

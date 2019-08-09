@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/me_menu_item_normal"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <com.core.widget.CircleTextView
+        android:id="@+id/grid_data_inquiry_menu_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundColor="#4d70a6"
+        tools:text="B"/>
+
+    <TextView
+        android:id="@+id/grid_data_inquiry_menu_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:textSize="14sp"
+        tools:text="BOM"/>
+</LinearLayout>

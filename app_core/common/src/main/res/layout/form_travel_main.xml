@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_main"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="基本资料"
+                android:background="@color/oa_bg"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp"
+                android:textSize="18sp"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:id="@+id/ly_head_display"
+                style="@style/form_linear_customer">
+
+                <RelativeLayout
+                    android:id="@+id/ry_extra_no"
+                    style="@style/form_relative_customer"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_order_no"
+                        style="@style/form_relative_left_image"
+                        android:src="@drawable/icon_order_no" />
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        style="@style/form_relative_left_text"
+                        android:layout_toEndOf="@+id/iv_order_no"
+                        android:layout_toRightOf="@+id/iv_order_no"
+                        android:text="单据编号：" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_extra_no"
+                        style="@style/form_relative_right_text"
+                        editTextFormExample:testType="nocheck"></com.andreabaccega.widget.FormEditText>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ry_extra_encode"
+                    style="@style/form_relative_customer"
+                    android:background="@color/item_color1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_set_title"
+                        style="@style/form_relative_left_text"
+
+                        android:text="申  请  人：" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_trave_linkman"
+                        style="@style/form_relative_right_text"
+                        editTextFormExample:testType="nocheck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ry_extra_deparment"
+                    style="@style/form_relative_customer"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_extra_deparment"
+                        style="@style/form_relative_left_image"
+                        android:src="@drawable/icon_deperment" />
+
+                    <TextView
+                        android:id="@+id/tv_extra_deparment"
+                        style="@style/form_relative_left_text"
+                        android:layout_toEndOf="@+id/iv_extra_deparment"
+                        android:layout_toRightOf="@+id/iv_extra_deparment"
+                        android:text="部门：" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_extra_deparment"
+                        style="@style/form_relative_right_text"
+                        editTextFormExample:testType="nocheck" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ry_extra_type"
+                    style="@style/form_relative_customer"
+                    android:background="@color/item_color2"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_trave_type"
+                        style="@style/form_relative_left_text"
+
+                        android:text="人员类型：" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_trave_type"
+                        style="@style/form_relative_right_text"
+                        editTextFormExample:testType="nocheck" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ry_leader_no"
+                    style="@style/form_relative_customer"
+                    android:background="@color/item_color1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_pushid"
+                        style="@style/form_relative_left_text"
+
+                        android:text="预计天数：" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_trave_address"
+                        style="@style/form_relative_right_text"
+                        editTextFormExample:testType="nocheck" />
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/ry_stay"
+                    style="@style/form_relative_customer"
+                    android:background="@color/item_color2"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_set_stay"
+                        style="@style/form_relative_left_text"
+
+                        android:text="接洽对象：" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_trave_stay"
+                        style="@style/form_relative_right_text"
+                        whatever:testType="nocheck" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ry_relations"
+                    style="@style/form_relative_customer"
+                    android:background="@color/item_color1"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_set_relations"
+                        style="@style/form_relative_left_text"
+
+                        android:text="工作项目：" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_trave_relations"
+                        style="@style/form_relative_right_text"
+                        whatever:testType="nocheck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ry_extra_reason_say"
+                    style="@style/form_relative_customer"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_set_t"
+                        style="@style/form_relative_left_text"
+
+
+                        android:text=" 考    勤 ：" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_extra_sign"
+                        style="@style/form_relative_right_text"
+                        editTextFormExample:testType="nocheck" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bottom_display"
+
+                style="@style/form_linear_customer">
+
+                <RelativeLayout
+                    android:id="@+id/ry_extra_startdate"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_set_startdate"
+                        style="@style/form_relative_left_text"
+                        android:layout_marginLeft="0dp"
+                        android:text="@string/start_time"
+                        android:textSize="15sp"/>
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_extra_starttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="@string/common_select"
+                        android:textSize="15sp"/>
+                </RelativeLayout>
+
+                <ImageView style="@style/app_comm_list_line_gray" />
+
+                <RelativeLayout
+                    android:id="@+id/ry_extra_endtime"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_set_endtime"
+                        style="@style/form_relative_left_text"
+                        android:layout_marginLeft="0dp"
+                        android:text="@string/end_time"
+                        android:textSize="15sp"
+                        />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_extra_endtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="@string/common_select"
+                        android:textSize="15sp"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+                <RelativeLayout
+                    android:id="@+id/ry_leader_name"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_set_tit"
+                        style="@style/form_relative_left_text"
+                        android:layout_marginLeft="0dp"
+                        android:text="@string/travel_reason"
+                        android:textSize="15sp"/>
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_trave_route"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:hint="@string/common_input"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:maxWidth="200dp"
+                        android:gravity="center_vertical|right"
+                        android:textSize="15sp"/>
+                    <ImageView
+                        android:id="@+id/voice_event_iv"
+                        android:background="@drawable/btn_yuyin_nor"
+                        android:visibility="visible"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/et_trave_route"
+                        />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+                <RelativeLayout
+                    style="@style/IMTbleLine2"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/form_relative_left_text"
+                        android:layout_marginLeft="0dp"
+                        android:text="备注" />
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:hint="@string/common_input"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ming_detail"
+                    android:background="@color/oa_bg"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="16sp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+                <RelativeLayout
+                    android:id="@+id/ry_traffic"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_set_traffic"
+                        style="@style/form_relative_left_text"
+                        android:layout_marginLeft="0dp"
+                        android:text="@string/travel_destination"
+                        android:textSize="15sp"/>
+
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_trave_traffic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:hint="@string/common_input"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:maxWidth="200dp"
+                        android:gravity="center_vertical|right"
+                        android:textSize="15sp"/>
+                    <ImageView
+                        android:id="@+id/voice_search_iv"
+                        android:background="@drawable/btn_yuyin_nor"
+                        android:visibility="visible"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/et_trave_traffic"
+                        />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+ 新增明细"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/titleBlue"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_bottom_save"
+                style="@style/form_linear_customer"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/bt_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_bule_btn"
+                    android:padding="10dp"
+                    android:text="@string/common_submit_button"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main"/>
+            </LinearLayout>
+
+<include layout="@layout/item_work_view"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

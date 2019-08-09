@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同步日程到手机系统中"
+            android:textColor="#FF383838"
+            android:textSize="14sp" />
+
+        <com.core.widget.view.SwitchView
+            android:id="@+id/saveSystemSv"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding"
+        android:padding="@dimen/padding"
+        android:text="同步日程到手机系统中，系统日程也可以同步到uu互联日程表中"
+        android:textColor="#FF7E7E7E"
+        android:textSize="10sp" />
+
+    <RelativeLayout
+        android:id="@+id/warmTimeRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认提示时间"
+            android:layout_marginLeft="@dimen/padding"
+
+            android:layout_centerVertical="true"
+            android:textColor="#FF383838"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/warmTimeTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:gravity="right|center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/oa_next"
+            android:text="开始时"
+            android:drawablePadding="@dimen/padding"
+            android:textColor="#FF797979"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/linen"/>
+
+    <RelativeLayout
+        android:id="@+id/repeatRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒重复默认"
+            android:layout_marginLeft="@dimen/padding"
+            android:textColor="#FF383838"
+            android:layout_centerVertical="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/repeatTv"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical|right"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding"
+            android:drawableRight="@drawable/oa_next"
+            android:text="不重复"
+            android:drawablePadding="@dimen/padding"
+            android:textColor="#FF797979"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>

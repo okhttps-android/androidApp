@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:id="@+id/mRootLL"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/bottom"
+        android:layout_weight="1"
+        android:background="#F2F2F2"
+        android:focusableInTouchMode="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/contentRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/viewOperation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding"
+        android:background="#f2f2f2" />
+
+    <RelativeLayout
+        android:id="@+id/opinionRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/viewOperation"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/commonWordsIV"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/voiceIV"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/changyongyu"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/voiceIV"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/commonWordsIV"
+            android:src="@drawable/btn_yuyin_nor"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/inputTagIV"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/shuru" />
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/opinionET"
+            style="@style/form_relative_right_text2"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/voiceIV"
+            android:layout_toRightOf="@+id/inputTagIV"
+            android:hint="请输入审批意见..."
+            android:minHeight="50dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            whatever:customRegexp="^[\\s\\S]{0,30}$"
+            whatever:testErrorString="输入错误或内容超长"
+            whatever:testType="regexp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/viewOperationtop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding"
+        android:background="#f2f2f2" />
+
+    <LinearLayout
+        android:id="@+id/operationLL"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/takeOverTV"
+            style="@style/bottomTextStyle"
+            android:layout_weight="2"
+            android:text="@string/take_over"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/agreeTV"
+            style="@style/bottomTextStyle"
+            android:layout_weight="2"
+            android:background="@drawable/bg_transparent_bule"
+            android:text="@string/agree"
+            android:textColor="@drawable/text_bule_white_bg" />
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/item_line" />
+
+        <Button
+            android:id="@+id/disagreeTV"
+            style="@style/bottomTextStyle"
+            android:layout_weight="3"
+            android:background="@drawable/bg_transparent_bule"
+            android:text="@string/common_disagree"
+            android:textColor="@drawable/text_bule_white_bg" />
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/item_line" />
+
+        <TextView
+            android:id="@+id/changedealmanTV"
+            style="@style/bottomTextStyle"
+            android:layout_weight="5"
+            android:background="@drawable/bg_transparent_bule"
+            android:text="@string/common_changedealman"
+            android:textColor="@drawable/text_bule_white_bg" />
+
+
+        <View
+
+            android:layout_width="@dimen/line"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/item_line" />
+
+        <Button
+            android:id="@+id/nextTV"
+            style="@style/bottomTextStyle"
+            android:layout_weight="3"
+            android:background="@drawable/bg_transparent_bule"
+            android:text="@string/next_article"
+            android:textColor="@drawable/text_bule_white_bg" />
+    </LinearLayout>
+
+
+</LinearLayout>

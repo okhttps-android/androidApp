@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.core.widget.VoiceSearchView
+        android:id="@+id/mSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <com.module.recyclerlibrary.ui.refresh.simlpe.SimpleRefreshLayout
+        android:id="@+id/mRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.module.recyclerlibrary.ui.refresh.EmptyRecyclerView
+            android:id="@+id/mEmptyRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.module.recyclerlibrary.ui.refresh.simlpe.SimpleRefreshLayout>
+
+</LinearLayout>

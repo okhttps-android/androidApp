@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/common_toolbar_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backImg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:src="@drawable/ic_baseutil_back" />
+
+            <com.modular.apputils.widget.MenuVoiceSearchView
+                android:id="@+id/mVoiceSearchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:orientation="horizontal" />
+
+
+            <ImageView
+                android:id="@+id/addImg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:padding="@dimen/padding"
+                android:src="@drawable/more"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.module.recyclerlibrary.ui.refresh.simlpe.SimpleRefreshLayout
+        android:id="@+id/mSimpleRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.module.recyclerlibrary.ui.refresh.EmptyRecyclerView
+            android:id="@+id/mEmptyRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.module.recyclerlibrary.ui.refresh.simlpe.SimpleRefreshLayout>
+</LinearLayout>

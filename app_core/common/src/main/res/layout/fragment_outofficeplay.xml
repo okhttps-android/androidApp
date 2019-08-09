@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/top_fl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/rili_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/oa_signin_tv_bg"
+                android:drawableLeft="@drawable/outoffice_sin"
+                android:drawableRight="@drawable/oa_next"
+                android:text="2016-07-01" />
+            <TextView
+                android:id="@+id/range_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_above="@+id/rili_tv"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/oa_signin_tv_bg"
+                android:drawableLeft="@drawable/outoffice_sin"
+                android:drawableRight="@drawable/oa_next"
+                android:text="范围：产品部" />
+            <TextView
+                android:id="@+id/spread_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="足迹分布"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/text_main"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/oa_next"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height">
+
+            <LinearLayout
+                android:id="@+id/played"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:minWidth="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/played_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/yellow_home"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/played_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/yellow_home"
+                    android:text="最新签到" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/unplay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/played"
+                android:gravity="center"
+                android:minWidth="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/unplay_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="@color/text_main"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/unplay_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="未签到" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

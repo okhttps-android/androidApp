@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/linear_task_background"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:text="录入人"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_task_man"
+            style="@style/task_text_right"
+            android:layout_marginLeft="10dp"
+            android:text="未填写" />
+
+    </LinearLayout>
+
+    <View style="@style/line_horizontal_style_one" />
+
+    <LinearLayout
+        style="@style/linear_task_background"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:text="时间"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_task_time"
+            style="@style/task_text_right"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <View style="@style/line_horizontal_style_one" />
+
+    <LinearLayout
+        style="@style/linear_task_background"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:text="内容"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tv_task_content"
+            style="@style/task_text_right" />
+    </LinearLayout>
+
+</LinearLayout>

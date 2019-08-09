@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/work_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/point"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:src="@drawable/signin_point" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="180dp"
+            android:layout_below="@+id/point"
+            android:layout_centerHorizontal="true"
+            android:background="@color/item_line" />
+
+        <TextView
+            android:id="@+id/work_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/point"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/point"
+            android:gravity="center"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/time_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/point"
+            android:layout_toLeftOf="@+id/work_time"
+            android:gravity="center"
+            android:text="@string/work_up_time"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+
+        <TextView
+            android:id="@+id/signin_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/point"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/point"
+            android:text="@string/work_signin"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/work_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/point"
+            android:layout_toRightOf="@+id/signin_tag"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/work_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signin_tag"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/point"
+            android:background="@drawable/oa_no_criterion"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_hine"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/work_supple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/work_tag"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/work_tag"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/btn_shensu"
+            android:textSize="@dimen/text_hine"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/point2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:padding="5dp"
+            android:src="@drawable/signin_point" />
+
+        <TextView
+            android:id="@+id/off_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/point2"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/point2"
+            android:gravity="center"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+
+        <TextView
+            android:id="@+id/signin_tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/point2"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/point2"
+            android:text="@string/unwork_signin"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/off_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/work_signin"
+            android:layout_alignTop="@+id/point2"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/off_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signin_tag2"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/point2"
+            android:background="@drawable/oa_no_criterion"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_hine"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/off_supple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/off_tag"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/off_tag"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/btn_shensu"
+            android:textSize="@dimen/text_hine"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/time_tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/off_time"
+            android:layout_alignBottom="@+id/off_time"
+            android:layout_toLeftOf="@+id/off_time"
+            android:layout_toStartOf="@+id/off_time"
+            android:gravity="center"
+            android:text="@string/work_off_time"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/free_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/signin_point" />
+
+
+        <TextView
+            android:id="@+id/free_work_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/point"
+            android:layout_toRightOf="@+id/point"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/free_work_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/point"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/point"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+    </LinearLayout>
+</FrameLayout>

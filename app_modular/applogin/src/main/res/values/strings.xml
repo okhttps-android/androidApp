@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppLogin</string>
+    <string name="modify_by_phone">通过手机验证</string>
+    <string name="modify_by_email">通过邮箱验证</string>
+    <string name="title_password_reset">密码重置</string>
+    <string name="obtain_verify_code">获取验证码</string>
+    <string name="verify_code_obtaining">验证码获取中...</string>
+    <string name="obtain_verify_code_failed">验证码获取失败</string>
+    <string name="verify_code_have_sent">验证码已发送，请注意接收</string>
+    <string name="str_enterprise_register">企业注册</string>
+    <string name="phone_pin_code">短信验证码</string>
+    <string name="str_password_points">*密码须为8-20字符的英文、数字混合</string>
+</resources>

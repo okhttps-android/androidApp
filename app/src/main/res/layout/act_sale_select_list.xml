@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <com.core.widget.VoiceSearchView
+        android:id="@+id/voiceSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <View
+        android:id="@+id/view_v1"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/top"
+        android:background="#E6E6E6"
+        android:divider="@drawable/bg_bar"
+        android:visibility="gone" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_sale_list"
+        style="@style/ListViewdoc"
+        android:layout_below="@id/voiceSearchView"
+        android:layerType="software"
+        android:background="@color/base_bg"
+        android:scrollingCache="false" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/fab_add"
+        android:visibility="gone"
+        app:fab_colorNormal="#3388FF"
+        app:fab_elevationCompat="4dp" />
+
+    <LinearLayout
+        android:id="@+id/tv_dispaly_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</RelativeLayout>

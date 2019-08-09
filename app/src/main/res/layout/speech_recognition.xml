@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/sr_identify_words_et"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:gravity="top"
+        android:inputType="textMultiLine">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/sr_speak_start_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击开始说话"
+        android:layout_gravity="center"/>
+</LinearLayout>

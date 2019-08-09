@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.xzjmyk.pm.activity.MainActivity">
+
+    <item
+        android:id="@+id/basic_info_more"
+        android:icon="@drawable/ic_dot_more"
+        android:title="更多"
+        app:showAsAction="ifRoom"/>
+    <!--<item
+        android:id="@+id/set_remark_name"
+        android:title="@string/set_remark_name" />
+    <item
+        android:id="@+id/remove_blacklist"
+        android:title="@string/remove_blacklist" />
+    <item
+        android:id="@+id/add_blacklist"
+        android:title="@string/add_blacklist" />
+    &lt;!&ndash;<item&ndash;&gt;
+        &lt;!&ndash;android:id="@+id/set_more_attention"&ndash;&gt;
+        &lt;!&ndash;android:title="@string/more_attention" />&ndash;&gt;
+    <item
+        android:id="@+id/cancel_attention"
+        android:title="@string/cancel_attention" />
+    <item
+        android:id="@+id/delete_all"
+        android:title="@string/delete_all" />-->
+
+</menu>

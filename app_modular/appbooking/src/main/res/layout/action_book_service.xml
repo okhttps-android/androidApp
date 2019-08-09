@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/book_service_action"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <ImageView
+        android:id="@+id/book_service_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_baseutil_back" />
+
+    <com.core.widget.DrawableCenterTextView
+        android:id="@+id/book_service_et"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/search_input"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:padding="6dp"
+        android:text="@string/search" />
+
+</RelativeLayout>

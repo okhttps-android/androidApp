@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:id="@+id/fristRL"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/fristIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/fristTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#afaeaeae"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:padding="5dp"
+            android:text="fristIV"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/normalRL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/item_line" />
+
+        <ImageView
+            android:id="@+id/normalIV"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/normalTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/normalIV"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:padding="5dp"
+            android:textSize="@dimen/text_main" />
+
+
+    </RelativeLayout>
+</FrameLayout>

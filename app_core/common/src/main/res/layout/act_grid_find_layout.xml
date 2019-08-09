@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/gv_home_display"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="0.5dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="0.5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/view_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+        <include layout="@layout/view_empty" />
+    </RelativeLayout>
+</LinearLayout>

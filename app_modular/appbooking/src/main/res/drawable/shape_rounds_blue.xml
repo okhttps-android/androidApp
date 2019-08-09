@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/icon_seats_lock">
+    </item>
+    <item >
+        <shape  android:shape="rectangle">
+            <corners
+                android:topLeftRadius="100dp"
+                android:topRightRadius="100dp"
+                android:bottomRightRadius="100dp"
+                android:bottomLeftRadius="100dp">
+            </corners>
+            <solid
+                android:color="#58bae9">
+            </solid>
+        </shape>
+    </item>
+</selector>

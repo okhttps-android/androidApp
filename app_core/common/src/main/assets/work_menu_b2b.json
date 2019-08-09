@@ -1,0 +1,199 @@
+[
+  {
+    "moduleName": "str_uu_application",
+    "isLocalModule": true,
+    "moduleTag": "uu_application",
+    "moduleId": "",
+    "moduleVisible": true,
+    "moduleList": [
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_subscribe_secretary",
+        "menuIcon": "ic_work_subscribe_secretary",
+        "menuActivity": "com.modular.booking.BookingListActivity",
+        "menuTag": "local_subscribe_secretary",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_uu_sports",
+        "menuIcon": "ic_work_uu_sports",
+        "menuActivity": "com.modular.appme.UURanking",
+        "menuTag": "local_uu_sports",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "charitable",
+        "menuIcon": "ic_work_charitable_donations",
+        "menuActivity": "com.modular.work.CharitableActivity",
+        "menuTag": "local_charitable_donations",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_invite_register",
+        "menuIcon": "ic_work_invite_register",
+        "menuActivity": "com.modular.work.InviteRegisterMainActivity",
+        "menuTag": "local_invite_register",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_uu_education",
+        "menuIcon": "ic_work_uu_education",
+        "menuActivity": "com.modular.apputils.activity.SimpleWebActivity",
+        "menuTag": "local_uu_education",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_yingtang_song",
+        "menuIcon": "icon_music_yingtang",
+        "menuActivity": "com.usoftchina.pay.MainMusicActivity",
+        "menuTag": "local_yingtang_song",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      }
+    ]
+  },
+  {
+    "moduleName": "str_administrative_office",
+    "isLocalModule": true,
+    "moduleTag": "administrative_office",
+    "moduleId": "",
+    "moduleVisible": true,
+    "moduleList": [
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_work_approval",
+        "menuIcon": "ic_work_work_approval",
+        "menuActivity": "com.modular.work.ProcessB2BActivity",
+        "menuTag": "local_work_approval",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_backlog",
+        "menuIcon": "ic_work_backlog",
+        "menuActivity": "com.modular.task.TaskB2BActivity",
+        "menuTag": "local_backlog",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_work_calendar",
+        "menuIcon": "ic_work_work_calendar",
+        "menuActivity": "com.modular.work.OAActivity",
+        "menuTag": "local_work_calendar",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_work_report",
+        "menuIcon": "ic_work_work_report",
+        "menuActivity": "com.modular.plat.WorkDailyAddActivity",
+        "menuTag": "local_work_report",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_punch_clock",
+        "menuIcon": "ic_work_punch_clock",
+        "menuActivity": "com.modular.work.WorkActivity",
+        "menuTag": "local_punch_clock",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_outwork_sign",
+        "menuIcon": "ic_work_outwork_sign",
+        "menuActivity": "com.modular.work.MissionActivity",
+        "menuTag": "local_outwork_sign",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_overtime_request",
+        "menuIcon": "ic_work_overtime_request",
+        "menuActivity": "com.modular.plat.WorkExtraActivity",
+        "menuTag": "local_overtime_request",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_leave_request",
+        "menuIcon": "ic_work_leave_request",
+        "menuActivity": "com.modular.oa.PlatLeaveAddActivity",
+        "menuTag": "local_leave_request",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_travel_request",
+        "menuIcon": "ic_work_travel_request",
+        "menuActivity": "com.modular.plat.TravelActivity",
+        "menuTag": "local_travel_request",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      }
+    ]
+  },
+  {
+    "moduleName": "str_usoft_cloud_platform",
+    "isLocalModule": true,
+    "moduleTag": "usoft_cloud_platform",
+    "moduleId": "",
+    "moduleVisible": true,
+    "moduleList": [
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_b2b_commerce",
+        "menuIcon": "ic_work_b2b_commerce",
+        "menuActivity": "com.modular.work.B2BBusinessLoginActivity",
+        "menuTag": "local_b2b_commerce",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      },
+      {
+        "isLocalMenu": true,
+        "menuName": "str_work_usoft_mall",
+        "menuIcon": "ic_work_usoft_mall",
+        "menuActivity": "com.modular.apputils.activity.SimpleWebActivity",
+        "menuTag": "local_usoft_mall",
+        "menuUrl": "",
+        "caller": "",
+        "isHide": false
+      }
+    ]
+  }
+]

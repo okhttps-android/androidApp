@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.crm.BusinessSelectCustomerActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:background="@drawable/bg_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="visible"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp">
+
+        <com.xzjmyk.pm.activity.view.ClearEditText
+            android:id="@+id/search_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_input"
+            android:drawableLeft="@drawable/search"
+            android:drawableRight="@drawable/search_clear"
+            android:hint="@string/search"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/grey"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/list_business"
+        android:layout_below="@+id/rl_search"
+        android:dividerHeight="5dp"
+        style="@style/ListViewBasic">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+</RelativeLayout>

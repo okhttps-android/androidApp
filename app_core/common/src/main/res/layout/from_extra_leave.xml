@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="基本资料"
+                android:background="@color/oa_bg"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="16sp"
+                />
+            <LinearLayout
+                android:id="@+id/ly_head_display"
+                style="@style/form_linear_customer">
+                <RelativeLayout
+                    android:id="@+id/ry_extra_no"
+                    style="@style/form_relative_customer"
+                    android:visibility="gone">
+                    <ImageView
+                        android:id="@+id/iv_order_no"
+                        style="@style/form_relative_left_image"
+                        android:src="@drawable/icon_order_no" />
+                    <TextView
+                        android:id="@+id/TextView01"
+                        style="@style/form_relative_left_text"
+                        android:layout_toEndOf="@+id/iv_order_no"
+                        android:layout_toRightOf="@+id/iv_order_no"
+                        android:text="单据编号：" />
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_extra_no"
+                        style="@style/form_relative_right_text"
+                        editTextFormExample:testType="nocheck"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/ry_extra_encode"
+                    style="@style/form_relative_customer"
+                    android:background="@color/item_color1"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/tv_set_title"
+                        style="@style/form_relative_left_text"
+                        android:text="  员    工 ：" />
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_extra_encode"
+                        style="@style/form_relative_right_text"
+                        editTextFormExample:testType="nocheck" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/ry_extra_deparment"
+                    style="@style/form_relative_customer"
+                    android:background="@color/item_color2"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/tv_extra_deparment"
+                        style="@style/form_relative_left_text"
+                        android:layout_toEndOf="@+id/iv_extra_deparment"
+                        android:layout_toRightOf="@+id/iv_extra_deparment"
+                        android:text="  部    门 ：" />
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_extra_deparment"
+                        style="@style/form_relative_right_text"
+                        editTextFormExample:testType="nocheck" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/ry_leader_no"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+                    <TextView
+                        android:id="@+id/tv_pushid"
+                        style="@style/form_relative_left_text"
+                        android:text="员工类型"
+                        android:layout_marginLeft="0dp"/>
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_leader_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:hint="@string/common_select"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"  />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+                <RelativeLayout
+                    android:id="@+id/ry_leader_name"
+                    style="@style/form_relative_customer"
+                    android:visibility="gone">
+                    <ImageView
+                        android:id="@+id/iv_set_ima"
+                        style="@style/form_relative_left_image"
+                        android:src="@drawable/icon_deperment_name" />
+                    <TextView
+                        android:id="@+id/tv_set_tit"
+                        style="@style/form_relative_left_text"
+                        android:layout_toEndOf="@+id/iv_set_ima"
+                        android:layout_toRightOf="@+id/iv_set_ima"
+                        android:text="责任人名称：" />
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_leader_name"
+                        style="@style/form_relative_right_text"
+                        editTextFormExample:testType="nocheck" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/ry_extra_reason"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+                    <TextView
+                        android:id="@+id/tv_set_ti"
+                        style="@style/form_relative_left_text"
+                        android:text="事由类型"
+                        android:layout_marginLeft="0dp"/>
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                                                           android:id="@+id/et_extra_resaon"
+                                                           android:layout_width="wrap_content"
+                                                           android:layout_height="wrap_content"
+                                                           android:textColor="@color/dark_dark_grey"
+                                                           android:padding="10dp"
+                                                           android:hint="@string/common_select"
+                                                           android:background="@null"
+                                                           android:layout_centerVertical="true"
+                                                           android:layout_alignParentRight="true"
+                                                           android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ly_bottom_display"
+                style="@style/form_linear_customer">
+                <RelativeLayout
+                    android:id="@+id/ry_extra_date"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+                    <TextView
+                        android:id="@+id/tv_set_"
+                        style="@style/form_relative_left_text"
+                        android:text="考勤时间"
+                        android:layout_marginLeft="0dp"/>
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_extra_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+                <RelativeLayout
+                    android:id="@+id/ry_extra_time"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="50dp"
+                    android:background="@color/white">
+                    <TextView
+                        android:id="@+id/tv_set_mail"
+                        style="@style/form_relative_left_text"
+                        android:text="结束时间"
+                        android:layout_marginLeft="0dp"/>
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_extra_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"/>
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+                <RelativeLayout
+                    android:id="@+id/ry_extra_reason_say"
+                    style="@style/IMTbleLine2"
+                    android:layout_height="150dp"
+                    android:background="@color/white">
+                    <TextView
+                        android:id="@+id/tv_set_t"
+                        style="@style/form_relative_left_text"
+                        android:layout_marginLeft="0dp"
+                        android:layout_width="80dp"
+                        android:text="事由说明(调休类/请在此处备注调休时间休息)" />
+                    <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/et_extra_resaon_say"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/dark_dark_grey"
+                        android:padding="10dp"
+                        android:hint="@string/common_input"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ly_bottom_save"
+                style="@style/form_linear_customer">
+                <Button
+                    android:id="@+id/bt_extra_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_bule_btn"
+                    android:padding="10dp"
+                    android:text="提交"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main" />
+            </LinearLayout>
+            <include layout="@layout/item_work_view"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

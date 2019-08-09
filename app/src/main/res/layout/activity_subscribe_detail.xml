@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/subscribe_detail_pb"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone"
+        android:progressTint="@color/titleBlue"
+        style="?android:attr/progressBarStyleHorizontal" />
+    <WebView
+        android:id="@+id/subscribe_detail_wv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </WebView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/transparent">
+        <Button
+            android:id="@+id/subscribe_detail_apply_btn"
+            style="@style/BlueButtonStyle"
+            android:layout_height="match_parent"
+            android:text="＋订阅"/>
+    </LinearLayout>
+
+</LinearLayout>

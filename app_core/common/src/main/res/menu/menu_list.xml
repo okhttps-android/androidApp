@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xzjmyk.pm.activity.MainActivity">
+
+    <item
+        android:id="@+id/push"
+        android:title="@string/more"
+        android:icon="@drawable/ic_oa_list"
+        app:showAsAction="ifRoom" />
+
+</menu>

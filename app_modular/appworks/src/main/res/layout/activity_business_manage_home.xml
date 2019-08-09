@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/business_manage_home_refreshlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srlAccentColor="@android:color/darker_gray" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/business_manage_home_mine_ll"
+                    style="@style/business_manage_header_item">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_business_header_mine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="我的商机"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/business_manage_home_company_ll"
+                    style="@style/business_manage_header_item"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_business_header_library" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="公共商机"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/business_manage_home_funnel_ll"
+                    style="@style/business_manage_header_item">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_business_header_funnel" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="销售漏斗"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/business_manage_home_grap_ll"
+                    style="@style/business_manage_header_item">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_business_header_race" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="抢占商机"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/business_manage_home_distribution_ll"
+                    style="@style/business_manage_header_item">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_business_header_distribution" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="商机分配"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_business_mold_data" />
+
+                <TextView
+                    style="@style/business_manage_mold_tilte"
+                    android:text="商机看板"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/business_manage_home_data_date_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/business_manage_home_data_date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#666666"
+                        android:textSize="10sp"
+                        tools:text="2018年8月" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/icon_zhankai_nor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="14dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/business_manage_base_text"
+                            android:text="新增商机"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/business_manage_home_data_newly_tv"
+                                style="@style/business_manage_blue_text"
+                                tools:text="5"
+                                />
+
+                            <TextView
+                                style="@style/business_manage_base_text"
+                                android:layout_marginLeft="3dp"
+                                android:text="个"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="3px"
+                        android:layout_height="match_parent"
+                        android:background="#F2F2F2" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/business_manage_base_text"
+                            android:text="阶段变化商机"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/business_manage_home_data_change_tv"
+                                style="@style/business_manage_blue_text"
+                                tools:text="5"
+                                />
+
+                            <TextView
+                                style="@style/business_manage_base_text"
+                                android:layout_marginLeft="3dp"
+                                android:text="个"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="#F2F2F2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="14dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/business_manage_base_text"
+                            android:text="赢单/输单/无效"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/business_manage_home_data_win_tv"
+                                style="@style/business_manage_blue_text"
+                                android:layout_width="wrap_content"
+                                tools:text="5" />
+
+                            <TextView
+                                style="@style/business_manage_blue_text"
+                                android:text="/"
+                                />
+
+                            <TextView
+                                android:id="@+id/business_manage_home_data_lose_tv"
+                                style="@style/business_manage_blue_text"
+                                tools:text="8"
+                                />
+
+                            <TextView
+                                style="@style/business_manage_blue_text"
+                                android:text="/"
+                                />
+
+                            <TextView
+                                android:id="@+id/business_manage_home_data_invalid_tv"
+                                style="@style/business_manage_blue_text"
+                                tools:text="2"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="3px"
+                        android:layout_height="match_parent"
+                        android:background="#F2F2F2" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/business_manage_base_text"
+                            android:text="商机跟进记录"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/business_manage_home_data_follow_tv"
+                                style="@style/business_manage_blue_text"
+                                tools:text="5"
+                                />
+
+                            <TextView
+                                style="@style/business_manage_base_text"
+                                android:layout_marginLeft="3dp"
+                                android:text="条"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="right"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/business_manage_home_data_refresh_tv"
+                    style="@style/business_manage_refresh_time"
+                    android:drawableRight="@drawable/ic_business_refresh"
+                    tools:text="2018-09-10 16:06" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_business_mold_rank" />
+
+                <TextView
+                    style="@style/business_manage_mold_tilte"
+                    android:text="商机转化率排行"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/business_manage_home_rank_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看全部"
+                        android:textColor="#666666"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/icon_zhankai_nor" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="排名"
+                    android:textColor="#FF666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="业务员"
+                    android:textColor="#FF666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="商机数(个)"
+                    android:textColor="#FF666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="赢单数(个)"
+                    android:textColor="#FF666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="成功率(%)"
+                    android:textColor="#FF666666"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/business_manage_home_rank_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="right"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/business_manage_home_rank_refresh_tv"
+                    style="@style/business_manage_refresh_time"
+                    android:drawableRight="@drawable/ic_business_refresh"
+                    tools:text="2018-09-10 16:06" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_business_mold_record" />
+
+                <TextView
+                    style="@style/business_manage_mold_tilte"
+                    android:text="最新销售记录"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/business_manage_home_record_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看全部"
+                        android:textColor="#666666"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/icon_zhankai_nor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/business_manage_home_record_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="right"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/business_manage_home_record_refresh_tv"
+                    style="@style/business_manage_refresh_time"
+                    android:drawableRight="@drawable/ic_business_refresh"
+                    tools:text="2018-09-10 16:06" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_business_mold_overtime" />
+
+                <TextView
+                    style="@style/business_manage_mold_tilte"
+                    android:text="超时未跟进商机"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/business_manage_home_overtime_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看全部"
+                        android:textColor="#666666"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="10dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/icon_zhankai_nor" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/business_manage_home_ovetime_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="right"
+                android:padding="6dp">
+
+                <TextView
+                    android:id="@+id/business_manage_home_overtime_refresh_tv"
+                    style="@style/business_manage_refresh_time"
+                    android:drawableRight="@drawable/ic_business_refresh"
+                    tools:text="2018-09-10 16:06" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

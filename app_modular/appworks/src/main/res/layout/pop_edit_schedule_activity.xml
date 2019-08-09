@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/commonPopView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_common_pop_option_item"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editTv"
+            style="@style/commonPopItemTop"
+            android:text="编辑日程" />
+
+        <View
+            android:id="@+id/super_setting_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/button_invalid" />
+
+
+        <TextView
+            android:id="@+id/deleteTv"
+            style="@style/commonPopSingleItem"
+            android:text="删除日程" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancel_tv"
+        style="@style/commonPopCancelItem"
+        android:text="@string/common_cancel" />
+
+</LinearLayout>

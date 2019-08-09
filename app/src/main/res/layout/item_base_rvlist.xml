@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/base_bg"
+                android:focusableInTouchMode="true">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/paddingApp"
+        android:background="@color/item_line"/>
+
+    <View
+        android:id="@+id/lineMin"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line"/>
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginLeft="4dp"
+        android:text="titleTV"
+        android:textColor="@color/titleBlue"
+        android:textSize="@dimen/text_main"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/titleTV">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/contentRV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:padding="@dimen/paddingApp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

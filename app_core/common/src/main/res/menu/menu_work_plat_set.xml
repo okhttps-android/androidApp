@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.xzjmyk.pm.activity.MainActivity">
+    <item
+        android:id="@+id/work_plat_set_iv"
+        android:icon="@drawable/ic_work_func_manage"
+        android:title="@string/setting"
+        app:showAsAction="always"
+        />
+</menu>

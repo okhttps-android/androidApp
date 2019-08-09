@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/approvalStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/context_ll"
+        style="@style/approvalStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/paddingApp">
+
+        <TextView
+            android:id="@+id/captionTV"
+            style="@style/approvalItemStyle"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:id="@+id/valuesFl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/valueEt"
+                style="@style/approvalItemStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:gravity="right"
+                android:textSize="12sp"
+                android:hint="@string/common_input2"
+                android:textColor="@color/text_main" />
+
+            <TextView
+                android:id="@+id/valueTv"
+                style="@style/approvalItemStyle"
+                android:layout_width="match_parent"
+                android:drawableRight="@drawable/oa_next"
+                android:gravity="right"
+                android:textColor="@color/text_main" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/context_ll"
+        android:background="@color/item_line" />
+</RelativeLayout>

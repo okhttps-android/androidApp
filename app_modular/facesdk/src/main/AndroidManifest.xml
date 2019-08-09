@@ -1,0 +1,19 @@
+<!--
+  ~ Copyright (C) 2017 Baidu, Inc. All Rights Reserved.
+  -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="demo.face.aip.baidu.com.facesdk">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <activity android:name="com.baidu.aip.excep.activity.RealTimeDetectFaceActivty"
+            android:label="刷脸打卡" />
+        <activity android:name="com.baidu.aip.excep.activity.FaceManageActivity"
+            android:label="人脸照片管理"/>
+    </application>
+
+</manifest>

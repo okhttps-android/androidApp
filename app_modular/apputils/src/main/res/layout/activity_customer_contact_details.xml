@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/bottomLL"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/callBtn"
+            android:layout_width="0dp"
+            android:background="@drawable/selector_me_menu_item_bg"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="打电话" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/item_line"/>
+        <Button
+            android:id="@+id/scheduleBtn"
+            android:layout_width="0dp"
+            android:background="@drawable/selector_me_menu_item_bg"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="安排日程" />
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/item_line"/>
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="0dp"
+            android:background="@drawable/selector_me_menu_item_bg"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="删除" />
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/item_line"/>
+        <Button
+            android:id="@+id/shareBtn"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:background="@drawable/selector_me_menu_item_bg"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="分享" />
+
+    </LinearLayout>
+
+    <com.module.recyclerlibrary.ui.refresh.EmptyRecyclerView
+        android:id="@+id/mEmptyRecyclerView"
+        android:layout_above="@id/bottomLL"
+        android:paddingBottom="@dimen/paddingMin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

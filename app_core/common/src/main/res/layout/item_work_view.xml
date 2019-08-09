@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_bottom_handler"
+    style="@style/form_linear_customer"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:visibility="gone">
+
+    <RadioButton
+        android:id="@+id/bt_add"
+        style="@style/from_button_base_white"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="false"
+        android:drawableTop="@drawable/work_add" />
+
+
+    <RadioButton
+        android:id="@+id/bt_commit"
+        style="@style/from_button_base_white"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="true"
+        android:drawableTop="@drawable/work_push" />
+
+
+    <RadioButton
+        android:id="@+id/bt_uncommit"
+        style="@style/from_button_base_white"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/work_unpush" />
+
+
+    <RadioButton
+        android:id="@+id/bt_update"
+        style="@style/from_button_base_white"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/work_undata" />
+
+</LinearLayout>

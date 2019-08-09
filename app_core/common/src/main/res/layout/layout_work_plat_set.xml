@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e9f0f5"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+    <TextView
+        android:id="@+id/work_plat_set_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_white_corner_white_bg"
+        android:drawableLeft="@drawable/ic_work_panel_set"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:paddingBottom="9dp"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:paddingTop="9dp"
+        android:text="工作模块设置"
+        android:textColor="#81A6C1"
+        android:textSize="12sp" />
+</LinearLayout>

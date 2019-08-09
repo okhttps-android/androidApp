@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:innerrect="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/scan_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <com.uuzuche.lib_zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            innerrect:inner_width="230dp"
+            innerrect:inner_height="230dp"
+            innerrect:inner_scan_speed="20"/>
+    </FrameLayout>
+<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scan_fl"
+        android:text="将二维码/条码置于扫描框内,即可自动扫描"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/transparent"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/back_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="取消"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FF8200"
+            android:gravity="center"/>
+        <!--<ImageView
+            android:id="@+id/qrcode_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/scan_light"
+            android:layout_marginRight="5dp"/>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding">
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="周杰伦"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/amountTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nameTv"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:text="102元"
+        android:textColor="@color/indianred"
+        android:textSize="@dimen/text_hine" />
+    <TextView
+        android:id="@+id/statusTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nameTv"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/nameTv"
+        android:background="@drawable/text_frame_circle_bg"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:text="未开奖"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+
+    <TextView
+        android:id="@+id/timeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTv"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/subTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeTv"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:background="@drawable/text_frame_bg"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_main" />
+</RelativeLayout>

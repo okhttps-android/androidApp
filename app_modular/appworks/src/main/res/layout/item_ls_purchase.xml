@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f2f8fc"
+    android:padding="@dimen/padding">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/customerTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="客户:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/customerTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/customerTag"
+        android:layout_toRightOf="@id/customerTag"
+        android:text="客户:"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/addressTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customerTv"
+        android:layout_marginTop="@dimen/padding"
+        android:text="收货地址:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/addressTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/addressTag"
+        android:layout_toRightOf="@id/customerTag"
+        android:text="客户:"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/codeTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressTv"
+        android:layout_marginTop="@dimen/padding"
+        android:text="订单号:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/codeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/codeTag"
+        android:layout_toRightOf="@id/customerTag"
+        android:text="客户:"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/timeTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/codeTv"
+        android:layout_marginTop="@dimen/padding"
+        android:text="单据时间:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/timeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/timeTag"
+        android:layout_toRightOf="@id/customerTag"
+        android:text="客户:"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/remarksTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeTv"
+        android:layout_marginTop="@dimen/padding"
+        android:text="备注:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/remarksTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/remarksTag"
+        android:layout_toRightOf="@id/customerTag"
+        android:text="客户:"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/currencyTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remarksTv"
+        android:layout_marginTop="@dimen/padding"
+        android:text="币别:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/currencyTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/currencyTag"
+        android:layout_toRightOf="@id/customerTag"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/totalTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currencyTv"
+        android:layout_marginTop="@dimen/padding"
+        android:text="金额:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/totalTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/totalTag"
+        android:layout_toRightOf="@id/customerTag"
+        android:text="客户:"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+
+</RelativeLayout>

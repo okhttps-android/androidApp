@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EBE9EA"
+    android:orientation="vertical">
+    <!--android:layout_marginTop="80dp"-->
+    <com.core.widget.view.MyGridView
+        android:id="@+id/mGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="0.5dp"
+        android:background="#EBE9EA"
+        android:numColumns="3"
+        android:paddingTop="5dp"
+        android:scrollbars="none"
+        android:verticalSpacing="0.5dp">
+    </com.core.widget.view.MyGridView>
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/city_industry_service_main_banner"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="100dp"
+        app:banner_default_image="@drawable/icon_bservice_banner_deafult"
+        app:delay_time="3000"
+        app:is_auto_play="true"
+        app:layout_collapseMode="none"
+        app:layout_collapseParallaxMultiplier="0.5"
+        app:scroll_time="600" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="horizontal">
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:gravity="center"
+                 android:layout_centerInParent="true"
+                 android:padding="5dp"
+                 android:text="@string/service_hot_list" />
+             <TextView
+                 android:id="@+id/tv_distance"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:drawablePadding="5dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="5dp"
+                 android:drawableRight="@drawable/icon_distances"
+                 
+                 android:text="距离" />
+         </RelativeLayout>
+       
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/item_line" />
+
+    </LinearLayout>
+</LinearLayout>

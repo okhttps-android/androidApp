@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_main">
+
+    <com.xzjmyk.pm.activity.view.PullToRefreshSlideListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ptrAnimationStyle="flip"
+        app:ptrDrawableEnd="@drawable/default_ptr_rotate"
+        app:ptrDrawableStart="@drawable/default_ptr_flip"
+        app:ptrHeaderTextColor="@color/black"
+        app:ptrMode="pullDownFromTop"
+        app:ptrOverScroll="false"
+        app:ptrScrollingWhileRefreshingEnabled="true"
+        app:ptrShowIndicator="false"
+        app:slideMode="right"
+        app:slideRightAction="reveal"/>
+</RelativeLayout>

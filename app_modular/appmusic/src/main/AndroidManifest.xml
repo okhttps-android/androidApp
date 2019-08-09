@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.usoftchina.music">
+    <!--打电话广播-->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <!--监听电话状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name="com.usoftchina.pay.MainMusicActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:label="智慧英唐">
+            <intent-filter>
+                <action android:name="com.usoftchina.pay.MainMusicActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+         
+        </activity>
+        <service
+            android:name="com.usoftchina.music.MusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+      <!--  <receiver android:name="com.usoftchina.PhoneBroadcastReceiver">
+            <intent-filter android:priority="1000">
+                //主动打电话时,发送的广播
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+                //电话状态改变时,发送的广播 (振铃,挂断,接通)
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>-->
+    </application>
+</manifest>

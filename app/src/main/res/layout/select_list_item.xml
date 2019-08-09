@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:background="@drawable/selector_me_menu_item_bg"
+    android:padding="8dp">
+
+    <CheckBox
+        android:id="@+id/select_scb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:checked="false"
+        android:drawableLeft="@drawable/oa_rb_button_bg"
+        android:padding="10dp"
+        android:visibility="visible"/>
+
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/select_scb"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+</RelativeLayout>

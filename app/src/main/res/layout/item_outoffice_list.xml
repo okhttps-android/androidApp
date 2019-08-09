@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8/20"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:background="@color/item_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="10:45"
+            android:textColor="@color/text_main"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/time"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <ImageView
+            android:id="@+id/addr_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/location"
+            android:layout_below="@id/location"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_outoffice_addr" />
+
+
+        <TextView
+            android:id="@+id/addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/addr_img"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/addr_img"
+            android:textSize="@dimen/text_hine" />
+
+        <ImageView
+            android:id="@+id/remark_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/addr_img"
+            android:layout_below="@id/addr"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_outoffice_msg" />
+
+        <TextView
+            android:id="@+id/remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/addr"
+            android:layout_alignTop="@id/remark_img"
+            android:layout_below="@id/addr"
+            android:textSize="@dimen/text_hine" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@id/remark"
+            android:layout_below="@id/remark"
+            android:layout_marginTop="6dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

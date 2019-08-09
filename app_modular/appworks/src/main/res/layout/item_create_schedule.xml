@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/createBtn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bule_btn"
+        android:padding="10dp"
+        android:text="@string/oacreat_calender"
+        android:layout_marginRight="@dimen/padding"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_main"/>
+
+    <Button
+        android:id="@+id/createBookBtn"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:background="@drawable/bg_bule_btn"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_main" />
+</LinearLayout>

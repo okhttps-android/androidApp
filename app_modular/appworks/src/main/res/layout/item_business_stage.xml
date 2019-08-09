@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F2F2F2"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:id="@+id/item_business_stage_parent_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_b2b_change_account"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="16dp"
+                android:background="#333333" />
+
+            <TextView
+                android:id="@+id/item_business_stage_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/main_text_color"
+                android:textSize="15sp"
+                tools:text="阶段1"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="10dp"
+            android:background="#F2F2F2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/item_business_stage_name_tv"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textColor="#FF666666"
+                android:textSize="12sp"
+                tools:text="客户探索：" />
+
+            <TextView
+                android:id="@+id/item_business_stage_explore_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textColor="#FF666666"
+                android:textSize="12sp"
+                tools:text="本阶段可停留X天" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/item_business_stage_point_capiton_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="阶段要点："
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_business_stage_point_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textColor="#FF666666"
+                android:textSize="12sp"
+                tools:text="1、 要点内容1\n2、要点内容2" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

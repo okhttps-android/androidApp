@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:background="@color/antionbarcolor"
+    android:layout_height="?attr/actionBarSize">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/back" />
+    <LinearLayout
+        android:id="@+id/ll_top_state"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_height="40dp"
+        android:padding="1dp"
+        android:background="@drawable/shape_process_linear"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:background="@drawable/shape_process_item"
+            android:layout_weight="1"
+            android:text="待审批"
+            android:textColor="@color/selector_schedule_text"
+            android:id="@+id/tv_process_un" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/shape_process_item"
+            android:textColor="@color/selector_schedule_text"
+            android:gravity="center"
+            android:text="已审批"
+            android:id="@+id/tv_process_already" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/shape_process_item"
+            android:textColor="@color/selector_schedule_text"
+            android:gravity="center"
+            android:text="我发起的"
+            android:id="@+id/tv_process_me"
+            android:visibility="gone"
+             />
+
+    </LinearLayout>
+    
+
+    <!--<TextView-->
+        <!--android:id="@+id/title"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:drawableRight="@drawable/down"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="@dimen/text_main" />-->
+
+  <!--  <ImageView
+        android:id="@+id/seting"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        android:src="@drawable/setting" />-->
+</RelativeLayout>

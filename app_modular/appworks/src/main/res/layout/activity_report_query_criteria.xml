@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_remind_bell"
+            android:drawablePadding="10dp"
+            android:text="@string/report_query_prompt" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light" />
+
+    <ListView
+        android:id="@+id/report_query_criteria_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:hardwareAccelerated="true"
+        android:layerType="hardware"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:scrollingCache="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/report_query_criteria_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_cancel_bg"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/selector_cancel_text_color" />
+
+        <TextView
+            android:id="@+id/report_query_criteria_reset_btn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_confirm_bg"
+            android:gravity="center"
+            android:text="@string/reset"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/report_query_criteria_confirm_btn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_confirm_bg"
+            android:gravity="center"
+            android:text="@string/app_dialog_ok"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

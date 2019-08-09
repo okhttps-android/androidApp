@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_flights_date"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oa_bg"
+    android:orientation="vertical"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.oa.FlightsDateActivity">
+
+    <LinearLayout
+        android:background="@color/oa_item_bg"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_min"
+            android:button="@drawable/checkbox_btn_india_bg"
+            android:padding="10dp"
+            android:text="@string/Monday"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2px"
+    android:background="@color/item_line"/>
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_min"
+            android:layout_marginTop="2px"
+            android:button="@drawable/checkbox_btn_india_bg"
+            android:padding="10dp"
+            android:text="@string/Tuesday"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/item_line"/>
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_min"
+            android:layout_marginTop="2px"
+            android:button="@drawable/checkbox_btn_india_bg"
+            android:padding="10dp"
+            android:text="@string/Wednesday"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/item_line"/>
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_min"
+            android:layout_marginTop="2px"
+            android:button="@drawable/checkbox_btn_india_bg"
+            android:padding="10dp"
+            android:text="@string/Thursday"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/item_line"/>
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_min"
+            android:layout_marginTop="2px"
+            android:button="@drawable/checkbox_btn_india_bg"
+            android:padding="10dp"
+            android:text="@string/Friday"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/item_line"/>
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_min"
+            android:layout_marginTop="2px"
+            android:button="@drawable/checkbox_btn_india_bg"
+            android:padding="10dp"
+            android:text="@string/Saturday"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/item_line"/>
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height_min"
+            android:layout_marginTop="2px"
+            android:button="@drawable/checkbox_btn_india_bg"
+            android:padding="10dp"
+            android:text="@string/Sunday"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/click_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            style="@style/commonButtonStyle"
+            android:text="@string/common_save_button"/>
+    </RelativeLayout>
+</LinearLayout>

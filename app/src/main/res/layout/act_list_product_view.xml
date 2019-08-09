@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blend_dialog_frame"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/blend_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:padding="10dp"
+        android:text="标题内容"
+        android:textColor="@color/blend_item_theme_color"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/blend_item_theme_color" />
+    <ListView
+        android:id="@+id/lv_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </ListView>
+    <LinearLayout
+        android:id="@+id/blend_dialog_preview"
+        android:layout_width="match_parent"
+        android:layout_height="272dip"
+        android:background="@null"
+        android:gravity="center" >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/blend_holo_progressbar_circle" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/sv_content_data"
+        android:layout_width="match_parent"
+        android:layout_height="272dip"
+        android:visibility="gone" >
+        <include
+            android:id="@+id/ic_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            layout="@layout/item_product_view" />
+    </ScrollView>
+    <View
+        android:id="@+id/blend_dialog_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/blend_item_divider_color" />
+    <TextView
+        android:id="@+id/blend_dialog_cancle_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/blend_view_bg_default"
+        android:gravity="center"
+        android:text="是"
+        android:textColor="@color/lightblack"
+        android:textSize="16.0dip" />
+</LinearLayout>

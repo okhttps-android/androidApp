@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/antionbarcolor">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:id="@+id/ll_top_state"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/shape_process_linear"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:weightSum="3">
+        <RelativeLayout
+            android:id="@+id/tv_process_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/shape_process_item"
+            >
+            <TextView
+                android:id="@+id/tv_process_un"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_process_item"
+                android:text="@string/status_pending"
+                android:textColor="@color/selector_schedule_text"
+                android:layout_centerVertical="true"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_process_already_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/shape_process_item">
+            <TextView
+                android:id="@+id/tv_process_already"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_process_item"
+                android:gravity="center"
+                android:text="@string/status_approved"
+                android:textColor="@color/selector_schedule_text" />
+            <TextView
+                android:id="@+id/tv_process_already_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text="99"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/tv_process_already"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tv_process_me_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/shape_process_item"
+            >
+            <TextView
+                android:id="@+id/tv_process_me"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_process_item"
+                android:gravity="center"
+                android:text="@string/task_request_me"
+                android:textColor="@color/selector_schedule_text" />
+            <TextView
+                android:id="@+id/tv_process_me_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:text="99"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/tv_process_me"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:drawableRight="@drawable/down"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/text_main" />-->
+
+    <!--  <ImageView
+          android:id="@+id/seting"
+          android:layout_width="40dp"
+          android:layout_height="match_parent"
+          android:layout_alignParentRight="true"
+          android:padding="8dp"
+          android:src="@drawable/setting" />-->
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/tv_process_un_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:background="@drawable/tab_unread_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="8dp"
+        android:visibility="gone"
+        android:layout_marginLeft="105dp"
+        />
+</RelativeLayout>

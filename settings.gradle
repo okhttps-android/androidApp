@@ -1,0 +1,77 @@
+rootProject.name = 'usoftchina'
+//主工程
+include ':app'
+
+//核心模块
+include ':network'
+include ':imageload'
+include ':common'
+include ':message'
+
+//业务模块
+include ':appmessages'
+include ':applogin'
+include ':appcontact'
+include ':appbooking'
+include ':appme'
+include ':appworks'
+include ':appmoments'
+include ':apptasks'
+include ':apputils'
+include ':appmusic'
+include ':facesdk'
+include ':applocation'
+include ':scancardlibrary'
+//第三库模块
+
+include ':lib-zxing'
+include ':libbdupdatesdk'
+include ':libedittextformlibrary'
+include ':libfloatingactionbutton'
+include ':library-refreshlayout'
+include ':library-swipemenu_lv'
+include ':library-viewpager-indicator'
+include ':materialdialogs'
+include ':MPAndroidChart'
+include ':pullToRefershLibraryMy'
+//include ':android-pdf-viewer'
+include ':recyclerlibrary'
+//include ':refresh-layout'
+//include ':refresh-header'
+
+//核心模块
+project(':network').projectDir = new File('app_core/network')
+project(':imageload').projectDir = new File('app_core/imageload')
+project(':common').projectDir = new File('app_core/common')
+project(':message').projectDir = new File('app_core/message')
+
+//业务模块
+project(':applogin').projectDir = new File('app_modular/applogin')
+project(':appme').projectDir = new File('app_modular/appme')
+project(':appworks').projectDir = new File('app_modular/appworks')
+project(':appcontact').projectDir = new File('app_modular/appcontact')
+project(':appmessages').projectDir = new File('app_modular/appmessages')
+project(':appbooking').projectDir = new File('app_modular/appbooking')
+project(':appmoments').projectDir = new File('app_modular/appmoments')
+project(':apptasks').projectDir = new File('app_modular/apptasks')
+project(':apputils').projectDir = new File('app_modular/apputils')
+project(':appmusic').projectDir = new File('app_modular/appmusic')
+project(':facesdk').projectDir = new File('app_modular/facesdk')
+project(':applocation').projectDir = new File('app_modular/applocation')
+//第三库模块
+
+project(':lib-zxing').projectDir = new File('app_third/lib-zxing')
+project(':libbdupdatesdk').projectDir = new File('app_third/libbdupdatesdk')
+project(':library-viewpager-indicator').projectDir = new File('app_third/library-viewpager-indicator')
+project(':libedittextformlibrary').projectDir = new File('app_third/libedittextformlibrary')
+project(':library-refreshlayout').projectDir = new File('app_third/library-refreshlayout')
+project(':pullToRefershLibraryMy').projectDir = new File('app_third/pullToRefershLibraryMy')
+project(':materialdialogs').projectDir = new File('app_third/materialdialogs')
+project(':MPAndroidChart').projectDir = new File('app_third/MPAndroidChart')
+project(':libfloatingactionbutton').projectDir = new File('app_third/libfloatingactionbutton')
+project(':library-swipemenu_lv').projectDir = new File('app_third/library-swipemenu_lv')
+//project(':android-pdf-viewer').projectDir = new File('app_third/android-pdf-viewer')
+project(':recyclerlibrary').projectDir = new File('app_third/recyclerlibrary')
+//project(':refresh-layout').projectDir = new File('app_third/refresh-layout')
+//project(':refresh-header').projectDir = new File('app_third/refresh-header')
+

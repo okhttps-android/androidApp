@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebe9e9"
+    >
+    <LinearLayout
+        android:descendantFocusability="blocksDescendants"
+        android:layout_height="wrap_content"
+        style="@style/crm_ll_card"
+        android:id="@+id/business_detail_ll"
+        android:paddingBottom="10dp"
+        >
+
+        <LinearLayout style="@style/crm_ll_sale_item">
+
+            <TextView
+                android:text="@string/business_id"
+                android:minWidth="90dp"
+                android:layout_marginTop="5dp"
+
+                style="@style/TextView_Basic" />
+            <TextView
+                android:id="@+id/tv_crm_business_num"
+                android:text="XXXXXXX"
+                style="@style/TextView_Basic"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/crm_ll_sale_item">
+
+            <TextView
+                android:minWidth="90dp"
+                android:text="@string/business_name"
+                style="@style/TextView_Basic" />
+
+            <TextView
+                android:id="@+id/tv_crm_business_name"
+                android:text="XXXXXXX"
+                style="@style/TextView_Basic" />
+        </LinearLayout>
+        <LinearLayout style="@style/crm_ll_sale_item">
+
+            <TextView
+                android:minWidth="90dp"
+                android:text="@string/business_Library"
+                style="@style/TextView_Basic" />
+            <TextView
+                android:id="@+id/tv_crm_business_steps"
+                style="@style/TextView_Basic" />
+        </LinearLayout>
+        <LinearLayout style="@style/crm_ll_sale_item">
+
+            <TextView
+                android:minWidth="90dp"
+                android:text="@string/business_from"
+                style="@style/TextView_Basic" />
+
+            <TextView
+                android:id="@+id/tv_crm_business_source"
+                android:text="XXXXXXX"
+                style="@style/TextView_Basic" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/crm_ll_sale_item">
+
+            <TextView
+                android:minWidth="90dp"
+                android:text="@string/common_tel"
+                style="@style/TextView_Basic" />
+
+            <TextView
+                android:id="@+id/tv_crm_business_phone"
+                android:text="XXXXXXX"
+                style="@style/TextView_Basic" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/crm_ll_sale_item">
+
+            <TextView
+                android:minWidth="90dp"
+                android:text="@string/Remarks"
+                style="@style/TextView_Basic" />
+
+            <TextView
+                android:id="@+id/tv_crm_business_note"
+                android:text="XXXXXXX"
+                style="@style/TextView_Basic" />
+        </LinearLayout>
+
+        <RelativeLayout
+            style="@style/crm_ll_sale_item"
+            android:layout_marginRight="110dp"
+            android:layout_gravity="right"
+            >
+
+            <TextView
+                android:minWidth="90dp"
+                android:id="@+id/tv_crm_business_datetv"
+                android:text="xx日期"
+                android:layout_gravity="center_vertical"
+                style="@style/TextView_Basic" />
+
+            <TextView
+                android:id="@+id/tv_crm_business_date"
+                android:layout_toRightOf="@+id/tv_crm_business_datetv"
+                android:text="XXXXXXX"
+                android:layout_gravity="center_vertical"
+                style="@style/TextView_Basic" />
+
+            <!--<Button
+                android:id="@+id/bt_business_qiang"
+                android:layout_alignParentRight="true"
+                android:text="抢"
+                android:layout_width="80dp"
+                android:layout_gravity="center_vertical|right"
+                style="@style/crm_business_btn_single"
+                android:focusable="false"
+                android:gravity="center" />-->
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_business_qiang"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_qiang"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@id/business_detail_ll"/>
+</RelativeLayout>
+

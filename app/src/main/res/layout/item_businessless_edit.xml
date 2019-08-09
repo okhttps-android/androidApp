@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_moment"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:maxHeight="180dp"
+        android:minHeight="50dp"
+        style="@style/LinearLayout_horizontal">
+        <TextView
+            android:id="@+id/tv_less_key"
+            style="@style/TextView_Basic"
+            android:layout_margin="10dp"
+            android:layout_width="55dp"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"
+            android:text="商机阶段商机阶段阶段:" />
+<!--android:background="@drawable/shape_from_edit"-->
+        <EditText
+            android:id="@+id/tv_less_value"
+            style="@style/TextView_Basic"
+            android:maxWidth="260dp"
+            android:minWidth="240dp"
+            
+            android:maxHeight="150dp"
+            android:textSize="14sp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_width="260dp"
+            android:background="@drawable/shape_from_edit"
+            android:gravity="right|center"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:hint="请输入(必填)" />
+    </LinearLayout>
+</LinearLayout>

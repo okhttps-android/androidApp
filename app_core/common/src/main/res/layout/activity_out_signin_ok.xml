@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oa_main"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.oa.OutSigninOKActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/top_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/com_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/outffice_com"
+                android:drawablePadding="6dp"
+                android:text="当前企业:"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                android:id="@+id/com_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/com_tag"
+                android:layout_toRightOf="@+id/com_tag"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                android:id="@+id/time_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/outoffice_time"
+                android:layout_below="@id/com_tag"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="6dp"
+                android:text="签到时间:"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/time_tag"
+                android:layout_toRightOf="@id/time_tag"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                android:id="@+id/addr_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_tag"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/outffice_addr"
+                android:drawablePadding="6dp"
+                android:text="签到地点:"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                android:id="@+id/addr_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/addr_tag"
+                android:layout_toRightOf="@+id/addr_tag"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_hine"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/text_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="请填写备注(必填)"
+                android:inputType="textMultiLine"
+                android:minLines="6"
+                android:textSize="@dimen/text_hine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/image_tag"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:src="@drawable/picture" />
+
+                <TextView
+                    android:id="@+id/text_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="5dp"
+                    android:layout_toLeftOf="@id/image_tag"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_main" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="签到列表:"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</ScrollView>

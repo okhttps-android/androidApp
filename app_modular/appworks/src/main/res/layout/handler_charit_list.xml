@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="历史捐款总数"
+            android:textColor="#969696"
+            android:textSize="@dimen/text_main" />
+
+        <LinearLayout
+            android:id="@+id/moneyAmountLL"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:divider="@drawable/spacer_medium"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <com.modular.apputils.widget.CustomerBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        custom:indicator_bottommargin="@dimen/padding"
+        custom:indicator_radius="3dp"
+        custom:indicator_selected_color="@color/white"
+        custom:indicator_span="16dp"
+        custom:indicator_unselected_color="@color/hintColor" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/typeGv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:paddingTop="@dimen/padding"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:verticalSpacing="10dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/typeGv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:verticalSpacing="10dp" />
+</LinearLayout>

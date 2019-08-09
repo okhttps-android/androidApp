@@ -1,0 +1,430 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/notice_rl"
+                style="@style/IMTbleLine">
+
+                <TextView
+                    android:id="@+id/notice_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/notice"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_main" />
+
+                <TextView
+                    android:id="@+id/notice_tv"
+                    style="@style/IMTbleLine_TextValue"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/notice_arrow_img"
+                    android:layout_toRightOf="@+id/notice_text"
+                    android:gravity="left"
+                    android:singleLine="false"
+                    android:textColor="@color/dark_dark_grey" />
+
+                <ImageView
+                    android:id="@+id/notice_arrow_img"
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <com.core.widget.view.MyGridView
+                android:id="@+id/grid_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="@dimen/line_min"
+                android:background="@color/item_color1"
+                android:cacheColorHint="#00000000"
+                android:gravity="center_horizontal"
+                android:horizontalSpacing="20dp"
+                android:listSelector="#00000000"
+                android:numColumns="5"
+                android:padding="10dp"
+                android:scrollbars="none"
+                android:verticalSpacing="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/room_name_rl"
+                style="@style/IMTbleLine"
+                android:layout_marginTop="@dimen/line_min">
+
+                <TextView
+                    android:id="@+id/room_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/room_name"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_main" />
+
+                <TextView
+                    android:id="@+id/room_name_tv"
+                    style="@style/IMTbleLine_TextValue"
+                    android:layout_toLeftOf="@+id/room_name_arrow_img"
+                    android:layout_toRightOf="@+id/room_name_text"
+                    android:textColor="@color/text_hine" />
+
+                <ImageView
+                    android:id="@+id/room_name_arrow_img"
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/room_desc_rl"
+                style="@style/IMTbleLine"
+                android:layout_marginTop="@dimen/line_min">
+
+                <TextView
+                    android:id="@+id/room_desc_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/room_desc"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_main" />
+
+                <TextView
+                    android:id="@+id/room_desc_tv"
+                    style="@style/IMTbleLine_TextValue"
+                    android:layout_toLeftOf="@+id/room_desc_arrow_img"
+                    android:layout_toRightOf="@+id/room_desc_text"
+                    android:textColor="@color/text_hine" />
+
+                <ImageView
+                    android:id="@+id/room_desc_arrow_img"
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/creator_rl"
+                style="@style/IMTbleLine"
+                android:layout_marginTop="@dimen/line_min">
+
+                <TextView
+                    android:id="@+id/creator_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/creator"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_main" />
+
+                <TextView
+                    android:id="@+id/creator_tv"
+                    style="@style/IMTbleLine_TextValue"
+                    android:layout_toLeftOf="@+id/creator_arrow_img"
+                    android:layout_toRightOf="@+id/creator_text"
+                    android:textColor="@color/dark_dark_grey" />
+
+                <ImageView
+                    android:id="@+id/creator_arrow_img"
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/create_time_rl"
+                style="@style/IMTbleLine"
+                android:layout_marginTop="@dimen/line_min">
+
+                <TextView
+                    android:id="@+id/create_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/create_time"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_main" />
+
+                <TextView
+                    android:id="@+id/create_timer"
+                    style="@style/IMTbleLine_TextValue"
+                    android:layout_toLeftOf="@+id/create_time_image"
+                    android:layout_toRightOf="@+id/create_time_text"
+                    android:textColor="@color/dark_dark_grey" />
+
+                <ImageView
+                    android:id="@+id/create_time_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/count_rl"
+                style="@style/IMTbleLine"
+                android:layout_marginTop="@dimen/line_min">
+
+                <TextView
+                    android:id="@+id/count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/people_count"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_main" />
+
+                <TextView
+                    android:id="@+id/count_tv"
+                    style="@style/IMTbleLine_TextValue"
+                    android:layout_toLeftOf="@+id/count_arrow_img"
+                    android:layout_toRightOf="@+id/count_text"
+                    android:textColor="@color/text_hine" />
+
+                <ImageView
+                    android:id="@+id/count_arrow_img"
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nick_name_rl"
+                style="@style/IMTbleLine"
+                android:layout_marginTop="@dimen/line_min">
+
+                <TextView
+                    android:id="@+id/nick_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/my_nick_name"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_main" />
+
+                <TextView
+                    android:id="@+id/nick_name_tv"
+                    style="@style/IMTbleLine_TextValue"
+                    android:layout_toLeftOf="@+id/nick_name_arrow_img"
+                    android:layout_toRightOf="@+id/nick_name_text"
+                    android:textColor="@color/text_hine" />
+
+                <ImageView
+                    android:id="@+id/nick_name_arrow_img"
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shield_chat_rl"
+                style="@style/IMTbleLine"
+                android:layout_marginTop="@dimen/line_min">
+
+                <TextView
+                    android:id="@+id/shield_chat_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/shield_chat"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/shield_chat_image"
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/banned_voice_rl"
+                style="@style/IMTbleLine"
+                android:layout_marginTop="@dimen/line_min">
+
+                <TextView
+                    android:id="@+id/banned_voice_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/banned_voice"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_main" />
+
+                <ImageView
+                    android:id="@+id/banned_voice_img"
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/add_manage_rl"
+                style="@style/IMTbleLine"
+                android:layout_marginTop="@dimen/line_min">
+
+                <TextView
+                    android:id="@+id/add_manage_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="添加管理员"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_main" />
+
+                <ImageView
+                    android:id="@+id/add_manage_img"
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/remove_manage_rl"
+                style="@style/IMTbleLine"
+                android:layout_marginTop="@dimen/line_min">
+
+                <TextView
+                    android:id="@+id/remove_manage_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="移除管理员"
+                    android:textColor="@color/text_main"
+                    android:textSize="@dimen/text_main" />
+
+                <ImageView
+                    android:id="@+id/remove_manage_img"
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/exit_room_rl"
+                style="@style/IMTbleLine_UP"
+                android:layout_marginTop="@dimen/line_big">
+
+                <Button
+                    android:id="@+id/btn_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/bg_btn"
+                    android:text="退出商务群"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/exit_rom"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/banned_delete_rl"
+                style="@style/IMTbleLine"
+                android:layout_marginTop="@dimen/line_min"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/banned_delete_room_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/banned_delete_room"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_main" />
+
+                <ImageView
+                    android:layout_width="@dimen/next_width"
+                    android:layout_height="@dimen/next_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/oa_next"
+                    android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.xzjmyk.pm.activity.view.DataLoadView
+        android:id="@+id/data_load_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

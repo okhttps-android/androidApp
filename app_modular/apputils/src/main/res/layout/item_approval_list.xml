@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="1dp"
+        app:cardCornerRadius="@dimen/paddingMin"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:background="@color/white"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/headImage"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/padding" />
+
+            <TextView
+                android:id="@+id/statusTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/headImage"
+                android:textColor="@color/done_approval"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/titleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/headImage"
+                android:layout_marginRight="@dimen/paddingMin"
+                android:layout_toLeftOf="@id/statusTv"
+                android:layout_toRightOf="@id/headImage"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="#FF333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/orderNumTv"
+                android:layout_below="@id/titleTv"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/done_approval"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleTv"
+                android:layout_toLeftOf="@id/orderNumTv"
+                android:lines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/headImage"
+                android:textColor="@color/done_approval"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

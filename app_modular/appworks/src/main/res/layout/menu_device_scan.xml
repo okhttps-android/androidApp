@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="294dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/popFindBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:gravity="center"
+        android:text="设备查找"
+        android:visibility="gone"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:visibility="gone"
+        android:background="@color/item_line" />
+
+    <Button
+        android:id="@+id/popUseApplyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:gravity="center"
+        android:text="使用申请"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <Button
+        android:id="@+id/popScrapApplyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:gravity="center"
+        android:text="报废申请"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <Button
+        android:id="@+id/popMaintenanceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:gravity="center"
+        android:text="保养维护"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <Button
+        android:id="@+id/popInspectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:gravity="center"
+        android:text="故障送检"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:visibility="gone"
+        android:background="@color/item_line" />
+
+    <Button
+        android:id="@+id/popCycleCountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:gravity="center"
+        android:text="周期盘点"
+        android:visibility="gone"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+</LinearLayout>

@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:jmf="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context="com.modular.booking.activity.services.BServiceAddActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hine_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_add_top"></include>
+
+        <!--KTV-->
+        <LinearLayout
+            android:id="@+id/ll_ktv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/ktv_room_rl"
+                style="@style/item_menu"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/tag_ktv_rooms"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_ktv_rooms"
+                    android:textColor="@color/hintColor" />
+
+                <TextView
+                    android:id="@+id/tv_ktv_rooms"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_ktv_rooms"
+                    android:contentDescription="@string/service_ktv_rooms"
+                    android:drawableRight="@drawable/oa_next"
+                    android:hint="@string/common_select"
+                    android:textColor="@color/hintColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ktv_time_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_ktv_times"
+                    style="@style/item_menu_tag"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_ktv_times" />
+
+                <TextView
+                    android:id="@+id/tv_ktv_times"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_ktv_times"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/oa_next"
+                    android:ellipsize="end"
+                    android:hint="@string/common_select" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ktv_people_rl"
+                style="@style/item_menu"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tag_ktv_peoples"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_ktv_peoples" />
+
+                <TextView
+                    android:id="@+id/tv_ktv_peoples"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_ktv_peoples"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/oa_next"
+                    android:hint="@string/common_select" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--会所-->
+        <LinearLayout
+            android:id="@+id/ll_club"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/club_time_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_club_technician"
+                    style="@style/item_menu_tag"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_club_list" />
+
+                <TextView
+                    android:id="@+id/tv_club_technician"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_club_technician"
+                    android:contentDescription="@string/service_club_list"
+                    
+                    android:drawableRight="@drawable/oa_next"
+                    android:ellipsize="end"
+                    android:hint="@string/common_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/club_rooms_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_club_tim"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_club_rooms"
+                    android:textColor="@color/hintColor" />
+
+                <TextView
+                    android:id="@+id/tv_club_time"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_club_tim"
+                    android:drawableRight="@drawable/oa_next"
+                    android:hint="@string/common_select"
+                    android:textColor="@color/hintColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/club_pepoles_rl"
+                style="@style/item_menu"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tag_club_peoples"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_ktv_peoples" />
+
+                <TextView
+                    android:id="@+id/tv_club_peoples"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_club_peoples"
+                    
+                    android:drawableRight="@drawable/oa_next"
+                    android:hint="@string/common_select" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--医院挂号-->
+        <LinearLayout
+            android:id="@+id/ll_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/hospital_time_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_hospital_time"
+                    style="@style/item_menu_tag"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_hospital_times" />
+
+                <TextView
+                    android:id="@+id/tv_hospital_rooms"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_hospital_time"
+                    android:contentDescription="@string/service_hospital_times"
+                    
+                    android:drawableRight="@drawable/oa_next"
+                    android:ellipsize="end"
+                    android:hint="@string/common_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hospital_rooms_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_hospital_rooms"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_hospital_rooms"
+                    android:textColor="@color/hintColor" />
+
+                <TextView
+                    android:id="@+id/tag_hospital_doctor"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_hospital_rooms"
+                    android:drawableRight="@drawable/oa_next"
+                    android:hint="@string/common_select"
+                    android:textColor="@color/hintColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hospital_people_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_hospital_people"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_hospital_peoples" />
+
+                <TextView
+                    android:id="@+id/tv_hospital_time"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_hospital_people"
+                    
+                    android:drawableRight="@drawable/oa_next"
+                    android:hint="@string/common_select" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--运动健身-->
+        <LinearLayout
+            android:id="@+id/ll_sport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/sport_time_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_sport_time"
+                    style="@style/item_menu_tag"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_sport_times" />
+
+                <TextView
+                    android:id="@+id/tv_sport_time"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_sport_time"
+                    
+                    android:drawableRight="@drawable/oa_next"
+                    android:ellipsize="end"
+                    android:hint="@string/common_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sport_rooms_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_sport_rooms"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_sport_rooms"
+                    android:textColor="@color/hintColor" />
+
+                <TextView
+                    android:id="@+id/tv_sport_rooms"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_sport_rooms"
+                    android:contentDescription="@string/service_sport_rooms"
+                    android:drawableRight="@drawable/oa_next"
+                    android:hint="@string/common_select"
+                    android:textColor="@color/hintColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sport_peoples_rl"
+                style="@style/item_menu"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tag_sport_peoples"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_ktv_peoples" />
+
+                <TextView
+                    android:id="@+id/tv_sport_peoples"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_sport_peoples"
+                    
+                    android:drawableRight="@drawable/oa_next"
+                    android:hint="@string/common_select" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--美容美发-->
+        <LinearLayout
+            android:id="@+id/ll_hair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/hair_times_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_hair_times"
+                    style="@style/item_menu_tag"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_hair_times" />
+
+                <TextView
+                    android:id="@+id/tv_hair_times"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/tag_hair_times"
+                    
+                    android:drawableRight="@drawable/oa_next"
+                    android:ellipsize="end"
+                    android:hint="@string/common_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hair_rooms_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_hair_rooms"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_hair_rooms"
+                    android:textColor="@color/hintColor" />
+
+                <TextView
+                    android:id="@+id/tv_hair_rooms"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/tag_hair_rooms"
+                    android:contentDescription="@string/service_hair_rooms"
+                    android:drawableRight="@drawable/oa_next"
+                    android:hint="@string/common_select"
+                    android:textColor="@color/hintColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/hair_peoples_rl"
+                style="@style/item_menu"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_ktv_peoples" />
+
+                <TextView
+                    android:id="@+id/tv_hair_peoples"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/company_tag"
+                    
+                    android:drawableRight="@drawable/oa_next"
+                    android:hint="@string/common_select" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--餐饮 android:visibility="gone"-->
+        <LinearLayout
+            android:id="@+id/ll_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/food_peoples_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_food_peoples"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_food_peoples" />
+
+
+                <TextView
+                    android:id="@+id/tv_food_peoples"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_food_peoples"
+                    
+                    android:drawableRight="@drawable/oa_next"
+                    android:hint="" />
+
+                <com.modular.booking.widget.AddSubUtils
+                    android:id="@+id/add_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    jmf:editable="true"
+                    jmf:contentWidth="40dp"
+                    jmf:all_background="@color/me_menu_item_normal"
+                    jmf:contentTextColor="@color/black"
+                    jmf:contentBackground="@color/me_menu_item_normal"
+                    jmf:leftBackground="@drawable/icon_remove"
+                    jmf:rightBackground="@drawable/icon_add">
+                </com.modular.booking.widget.AddSubUtils>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/food_times_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_food_times"
+                    style="@style/item_menu_tag"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_food_times" />
+
+                <TextView
+                    android:id="@+id/tv_food_times"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_toRightOf="@id/tag_food_times"
+                  
+                    android:drawableRight="@drawable/oa_next"
+                    android:ellipsize="end"
+                    android:hint="@string/common_select" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/food_rooms_rl"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_food_rooms"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_food_rooms"
+                    android:textColor="@color/hintColor" />
+
+                <TextView
+                    android:id="@+id/tv_food_rooms"
+                    style="@style/item_menu_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                  
+                    android:layout_toRightOf="@id/tag_food_rooms"
+                    android:layout_toLeftOf="@+id/sv_food_rooms"
+                    android:drawableRight="@drawable/oa_next"
+                    android:contentDescription="@string/service_food_rooms"
+                    android:hint="@string/common_select_not_must"
+                  
+                    android:textColor="@color/hintColor" />
+                <com.core.widget.view.SwitchView
+                    android:id="@+id/sv_food_rooms"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/food_dishs_rl"
+                android:visibility="gone"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_food_dishs"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="@string/tv_foods_dish"
+                    android:textColor="@color/hintColor" />
+
+                <TextView
+                    android:id="@+id/tv_food_dishs"
+                    style="@style/item_menu_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_toRightOf="@id/tag_food_dishs"
+                    android:layout_toLeftOf="@+id/sv_food_dishs"
+                    android:drawableRight="@drawable/oa_next"
+                    android:contentDescription="@string/service_food_rooms"
+                    android:hint="@string/common_select_not_must"
+
+                    android:textColor="@color/hintColor" />
+                <com.core.widget.view.SwitchView
+                    android:id="@+id/sv_food_dishs"
+                    android:layout_width="40dp"
+                    android:layout_height="25dp"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/food_dishs_list_rl"
+                style="@style/item_menu"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <com.core.widget.view.ListViewInScroller
+                    android:id="@+id/lv_dish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+                </com.core.widget.view.ListViewInScroller>
+            </RelativeLayout>
+            
+            
+            <RelativeLayout
+                android:id="@+id/food_seats_rl"
+                android:visibility="gone"
+                style="@style/item_menu">
+
+                <TextView
+                    android:id="@+id/tag_food_seats"
+                    style="@style/item_menu_tag"
+                    android:gravity="center_vertical"
+                    android:text="桌位余量"
+                    android:textColor="@color/hintColor" />
+
+                <TextView
+                    android:id="@+id/tv_food_seats"
+                    style="@style/item_menu_input"
+                    android:layout_width="290dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@id/tag_food_seats"
+                
+                    android:drawableRight="@drawable/oa_next"
+                    android:hint="@string/common_select"
+                    android:text="仅限1桌"
+                    android:textColor="@color/hintColor" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_seats_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/me_menu_item_normal"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical">
+                
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvSeatsLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/blue_seats_num"
+                        android:textStyle="bold"
+                        android:text="排队实况"/>
+<!--
+                    <View
+                      
+                        style="@style/app_line_v_1dp" ></View>
+-->
+                    <TextView
+                        android:id="@+id/tvSeatsRight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="3dp"
+                        android:drawableLeft="@drawable/icon_line_v"
+                        android:textColor="@color/gray"
+                        android:textStyle="bold"
+                        android:text="商家释放"/>
+                </LinearLayout>
+               
+                <LinearLayout
+                    android:id="@+id/llPanelWait"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        style="@style/item_menu"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/shape_sample_one_1dp">
+                        <TextView
+                            android:id="@+id/tvMSeatsName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textStyle="bold"
+                            android:text="小桌(1-2人)"
+                            android:layout_alignParentLeft="true"/>
+
+                        <TextView
+                            android:id="@+id/tvMSeatsNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textStyle="bold"
+                            android:text="前方0桌"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:background="@drawable/shape_sample_one_1dp"
+                        android:layout_margin="6dp"
+                        style="@style/item_menu">
+                        <TextView
+                            android:id="@+id/tvZSeatsName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textStyle="bold"
+                            android:text="中桌(3-5人)"
+                            android:layout_alignParentLeft="true"/>
+
+                        <TextView
+                            android:id="@+id/tvZSeatsNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textStyle="bold"
+                            android:text="前方0桌"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:background="@drawable/shape_sample_one_1dp"
+                        android:layout_margin="6dp"
+                        style="@style/item_menu">
+                        <TextView
+                            android:id="@+id/tvDSeatsName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textStyle="bold"
+                            android:text="大桌(6人以上)"
+                            android:layout_alignParentLeft="true"/>
+
+                        <TextView
+                            android:id="@+id/tvDSeatsNum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textStyle="bold"
+                            android:text="前方0桌"
+                            android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llPanelBusiness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:background="@drawable/shape_sample_one_1dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content"
+                        style="@style/item_menu">
+                        <TextView
+                            android:id="@+id/tvMSeatsTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:textStyle="bold"
+                            android:text="小桌"
+                            android:layout_alignParentLeft="true"/>
+
+                        <com.core.widget.NScrollerGridView
+                            android:id="@+id/gvMSeats"
+                            android:layout_below="@+id/tvMSeatsTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:horizontalSpacing="3dp"
+                            android:numColumns="8"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="5dp"
+                            android:scrollbars="none"
+                            android:verticalSpacing="10dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:background="@drawable/shape_sample_one_1dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content"
+                        style="@style/item_menu">
+                        <TextView
+                            android:id="@+id/tvZSeatsTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:textStyle="bold"
+                            android:text="中桌"
+                            android:layout_alignParentLeft="true"/>
+
+                        <com.core.widget.NScrollerGridView
+                            android:id="@+id/gvZSeats"
+                            android:layout_below="@+id/tvZSeatsTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:horizontalSpacing="3dp"
+                            android:numColumns="8"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="5dp"
+                            android:scrollbars="none"
+                            android:verticalSpacing="10dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:background="@drawable/shape_sample_one_1dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content"
+                        style="@style/item_menu">
+                        <TextView
+                            android:id="@+id/tvDSeatsTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
+                            android:text="大桌"
+                            android:layout_alignParentLeft="true"/>
+
+                        <com.core.widget.NScrollerGridView
+                            android:id="@+id/gvDSeats"
+                            android:layout_below="@+id/tvDSeatsTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:horizontalSpacing="3dp"
+                            android:numColumns="8"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="5dp"
+                            android:scrollbars="none"
+                            android:verticalSpacing="10dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+                
+            </LinearLayout>
+        </LinearLayout>
+
+  
+     <include layout="@layout/include_add_bottom"></include>
+
+    </LinearLayout>
+
+</ScrollView>

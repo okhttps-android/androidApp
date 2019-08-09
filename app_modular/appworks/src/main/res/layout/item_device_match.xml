@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/nameTag"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_gravity="left"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/paddingMin"
+        android:text="设备名称"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignTop="@id/nameTag"
+        android:layout_toRightOf="@id/nameTag"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/specTag"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/nameTag"
+        android:layout_gravity="left"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/paddingMin"
+        android:text="设备规格"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/specTv"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_toRightOf="@id/specTag"
+        android:layout_alignTop="@id/specTag"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:id="@+id/existqtyLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/specTag"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/existqtyTag"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/paddingMin"
+            android:text="匹配数量"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/existqtyTv"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_alignTop="@id/existqtyTag"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_toRightOf="@id/existqtyTag"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lackqtyTag"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_below="@id/existqtyTag"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/paddingMin"
+            android:text="欠缺数量"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lackqtyTv"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_alignTop="@id/lackqtyTag"
+            android:layout_toRightOf="@id/lackqtyTag"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/needqtyTag"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/existqtyLL"
+        android:layout_gravity="left"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/paddingMin"
+        android:text="需求数量"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/needqtyTv"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_toRightOf="@id/needqtyTag"
+        android:layout_alignTop="@id/needqtyTag"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="14sp" />
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:whatever="http://schemas.android.com/apk/res-auto"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/base_bg">
+
+
+    <View
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/paddingApp"
+        android:background="@color/item_line"/>
+
+
+    <ImageView
+        android:id="@+id/commonWordsIV"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/line_top"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/changyongyu"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/voiceIV"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/commonWordsIV"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toLeftOf="@id/commonWordsIV"
+        android:src="@drawable/btn_yuyin_nor"/>
+
+    <ImageView
+        android:id="@+id/inputTagIV"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignTop="@id/commonWordsIV"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/shuru"/>
+
+    <com.andreabaccega.widget.FormEditText
+        android:id="@+id/opinionET"
+        style="@style/form_relative_right_text2"
+        android:layout_alignTop="@id/commonWordsIV"
+        android:layout_toLeftOf="@+id/voiceIV"
+        android:layout_toRightOf="@+id/inputTagIV"
+        android:hint="请输入审批意见..."
+        android:minHeight="30dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        whatever:customRegexp="^[\\s\\S]{0,30}$"
+        whatever:testErrorString="输入错误或内容超长"
+        whatever:testType="regexp"/>
+
+    <View
+        android:id="@+id/line_botton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/paddingApp"
+        android:layout_below="@id/opinionET"
+        android:background="@color/item_line"/>
+
+    <LinearLayout
+        android:id="@+id/operationLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_botton"
+        android:background="@color/base_bg"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/takeOverTV"
+            style="@style/bottomTextStyle"
+            android:layout_weight="2"
+            android:text="@string/take_over"
+            android:visibility="gone"/>
+
+
+        <Button
+            android:id="@+id/disagreeTV"
+            style="@style/bottomTextStyle"
+            android:layout_weight="3"
+            android:background="@color/base_bg"
+            android:text="@string/common_disagree"
+            android:textColor="@drawable/bg_bule_yellow_text"/>
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/item_line"/>
+
+        <Button
+            android:id="@+id/agreeTV"
+            style="@style/bottomTextStyle"
+            android:layout_weight="2"
+            android:background="@color/base_bg"
+            android:text="@string/agree"
+            android:textColor="@drawable/bg_bule_yellow_text"/>
+
+        <View
+            android:layout_width="@dimen/line"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/item_line"/>
+
+        <TextView
+            android:id="@+id/changedealmanTV"
+            style="@style/bottomTextStyle"
+            android:layout_weight="5"
+            android:text="@string/common_changedealman"
+            android:visibility="gone"/>
+
+        <View
+
+            android:layout_width="@dimen/line"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/item_line"/>
+
+        <Button
+            android:id="@+id/nextTV"
+            style="@style/bottomTextStyle"
+            android:layout_weight="3"
+            android:background="@color/base_bg"
+            android:text="@string/next_article"
+            android:textColor="@drawable/bg_bule_yellow_text"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/base_bg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.core.widget.MyListView
+                android:id="@+id/com_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:paddingBottom="20dp">
+            </com.core.widget.MyListView>
+
+
+            <RelativeLayout
+                android:id="@+id/add_new_rl"
+                android:layout_width="match_parent"
+                style="@style/IMTbleLine2"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/new_add"
+                    android:textColor="#2F95DD"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/save_bt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/bg_bule_btn"
+                    android:padding="10dp"
+                    android:text="@string/common_save_button"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main"
+                    />
+                <Button
+                    android:id="@+id/delete_btn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/bg_bule_btn"
+                    android:padding="10dp"
+                    android:text="@string/common_delete"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

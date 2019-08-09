@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">appbooking</string>
+    <string name="booking">预约</string>
+     <!-- 服务预约-->
+    <string name="service_name">姓名</string>
+    <string name="service_phone">电话</string>
+    <string name="service_notes">备注</string>
+    <string name="service_hot_list">热门推荐</string>
+    
+    <string name="service_ktv_times">欢唱时段</string>
+    <string name="service_ktv_rooms">包房预定</string>
+    <string name="service_peoples">人数</string>
+
+    <string name="service_club_times">预约技师</string>
+    <string name="service_club_rooms">服务时段</string>
+    
+    <string name="service_hospital_times">科室</string>
+    <string name="service_hospital_rooms">医生</string>
+    <string name="service_hospital_peoples">时间</string>
+
+    <string name="service_sport_times">运动时间</string>
+    <string name="service_sport_rooms">运动项目</string>
+    <!--美容美发-->
+    <string name="service_hair_times">服务时间</string>
+    <string name="service_hair_rooms">服务项目</string>
+
+    <string name="service_food_times">用餐时间</string>
+    <string name="service_food_rooms">包房预订</string>
+    <string name="service_food_peoples">用餐人数</string>
+    
+    <!--预约功能-->
+    <string name="booking_personal">个人预约</string>
+    <string name="booking_business">商务预约</string>
+    <string name="booking_service">服务预约</string>
+    <string name="booking_share">预约共享</string>
+
+    <string name="booking_add_company">企业</string>
+    <string name="unspecified_hair_stylist">不指定发型师，预约门店</string>
+    <string name="specified_hair_stylist">指定发型师</string>
+    <string name="booking_serivce_teacher">特聘导师</string>
+    <string name="booking_serivce_technician">特聘技师</string>
+    <string name="book_shopcart_clear">清空</string>
+    <string name="tv_foods_dish">点菜</string>
+    <string name="fulldelicious">美味齐全</string>
+    <string name="service_foods">餐饮</string>
+    <string name="fashion">时尚潮流</string>
+    <string name="beautysalons">美容美发</string>
+    <string name="musicfestival">音乐节</string>
+    <string name="takeaction">hi起来</string>
+    <string name="exercise">运动健身</string>
+    <string name="discountforreservation">预约有优惠</string>
+    <string name="Club">会所</string>
+    <string name="healthassistant">您的健康助手</string>
+    <string name="Hospitalregistration">医院挂号</string>
+
+
+    <string-array name="booking_reject">
+        <item>请选择拒绝理由</item>
+        <item>工作繁忙</item>
+        <item>没有必要</item>
+        <item>其它</item>
+    </string-array>
+</resources>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding"
+    android:layout_marginRight="@dimen/padding"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radian_top_cui_bg"
+        android:paddingBottom="@dimen/padding">
+
+        <TextView
+            android:id="@+id/codeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginLeft="@dimen/padding"
+            android:gravity="center_horizontal"
+            android:text="住宿"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_hine" />
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/codeTv"
+            android:layout_marginRight="@dimen/padding"
+            android:text="状态"
+            android:textColor="@color/cui_yellow"
+            android:textSize="@dimen/text_hine" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_below="@id/codeTv"
+            android:id="@+id/line"
+            android:background="@color/item_line" />
+
+        <RelativeLayout
+            android:id="@+id/orderInfoRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/codeTv"
+            android:layout_marginTop="@dimen/padding">
+
+            <TextView
+                android:id="@+id/levelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/codeTv"
+                android:text="标准单人间"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textXXL" />
+
+            <TextView
+                android:id="@+id/businessNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/levelTv"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_toRightOf="@id/levelTv"
+                android:text="香格里拉酒店"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                android:id="@+id/whenLongTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/levelTv"
+                android:layout_below="@id/businessNameTv"
+                android:layout_marginTop="@dimen/padding"
+                android:text="入住：12-10     离店：12-12    共两晚"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                android:id="@+id/numberTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/whenLongTv"
+                android:layout_below="@id/whenLongTv"
+                android:layout_marginTop="@dimen/padding"
+                android:text="1人"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_hine" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userInfoRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding"
+            android:text="周炳"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/idTypeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/nameTv"
+            android:layout_marginLeft="@dimen/padding"
+            android:text="二代身份证"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+
+        <TextView
+            android:id="@+id/idCardTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_toLeftOf="@id/idTypeTv"
+            android:layout_toRightOf="@id/nameTv"
+            android:text="4501221994312319827"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+
+        <TextView
+            android:id="@+id/roomsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTv"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:text="1间"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/seatTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/idCardTv"
+            android:layout_alignTop="@id/roomsTv"
+            android:layout_marginRight="@dimen/padding"
+            android:text="A30H"
+            android:textColor="@color/hintColor"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/realFeeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/roomsTv"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/seatTv"
+            android:text="54元"
+            android:textColor="@color/indianred"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/payTypeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/roomsTv"
+            android:text="前台自付"
+            android:textColor="@color/indianred"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/doneTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/roomsTv"
+            android:background="@drawable/text_frame_radian_red_bg"
+            android:padding="4dp"
+            android:text="取消预约"
+            android:textColor="@color/indianred" />
+
+        <TextView
+            android:id="@+id/expandTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/doneTv"
+            android:drawableRight="@drawable/icon_more_down"
+            android:text="申请记录" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_below="@id/doneTv" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:id="@+id/subRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radian_bottom_white_bg"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/addressTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:text="城市地址"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/addressTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/addressTag"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/addressTag"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="城市地址"
+            android:textColor="@color/text_main" />
+
+        <TextView
+            android:id="@+id/dateTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressTag"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:text="入住日期"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/addressTv"
+            android:layout_alignTop="@id/dateTag"
+            android:layout_toRightOf="@id/dateTag"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="城市地址"
+            android:textColor="@color/text_main" />
+
+        <TextView
+            android:id="@+id/numberTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateTag"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:text="人数"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/numberSubTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/addressTv"
+            android:layout_alignTop="@id/numberTag"
+            android:layout_toRightOf="@id/numberTag"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="城市地址"
+            android:textColor="@color/text_main" />
+
+
+        <TextView
+            android:id="@+id/expecteFeeTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numberTag"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:text="预计费用"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/expecteFeeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/addressTv"
+            android:layout_alignTop="@id/expecteFeeTag"
+            android:layout_toRightOf="@id/expecteFeeTag"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="预计费用"
+            android:textColor="@color/text_main" />
+    </RelativeLayout>
+</LinearLayout>

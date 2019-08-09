@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/main_schedule_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="#FF666666"
+        android:textSize="12sp"
+        tools:text="09:00" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/item_time_helper_indicate"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/shape_main_schedule_indicate" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#FFD37C" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_schedule_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF666666"
+        android:paddingBottom="40dp"
+        android:paddingRight="20dp"
+        android:textSize="15sp"
+        tools:text="去平安金融\n大厦开会去平安金融\n大厦开会去平\n安金融大厦开会" />
+
+</LinearLayout>

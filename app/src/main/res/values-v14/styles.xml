@@ -1,0 +1,173 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <!--<item name="android:windowAnimationStyle">@style/noAnimation</item>-->
+    </style>
+    
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:windowAnimationStyle">@style/IMAnimationStyle</item>
+        <item name="android:actionBarStyle">@style/IMActionBar</item>
+        <item name="android:homeAsUpIndicator">@drawable/actionbar_up_indicator</item>
+        <item name="android:actionBarItemBackground">@drawable/actionbar_menu_selector</item>
+        <item name="actionBarStyle">@style/IMActionBar</item>
+        <item name="actionBarItemBackground">@drawable/actionbar_menu_selector</item>
+        <item name="homeAsUpIndicator">@drawable/actionbar_up_indicator</item>
+        <item name="android:listViewStyle">@style/IMListView</item>
+        <item name="actionBarTabStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabStyle">@style/MyActionBar</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <!-- This disables the black preview screen -->
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="AppBaseThemeBule" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:windowAnimationStyle">@style/IMAnimationStyle</item>
+        <item name="android:actionBarStyle">@style/CRM_Ttile_Bule</item>
+        <item name="android:homeAsUpIndicator">@drawable/actionbar_up_indicator</item>
+        <item name="android:actionBarItemBackground">@drawable/actionbar_menu_selector</item>
+        <item name="actionBarStyle">@style/CRM_Ttile_Bule</item>
+        <item name="actionBarItemBackground">@drawable/actionbar_menu_selector</item>
+        <item name="homeAsUpIndicator">@drawable/actionbar_up_indicator</item>
+        <item name="android:listViewStyle">@style/IMListView</item>
+        <item name="actionBarTabStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabStyle">@style/MyActionBar</item>
+    </style>
+    
+    <!--crm title theme-->
+    <style name="CrmThemeBlue" parent="AppBaseThemeBule">
+        <item name="actionBarStyle">@style/CRM_Ttile_Bule</item>
+    </style>
+
+    <style name="CrmThemeCustomer" parent="AppBaseThemeBule">
+        <item name="actionBarStyle">@style/CRM_Ttile_Customer</item>
+    </style>
+
+    <style name="CrmThemeVisit" parent="AppBaseThemeBule">
+        <item name="actionBarStyle">@style/CRM_Ttile_Visit</item>
+    </style>
+
+    <style name="CrmThemeRank" parent="AppBaseThemeBule">
+        <item name="actionBarStyle">@style/CRM_Ttile_Rank</item>
+    </style>
+
+    <style name="OAThemeOutOffice" parent="AppBaseThemeBule">
+        <item name="actionBarStyle">@style/OATheme_OutOffice</item>
+    </style>
+
+    <style name="OAThemeMeet" parent="AppBaseThemeBule">
+        <item name="actionBarStyle">@style/OATheme_Meet</item>
+    </style>
+
+    <style name="OAThemeSignin" parent="AppBaseThemeBule">
+        <item name="actionBarStyle">@style/OATheme_Signin</item>
+    </style>
+
+    <style name="CrmThemeTask" parent="AppBaseThemeBule">
+        <item name="actionBarStyle">@style/CRM_Ttile_Task</item>
+    </style>
+
+
+    <style name="MenuTextStyle">
+        <item name="android:textColor">@color/antionbarcolor</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CRM_Ttile_Bule" parent="IMActionBar">
+        <!--<item name="android:background">@color/titleBlue</item>-->
+        <!--<item name="background">@color/titleBlue</item>-->
+        <item name="android:background">@color/antionbarcolor</item>
+        <item name="background">@color/antionbarcolor</item>
+    </style>
+
+    <style name="CRM_Ttile_Task" parent="IMActionBar">
+        <!--<item name="android:background">@color/crm_title_task</item>-->
+        <!--<item name="background">@color/crm_title_task</item>-->
+        <item name="android:background">@color/antionbarcolor</item>
+        <item name="background">@color/antionbarcolor</item>
+    </style>
+
+    <style name="CRM_Ttile_Visit" parent="IMActionBar">
+        <!--<item name="android:background">@color/titleVisit</item>-->
+        <!--<item name="background">@color/titleVisit</item>-->
+        <item name="android:background">@color/antionbarcolor</item>
+        <item name="background">@color/antionbarcolor</item>
+    </style>
+
+    <style name="CRM_Ttile_Customer" parent="IMActionBar">
+        <!--<item name="android:background">@color/titleCustomer</item>-->
+        <!--<item name="background">@color/titleCustomer</item>-->
+        <item name="android:background">@color/antionbarcolor</item>
+        <item name="background">@color/antionbarcolor</item>
+    </style>
+
+    <style name="CRM_Ttile_Rank" parent="IMActionBar">
+        <!--<item name="android:background">@color/titleRank</item>-->
+        <!--<item name="background">@color/titleRank</item>-->
+        <item name="android:background">@color/antionbarcolor</item>
+        <item name="background">@color/antionbarcolor</item>
+    </style>
+
+    <style name="OATheme_OutOffice" parent="IMActionBar">
+        <!--<item name="android:background">@color/oa_outoffice</item>-->
+        <!--<item name="background">@color/oa_outoffice</item>-->
+        <item name="android:background">@color/antionbarcolor</item>
+        <item name="background">@color/antionbarcolor</item>
+    </style>
+
+    <style name="OATheme_Meet" parent="IMActionBar">
+        <!--<item name="android:background">@color/meeting</item>-->
+        <!--<item name="background">@color/meeting</item>-->
+        <item name="android:background">@color/antionbarcolor</item>
+        <item name="background">@color/antionbarcolor</item>
+    </style>
+
+    <style name="OATheme_Signin" parent="IMActionBar">
+        <!--<item name="android:background">@color/signin</item>-->
+        <!--<item name="background">@color/signin</item> -->
+        <item name="android:background">@color/antionbarcolor</item>
+        <item name="background">@color/antionbarcolor</item>
+    </style>
+
+
+    <style name="IMActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:actionBarSize">18dp</item>
+        <item name="android:icon">@drawable/action_bar_divider</item>
+        <item name="android:background">@drawable/BackBar</item>
+        <item name="android:titleTextStyle">@style/IMActionBar.TitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/IMActionBar.SubTitleTextStyle</item>
+        <item name="android:indeterminateProgressStyle">@style/ActionBarCustomProgressBar</item>
+        <item name="android:backgroundStacked">@color/antionbaritemcolor</item>
+        <item name="android:backgroundSplit">@color/red</item>
+        <item name="titleTextStyle">@style/IMActionBar.TitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/IMActionBar.SubTitleTextStyle</item>
+        <item name="icon">@drawable/action_bar_divider</item>
+        <item name="background">@drawable/BackBar</item>
+        <item name="backgroundStacked">@color/antionbaritemcolor</item>
+        <item name="backgroundSplit">@color/red</item>
+        <item name="indeterminateProgressStyle">@style/ActionBarCustomProgressBar</item>
+    </style>
+
+    <style name="MyActionBar" parent="Widget.AppCompat.ActionBar.TabView">
+        <item name="android:background">@color/antionbaritemcolor</item>
+    </style>
+
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+
+    </style>
+</resources>

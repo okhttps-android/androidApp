@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/cancle_subscribe_warning_ll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="取消订阅后将不再收到其推送消息"
+            android:textColor="@color/gray"
+            android:drawableLeft="@drawable/ic_warning"
+            android:drawablePadding="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/app_line_gray_1dp"/>
+    <TextView
+        android:id="@+id/cancel_subscribe_cancle_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="不再关注"
+        android:gravity="center"
+        android:textColor="@color/red"/>
+    <View
+        style="@style/app_line_gray_1dp"/>
+    <TextView
+        android:id="@+id/cancel_subscribe_contine_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="继续关注"
+        android:gravity="center"
+        />
+</LinearLayout>

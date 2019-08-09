@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.modular.booking">
+
+    <application>
+        <activity android:name=".activity.business.BBookingAddActivity"
+            android:theme="@style/MainBaseTheme"
+            android:label="@string/booking_business"/>
+        <activity android:name=".activity.shares.BBSharesListActivity"
+            android:theme="@style/MainBaseTheme"
+            android:label="@string/booking_share"/>
+        <activity android:name=".activity.business.BBCompanyListActivity" />
+        <activity android:name=".activity.business.MuilSelectBeanActivity" />
+        <activity android:name=".activity.business.BBookingDetailActivity" />
+        <activity android:name=".activity.shares.MuiltSelectShareActivity" 
+            android:label="@string/booking_share"
+            android:theme="@style/MainBaseTheme"/>
+        <activity android:name=".activity.services.BServicesActivity" />
+        <activity android:name=".activity.services.BServiceListActivity" />
+        <activity android:name=".activity.services.BServiceAddActivity" />
+        <activity
+            android:name=".activity.services.BServiceSearchActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.services.BServiceDetailActivity" />
+        <activity android:name=".activity.utils.GridSelectActivity" />
+        <activity android:name=".activity.utils.GridSelectDateActivity" />
+        <activity android:name=".activity.services.DishSelectActivity"></activity>
+
+        <activity android:name=".activity.services.DishMainActivity"></activity>
+        <activity android:name=".activity.test.BottomSheetActivity"></activity>
+       
+    </application>
+
+</manifest>

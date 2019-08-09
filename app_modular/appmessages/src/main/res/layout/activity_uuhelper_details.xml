@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/base_bg"
+                tools:context="com.modular.appmessages.activity.UUHelperDetailsActivity">
+
+    <ImageView
+        android:id="@+id/headIMG"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/icon_uuhelper_header" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@id/headIMG"
+        android:layout_toRightOf="@id/headIMG"
+        android:gravity="center_vertical"
+        android:text="@string/uu_helper"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/headIMG"
+        android:background="@color/item_line" />
+
+    <TextView
+        android:id="@+id/tagTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/headIMG"
+        android:layout_below="@id/headIMG"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="功能介绍"
+        android:textColor="@color/text_hine"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/contentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tagTV"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tagTV"
+        android:gravity="center_vertical"
+        android:text="UU 助手，您身边的移动办公小帮手。在这里，您可以查看CRM、OA等消息通知，还可以了解UU互联的最新动态哦，我们还提供人工智能客户，UU助手随时等候主任的吩咐哦！"
+        android:textColor="@color/text_main"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/takePhotoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentTV"
+    android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/uuhelper_btn_bg"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_main" />
+</RelativeLayout>

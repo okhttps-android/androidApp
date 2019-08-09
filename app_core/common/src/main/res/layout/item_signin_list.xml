@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/point"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/signin_point" />
+
+    <View
+        android:layout_width="2px"
+        android:layout_height="180dp"
+        android:layout_below="@+id/point"
+        android:layout_centerHorizontal="true"
+        android:background="@color/item_line" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/point"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/point"
+        android:gravity="center"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/time_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/point"
+        android:layout_toLeftOf="@+id/time"
+        android:gravity="center"
+        android:text="上班时间   "
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_main" />
+
+
+    <TextView
+        android:id="@+id/signin_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/point"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/point"
+        android:text="上班打卡 "
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/point"
+        android:layout_toRightOf="@+id/signin_tag"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_tag"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/point"
+        android:background="@drawable/oa_no_criterion"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_hine" />
+    <TextView
+        android:id="@+id/workSupple"
+        android:layout_alignTop="@id/tag"
+        android:layout_toRightOf="@id/tag"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signin_criterion"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="申请补卡>"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_hine" />
+
+    <View
+        android:id="@+id/point2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/signin_point" />
+
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/point2"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/point2"
+        android:gravity="center"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/time_tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/point2"
+        android:layout_toLeftOf="@+id/time2"
+        android:gravity="center"
+        android:text="下班时间   "
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_main" />
+
+
+    <TextView
+        android:id="@+id/signin_tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/point2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/point2"
+        android:text="下班打卡  "
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/signin2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/point2"
+        android:layout_toRightOf="@+id/signin_tag2"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/tag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin_tag2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/point2"
+        android:background="@drawable/oa_no_criterion"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_hine" />
+
+    <TextView
+        android:id="@+id/offSupple"
+        android:layout_alignTop="@id/tag2"
+        android:layout_toRightOf="@id/tag2"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signin_criterion"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="申请补卡>"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_hine" />
+</RelativeLayout>

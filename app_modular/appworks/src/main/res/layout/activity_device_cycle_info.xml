@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/codeTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单号"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/codeTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_toRightOf="@id/codeTag"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/padding"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/centerTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属部门"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/centerTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_toRightOf="@id/centerTag"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/padding"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/workshopTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车间"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/workshopTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_toRightOf="@id/workshopTag"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/padding"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/lineTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属线别"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/lineTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_toRightOf="@id/lineTag"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/padding"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/kindTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备种类"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/kindTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_toRightOf="@id/kindTag"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/padding"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/actionqtyTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已盘点"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/actionqtyTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_toRightOf="@id/actionqtyTag"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/padding"
+            android:textColor="@color/titleBlue"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/unactionqtyTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未盘点"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/unactionqtyTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_toRightOf="@id/unactionqtyTag"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/padding"
+            android:textColor="@color/titleBlue"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <com.core.widget.MyListView
+        android:id="@+id/mListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lossDeviceBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:layout_weight="1"
+            android:background="@drawable/bg_bule_btn"
+            android:padding="@dimen/paddingMin"
+            android:text="盘亏"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main" />
+
+        <Button
+            android:id="@+id/cycleBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:layout_weight="1"
+            android:background="@drawable/bg_bule_btn"
+            android:padding="@dimen/paddingMin"
+            android:text="@string/cycle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main" />
+
+        <Button
+            android:id="@+id/deviceAttributeBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding"
+            android:layout_weight="1"
+            android:background="@drawable/bg_bule_btn"
+            android:padding="@dimen/paddingMin"
+            android:text="获取明细"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main" />
+
+    </LinearLayout>
+
+    <com.module.recyclerlibrary.ui.refresh.simlpe.SimpleRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/mSimpleRefreshLayout"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gridList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.module.recyclerlibrary.ui.refresh.simlpe.SimpleRefreshLayout>
+
+</LinearLayout>

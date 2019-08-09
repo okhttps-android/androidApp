@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="2px"
+        android:layout_height="0dp"
+        android:background="#CDCDCD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/spot"
+        app:layout_constraintRight_toRightOf="@+id/spot"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/spot"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/bg_circular_bule"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/timeFl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/spot"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全天"
+            android:textColor="#FF000000"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/startTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:30"
+            android:textColor="#FF000000"
+            android:textSize="11sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/endTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14:00"
+            android:textColor="#FF000000"
+            android:textSize="11sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/contentCl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="@dimen/padding"
+        app:layout_constraintLeft_toRightOf="@id/timeFl"
+        app:layout_constraintRight_toLeftOf="@+id/nextIV"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/contentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLength="20"
+            android:text="需求设计需求设计需求设计需求设计需需求设计需求设计需求设计需求设计需…"
+            android:textColor="#FF282828"
+            android:textSize="13sp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintRight_toLeftOf="@+id/tagTv" />
+
+        <TextView
+            android:id="@+id/tagTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddingMin"
+            android:background="@drawable/bg_schedule_tag_blue"
+            android:text="工作"
+            android:textColor="#FFFFFFFF"
+            android:textSize="9sp"
+            app:layout_constraintBottom_toBottomOf="@id/contentTv"
+            app:layout_constraintLeft_toRightOf="@id/contentTv"
+            app:layout_constraintTop_toTopOf="@id/contentTv" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/typeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding"
+        android:layout_marginTop="@dimen/paddingMin"
+        android:textColor="#FF909090"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/contentCl"
+        app:layout_constraintTop_toBottomOf="@id/contentCl" />
+
+    <ImageView
+        android:id="@+id/nextIV"
+        android:layout_width="@dimen/next_width"
+        android:layout_height="@dimen/next_height"
+        android:src="@drawable/oa_next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line"
+        android:background="@color/linen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/contentCl"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        layout="@layout/action_device_cycle_count"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mRefreshListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/gray_light"
+        android:dividerHeight="1dp"
+        android:hardwareAccelerated="true"
+        android:layerType="software"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:visibility="visible" />
+</LinearLayout>

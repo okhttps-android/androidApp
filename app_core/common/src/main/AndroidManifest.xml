@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.core.app">
+
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+
+        <activity android:name="com.core.widget.view.Activity.CommonWebviewActivity"/>
+        <activity android:name="com.core.widget.view.Activity.ImgFileListActivity"
+            android:label="相册列表"/>
+        <activity android:name="com.core.utils.pictureselector.ImgsActivity"
+            android:label="@string/selector_caption"/>
+
+        <activity android:name="com.core.widget.view.Activity.SearchLocationActivity"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="stateUnspecified|adjustNothing" />
+        <activity android:name="com.core.widget.view.Activity.SelectActivity">
+        </activity>
+        <activity
+            android:name="com.core.widget.view.selectcalendar.SelectCalendarActivity"
+            android:label="@string/title_activity_select_calendar"/>
+        <activity
+            android:name="com.core.widget.view.Activity.MultiImagePreviewActivity"
+            android:configChanges="orientation|screenSize" />
+    </application>
+</manifest>

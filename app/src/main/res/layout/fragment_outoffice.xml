@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE9E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/name_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/radian_white_bg"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_alignLeft="@id/name_img"
+                android:layout_below="@id/name_img"
+                android:background="@color/item_line" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/name_img"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/name_img"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_tv"
+                android:layout_below="@+id/line"
+                android:layout_marginTop="15dp"
+                android:text="你今天完成签到"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/tv"
+                android:text=" 0"
+                android:textColor="@color/mainList2"
+                android:textSize="25dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/num_tv"
+                android:text="次"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/com_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_tv"
+                android:layout_below="@+id/name_tv"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="5dp"
+            android:background="@color/item_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"
+            android:background="#faf9f9"
+            android:padding="10dp">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/mapView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:clickable="true" />
+
+            <ImageView
+                android:id="@+id/tag_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/mapView"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/mapView"
+                android:src="@drawable/outoffice_time" />
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tag_img"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tag_img"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_min" />
+
+            <ImageView
+                android:id="@+id/tag_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tag_img"
+                android:layout_below="@id/date_tv"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/outffice_addr" />
+
+            <TextView
+                android:id="@+id/location_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/date_tv"
+                android:layout_alignTop="@id/tag_img2"
+                android:layout_below="@+id/date_tv"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_min" />
+
+            <TextView
+                android:id="@+id/addr_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/date_tv"
+                android:layout_below="@+id/location_tv"
+                android:layout_marginTop="5dp"
+                android:maxLines="3"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_min" />
+
+            <TextView
+                android:id="@+id/do_trim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/date_tv"
+                android:layout_below="@id/addr_tv"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:text="地点微调"
+                android:textColor="#f17e21"
+                android:textSize="@dimen/text_min" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@+id/mapView"
+            android:background="@color/item_line" />
+
+        <Button
+            android:id="@+id/click_btn"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/signin"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</ScrollView>

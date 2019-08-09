@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <com.xzjmyk.pm.activity.view.DivideRadioGroup
+        android:id="@+id/mDivideRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null">
+
+            <RadioButton
+                android:id="@+id/main_tab_one"
+                style="@style/IMTabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_job_bg"
+                android:paddingTop="7dp"
+                android:text="@string/message"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/main_tab_one_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="7sp"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/main_tab_two"
+                style="@style/IMTabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/tab_found_bg"
+                android:paddingTop="7dp"
+                android:text="@string/find"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/main_tab_two_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="7sp"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null">
+
+            <RadioButton
+                android:id="@+id/main_tab_three"
+                style="@style/IMTabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/tab_interview"
+                android:paddingTop="7dp"
+                android:text="@string/nearby"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/main_tab_three_tv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/hongdian"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="7sp"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <!--   <FrameLayout
+               android:layout_width="0dip"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="@null" >
+
+               <RadioButton
+                   android:id="@+id/main_tab_four"
+                   style="@style/IMTabButton"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:drawableTop="@drawable/tab_message"
+                   android:text="@string/group_chat" />
+
+               <TextView
+                   android:id="@+id/main_tab_four_tv"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="top|right"
+                   android:layout_marginRight="10dp"
+                   android:background="@drawable/tab_unread_bg"
+                   android:gravity="center"
+                   android:textColor="@android:color/white"
+                   android:textSize="10dp"
+                   android:visibility="invisible" />
+           </FrameLayout>-->
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null">
+
+            <RadioButton
+                android:id="@+id/main_tab_five"
+                style="@style/IMTabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/tab_more"
+                android:paddingTop="7dp"
+                android:text="@string/me"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/main_tab_five_tv"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/hongdian"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="7sp"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </com.xzjmyk.pm.activity.view.DivideRadioGroup>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xzjmyk.pm.activity.MainActivity" >
+
+    <item
+        android:id="@+id/app_about"
+        android:icon="@drawable/icon_app_share"
+        android:title="@string/about_share"
+        app:showAsAction="ifRoom"/>
+
+</menu>

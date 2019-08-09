@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/contact_title"
+        style="@style/TextView_VerticalCenter"
+        android:layout_width="70dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/titleBlue" />
+
+
+    <LinearLayout
+        style="@style/LinearLayout_horizontal"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/TextView_VerticalCenter"
+            android:layout_width="70dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/common_Contact_person"
+            android:textColor="@color/gray_light" />
+
+        <TextView
+            android:id="@+id/contact_tv"
+            style="@style/TextView_VerticalCenter"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayout_horizontal"
+        android:padding="5dp">
+
+        <TextView
+            style="@style/TextView_VerticalCenter"
+            android:layout_width="70dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/common_tel"
+            android:textColor="@color/gray_light" />
+
+        <TextView
+            android:id="@+id/bt_tel"
+            style="@style/TextView_VerticalCenter"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+</LinearLayout>

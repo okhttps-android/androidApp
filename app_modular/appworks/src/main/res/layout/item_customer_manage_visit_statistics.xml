@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding">
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="黄岩"
+        android:textColor="#FF333333"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customerTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:text="客户"
+        android:textColor="#FF666666"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@id/nameTv" />
+
+    <TextView
+        android:id="@+id/visitPlanTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paddingMin"
+        android:text="拜访计划"
+        android:textColor="#FF666666"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/customerTag"
+        app:layout_constraintTop_toBottomOf="@id/customerTag" />
+
+    <TextView
+        android:id="@+id/visitReportTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paddingMin"
+        android:text="拜访报告"
+        android:textColor="#FF666666"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="@id/visitPlanTag"
+        app:layout_constraintTop_toBottomOf="@id/visitPlanTag" />
+
+
+    <TextView
+        android:id="@+id/customerNumTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5个"
+        android:textColor="#FF333333"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/customerTag" />
+
+
+    <TextView
+        android:id="@+id/visitPlanTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5个"
+        android:textColor="#FF333333"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="@id/customerNumTv"
+        app:layout_constraintTop_toTopOf="@id/visitPlanTag" />
+
+    <TextView
+        android:id="@+id/visitReportNunTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5个"
+        android:textColor="#FF333333"
+        android:textSize="12sp"
+        app:layout_constraintRight_toRightOf="@id/customerNumTv"
+        app:layout_constraintTop_toTopOf="@id/visitReportTag" />
+</android.support.constraint.ConstraintLayout>

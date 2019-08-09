@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.core.widget.CustomerScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context="com.xzjmyk.pm.activity.ui.erp.activity.crm.VisitReportPlanActivity">
+
+        <RelativeLayout
+            android:id="@+id/rl_dateSelect"
+            style="@style/form_relative_customer"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_id1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="开始时间"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_id1"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <com.andreabaccega.widget.FormEditText
+                xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_date_select"
+                style="@style/form_relative_right_text"
+                android:drawableRight="@drawable/nav_icon_search_default"
+                editTextFormExample:testType="nocheck"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="请输入" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/visit_erp_rl"
+            style="@style/form_relative_customer"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_id2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="截止时间"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_id2"
+                android:text="*"
+                android:textColor="@color/red" />
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_visit_enddate"
+                style="@style/form_relative_right_text"
+                android:drawableRight="@drawable/nav_icon_search_default"
+                editTextFormExample:testType="nocheck"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="请输入" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/customer_erp_rl"
+            style="@style/form_relative_customer"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_id3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="客户名称"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_id3"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_customer_login"
+                style="@style/form_relative_right_text"
+                android:drawableRight="@drawable/nav_icon_search_default"
+                editTextFormExample:testType="nocheck"
+                android:maxHeight="70dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="请输入" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linksman_erp_rl"
+            style="@style/form_relative_customer"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_id4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="联系人"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@+id/tv_id4"
+                android:text="*"
+                android:textColor="@color/red" />
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_linksman_login"
+                style="@style/form_relative_right_text"
+                editTextFormExample:testType="nocheck"
+                android:hint="请输入" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/address_erp_rl"
+            style="@style/form_relative_customer"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_id5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:editable="true"
+                android:gravity="center"
+                android:text="客户地址"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_id5"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_address_login"
+                style="@style/form_relative_right_text"
+                android:maxHeight="70dp"
+                editTextFormExample:testType="nocheck"
+                android:hint="请输入" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/form_relative_customer"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_id6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="拜访主题"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_id6"
+                android:text="*"
+                android:textColor="@color/red" />
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_visit_theme"
+                style="@style/form_relative_right_text"
+                editTextFormExample:testType="nocheck"
+                android:hint="请输入" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/form_relative_customer"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_id7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="当前阶段"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_id7"
+                android:text="*"
+                android:textColor="@color/red" />
+            <com.andreabaccega.widget.FormEditText
+                xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_visit_steps"
+                style="@style/form_relative_right_text"
+                android:drawableRight="@drawable/nav_icon_search_default"
+                editTextFormExample:testType="nocheck"
+                android:hint="请选择" />
+        </RelativeLayout>
+        <RelativeLayout
+            style="@style/form_relative_customer"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_id8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="拜访内容"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_id8"
+                android:text="*"
+                android:textColor="@color/red" />
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/tv_visit_content"
+                style="@style/form_relative_right_text"
+                editTextFormExample:testType="nocheck"
+                android:hint="请输入" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+</com.core.widget.CustomerScrollView>
+

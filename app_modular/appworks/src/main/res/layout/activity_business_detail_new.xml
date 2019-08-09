@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/business_detail_new_main_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="商机阶段"
+                    android:textColor="#FF333333"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+
+                        <com.dinuscxj.progressbar.CircleProgressBar
+                            android:id="@+id/business_detail_new_progress"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:line_count="30"
+                            app:line_width="6dp"
+                            app:progress_background_color="#dddddd"
+                            app:progress_end_color="#3D80FE"
+                            app:progress_shader="sweep"
+                            app:progress_start_color="#9EBBFF"
+                            app:progress_stroke_cap="round"
+                            app:progress_stroke_width="6dp"
+                            app:progress_text_size="0sp"
+                            app:style="solid_line" />
+
+                        <TextView
+                            android:id="@+id/business_detail_new_stage_tv"
+                            android:layout_width="75dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:textColor="#FF666666"
+                            android:textSize="12sp"
+                            tools:text="第四阶段" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="阶段要点："
+                                android:textColor="#FF666666"
+                                android:textSize="12sp" />
+
+                            <ImageView
+                                android:id="@+id/business_detail_new_stage_iv"
+                                android:layout_width="20dp"
+                                android:layout_height="10dp"
+                                android:src="@drawable/ic_business_eye"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/business_detail_stage_content_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#FF333333"
+                            android:textSize="12sp"
+                            tools:text="要点1要点1要点1要点1要点1要点1
+    要点1要点1要点1要点1要点1要点1
+    要点1要点1要点1要点1要点1要点1
+    要点1要点1要点1要点1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/business_detail_new_tablayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        app:tabIndicatorColor="#33A2EE"
+                        app:tabIndicatorHeight="4dp"
+                        app:tabSelectedTextColor="#1084D1"
+                        app:tabTextColor="#666666" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/business_detail_new_vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/business_detail_new_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/business_detail_new_add_schedule_tv"
+            style="@style/business_follow_btn"
+            android:text="添 加 日 程"
+            />
+
+
+        <TextView
+            android:id="@+id/business_detail_new_follow_tv"
+            style="@style/business_follow_btn"
+            android:layout_marginLeft="40dp"
+            android:text="商 机 跟 进"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/business_detail_new_operate_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/business_detail_new_distribution_tv"
+            style="@style/business_follow_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:text="分 配"
+            android:visibility="gone"
+            />
+
+
+        <TextView
+            android:id="@+id/business_detail_new_receive_tv"
+            style="@style/business_follow_btn"
+            android:layout_weight="1"
+            android:width="0dp"
+            android:text="领 取"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</LinearLayout>

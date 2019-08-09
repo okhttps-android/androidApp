@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:footerDividersEnabled="false">
+
+    <ImageView
+        android:id="@+id/img_next"
+        android:layout_width="@dimen/next_width"
+        android:layout_height="@dimen/next_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/oa_next" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/img_next"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minWidth="70dp"
+                android:padding="3dp"
+                android:text="编   号："
+                android:textSize="@dimen/next_height"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_name"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="请购单维护作业"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/next_height"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_taskid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minWidth="70dp"
+                android:padding="3dp"
+                android:text="名   称："
+                android:textSize="@dimen/next_height" />
+
+            <TextView
+                android:id="@+id/tv_task_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="状态"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_hine" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_task_status"
+                android:layout_toRightOf="@+id/tv_taskid"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:padding="3dp"
+                android:text="PR14090048 "
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/next_height" />
+
+            <ImageView
+                android:id="@+id/iv_website"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/iconfont_website"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_emcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minWidth="70dp"
+                android:padding="3dp"
+                android:text="发起人："
+                android:textSize="@dimen/next_height" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_emcode"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="周袁"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/next_height" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:text="2014-10-10 16:23:12"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

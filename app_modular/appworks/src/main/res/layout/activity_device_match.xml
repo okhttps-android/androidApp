@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/paddingMin">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="@dimen/oa_statistics_date_minheight"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:text="部门编号"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/centerCodeEd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oa_statistics_date_minheight"
+            android:background="@drawable/shape_corner_white_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/paddingMin">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="@dimen/oa_statistics_date_minheight"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:text="部门名称"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/centerNameEd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oa_statistics_date_minheight"
+            android:background="@drawable/shape_corner_white_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/paddingMin">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="@dimen/oa_statistics_date_minheight"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:text="车间"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/workShopEd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oa_statistics_date_minheight"
+            android:background="@drawable/shape_corner_white_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/paddingMin">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="@dimen/oa_statistics_date_minheight"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:text="线别"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lineCodeEd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oa_statistics_date_minheight"
+            android:background="@drawable/shape_corner_white_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/paddingMin">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="@dimen/oa_statistics_date_minheight"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:text="机型"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/devModelEd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oa_statistics_date_minheight"
+            android:background="@drawable/shape_corner_white_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/cancelTv"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_cancel_bg"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/selector_cancel_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/resetTv"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_confirm_bg"
+            android:gravity="center"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/confirmTv"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_confirm_bg"
+            android:gravity="center"
+            android:text="@string/app_dialog_ok"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

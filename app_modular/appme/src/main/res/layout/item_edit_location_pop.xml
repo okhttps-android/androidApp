@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/pop_round_bg">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="请输入服务/场地/房间名称"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <EditText
+            android:id="@+id/editname_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:hint="@string/common_input"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main"
+            android:gravity="center_horizontal"
+            />
+        <EditText
+            android:id="@+id/editname_et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:hint="@string/common_input2"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main"
+            android:gravity="center_horizontal"
+            android:inputType="number"/>
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="10dp"
+        android:background="@color/item_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main">
+
+        <TextView
+            android:id="@+id/cancel_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:background="@color/item_line" />
+
+        <TextView
+            android:id="@+id/sure_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/common_sure"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+    </LinearLayout>
+</LinearLayout>

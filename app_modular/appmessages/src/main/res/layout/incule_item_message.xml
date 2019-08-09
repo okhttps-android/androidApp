@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/headIMG"
+        android:layout_width="@dimen/item_img_height"
+        android:layout_height="@dimen/item_img_width"
+        android:layout_centerVertical="true"
+        android:background="@color/transparent"
+        android:padding="1dp"
+        android:src="@drawable/home_image_01_u" />
+
+    <TextView
+        android:id="@+id/numUnReadTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/tab_unread_bg"
+        android:gravity="center"
+        android:text="999"
+        android:textColor="@android:color/white"
+        android:textSize="10.0dp" />
+
+    <TextView
+        android:id="@+id/timeTV"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/headIMG"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="timeTV"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/timeTV"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/timeTV"
+        android:layout_toRightOf="@id/headIMG"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/msg_approval"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/messageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/titleTV"
+        android:layout_below="@id/titleTV"
+        android:ellipsize="end"
+        android:lines="1"
+        android:layout_marginTop="5dp"
+        android:text="titleTV"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+</RelativeLayout>

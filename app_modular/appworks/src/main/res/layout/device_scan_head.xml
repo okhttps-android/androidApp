@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/backImg"
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/doneTv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:src="@drawable/back"
+        android:text="操作"
+        android:textColor="@color/white" />
+
+    <RadioGroup
+        android:id="@+id/selectRg"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape_process_linear"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/baseInfoRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_process_item"
+            android:button="@null"
+            android:textColor="@drawable/text_btn_bg"
+            android:checked="true"
+            android:gravity="center"
+            android:text="基础信息" />
+
+        <RadioButton
+            android:id="@+id/moreInfoRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:textColor="@drawable/text_btn_bg"
+            android:background="@drawable/shape_process_item"
+            android:button="@null"
+            android:gravity="center"
+            android:text="详细配置" />
+
+        <RadioButton
+            android:id="@+id/historyRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:textColor="@drawable/text_btn_bg"
+            android:background="@drawable/shape_process_item"
+            android:button="@null"
+            android:gravity="center"
+            android:text="设备履历" />
+
+    </RadioGroup>
+</RelativeLayout>

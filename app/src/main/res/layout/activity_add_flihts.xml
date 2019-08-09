@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_flihts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/oa_bg"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.oa.AddFlihtsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_min"
+        android:background="@color/oa_item_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/rule_name_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/work_name"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_toRightOf="@id/rule_name_tag"
+            android:layout_marginTop="@dimen/padding"
+            android:textColor="@color/red"/>
+
+        <EditText
+            android:id="@+id/rule_name_et"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/rule_name_tag"
+            android:background="@null"
+            android:gravity="center_vertical|right"
+            android:hint="@string/common_input"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_min"
+        android:layout_marginTop="10dp"
+        android:background="@color/oa_item_bg"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/time_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/work_time"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_toRightOf="@id/time_tag"
+            android:layout_marginTop="@dimen/padding"
+            android:textColor="@color/red"/>
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/time_tag"
+            android:background="@null"
+            android:drawableRight="@drawable/oa_next"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:hint="@string/common_select"
+            android:lines="1"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_min"
+        android:layout_marginTop="2px"
+        android:background="@color/oa_item_bg"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/date_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/work_day"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_toRightOf="@id/date_tag"
+            android:layout_marginTop="@dimen/padding"
+            android:textColor="@color/red"/>
+        <LinearLayout
+            android:id="@+id/calender_select_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="80dp"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_date_nor"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:drawableRight="@drawable/oa_next"
+            android:gravity="center_vertical|right"
+            android:hint="@string/common_select"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/department_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_min"
+        android:layout_marginTop="2px"
+        android:background="@color/oa_item_bg"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/department_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/work_department"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/department_tv"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/department_tag"
+            android:background="@null"
+            android:drawableRight="@drawable/oa_next"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:hint="@string/common_select_not_must"
+            android:lines="1"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/collision_department_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="3dp"
+        android:text="aaaa"
+        android:textColor="@color/titleBlue"
+        android:textSize="@dimen/text_hine"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/munber_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height_min"
+        android:layout_marginTop="2px"
+        android:background="@color/oa_item_bg"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/munber_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:text="@string/and_join_member"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/munber_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/munber_tag"
+            android:background="@null"
+            android:drawableRight="@drawable/oa_next"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:hint="@string/common_select_not_must"
+            android:lines="1"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/collision_munber_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="13dp"
+        android:paddingTop="3dp"
+        android:text="aaaa"
+        android:textColor="@color/titleBlue"
+        android:textSize="@dimen/text_hine"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/click_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_bule_btn"
+            android:padding="10dp"
+            android:text="@string/common_save_button"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+</LinearLayout>

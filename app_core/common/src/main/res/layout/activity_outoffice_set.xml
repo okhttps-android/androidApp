@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.oa.OutofficeSetActivity">
+
+    <RelativeLayout
+        android:id="@+id/mission_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="自动外勤"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <com.core.widget.view.SwitchView
+            android:id="@+id/auto_signin_sw"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="是否使用相册图片"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <com.core.widget.view.SwitchView
+            android:id="@+id/isImage"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="是否允许地址微调"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <com.core.widget.view.SwitchView
+            android:id="@+id/allow_chance_location"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:id="@+id/location_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/location_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="允许微调距离"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:drawableRight="@drawable/oa_next"
+            android:gravity="center_vertical"
+            android:text="500米"
+            android:textColor="@color/text_main" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+</LinearLayout>

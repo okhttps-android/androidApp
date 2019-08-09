@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.crm.SalesRankingActivity">
+
+    <LinearLayout style="@style/LinearLayout_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_star_left" />
+
+            <TextView
+                android:id="@+id/tv_date_title"
+                style="@style/TextView_Basic"
+                android:text="2016年7月荣誉墙"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_star_right" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextView_Basic"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/Wall_of_Fame_description"
+            />
+        <View style="@style/app_line_horizontal_05p"></View>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/list_business"
+        style="@style/GridViewSaleRanking"
+        android:layout_margin="10dp"></com.handmark.pulltorefresh.library.PullToRefreshGridView>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/common_header_boy"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/photo_img"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_hine"
+            android:layout_marginTop="10dp"
+
+            />
+        <TextView
+            android:id="@+id/ranking_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/photo_img"
+            android:layout_below="@id/name_tv"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_hine"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:id="@+id/steps_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="@dimen/BigTextSize"
+            android:textColor="@color/green"
+            android:layout_toLeftOf="@+id/prise_tv"
+            android:layout_marginRight="30dp"
+            android:text="11"
+            />
+
+        <TextView
+            android:id="@+id/prise_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:textSize="@dimen/text_hine"
+            android:textColor="@color/text_hine"
+            android:layout_marginRight="8dp"
+            android:visibility="visible"
+            android:text="0"/>
+        <ImageView
+            android:id="@+id/prise_im"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/praise"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/prise_tv"
+            android:layout_marginTop="5dp"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</LinearLayout>

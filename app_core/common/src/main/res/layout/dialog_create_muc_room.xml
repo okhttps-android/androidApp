@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_color2">
+
+    <RelativeLayout
+        android:id="@+id/rl_room_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="3dp"
+        android:background="@color/item_color1">
+
+        <TextView
+            android:id="@+id/tv_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center_vertical"
+            android:text="@string/room_name"
+            android:textSize="@dimen/text_main" />
+
+        <com.xzjmyk.pm.activity.view.ClearEditText
+            android:id="@+id/room_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:layout_toRightOf="@+id/tv_room_name"
+            android:background="@color/item_color2"
+            android:drawablePadding="5dp"
+            android:hint="@string/common_input"
+            android:inputType="text"
+            android:textSize="@dimen/text_hine" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_room_doc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_below="@id/rl_room_name"
+        android:layout_marginTop="@dimen/line_min"
+        android:background="@color/item_color1">
+
+        <TextView
+            android:id="@+id/tv_room_doc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center_vertical"
+            android:text="@string/room_description"
+            android:textSize="@dimen/text_main"
+
+            />
+
+        <com.xzjmyk.pm.activity.view.ClearEditText
+            android:id="@+id/room_desc_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:layout_toRightOf="@+id/tv_room_doc"
+            android:background="@color/item_color2"
+            android:drawablePadding="5dp"
+            android:hint="@string/common_input"
+            android:inputType="text"
+
+            android:textSize="@dimen/text_hine" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/creater"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/item_color1"
+        android:layout_below="@+id/rl_room_doc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center_vertical"
+            android:text="@string/creater"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/creater_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center_vertical"
+
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_below="@+id/creater"
+        android:layout_marginTop="@dimen/line_min"
+        android:background="@color/item_color1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center_vertical"
+            android:text="@string/room_number"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center_vertical"
+            android:text="0/0"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sure_btn"
+        android:background="@drawable/bg_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/num"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_main"
+        android:text="@string/common_sure"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

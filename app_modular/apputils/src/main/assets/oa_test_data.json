@@ -1,0 +1,15 @@
+{
+  "datas": {
+    "subs": [],
+    "target": [{
+      "EM_CODE": null,
+      "CUSTOMERCOUNT": null,
+      "BFCOUNT": null,
+      "RANK": null,
+      "FIRSTBFCOUNT": 16.2719,
+      "TOPCOUNT": null
+    }]
+  },
+  "success": true,
+  "sessionId": "6CE9C801F38E2BF728B0D8D78A61EFEB"
+}

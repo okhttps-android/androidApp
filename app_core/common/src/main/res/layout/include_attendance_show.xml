@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/l1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/attendances_bg"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/r1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/attendances_bg"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/l2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/attendances_bg"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/r2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/attendances_bg"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/l3"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/attendance_bg"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/r3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/attendance_bg"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/l4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/attendance_bg"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/r4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/attendance_bg"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/l5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/attendance_bg"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/r5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/attendance_bg"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/l6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/attendance_bg"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/r6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/attendance_bg"
+            android:drawablePadding="10dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_main" />
+    </LinearLayout>
+</LinearLayout>

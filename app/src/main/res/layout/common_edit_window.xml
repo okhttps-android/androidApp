@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.andreabaccega.widget.FormEditText
+        android:id="@+id/deal_describe"
+        style="@style/form_relative_right_text"
+        android:layout_marginLeft="5dp"
+        android:gravity="top"
+        android:hint="请输入审批意见"
+        android:minHeight="100dp"
+        android:layout_marginRight="5dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="1dp"
+        android:background="@color/item_line" />
+
+    <LinearLayout
+        android:id="@+id/item_common_docui_res_and_del_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_main"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="3dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/jump_step_ll"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/selector_me_menu_item_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/titleBlue"
+                android:text="跳过此步"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="@color/item_line"
+            android:layout_gravity="center_vertical"
+            />
+        <LinearLayout
+            android:id="@+id/ok_ll"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/selector_me_menu_item_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/titleBlue"
+                android:text="确定"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

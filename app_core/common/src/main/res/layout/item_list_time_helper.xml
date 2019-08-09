@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp">
+
+            <LinearLayout
+                android:id="@+id/item_time_helper_order_left_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/item_time_helper_order_left_tv"
+                    style="@style/time_helper_content"
+                    android:background="@drawable/shape_time_helper_order_left"
+                    tools:text="您预约了赵四"
+                    />
+
+                <TextView
+                    style="@style/time_helper_title"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/shape_time_helper_order_left_title"
+                    android:text="预\n约"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_time_helper_schedule_left_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/item_time_helper_schedule_left_tv"
+                    style="@style/time_helper_content"
+                    android:background="@drawable/shape_time_helper_schedule_left"
+                    tools:text="拜访客户张先生"
+                    />
+
+                <TextView
+                    style="@style/time_helper_title"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/shape_time_helper_schedule_left_title"
+                    android:text="日\n程"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_time_helper_meeting_left_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/item_time_helper_meeting_left_tv"
+                    style="@style/time_helper_content"
+                    android:background="@drawable/shape_time_helper_meeting_left"
+                    tools:text="股东大会"
+                    />
+
+                <TextView
+                    style="@style/time_helper_title"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/shape_time_helper_meeting_left_title"
+                    android:text="会\n议"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_time_helper_outwork_left_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/item_time_helper_outwork_left_tv"
+                    style="@style/time_helper_content"
+                    android:background="@drawable/shape_time_helper_outwork_left"
+                    tools:text="股东大会"
+                    />
+
+                <TextView
+                    style="@style/time_helper_title"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/shape_time_helper_outwork_left_title"
+                    android:text="外\n勤"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_time_helper_trip_left_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/item_time_helper_trip_left_tv"
+                    style="@style/time_helper_content"
+                    android:background="@drawable/shape_time_helper_trip_left"
+                    tools:text="股东大会"
+                    />
+
+                <TextView
+                    style="@style/time_helper_title"
+                    android:layout_marginLeft="2dp"
+                    android:background="@drawable/shape_time_helper_trip_left_title"
+                    android:text="出\n差"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_time_helper_time_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="#5B5B5B"
+                android:textSize="14sp"
+                android:visibility="gone"
+                tools:text="14:00" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/item_time_helper_currenttime_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="36dp"
+            android:gravity="right"
+            android:text="14:00"
+            android:textColor="#0051C7"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/item_time_helper_indicate"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/shape_time_helper_indicate" />
+
+        <RelativeLayout
+            android:layout_width="4dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="#AFAFAF" />
+
+            <ProgressBar
+                android:id="@+id/item_time_helper_progress"
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:indeterminateOnly="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_vertical_gradient_simple_shape" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/item_time_helper_currenttime_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="36dp"
+            android:text="14:00"
+            android:textColor="#0051C7"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:id="@+id/item_time_helper_time_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#5B5B5B"
+                android:textSize="14sp"
+                android:visibility="gone"
+                tools:text="14:00" />
+
+            <LinearLayout
+                android:id="@+id/item_time_helper_order_right_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/time_helper_title"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shape_time_helper_order_right_title"
+                    android:text="预\n约"
+                    />
+
+                <TextView
+                    android:id="@+id/item_time_helper_order_right_tv"
+                    style="@style/time_helper_content"
+                    android:background="@drawable/shape_time_helper_order_right"
+                    tools:text="您预约了赵四" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_time_helper_schedule_right_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/time_helper_title"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shape_time_helper_schedule_right_title"
+                    android:text="日\n程"
+                    />
+
+                <TextView
+                    android:id="@+id/item_time_helper_schedule_right_tv"
+                    style="@style/time_helper_content"
+                    android:background="@drawable/shape_time_helper_schedule_right"
+                    tools:text="拜访客户张先生" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_time_helper_meeting_right_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/time_helper_title"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shape_time_helper_meeting_right_title"
+                    android:text="会\n议"
+                    />
+
+                <TextView
+                    android:id="@+id/item_time_helper_meeting_right_tv"
+                    style="@style/time_helper_content"
+                    android:background="@drawable/shape_time_helper_meeting_right"
+                    tools:text="股东大会" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_time_helper_outwork_right_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/time_helper_title"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shape_time_helper_outwork_right_title"
+                    android:text="外\n勤"
+                    />
+
+                <TextView
+                    android:id="@+id/item_time_helper_outwork_right_tv"
+                    style="@style/time_helper_content"
+                    android:background="@drawable/shape_time_helper_outwork_right"
+                    tools:text="股东大会" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_time_helper_trip_right_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/time_helper_title"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/shape_time_helper_trip_right_title"
+                    android:text="出\n差"
+                    />
+
+                <TextView
+                    android:id="@+id/item_time_helper_trip_right_tv"
+                    style="@style/time_helper_content"
+                    android:background="@drawable/shape_time_helper_trip_right"
+                    tools:text="股东大会" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

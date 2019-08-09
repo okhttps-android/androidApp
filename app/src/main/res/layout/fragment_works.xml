@@ -1,0 +1,372 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/my_data_rl"
+            style="@style/IMTbleLine"
+            android:background="@drawable/selector_me_menu_item_bg"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/set_resume_u"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="我的关注"
+                android:textColor="@color/text_main"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="@color/item_line" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/my_client_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:background="@drawable/selector_me_menu_item_bg">
+
+            <TextView
+                android:id="@+id/tv_crm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/title_set_u"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/work_customer"
+                android:textColor="@color/text_main"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/item_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_uas_sys"
+            style="@style/IMTbleLine_UP_Me"
+            android:background="@drawable/selector_me_menu_item_bg">
+
+            <TextView
+                android:id="@+id/tv_oa_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_menu_oa"
+                android:layout_toLeftOf="@+id/iv_desc_oa"
+                android:layout_toStartOf="@+id/iv_desc_oa"
+                android:text="@string/Expense_reimbursement" />
+
+            <ImageView
+                android:id="@+id/iv_desc_oa"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/oa_next"
+                android:layout_toLeftOf="@+id/tv_menu_oa"
+                android:layout_toStartOf="@+id/tv_menu_oa"
+                android:src="@drawable/kaoqintongji" />
+
+            <TextView
+                android:id="@+id/tv_menu_oa"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignTop="@+id/tv_oa"
+                android:layout_gravity="top|right"
+                android:layout_toLeftOf="@+id/oa_next"
+                android:layout_toStartOf="@+id/oa_next"
+                android:background="@drawable/hongdian"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="10.0dip" />
+
+            <TextView
+                android:id="@+id/tv_oa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/set_video_u"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/work_oa"
+                android:textColor="@color/text_main"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/oa_next"
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:id="@+id/show_new_function_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/oa_next"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="考勤统计"
+                    android:textSize="12sp" />
+
+                <FrameLayout
+                    android:id="@+id/notice_head_area"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/notice_avatar_img"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        android:contentDescription="@string/app_name"
+                        android:padding="1dp"
+                        android:src="@drawable/kaoqintongji" />
+
+                    <TextView
+                        android:id="@+id/notice_num_tv"
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/hongdian"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="10.0dip"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/item_line" />
+
+        <RelativeLayout
+            android:id="@+id/setting_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:background="@drawable/selector_me_menu_item_bg">
+
+            <TextView
+                android:id="@+id/tv_desc_business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_business_num"
+                android:layout_toLeftOf="@+id/iv_business_desc"
+                android:layout_toStartOf="@+id/iv_business_desc"
+                android:text="@string/work_oa_order" />
+
+            <ImageView
+                android:id="@+id/iv_business_desc"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tv_business_num"
+                android:layout_toLeftOf="@+id/tv_business_num"
+                android:layout_toStartOf="@+id/tv_business_num"
+                android:src="@drawable/kaoqintongji" />
+
+            <TextView
+                android:id="@+id/tv_business_num"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignTop="@+id/textView2"
+                android:layout_gravity="top|right"
+                android:layout_toLeftOf="@+id/imageView2"
+                android:layout_toStartOf="@+id/imageView2"
+                android:background="@drawable/hongdian"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/business_manage"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/work_business_manage"
+                android:textColor="@color/text_main"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/item_line" />
+
+        <RelativeLayout
+            android:id="@+id/goods_find"
+            style="@style/IMTbleLine_UP_Me"
+            android:background="@drawable/selector_me_menu_item_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/f_u"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/work_business_mall"
+                android:textColor="@color/text_main"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/item_line" />
+
+        <RelativeLayout
+            android:id="@+id/work_data_inquiry_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:background="@drawable/selector_me_menu_item_bg">
+
+            <TextView
+                android:id="@+id/work_data_inquiry_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_data_inquiry"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/work_data_inquiry"
+                android:textColor="@color/text_main"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/work_data_inquiry_next"
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+
+            <com.core.widget.RedView
+                android:id="@+id/work_data_inquiry_rv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/work_data_inquiry_next"
+                app:text="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/item_line" />
+
+        <RelativeLayout
+            android:id="@+id/work_report_statistics_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:background="@drawable/selector_me_menu_item_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_report_statistics"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/work_report_statistics"
+                android:textColor="@color/text_main"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/work_report_statistics_next"
+                android:layout_width="@dimen/next_width"
+                android:layout_height="@dimen/next_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/oa_next"
+                android:contentDescription="@string/app_name" />
+
+            <com.core.widget.RedView
+                android:id="@+id/work_report_statistics_rv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/work_report_statistics_next"
+                app:text="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/item_line" />
+    </LinearLayout>
+
+</ScrollView>

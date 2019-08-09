@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="#f6f6f6"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/data_inquiry_list_ptlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray_light"
+            android:dividerHeight="1dp"
+            android:hardwareAccelerated="true"
+            android:layerType="software"
+            android:scrollbars="none"
+            android:scrollingCache="false"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/data_inquiry_list_total_spread_iv"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_alignParentBottom="true"
+            android:background="#20000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_expansion_spread"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/data_inquiry_list_total_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_light" />
+
+        <RelativeLayout
+            android:id="@+id/data_inquiry_list_total_hide_rl"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:background="@color/background">
+
+            <ImageView
+                android:id="@+id/data_inquiry_list_total_hide_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_expansion_retract" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/data_inquiry_list_total_hide_iv"
+                android:gravity="center_vertical"
+                android:text="合计"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/data_inquiry_list_total_lv"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/data_inquiry_list_gray_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#20000000"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/data_inquiry_list_fuzzy_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/data_inquiry_list_history_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/str_search_history"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/data_inquiry_history_clear_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_clear"
+                    android:textColor="@color/LightBlue"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <com.core.widget.MyListView
+                android:id="@+id/data_inquiry_list_history_data_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/me_menu_item_normal"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/data_inquiry_list_exact_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/data_inquiry_list_option_ll"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/data_inquiry_list_option_lv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/data_inquiry_list_option_cancel_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_cancel_bg"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textColor="@color/selector_cancel_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/data_inquiry_list_option_reset_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_confirm_bg"
+                    android:gravity="center"
+                    android:text="@string/reset"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/data_inquiry_list_option_confirm_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_confirm_bg"
+                    android:gravity="center"
+                    android:text="@string/app_dialog_ok"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

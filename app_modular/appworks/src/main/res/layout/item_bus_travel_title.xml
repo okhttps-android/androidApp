@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/titleLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="出差单号"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/text_hine" />
+
+        <ImageView
+            android:id="@+id/addMoreTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:src="@drawable/icon_add_circular" />
+
+        <TextView
+            android:id="@+id/codeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:layout_toLeftOf="@id/addMoreTv"
+            android:layout_toRightOf="@id/tag"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="出差单号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+</LinearLayout>

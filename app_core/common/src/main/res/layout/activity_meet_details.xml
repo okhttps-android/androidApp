@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/oa_main"
+                tools:context="com.xzjmyk.pm.activity.ui.erp.activity.oa.MeetDetailsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/oa_background_orange"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/meet_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/oa_save_meet"
+            android:gravity="center"
+            android:text="@string/meet_details"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/add_task_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/oa_add_task"
+            android:gravity="center"
+            android:text="@string/push_task"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/hintColor"
+            android:textSize="@dimen/text_hine" />
+
+        <TextView
+            android:id="@+id/oa_meeting_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_tv"
+            android:layout_marginTop="20dp"
+            android:text="06月13日"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/oa_meeting_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/oa_meeting_start"
+            android:layout_marginTop="5dp"
+            android:text="16:00"
+            android:textColor="@color/powderblue"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/oa_meeting_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/oa_meeting_start_date"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/oa_meeting_start_date"
+            android:text="—"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/oa_meeting_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/oa_meeting_start_date"
+            android:layout_toRightOf="@+id/oa_meeting_line"
+            android:text="18:00"
+            android:textColor="@color/powderblue"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/oa_meeting_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/oa_meeting_end_date"
+            android:layout_alignLeft="@+id/oa_meeting_end_date"
+            android:layout_marginBottom="5dp"
+            android:text="06月13日"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/oa_meeting_start_date"
+            android:layout_marginTop="10dp"
+            android:text="@string/meet_position"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/addr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/addr"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/addr"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/not_edit"
+            android:textColor="@color/text_hine" />
+
+
+        <TextView
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addr_tv"
+            android:layout_marginTop="10dp"
+            android:text="@string/meet_show"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/sub_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/sub"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/sub"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="无"
+            android:textColor="@color/text_hine" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sub_tv"
+            android:layout_marginTop="10dp"
+            android:text="@string/recorder"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/user_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/addr_tv"
+            android:layout_alignTop="@id/user"
+            android:textColor="@color/text_hine" />
+
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_tv"
+            android:layout_marginTop="10dp"
+            android:text="@string/meet_tag"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/tag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/addr_tv"
+            android:layout_alignTop="@id/tag"
+            android:text="无"
+            android:textColor="@color/text_hine" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/click_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_orange_btn"
+        android:padding="10dp"
+        android:text="@string/signin_new"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_main" />
+
+
+    <RelativeLayout
+        android:id="@+id/baidu_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/click_btn"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/location_tag"
+            android:ellipsize="end"
+            android:lines="1" />
+
+        <TextView
+            android:id="@+id/location_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:text="@string/agare"
+            android:textColor="@color/blue" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/click_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/baidu_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signin_number" />
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:id="@+id/num_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/click_finds"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/end_meet_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/endmeeting" />
+
+</RelativeLayout>

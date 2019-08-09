@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/tag1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F3F3F3" />
+
+    <EditText
+        android:id="@+id/contentEd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:background="@null"
+        android:hint="请输入日程内容…"
+        android:padding="@dimen/padding"
+        android:textColor="#5D5D5D"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tag1" />
+
+    <View
+        android:id="@+id/tag2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line"
+        android:layout_marginTop="@dimen/paddingMin"
+        android:background="#F3F3F3"
+        app:layout_constraintLeft_toLeftOf="@id/contentEd"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contentEd" />
+
+    <TextView
+        android:id="@+id/allDayTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="全天"
+        android:textColor="#FF000000"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/contentEd"
+        app:layout_constraintTop_toBottomOf="@id/tag2" />
+
+    <com.core.widget.view.SwitchView
+        android:id="@+id/allDaySv"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintBottom_toBottomOf="@id/allDayTag"
+        app:layout_constraintRight_toRightOf="@id/contentEd"
+        app:layout_constraintTop_toTopOf="@id/allDayTag" />
+
+    <View
+        android:id="@+id/tag3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line"
+        android:layout_marginTop="@dimen/paddingMin"
+        android:background="#F3F3F3"
+        app:layout_constraintLeft_toLeftOf="@id/contentEd"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/allDayTag" />
+
+
+    <TextView
+        android:id="@+id/startTimeTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="开始时间"
+        android:textColor="#FF000000"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/contentEd"
+        app:layout_constraintTop_toBottomOf="@id/tag3" />
+
+
+    <TextView
+        android:id="@+id/startTimeTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/paddingMin"
+        android:drawableRight="@drawable/oa_next"
+        android:gravity="right|center_vertical"
+        android:padding="@dimen/padding"
+        android:textColor="#909090"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/startTimeTag"
+        app:layout_constraintLeft_toRightOf="@id/startTimeTag"
+        app:layout_constraintRight_toRightOf="@id/contentEd"
+        app:layout_constraintTop_toTopOf="@id/startTimeTag" />
+
+    <View
+        android:id="@+id/tag4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line"
+        android:layout_marginTop="@dimen/paddingMin"
+        android:background="#F3F3F3"
+        app:layout_constraintLeft_toLeftOf="@id/contentEd"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startTimeTag" />
+
+
+    <TextView
+        android:id="@+id/endTimeTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="结束时间"
+        android:textColor="#FF000000"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/contentEd"
+        app:layout_constraintTop_toBottomOf="@id/tag4" />
+
+
+    <TextView
+        android:id="@+id/endTimeTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/paddingMin"
+        android:drawableRight="@drawable/oa_next"
+        android:gravity="right|center_vertical"
+        android:padding="@dimen/padding"
+        android:textColor="#FF909090"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/endTimeTag"
+        app:layout_constraintLeft_toRightOf="@id/endTimeTag"
+        app:layout_constraintRight_toRightOf="@id/contentEd"
+        app:layout_constraintTop_toTopOf="@id/endTimeTag" />
+
+    <View
+        android:id="@+id/tag5"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="@dimen/paddingMin"
+        android:background="#F3F3F3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/endTimeTag" />
+
+
+    <TextView
+        android:id="@+id/warnTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="提醒时间"
+        android:textColor="#FF000000"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/contentEd"
+        app:layout_constraintTop_toBottomOf="@id/tag5" />
+
+
+    <TextView
+        android:id="@+id/warnTimeTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/paddingMin"
+        android:drawableRight="@drawable/oa_next"
+        android:gravity="right|center_vertical"
+        android:padding="@dimen/padding"
+        android:textColor="#FF909090"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/warnTag"
+        app:layout_constraintLeft_toRightOf="@id/warnTag"
+        app:layout_constraintRight_toRightOf="@id/contentEd"
+        app:layout_constraintTop_toTopOf="@id/warnTag" />
+
+    <View
+        android:id="@+id/tag6"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line"
+        android:layout_marginTop="@dimen/paddingMin"
+        android:background="#F3F3F3"
+        app:layout_constraintLeft_toLeftOf="@id/contentEd"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/warnTag" />
+
+
+    <TextView
+        android:id="@+id/repeatTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="是否重复"
+        android:visibility="gone"
+        android:textColor="#FF000000"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/contentEd"
+        app:layout_constraintTop_toBottomOf="@id/tag6" />
+
+
+    <TextView
+        android:id="@+id/repeatTv"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/paddingMin"
+        android:drawableRight="@drawable/oa_next"
+        android:gravity="right|center_vertical"
+        android:padding="@dimen/padding"
+        android:textColor="#FF909090"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/repeatTag"
+        app:layout_constraintLeft_toRightOf="@id/repeatTag"
+        app:layout_constraintRight_toRightOf="@id/contentEd"
+        app:layout_constraintTop_toTopOf="@id/repeatTag" />
+
+    <View
+        android:id="@+id/tag7"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/paddingMin"
+        android:background="#F3F3F3"
+        app:layout_constraintLeft_toLeftOf="@id/contentEd"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/repeatTag" />
+
+
+    <TextView
+        android:id="@+id/typeTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="日程类型"
+        android:textColor="#FF000000"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/contentEd"
+        app:layout_constraintTop_toBottomOf="@id/tag6" />
+
+
+    <TextView
+        android:id="@+id/typeTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/paddingMin"
+        android:drawableRight="@drawable/oa_next"
+        android:gravity="right|center_vertical"
+        android:padding="@dimen/padding"
+        android:textColor="#FF909090"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/typeTag"
+        app:layout_constraintLeft_toRightOf="@id/typeTag"
+        app:layout_constraintRight_toRightOf="@id/contentEd"
+        app:layout_constraintTop_toTopOf="@id/typeTag" />
+
+    <View
+        android:id="@+id/tag8"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line"
+        android:layout_marginTop="@dimen/paddingMin"
+        android:background="#F3F3F3"
+        app:layout_constraintLeft_toLeftOf="@id/contentEd"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/typeTag" />
+
+</android.support.constraint.ConstraintLayout>

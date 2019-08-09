@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/paddingApp"
+        android:background="#f2f2f2" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="2px"
+        android:layout_height="match_parent"
+        android:layout_below="@id/padding"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="4px"
+        android:background="#f2f2f2" />
+
+
+    <TextView
+        android:id="@+id/nodeTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/padding"
+        android:layout_marginBottom="4px"
+        android:layout_toLeftOf="@id/line"
+        android:gravity="center"
+        android:text="审批节点"
+        android:textSize="@dimen/text_main" />
+
+
+    <TextView
+        android:id="@+id/historyTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/padding"
+        android:layout_marginBottom="4px"
+        android:layout_toRightOf="@id/line"
+        android:gravity="center"
+        android:text="审批历史"
+        android:textCursorDrawable="@color/yellow_home"
+        android:textSize="@dimen/text_main" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:layout_alignParentBottom="true"
+        android:background="#f2f2f2" />
+
+    <View
+        android:id="@+id/nodeTag"
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/line"
+        android:background="@color/titleBlue" />
+
+    <View
+        android:id="@+id/historyTag"
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/line"
+        android:background="@color/titleBlue" />
+</RelativeLayout>

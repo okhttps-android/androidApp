@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_me_menu_item_bg"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/distance_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="name" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/distance_tv"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="name"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/address_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_tv"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/select_rb"
+        android:text="name"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.modular.appmessages"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".activity.MsgsSecondCommonActivity"
+            android:theme="@style/MainBaseTheme" />
+        <activity android:name=".activity.PlatMsgThirdActivity" />
+        <activity android:name=".activity.MsgThirdWebActivity" />
+        <activity android:name=".activity.ProcessB2BActivity">
+            <intent-filter>
+                <action android:name="com.modular.work.ProcessB2BActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ComplaintDetailActivity"
+            android:label="@string/complaint_doc" />
+        <activity
+            android:name=".activity.ProcessMsgActivity"
+            android:label="@string/title_activity_process_msg">
+
+        </activity>
+        <activity
+            android:name=".activity.ApprovalListActivity"
+            android:label="@string/title_activity_process_msg"
+            android:theme="@style/MainBaseTheme">
+            <intent-filter>
+                <action android:name="com.modular.work.ProcessMsgActivity1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ApprovalNewListActivity"
+            android:label="@string/title_activity_process_msg"
+            android:theme="@style/MainBaseTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="com.modular.work.ProcessMsgActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.TaskNewActivity"
+            android:theme="@style/MainBaseTheme"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <!--<intent-filter>-->
+            <!--<action android:name="com.modular.task.TaskActivity" />-->
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".activity.AppWebViewActivity"
+            android:theme="@style/MainBaseTheme" />
+        <activity
+            android:name=".activity.ApprovalActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/MainBaseTheme" />
+        <activity
+            android:name=".activity.Subscription2Activity"
+            android:label="@string/subscribe_title" />
+        <activity
+            android:name=".activity.SubcribeManageActivity"
+            android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="com.modular.company.SubcribeManageActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.UUHelperActivity"
+            android:label="@string/uu_helper"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.modular.appmessage.UUHelperActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.UUHelperDetailsActivity"
+            android:label="@string/uu_helper" />
+        <activity android:name=".activity.MessageWebActivity">
+            <intent-filter>
+                <action android:name="com.modular.message.MessageWebActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.RealTimeFormActivity">
+            <intent-filter>
+                <action android:name="com.modular.company.RealTimeFormActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.BusinessTargetsActivity" />
+        <activity android:name=".activity.BusinessTargetDetailActivity" />
+    </application>
+
+</manifest>

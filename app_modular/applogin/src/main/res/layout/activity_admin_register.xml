@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="管理员信息"
+                        android:textColor="#2F95DD" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/form_relative_left_text"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="10dp"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+                    <com.core.widget.ClearEditText
+                        android:id="@+id/admin_register_name_et"
+                        style="@style/register_edittext_style"
+                        android:drawableLeft="@drawable/ic_reg_name"
+                        android:hint="姓名(例如:张三)" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+
+                <TextView
+                    android:id="@+id/admin_register_name_error_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="#e9e9e9"
+                    android:drawableLeft="@drawable/ic_reg_notice"
+                    android:drawablePadding="4dp"
+                    android:padding="2dp"
+                    android:text="请填写管理员姓名"
+                    android:textColor="@color/red"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/form_relative_left_text"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="10dp"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+                    <com.core.widget.ClearEditText
+                        android:id="@+id/admin_register_phone_et"
+                        style="@style/register_edittext_style"
+                        android:drawableLeft="@drawable/ic_reg_phone"
+                        android:hint="手机号(例如:15855555555)"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+
+                <TextView
+                    android:id="@+id/admin_register_phone_error_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="#e9e9e9"
+                    android:drawableLeft="@drawable/ic_reg_notice"
+                    android:drawablePadding="4dp"
+                    android:padding="2dp"
+                    android:text="请填写正确的手机号码"
+                    android:textColor="@color/red"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/form_relative_left_text"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="10dp"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+                    <com.core.widget.ClearEditText
+                        android:id="@+id/admin_register_email_et"
+                        style="@style/register_edittext_style"
+                        android:drawableLeft="@drawable/ic_reg_email"
+                        android:drawablePadding="16dp"
+                        android:hint="邮箱(例如:zhangsan@example.com)" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+
+                <TextView
+                    android:id="@+id/admin_register_email_error_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="#e9e9e9"
+                    android:drawableLeft="@drawable/ic_reg_notice"
+                    android:drawablePadding="4dp"
+                    android:padding="2dp"
+                    android:text="请填写正确的邮箱"
+                    android:textColor="@color/red"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/form_relative_left_text"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="10dp"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+                    <com.core.widget.ClearEditText
+                        android:id="@+id/admin_register_verification_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_verification_code"
+                        android:drawablePadding="16dp"
+                        android:hint="验证码(例如:123456)"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/admin_register_obtain_code_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_cancel_bg"
+                        android:gravity="center"
+                        android:padding="6dp"
+                        android:text="获取验证码"
+                        android:textColor="@color/selector_cancel_text_color" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+
+                <TextView
+                    android:id="@+id/admin_register_code_error_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="#e9e9e9"
+                    android:drawableLeft="@drawable/ic_reg_notice"
+                    android:drawablePadding="4dp"
+                    android:padding="2dp"
+                    android:text="请填写验证码"
+                    android:textColor="@color/red"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/form_relative_left_text"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="10dp"
+                        android:text="*"
+                        android:textColor="@color/red" />
+
+                    <com.core.widget.ClearEditText
+                        android:id="@+id/admin_register_password_et"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_admin_password"
+                        android:drawablePadding="16dp"
+                        android:hint="密码(例如:Ab12345)"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/admin_register_password_visiable_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_password_invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/item_line" />
+
+                <TextView
+                    android:id="@+id/admin_register_password_error_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:background="#e9e9e9"
+                    android:drawableLeft="@drawable/ic_reg_notice"
+                    android:drawablePadding="4dp"
+                    android:padding="2dp"
+                    android:text="请填写管理员的密码"
+                    android:textColor="@color/red"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/form_linear_customer">
+
+                <Button
+                    android:id="@+id/admin_register_next_step_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_bule_btn"
+                    android:padding="10dp"
+                    android:text="@string/register"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

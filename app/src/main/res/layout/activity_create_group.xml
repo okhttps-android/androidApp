@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/added_layout"
+        android:cacheColorHint="#00000000"
+        android:gravity="fill"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/added_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/item_color1"
+        android:paddingBottom="7dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="1dp"
+        android:paddingTop="7dp">
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn"
+            android:focusable="true"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:minWidth="75.0dip"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_hine" />
+
+        <com.xzjmyk.pm.activity.view.HorizontalListView
+            xmlns:widget="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/h_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ok_btn"
+            android:divider="@color/transparent"
+            widget:dividerWidth="5dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

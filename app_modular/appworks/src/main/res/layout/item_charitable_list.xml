@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/contantImg"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/contantImg"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_toRightOf="@id/contantImg"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="titleTv"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/subTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/titleTv"
+        android:layout_below="@id/titleTv"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_toRightOf="@id/contantImg"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="subTv"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <TextView
+        android:id="@+id/targetTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/subTv"
+        android:layout_below="@id/subTv"
+        android:layout_marginTop="@dimen/padding"
+        android:layout_toRightOf="@id/contantImg"
+        android:text="目标筹款 ："
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_min" />
+
+    <TextView
+        android:id="@+id/targetTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/targetTag"
+        android:layout_toRightOf="@id/targetTag"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="targetTv"
+        android:textColor="@color/indianred"
+        android:textSize="@dimen/text_hine" />
+
+
+
+    <TextView
+        android:id="@+id/defProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/targetTag"
+        android:layout_marginBottom="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginTop="@dimen/padding"
+        android:padding="4dp"
+        android:text="我要捐款"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_hine" />
+    <SeekBar
+        android:id="@+id/progressSb"
+        android:layout_below="@id/targetTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/contantImg"/>
+
+
+
+    <TextView
+        android:id="@+id/giftBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/progressSb"
+        android:layout_marginBottom="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:layout_marginTop="@dimen/padding"
+        android:background="@color/indianred"
+        android:padding="4dp"
+        android:text="我要捐款"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_hine" />
+
+    <TextView
+        android:id="@+id/typeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/giftBtn"
+        android:layout_alignLeft="@id/titleTv"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_frame_bg"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:text="疾病救助"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+
+</RelativeLayout>

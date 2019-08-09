@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_me_height"
+    android:background="@drawable/selector_me_menu_item_bg"
+    android:orientation="vertical">
+    <!--<TextView-->
+    <!--android:id="@+id/tv_title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="新闻标题"-->
+    <!--android:textColor="@color/black" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp">
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="作者:张超"
+            android:textSize="@dimen/text_main"
+            android:textColor="@color/text_main" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/loading_01" />
+
+        <TextView
+            android:id="@+id/tv_theme"
+            android:textSize="@dimen/text_hine"
+            android:layout_marginTop="@dimen/line_big"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_below="@+id/tv_author"
+            android:text="新闻正文"
+            android:textColor="@color/text_hine" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_theme"
+            android:text="2015-09-12"
+            android:textColor="@color/text_hine" />
+    </RelativeLayout>
+
+</LinearLayout>

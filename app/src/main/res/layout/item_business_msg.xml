@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:orientation="vertical"
+    style="@style/crm_ll_card"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout style="@style/LinearLayout_horizontal">
+
+        <TextView
+            android:id="@+id/tv_left_yel"
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/shape_tv_color"
+            android:textColor="#5ac4c7" />
+
+        <TextView
+            android:layout_toRightOf="@+id/tv_left_yel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:textColor="#FF8E57"
+            android:text="商务消息" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="end|right|center_vertical"
+            android:src="@drawable/delete"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        style="@style/LinearLayout_horizontal">
+
+        <TextView
+            android:text="内容"
+            android:textColor="@color/gray_light"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            style="@style/TextView_VerticalCenter" />
+
+        <TextView
+            android:id="@+id/b2b_msg_content"
+            android:layout_marginLeft="5dp"
+            android:text="会议销售"
+            style="@style/TextView_VerticalCenter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        style="@style/LinearLayout_horizontal">
+
+        <TextView
+            android:text="时间"
+            android:textColor="@color/gray_light"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            style="@style/TextView_VerticalCenter" />
+
+        <TextView
+            android:id="@+id/b2b_msg_time"
+            android:layout_marginLeft="5dp"
+            android:text="158********"
+            style="@style/TextView_VerticalCenter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        style="@style/LinearLayout_horizontal">
+
+        <TextView
+            android:text="备注"
+            android:textColor="@color/gray_light"
+            android:layout_marginLeft="10dp"
+            android:layout_width="70dp"
+            style="@style/TextView_VerticalCenter" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:text="行业交流大会,****************************************"
+            style="@style/TextView_VerticalCenter" />
+    </LinearLayout>
+
+</LinearLayout>

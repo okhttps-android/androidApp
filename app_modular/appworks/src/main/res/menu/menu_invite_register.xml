@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.xzjmyk.pm.activity.MainActivity">
+
+    <item
+        android:id="@+id/invite_register_statistics"
+        android:icon="@drawable/ic_statistics"
+        android:title="@string/str_statistics"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/invite_register_share"
+        android:icon="@drawable/icon_app_share"
+        android:title="@string/about_share"
+        app:showAsAction="ifRoom" />
+
+</menu>

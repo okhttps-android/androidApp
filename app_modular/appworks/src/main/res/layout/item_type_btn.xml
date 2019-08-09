@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:paddingTop="@dimen/paddingMin"
+    android:paddingBottom="@dimen/paddingMin"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/typeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/text_frame_btn_bg"
+        android:gravity="center"
+        android:maxHeight="30dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:paddingBottom="4dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding"
+        android:paddingTop="4dp"
+        android:text="环保/保护环境"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+</LinearLayout>

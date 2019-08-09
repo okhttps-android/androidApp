@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_underlying"
+              android:orientation="vertical">
+
+    <com.core.widget.DrawableCenterTextView
+        android:id="@+id/data_inquiry_menu_search_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:background="@drawable/search_input"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:padding="6dp"
+        android:visibility="invisible"
+        android:text="@string/search"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/data_inquiry_menu_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/gray_light"
+        android:dividerHeight="1dp"/>
+</LinearLayout>

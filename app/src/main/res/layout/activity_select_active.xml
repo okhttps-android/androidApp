@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.core.widget.VoiceSearchView
+        android:id="@+id/voiceSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <LinearLayout
+        android:id="@+id/include_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/item_line" />
+
+        <include layout="@layout/include_select" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/include_tag"
+        android:layout_below="@+id/voiceSearchView"
+        android:divider="@color/item_line"
+        android:dividerHeight="2px"
+        android:smoothScrollbar="false" />
+
+    <include
+        layout="@layout/view_empty"
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@color/black_trans_99"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="30.0dip"
+        android:visibility="invisible" />
+
+    <com.core.utils.sortlist.SideBar
+        android:id="@+id/sidebar"
+        android:layout_width="30.0dip"
+        android:layout_height="match_parent"
+        android:layout_above="@id/include_tag"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right|center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="60dp" />
+
+</RelativeLayout>

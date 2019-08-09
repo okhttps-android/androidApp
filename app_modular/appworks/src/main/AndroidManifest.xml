@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uas.appworks">
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".OA.erp.activity.DailydetailsActivity" />
+        <activity android:name=".OA.erp.activity.WorkDailyAddActivity">
+            <intent-filter>
+                <action android:name="com.modular.plat.WorkDailyAddActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OA.erp.activity.WorkDailyShowActivity" />
+        <activity android:name=".OA.platform.activity.PlatDailyShowActivity" />
+        <activity android:name=".OA.platform.activity.PlatWDdetailyActivity" />
+        <activity
+            android:name=".OA.erp.activity.ExpenseReimbursementActivity"
+            android:label="@string/Expense_reimbursement"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.modular.oa.ExpenseReimbursementActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OA.erp.activity.CommonDocDetailsActivity" >
+            <intent-filter>
+                <action android:name="com.modular.form.erp.activity.CommonDocDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OA.erp.activity.ZeTianDocDetailsActivity" >
+            <intent-filter>
+                <action android:name="com.modular.form.erp.activity.ZeTianDocDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OA.erp.activity.form.DataFormDetailActivity"
+            android:hardwareAccelerated="false">
+            <intent-filter>
+                <action android:name="com.modular.form.DataFormDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OA.erp.activity.form.TravelDataFormDetailActivity"
+            android:hardwareAccelerated="false">
+            <intent-filter>
+                <action android:name="com.modular.form.TravelDataFormDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OA.erp.activity.form.DataFormFieldActivity" />
+        <activity
+            android:name=".OA.erp.activity.form.FormListSelectActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="com.modular.work.OA.erp.activity.form.FormListSelectActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OA.erp.activity.WorkActivity"
+            android:label="@string/activity_signing">
+            <intent-filter>
+                <action android:name="com.modular.work.WorkActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OA.erp.activity.form.WorkLogsActivity"
+            android:label="打卡记录"
+            android:theme="@style/MainBaseTheme" />
+        <activity
+            android:name=".OA.erp.activity.TeamsAttShowActivity"
+            android:label="@string/sign_teams_rank" />
+        <activity
+            android:name=".OA.erp.activity.MeetDetailsActivity"
+            android:label="@string/meet_detail" />
+        <activity
+            android:name=".OA.erp.activity.DetailTaskActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".OA.erp.activity.AddMeetingActivity"
+            android:label="@string/new_meet"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnspecified|adjustNothing">
+            <intent-filter>
+                <action android:name="com.modular.oa.AddMeetingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OA.erp.activity.MeetingActivity"
+            android:label="@string/meet_manage" />
+        <activity
+            android:name=".OA.erp.activity.SaveMeetActivity"
+            android:label="@string/meet_details" />
+        <activity
+            android:name=".OA.erp.activity.AddMeetTaskActivity"
+            android:label="@string/meet_task" />
+        <activity android:name=".CRM.erp.activity.DbfindListActivity" />
+        <activity android:name=".CRM.erp.activity.DbfindList2Activity" />
+        <activity android:name=".CRM.erp.activity.BusinessActivity">
+            <intent-filter>
+                <action android:name="com.modular.crm.BusinessActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CRM.erp.activity.BusinessDetailActivty" />
+        <activity android:name=".CRM.erp.activity.BusinessDetailInfoActivity" />
+        <activity android:name=".CRM.erp.activity.BusinessLessActivity" />
+        <activity android:name=".CRM.erp.activity.BusinessTransferActivity" />
+        <activity
+            android:name=".CRM.erp.activity.BusinessSelectCustomerActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".CRM.erp.activity.CustomerAddActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".CRM.erp.activity.BusinessAddActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".CRM.erp.activity.BusinessStateActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".CRM.erp.activity.AddBusinessActivity"
+            android:label="@string/crm_creat_business" />
+        <activity android:name=".CRM.erp.activity.SearchSelectActivity" />
+        <activity android:name=".CRM.erp.activity.CustomerDetailActivity" />
+        <activity android:name=".CRM.erp.activity.CustomerListActivity">
+            <intent-filter>
+                <action android:name="com.modular.crm.CustomerListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CRM.erp.activity.CustomerListSelectActivity" />
+        <activity
+            android:name=".CRM.erp.activity.UserSelectActivity"
+            android:label="@string/select_user" />
+        <activity
+            android:name=".OA.erp.activity.FlightsActivity"
+            android:label="@string/activity_flights" />
+
+        <!-- 打卡2.0模块 -->
+        <activity
+            android:name=".OA.erp.activity.OfficeAddressSettingsActivity"
+            android:label="@string/office_addr_setting" />
+        <activity
+            android:name=".OA.erp.activity.SignSeniorSettingActivity"
+            android:label="@string/super_setting" />
+        <activity android:name=".OA.erp.activity.AddFlihtsActivity" />
+        <activity
+            android:name=".OA.erp.activity.MyRuleSetActivity"
+            android:label="@string/my_rule_setting" />
+        <activity
+            android:name=".OA.erp.activity.HolidaysActivity"
+            android:label="@string/holidays" />
+        <activity
+            android:name=".OA.erp.activity.StatisticsActivity"
+            android:label="@string/work_statistics">
+            <intent-filter>
+                <action android:name="com.modular.oa.StatisticsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OA.erp.activity.ChangeMobileActivity"
+            android:label="@string/change_mobile" />
+        <activity
+            android:name=".OA.erp.activity.MissionSetActivity"
+            android:label="@string/activity_mission_set"
+            android:theme="@style/MainBaseTheme" />
+        <activity
+            android:name=".OA.erp.activity.MissionActivity"
+            android:label="@string/activity_mission_plan">
+            <intent-filter>
+                <action android:name="com.modular.work.MissionActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CRM.erp.activity.SalesRankingActivity"
+            android:label="@string/crmmain_wall_of_fame">
+            <intent-filter>
+                <action android:name="com.modular.crm.SalesRankingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 工作汇报 -->
+        <activity
+            android:name=".OA.erp.activity.WorkReportMenuActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.modular.work.WorkReportMenuActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OA.erp.activity.WorkReportAddActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".OA.platform.activity.CharitableActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="false"
+            android:label="@string/charitable"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainBaseTheme"
+            android:windowSoftInputMode="stateUnspecified|adjustNothing">
+            <intent-filter>
+                <action android:name="com.modular.work.CharitableActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OA.platform.activity.CharitSearchActivity" />
+        <activity android:name=".OA.platform.activity.JoinCharitActivity" />
+
+        <!-- 数据统计，报表查询 -->
+        <activity android:name=".datainquiry.activity.ReportStatisticsActivity">
+            <intent-filter>
+                <action android:name="com.modular.company.ReportStatisticsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".datainquiry.activity.DataInquiryActivity">
+            <intent-filter>
+                <action android:name="com.modular.company.DataInquiryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".datainquiry.activity.DataInquiryListActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".datainquiry.activity.DataInquiryMoreMenuActivity" />
+        <activity
+            android:name=".datainquiry.activity.ReportQueryCriteriaActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".datainquiry.activity.ReportStatisticsMoreMenuActivity" />
+        <activity
+            android:name=".datainquiry.activity.PDFDownloadActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation" />
+        <activity android:name=".datainquiry.activity.DataInquirySearchActivity" />
+        <activity android:name=".datainquiry.activity.ReportQuerySearchActivity" />
+
+        <!-- 工作台模块设置页面 -->
+        <activity android:name=".activity.WorkModuleSortActivity">
+            <intent-filter>
+                <action android:name="com.modular.work.WorkModuleSortActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 工作台应用设置页面 -->
+        <activity android:name=".activity.WorkFuncSetActivity">
+            <intent-filter>
+                <action android:name="com.modular.work.WorkFuncSetActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 产城服务主页面 -->
+        <activity android:name=".activity.CityIndustryServiceMainActivity">
+            <intent-filter>
+                <action android:name="com.modular.cityIndustry.CityIndustryServiceMainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CityIndustryFuncSetActivity">
+            <intent-filter>
+                <action android:name="com.modular.work.CityIndustryFuncSetActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CommonDataFormActivity">
+            <intent-filter>
+                <action android:name="com.modular.work.CommonDataFormActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WorkDataFormActivity">
+            <intent-filter>
+                <action android:name="com.modular.work.WorkDataFormActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CommonFormListActivity"
+            android:hardwareAccelerated="false"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.modular.work.CommonFormListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CommonCityIndustryDetailsActivity">
+            <intent-filter>
+                <action android:name="com.modular.work.CommonCityIndustryDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 设备管理 -->
+        <activity
+            android:name=".CRM.erp.activity.DeviceManageActivity"
+            android:label="@string/title_device_manage"
+            android:theme="@style/MainBaseTheme">
+            <intent-filter>
+                <action android:name="com.modular.work.DeviceManageActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CRM.erp.activity.DeviceMatchActivity"
+            android:label="@string/text_device_query_match"
+            android:theme="@style/MainBaseTheme">
+            <intent-filter>
+                <action android:name="com.modular.work.DeviceMatchActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CRM.erp.activity.ScanDetailActivity"
+            android:label="@string/text_scan_device" />
+        <activity
+            android:name=".CRM.erp.activity.DeviceCycleCountActivity"
+            android:label="@string/title_device_manage"
+            android:theme="@style/MainBaseTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".CRM.erp.activity.DeviceCycleCountInfoActivity"
+            android:label="@string/text_cycle_count"
+            android:theme="@style/MainBaseTheme" />
+        <activity
+            android:name=".CRM.erp.activity.DeviceDataFormAddActivity"
+            android:label="@string/title_device_manage"
+            android:theme="@style/MainBaseTheme" />
+        <activity
+            android:name=".CRM.erp.activity.DeviceCycleCountDetailsActivity"
+            android:label="@string/title_device_manage"
+            android:theme="@style/MainBaseTheme" />
+        <activity
+            android:name=".CRM.erp.activity.DeviceCycleCountAddActivity"
+            android:label="@string/text_cycle_count_add"
+            android:theme="@style/MainBaseTheme" />
+        <activity
+            android:name=".OA.platform.activity.BusinessTravelActivity"
+            android:label="@string/business_services"
+            android:theme="@style/MainBaseTheme">
+            <intent-filter>
+                <action android:name="com.modular.work.BusinessTravelActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.DeviceQueryActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.modular.work.DeviceQueryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- B2B商务 -->
+        <activity
+            android:name=".activity.B2BBusinessMainActivity"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.modular.work.B2BBusinessMainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.B2BBusinessLoginActivity">
+            <intent-filter>
+                <action android:name="com.modular.work.B2BBusinessLoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PublicInquiryListActivity"
+            android:hardwareAccelerated="true"
+            android:theme="@style/StyledBlueIndicators"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.CustomerInquiryListActivity"
+            android:hardwareAccelerated="true"
+            android:theme="@style/StyledBlueIndicators"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.PurchaseOrderListActivity"
+            android:hardwareAccelerated="true"
+            android:theme="@style/StyledBlueIndicators"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.PublicInquiryDetailActivity" />
+        <activity
+            android:name=".activity.CustomerInquiryDetailActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="com.modular.work.platform.activity.CustomerInquiryDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OA.platform.activity.PurchaseDetailsActivity"
+            android:theme="@style/MainBaseTheme">
+            <intent-filter>
+                <action android:name="com.modular.work.platform.activity.PurchaseDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CompanyBusinessListActivity"
+            android:hardwareAccelerated="true"
+            android:theme="@style/StyledBlueIndicators"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.PublicInquiryQuoteActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="com.modular.work.platform.activity.PublicInquiryQuoteActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- B2B商务end -->
+
+
+        <!-- 邀请注册 -->
+        <activity android:name=".activity.InviteRegisterActivity">
+            <intent-filter>
+                <action android:name="com.modular.work.InviteRegisterActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.InviteRegisterMainActivity"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.modular.work.InviteRegisterMainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.InviteRegisterListActivity" />
+        <activity android:name=".activity.RegisterDetailActivity" />
+        <activity android:name=".activity.EnterpriseInviteStatisticsActivity" />
+        <activity android:name=".activity.ScheduleSearchActivity" />
+        <activity
+            android:name=".activity.ScheduleSettingActivity"
+            android:label="@string/scheduler_setting" />
+        <activity
+            android:name=".activity.SchedulerCreateActivity"
+            android:label="@string/create_scheduler" />
+        <activity
+            android:name=".activity.ScheduleActivity"
+            android:label="@string/my_scheduler">
+            <intent-filter>
+                <action android:name="com.modular.work.ScheduleActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 时间助手 -->
+        <activity
+            android:name=".activity.TimeHelperActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.modular.work.TimeHelperActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TimeHelperSettingActivity" />
+        <activity android:name=".crm3_0.activity.CustomerVisitActivity"
+            android:label="@string/crm_customer_visit">
+            <intent-filter>
+                <action android:name="com.modular.work.crm3_0.activity.CustomerVisitActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".crm3_0.activity.CustomerListActivity"/>
+        <activity android:name=".crm3_0.activity.CustomerContactDetailActivity"/>
+        <activity android:name="com.modular.apputils.activity.BillListActivity"/>
+        <activity android:name=".crm3_0.activity.CustomerManageActivity"
+            android:label="客户管理">
+            <intent-filter>
+                <action android:name="com.modular.work.crm3_0.activity.CustomerManageActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".crm3_0.activity.CustomerBillInputActivity"
+            android:hardwareAccelerated="false"></activity>
+        <activity android:name=".crm3_0.activity.CustomerDetails3_0Activity"></activity>
+        <!-- 联系人 -->
+        <activity 
+            android:name=".crm3_0.activity.ContactSearchActivity"
+            android:theme="@style/MainBaseTheme">
+        </activity>
+        <activity
+            android:name=".crm3_0.activity.ContactsListActivity"
+            android:theme="@style/MainBaseTheme"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="com.modular.work.ContactsListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".crm3_0.activity.ContactsAddActivity" />
+        <activity android:name=".crm3_0.activity.ContactsDetialActivity" />
+        <activity android:name=".crm3_0.activity.ContactDynamicAddActivity"></activity>
+
+        <!-- 商机管理 -->
+        <activity android:name=".activity.businessManage.businessManageHome.BusinessManageHomeActivity">
+            <intent-filter>
+                <action android:name="com.modular.work.BusinessManageHomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.businessManage.BusinessRecordListActivity" />
+        <activity android:name=".activity.businessManage.BusinessOvertimeListActivity" />
+        <activity android:name=".activity.businessManage.BusinessRankListActivity" />
+        <activity android:name=".activity.businessManage.businessMineList.BusinessMineListActivity" />
+        <activity android:name=".activity.businessManage.businessStage.BusinessStageActivity" />
+      
+        <activity android:name=".crm3_0.activity.BillSearchActivity" >
+            <intent-filter>
+                <action android:name="com.modular.work.crm3_0.activity.BillSearchActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".crm3_0.activity.CustomerVisitDetailsActivity" />
+        <activity android:name=".crm3_0.activity.CustomerCareListActivity" />
+        <activity android:name=".crm3_0.activity.VisitRecordBillInputActivity"
+            android:hardwareAccelerated="false" />
+        <activity android:name=".crm3_0.activity.CusBillDetailsActivity" />
+        <activity android:name=".crm3_0.activity.CustomerVisitBillInputActivity"
+            android:hardwareAccelerated="false" />
+        <activity android:name=".crm3_0.activity.CustomerContactActivity" />
+        <activity android:name=".activity.businessManage.businessDetailActivity.BusinessDetailNewActivity" />
+        <activity android:name=".activity.businessManage.BusinessCompanyListActivity" />
+        <activity android:name=".activity.businessManage.businessChangeStage.BusinessChangeStageActivity" />
+        <activity android:name=".activity.businessManage.BusinessBillInputActivity"
+            android:hardwareAccelerated="false" />
+        
+        <activity android:name=".crm3_0.activity.BillInputBindActivity"/>
+    </application>
+
+</manifest>

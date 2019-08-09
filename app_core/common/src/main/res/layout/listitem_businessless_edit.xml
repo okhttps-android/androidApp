@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_moment"
+        style="@style/LinearLayout_horizontal"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/padding"
+        android:background="@color/white"
+        android:maxHeight="180dp"
+        android:minHeight="50dp">
+
+        <TextView
+            android:id="@+id/tv_less_key"
+            style="@style/TextView_Basic"
+            android:layout_width="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="10dp"
+            android:text="商机阶段商机阶段阶段:"
+            android:textColor="@color/text_main"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/muchInputTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="*"
+            android:textColor="@color/red"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/tv_less_value"
+            style="@style/TextView_Basic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_weight="1"
+            android:background="@drawable/shape_from_edit"
+            android:gravity="right|center"
+            android:hint="@string/common_input"
+            android:maxHeight="150dp"
+            android:maxWidth="260dp"
+            android:minWidth="240dp"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/selectIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/paddingMin"
+            android:src="@drawable/oa_next"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

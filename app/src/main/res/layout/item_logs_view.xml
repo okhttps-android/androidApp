@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_linear_detail"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tv_man"
+            style="@style/item_relative_style_tv"
+            android:text="操作人：" />
+        <TextView
+            android:id="@+id/tv_man_value"
+            style="@style/item_relative_style_value"
+            android:layout_toRightOf="@+id/tv_man"
+            android:text="操作人" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/item_relative_style_tv"
+            android:text="时间：" />
+        <TextView
+            android:id="@+id/tv_date_value"
+            style="@style/item_relative_style_value"
+            android:layout_toRightOf="@+id/tv_date"
+            android:text="操作结果" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/item_relative_style_tv"
+            android:text="内容：" />
+        <TextView
+            android:id="@+id/tv_content_value"
+            style="@style/item_relative_style_value"
+            android:layout_toRightOf="@+id/tv_content"
+            android:text="操作内容" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" >
+    </View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tv_result"
+            style="@style/item_relative_style_tv"
+            android:text="结果：" />
+        <TextView
+            android:id="@+id/tv_result_value"
+            style="@style/item_relative_style_value"
+            android:layout_toRightOf="@+id/tv_result" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightgray" >
+    </View>
+</LinearLayout>

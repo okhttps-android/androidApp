@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/caption_enterprise_name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/invite_register_list_company_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="2.2"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="2018-01-21" />
+
+        <TextView
+            android:id="@+id/invite_register_list_state_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="right"
+            android:textColor="@color/blue"
+            tools:text="@string/str_registered" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/caption_register_linkman"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/invite_register_list_linkman_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="3"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="2018-01-21" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/caption_register_phone"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/invite_register_list_phone_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="3"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="2018-01-21" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/caption_invite_name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/invite_register_list_invite_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="3"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="2018-01-21" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/caption_invite_date"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/invite_register_list_invite_date_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="3"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="2018-01-21" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invite_register_list_register_date_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/caption_register_date"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/invite_register_list_register_date_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="3"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:text="2018-01-21" />
+    </LinearLayout>
+
+
+</LinearLayout>

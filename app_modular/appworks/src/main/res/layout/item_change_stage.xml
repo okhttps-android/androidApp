@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/item_change_stage_caption_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#333"
+        android:textSize="14sp"
+        tools:text="名称" />
+
+    <com.core.widget.ClearEditText
+        android:id="@+id/item_change_stage_value_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/shape_b2b_detail_edittext"
+        android:hint="请输入(必填)"
+        android:padding="6dp"
+        android:textSize="12sp" />
+
+</LinearLayout>

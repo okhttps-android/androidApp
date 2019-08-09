@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/closeIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/close_agenda" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_margin="@dimen/padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxWidth="200dp"
+        android:text="@string/charitable"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/nameTv"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/infoTag"
+        android:layout_toRightOf="@id/nameTv"
+        android:text="一份爱心，一份温暖"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+
+    <RadioGroup
+        android:id="@+id/selectRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTv"
+        android:layout_marginTop="10dp"
+        android:baselineAligned="false"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_marginRight="@dimen/padding"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <RadioButton
+            android:id="@+id/oneRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/pop_text_frame_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="1元"
+            android:textColor="@drawable/pop_text_color_bg" />
+
+
+        <RadioButton
+            android:id="@+id/twoRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/pop_text_frame_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="10元"
+            android:textColor="@drawable/pop_text_color_bg" />
+
+        <RadioButton
+            android:id="@+id/fiveRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/pop_text_frame_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="50元"
+            android:textColor="@drawable/pop_text_color_bg" />
+
+        <RadioButton
+            android:id="@+id/tenRb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/pop_text_frame_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="100元"
+            android:textColor="@drawable/pop_text_color_bg" />
+
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:id="@+id/autoRl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectRg"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="@dimen/padding"
+        android:background="@drawable/text_frame_bg"
+        android:padding="@dimen/padding">
+
+        <EditText
+            android:id="@+id/autoNumEd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="自定义金额"
+            android:inputType="numberDecimal"
+            android:maxWidth="300dp"
+            android:minWidth="40dp"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/autoNumEd"
+            android:text="元"
+            android:textColor="@color/indianred"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/payNumTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/autoRl"
+        android:layout_marginLeft="10dp"
+        android:text="*当前选择1元*"
+        android:textColor="@color/indianred"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/typeLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/payNumTv"
+        android:layout_below="@id/payNumTv"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/typeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="付款方式:"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <RadioGroup
+            android:id="@+id/typeRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/typeTv"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/typeTv"
+            android:baselineAligned="false"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp">
+
+            <RadioButton
+                android:id="@+id/wxRb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/pop_text_frame_bg"
+                android:button="@null"
+                android:drawableLeft="@drawable/icon_wx_pay"
+                android:drawablePadding="@dimen/padding"
+                android:padding="10dp"
+                android:paddingTop="3dp"
+                android:text="微信"
+                android:textColor="@drawable/pop_text_color_bg" />
+
+
+            <RadioButton
+                android:id="@+id/aliPlayRb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/pop_text_frame_bg"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/icon_ali_pay"
+                android:drawablePadding="@dimen/padding"
+                android:padding="10dp"
+                android:paddingTop="3dp"
+                android:text="支付宝"
+                android:textColor="@drawable/pop_text_color_bg" />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/agreeCb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/autoRl"
+        android:layout_alignStart="@+id/autoRl"
+        android:layout_below="@+id/typeLL"
+        android:layout_marginTop="12dp"
+        android:button="@null"
+        android:drawableLeft="@drawable/checkbox_btn_india_bg"
+        android:drawablePadding="@dimen/padding"
+        android:layout_marginLeft="@dimen/padding"
+        android:text="同意并接受"
+        android:layout_marginBottom="@dimen/padding"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_main" />
+
+
+    <TextView
+        android:id="@+id/agreeNoteTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/agreeCb"
+        android:layout_marginLeft="10dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:inputType="text"
+        android:layout_toRightOf="@id/agreeCb"
+        android:text="@string/charitable_user_agreement"
+        android:textSize="@dimen/text_main"
+        android:textColor="@color/text_main"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/giftBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/agreeCb"
+        android:layout_marginTop="@dimen/padding"
+        android:background="@color/hintColor"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="立即捐款"
+        android:textColor="@color/white" />
+</RelativeLayout>

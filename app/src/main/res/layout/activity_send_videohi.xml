@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EBe9e9" >
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:shadowColor="@color/white"
+                android:text="@string/circle_select_video"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                >
+
+                <include
+                    android:id="@+id/add_video_item"
+                    layout="@layout/layout_circle_add_video_item" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/text_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#262626"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:minHeight="180dp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textColorHint="@color/white"
+                android:hint="@string/qzone_say_something"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lime"
+                android:visibility="gone"/>
+            <RelativeLayout
+                android:id="@+id/location_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:padding="10dp"
+                android:background="#262626"
+                >
+                <ImageView
+                    android:id="@+id/location_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_dingwei1_nor"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:id="@+id/location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/qzone_now_location"
+                    android:textSize="@dimen/text_main"
+                    android:paddingRight="20dp"
+                    android:layout_toRightOf="@+id/location_iv"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_zhankai_nor"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab_bg"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/release_btn"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/button_orange_bg"
+            android:text="@string/task_send"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

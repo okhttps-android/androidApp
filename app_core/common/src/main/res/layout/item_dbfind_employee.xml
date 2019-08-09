@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+    <RelativeLayout style="@style/form_relative_customer_item" 
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:height="30dp"
+            android:visibility="gone"
+            android:text="编号："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_defaultorname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:height="30dp"
+            android:text="人员："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_employee_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:height="30dp"
+            android:layout_centerVertical="true"
+            android:text="孙土桂"
+            android:layout_toRightOf="@+id/tv_defaultorname"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:width="150dp" />
+        <TextView
+            android:id="@+id/tv_em_code_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_position"
+            android:gravity="center_vertical"
+            android:height="30dp"
+             android:layout_centerVertical="true"
+            android:text="U0502"
+               android:visibility="gone"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</LinearLayout>

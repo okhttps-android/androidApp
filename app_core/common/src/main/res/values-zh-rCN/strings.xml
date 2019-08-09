@@ -1,0 +1,1717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- start公用部分-->
+    <string name="uas_company_name">Shenzhen You soft Technology Co., Ltd</string>
+    <string name="common_save_button">保存</string>
+    <string name="common_dialog_title">UU提示</string>
+    <string name="common_update_button">更新</string>
+    <string name="common_submit_button">提交</string>
+    <string name="common_reset">重置</string>
+    <string name="common_select_all">全部</string>
+    <string name="common_resubmit_button">重新提交</string>
+    <string name="common_search">搜索</string>
+    <string name="common_input">请输入(必填)</string>
+    <string name="common_input1">请输入(非必填)</string>
+    <string name="common_input2">请输入</string>
+    <string name="common_select">请选择(必选)</string>
+    <string name="common_select_not_must">请选择(非必选)</string>
+    <string name="common_input_or_select_much">请输入或选择(必选)</string>
+    <string name="common_sure">确定</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_date">日期</string>
+    <string name="common_year">年</string>
+    <string name="common_month">月</string>
+    <string name="common_day">日</string>
+    <string name="common_basicinfo">基本信息</string>
+    <string name="common_Contact_information">联系方式</string>
+    <string name="common_Contact_person">联系人</string>
+    <string name="common_tel">电话</string>
+    <string name="common_department">部门</string>
+    <string name="common_post">岗位</string>
+    <string name="common_up_finish">加载完毕</string>
+    <string name="common_down_finish">刷新完成</string>
+    <string name="common_refresh_finish">刷新成功</string>
+    <string name="common_agree">同意</string>
+    <string name="common_disagree">不同意</string>
+    <string name="common_changedealman">变更处理人</string>
+    <string name="common_noinput">未填写</string>
+    <string name="common_camera">拍照</string>
+    <string name="common_photo">从相册选择</string>
+    <string name="common_notlinknet">当前网络不可用，请稍后重试!</string>
+    <string name="common_notice">温馨提示</string>
+    <string name="common_save_failed">保存失败</string>
+    <string name="common_save_success">保存成功</string>
+
+    <string name="common_list_empty">暂无数据</string>
+    <string name="search">搜索</string>
+
+    <!-- end公用部分-->
+
+    <!-- start行政办公OA界面-->
+    <string name="oamain_title">行政办公</string>
+    <string name="oasign_title">打卡签到</string>
+    <string name="oaoutplan_title">外勤签到</string>
+    <string name="oaworkdaily_title">工作日报</string>
+    <string name="oaworkweekly_title">工作周报</string>
+    <string name="oaworkmonthly_title">工作月报</string>
+    <string name="oapackup_title">收起</string>
+    <string name="oamore_tltle">更多</string>
+    <string name="oametting_title">会议管理</string>
+    <string name="oavacation_apply">请假申请</string>
+    <string name="oaovertime_apply">加班申请</string>
+    <string name="oatravel_apply">出差申请</string>
+    <string name="oaspecial_attendance_apply">特殊考勤</string>
+    <string name="oasubordinate_work_calendar">下属工作日历</string>
+    <string name="oamy_work_calender">我的工作日历</string>
+    <string name="oamaterials_apply">物料申请单</string>
+    <string name="oaservice_apply">维修申请单</string>
+    <string name="oaStandby_machine_apply">备用机申请单</string>
+    <!-- end 行政办公OA界面-->
+
+    <!-- start 打卡签到 oasign_title-->
+    <string name="super_setting">高级设置</string>
+    <string name="work_setting">排班设置</string>
+    <string name="office_addr_setting">办公地址设置</string>
+    <string name="my_rule_setting">我的考勤规则</string>
+    <string name="sm_cancel_title">取消</string>
+    <!-- end 打卡签到 -->
+
+    <!-- start -高级设置 seniorsettings-->
+    <string name="ss_autosign_switch">自动打卡</string>
+    <string name="ss_signnotice_switch">打卡提醒</string>
+    <string name="ss_autosign_description">上班后超过多久打卡分别计算为迟到、严重迟到、早退、旷工</string>
+    <string name="ss_latetime_settings">设置迟到时间</string>
+    <string name="ss_seniouslatetime_settings">设置严重迟到时间</string>
+    <string name="ss_leaveearlytime_settings">设置早退时间</string>
+    <string name="ss_absenteeismtime_settings">设置旷工时间</string>
+    <string name="close_sign_notice1">关闭自动打卡,保存后系统将无法帮您自动打卡</string>
+    <string name="open_sign_notice1">开启自动打卡，保存后系统将帮您自动打卡</string>
+    <string name="ss_select_time">选择时间</string>
+    <string name="ss_sign_seted">已设置自动打卡</string>
+    <string name="ss_sign_closed">您已关闭自动打卡,系统将无法帮您自动打卡</string>
+    <string name="ss_sign_close_notice2">关闭后系统无法帮您自动打卡，确认关闭？</string>
+    <string name="ss_time_notice1">迟到时间必须小于严重迟到时间!</string>
+    <string name="ss_time_notice2">严重迟到时间必须小于旷工时间!</string>
+    <string name="ss_time_notice3">早退时间必须小于旷工时间!</string>
+
+
+    <string-array name="late_time">
+        <item>0分钟</item>
+        <item>1分钟</item>
+        <item>2分钟</item>
+        <item>3分钟</item>
+        <item>4分钟</item>
+        <item>5分钟</item>
+        <item>6分钟</item>
+        <item>7分钟</item>
+        <item>8分钟</item>
+        <item>9分钟</item>
+        <item>10分钟</item>
+        <item>11分钟</item>
+        <item>12分钟</item>
+        <item>13分钟</item>
+        <item>14分钟</item>
+        <item>15分钟</item>
+        <item>16分钟</item>
+        <item>17分钟</item>
+        <item>18分钟</item>
+        <item>19分钟</item>
+        <item>20分钟</item>
+        <item>21分钟</item>
+        <item>22分钟</item>
+        <item>23分钟</item>
+        <item>24分钟</item>
+        <item>25分钟</item>
+        <item>26分钟</item>
+        <item>27分钟</item>
+        <item>28分钟</item>
+        <item>29分钟</item>
+        <item>30分钟</item>
+    </string-array>
+    <string-array name="serious_late_time">
+        <item>10分钟</item>
+        <item>15分钟</item>
+        <item>20分钟</item>
+        <item>25分钟</item>
+        <item>30分钟</item>
+        <item>35分钟</item>
+        <item>40分钟</item>
+        <item>45分钟</item>
+        <item>50分钟</item>
+        <item>55分钟</item>
+        <item>60分钟</item>
+    </string-array>
+    <string-array name="serious_leave_early_time">
+        <item>10分钟</item>
+        <item>15分钟</item>
+        <item>20分钟</item>
+        <item>25分钟</item>
+        <item>30分钟</item>
+        <item>35分钟</item>
+        <item>40分钟</item>
+        <item>45分钟</item>
+        <item>50分钟</item>
+        <item>55分钟</item>
+        <item>60分钟</item>
+    </string-array>
+    <string-array name="absenteeism_time">
+        <item>30分钟</item>
+        <item>40分钟</item>
+        <item>50分钟</item>
+        <item>60分钟</item>
+        <item>70分钟</item>
+        <item>80分钟</item>
+        <item>90分钟</item>
+        <item>100分钟</item>
+        <item>110分钟</item>
+        <item>120分钟</item>
+    </string-array>
+    <!-- end -高级设置-->
+
+
+    <!-- start 办公地址设置 office_settings_title-->
+    <string name="os_headerdescription1">您可设置多办公地址</string>
+    <string name="os_headerdescription2">员工在以下任意地址有效范围内均可打卡</string>
+    <string name="os_signrange">打卡范围</string>
+    <string name="os_workrange">办公范围</string>
+    <string name="os_add_address">+添加办公地址</string>
+    <string name="os_range_notice1">地址距离更新成功</string>
+    <string name="os_address_notice1">办公地址保存成功</string>
+    <string name="delete_succeed_notice1">删除成功</string>
+    <string name="delete_failed_notice1">删除失败</string>
+    <string name="add_address_first">请先添加办公地址</string>
+    <string name="add_office_address">添加办公地址</string>
+    <string name="select_range">选择范围</string>
+    <string name="edit_office_address_name">完善办公地址名称</string>
+    <string name="detail_address">详细地址</string>
+    <string name="delete_address_notice1">确认删除该条办公地址？</string>
+    <!-- end 办公地址设置 -->
+
+    <!-- start工作日报 oaworkdaily-->
+    <string name="wd_summary_title">工作总结</string>
+    <string name="wd_summary_descrition">请输入今日工作总结(必填,限500字)</string>
+    <string name="wd_summary_error">"字数超限500了喔,亲!</string>
+    <string name="wd_plan_title">工作计划</string>
+    <string name="wd_plan_descrition">请输入明日工作计划(非必填,限300字)</string>
+    <string name="wd_plan_error">字数超限300了喔,亲!</string>
+    <string name="wd_experience_title">工作心得</string>
+    <string name="wd_experience_descrition">点击分享按钮可将工作心得分享到工作圈(非必填,限300字)</string>
+    <string name="wd_experience_error">字数超限300了喔,亲!</string>
+    <string name="wd_recording_title">日报记录</string>
+    <string name="daily_submit_success">工作日报提交成功</string>
+    <string name="daily_submit_failed">工作日报提交失败</string>
+    <string name="daily_update_success">工作日报更新成功</string>
+    <string name="daily_update_failed">工作日报更新失败</string>
+    <string name="daily_resubmit_success">工作日报重新提交成功</string>
+    <string name="daily_resubmit_failed">工作日报重新提交失败</string>
+    <string name="workcontext_grap_success">工作内容抓取成功</string>
+    <string name="submit_success">提交成功</string>
+    <string name="select_approvel_people">选择审批人</string>
+    <string name="submited">已提交</string>
+    <string name="daily_exit_notice">您当前页面存在未提交数据,退出数据将被清空,是否继续退出？</string>
+    <string name="work_report_exit_notice">正在离开录入页面，是否保存到在录入状态？</string>
+    <string name="share_experience_notice">请先填写工作心得再分享</string>
+    <string name="daily_submit_notice">确认提交工作日报</string>
+    <string name="daily_delate_success">工作日报删除成功</string>
+    <string name="delete_notice1">确认删除该条已保存单据?</string>
+    <string name="daily_detaily">日报详情</string>
+    <string name="delete_sumited_notice1">确认删除该条已提交单据?</string>
+    <string name="daily_resumit_success">工作日报反提交成功</string>
+    <string name="daily_resubmit_notice1">确认反提交该条单据?</string>
+    <string name="daily_approve_notice1">请输入审批意见,或者跳过此步直接进行审批操作</string>
+    <string name="select_doman">选择执行人</string>
+    <string name="doc_detaily_deleted">单据详情已被删除</string>
+    <string name="make_adeal_success">操作成功</string>
+    <string name="delete_doc_notice2">确认删除该条在录入单据</string>
+    <!-- end工作日报 oaworkdaily-->
+
+    <!-- start 考勤单据、详情  -->
+    <string name="status_approved">已审批</string>
+    <string name="status_pending">待审批</string>
+    <string name="status_unsubmit">在录入</string>
+    <string name="wd_completed_task">已完成任务</string>
+    <string name="wd_undone_task">未完成任务</string>
+    <string name="common_resubmit">重新提交</string>
+    <string name="common_delete">删除</string>
+    <string name="vacation_doc">请假单</string>
+    <string name="travel_doc">出差单</string>
+    <string name="overtime_doc">加班单</string>
+    <!-- end 考勤单据、详情 -->
+
+    <!-- start 客户关系管理界面CRM -->
+    <string name="crmmain_business">商机</string>
+    <string name="crmmain_client">客户</string>
+    <string name="crmmain_customer_visit">客户拜访</string>
+    <string name="crmmain_wall_of_fame">荣誉墙</string>
+    <string name="crmmain_dayasale">日销售额</string>
+    <string name="sz_zong">深圳总部</string>
+    <string name="zong">总经理</string>
+
+    <!-- 我的排名-->
+    <string name="crm_myranking">我的排名</string>
+    <string name="crm_filter">筛选</string>
+    <string name="crm_sales">销售额</string>
+    <string name="crm_Gross_profit">毛利润</string>
+    <string name="crm_Numberofcustome_visits">客户拜访数</string>
+    <string name="crm_Excessive_receivable">超额应收</string>
+    <string name="crm_di">第</string>
+    <string name="crm_ming">名</string>
+    <string name="crm_wyuan">万元</string>
+    <string name="crm_ge">个</string>
+    <string name="crm_extra_get">超期应收</string>
+    <string name="crm_newadd_c">_个新增客户</string>
+    <string name="crm_visit_record">拜访记录</string>
+    <string name="crm_out_doc">出货单</string>
+    <string name="crm_plansales_dec1">计划销售额/毛利润\n（万元）</string>
+    <string name="crm_realsales_dec2">实际销售额/毛利润\n（万元）</string>
+    <string name="crm_di_ming">第_名</string>
+    <string name="crm_nodatas">暂时没有数据</string>
+    <string name="crm_wwyuan">万元</string>
+    <string name="crm_back0wyuan">回款0万元</string>
+    <string name="crm_out0wyuan">出货0万元</string>
+
+    <string-array name="month_list">
+        <item>实际销售额</item>
+        <item>计划销售额</item>
+        <item>实际毛利润</item>
+        <item>计划毛利润</item>
+    </string-array>
+
+    <string-array name="sale_list">
+        <item>客户</item>
+        <item>联系人</item>
+        <item>商机数</item>
+        <item>商机变更</item>
+        <item>销售订单</item>
+        <item>拜访客户数</item>
+        <item>拜访次数</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Okt</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <!-- 本月销售简报-->
+    <string name="crm_Sales_briefing_this_month">本月销售简报</string>
+    <string name="crm_Back_money">回款</string>
+    <string name="crm_Shipments">出货</string>
+    <string name="crm_Numberofbusiness">商机数</string>
+    <string name="crm_change_business">商机变更</string>
+    <string name="crm_Sales_order">销售订单</string>
+    <string name="crm_Numberofvisitors">拜访客户数</string>
+    <string name="crm_Numberofvisited">拜访次数</string>
+    <string name="crm_unit_one">数量（单位:个）</string>
+
+    <!--我的指标 -->
+    <string name="crm_My_indicators">我的指标</string>
+    <string name="crm_Actual_sales">实际销售额</string>
+    <string name="crm_Plan_sales">计划销售额</string>
+    <string name="crm_Actual_gross_profit">实际毛利润</string>
+    <string name="crm_Plan_gross_profit">计划毛利润</string>
+    <string name="crm_Monthly_sales_unit">月销售额（单位:人民币 万元）</string>
+    <string name="crm_Forgotten_customers">遗忘的客户</string>
+
+    <string name="crm_creat_business">创建商机</string>
+    <string name="crm_add_business">新增客户</string>
+    <string name="crm_add_visitrecord">新增拜访报告</string>
+    <!-- end 客户关系管理界面CRM -->
+
+    <!-- start 商机界面-->
+    <string name="business_get_split">可领取可分配</string>
+    <string name="business_common">公有</string>
+    <string name="business_Selling_funnel">销售漏斗</string>
+    <string name="business_seize">抢占商机</string>
+    <string name="business_distribution">商机分配</string>
+    <string name="business_followup">我的商机</string>
+    <string name="business_followup_people">商机跟进人</string>
+    <string name="color_text">颜色</string>
+    <string name="business_number">数量/金额</string>
+    <string name="business_Conversion_rate">转化率</string>
+
+    <string name="business_stage">商机阶段</string>
+    <string name="First_communication">初次沟通</string>
+    <string name="Product_show">产品演示</string>
+    <string name="Project_evaluation">立项评估</string>
+    <string name="demand_analysis">需求分析</string>
+    <string name="Sample_offer">样品报价</string>
+    <string name="Business_negotiation">商务谈判</string>
+    <string name="Contract_signing">合同签约</string>
+    <string name="Seal_the_deal">完成交易</string>
+    <string name="Many_transactions">多次交易</string>
+    <string name="click_more">以上显示排名前三的下属，点击显示更多</string>
+    <string name="length_last_gj">距离上次跟进</string>
+    <!-- end 商机界面-->
+
+    <!-- start 创建商机-->
+    <string name="no_">无</string>
+    <string name="business_add_success">添加商机成功</string>
+    <string name="business_name">商机名称</string>
+    <string name="business_id">商机编号</string>
+    <string name="business_from">商机来源</string>
+    <string name="business_Library">商机库</string>
+    <string name="current_stage">当前阶段</string>
+    <string name="Company_Name">企业名称</string>
+    <string name="business_license">营业执照</string>
+    <string name="Estimated_cost">预计成本金额</string>
+    <string name="Expected_transaction_time">预计成交时间</string>
+    <string name="Follow_up_person">跟进人</string>
+    <string name="Remarks">备注</string>
+    <string name="this_month">本月</string>
+    <string name="last_month">上月</string>
+    <string name="this_Quarterly">本季度</string>
+    <string name="last_Quarterly">上季度</string>
+    <string name="this_year">本年度</string>
+    <string name="last_year">上年度</string>
+    <string name="enterprise_address">企业地址</string>
+    <string name="enterprise_license" tools:ignore="ExtraTranslation">营业执照</string>
+    <string name="Unscheduled_schedule">未排日程</string>
+    <string name="Has_been_scheduled">已排日程</string>
+    <string name="Will_time_out">即将超时</string>
+    <string name="Has_switched_customers">已转客户</string>
+    <string name="qiang_business_success">成功抢得此商机</string>
+    <string name="split_business_success">成功分配商机</string>
+    <string name="business_limit">您已超出最大获取商机数</string>
+    <string name="business_notice1">请到商机跟进中查看商机</string>
+
+    <!-- start 商机来源-->
+    <string name="Come_to_visit">上门拜访</string>
+    <string name="tel_to_visit">电话拜访</string>
+    <string name="Others_introduced">他人介绍</string>
+    <string name="Internet_advertising">互联网广告</string>
+    <string name="Print_Ads">平面广告</string>
+    <string name="others">其他</string>
+    <!-- end 商机来源-->
+
+    <!-- start 商机库-->
+    <string name="UAS_public_business_library">UAS公共商机库</string>
+    <string name="yf_Department_private_business_library">研发部私有商机库</string>
+    <string name="UAS_private_business_library">UAS私有商机库</string>
+    <string name="Test_Department_Private_Business_Library">测试部私有商机库</string>
+    <!-- end 商机库-->
+
+    <string name="business_detail">商机详情</string>
+    <string name="creat_time">创建时间</string>
+    <string name="last_followup_time">最后跟进时间</string>
+    <string name="Stage_requirements">阶段要求</string>
+    <string name="grab">抢</string>
+    <!-- start 创建商机-->
+
+    <!-- start 客户-->
+    <string name="client_search">查询</string>
+    <string name="client_myself">我自己</string>
+    <string name="client_subordinate">我下属</string>
+    <string name="client_Not_traded">未成交</string>
+    <string name="client_Deal_done">已成交</string>
+    <string name="client_All_customers">全部客户</string>
+    <string name="client_current_stage">当前阶段</string>
+    <string name="client_Clerk">业务员</string>
+    <string name="client_status">审核状态</string>
+    <string name="client_Switch">切换</string>
+    <string name="un_deal">0\n未成交</string>
+    <string name="dealed">0\n已成交</string>
+    <string name="all_client">0\n全部客户</string>
+    <string name="client_Number">编号:</string>
+    <string name="thismonth_prediction">本月预测(元)：</string>
+    <string name="client_Customer_Number">客户编号</string>
+    <string name="client_Customer_name">客户名称</string>
+    <string name="client_Referred_to">简称</string>
+    <string name="client_customer_address">客户地址</string>
+    <string name="client_district_belong_to">所属地区</string>
+    <string name="client_payment_method">收款方式</string>
+    <string name="client_Currency">币别</string>
+    <string name="client_tax_rate">税率</string>
+    <!-- start 所属地区-->
+    <string name="client_Huadong_Region">华东地区</string>
+    <string name="client_Huanan_Region">华南地区</string>
+    <string name="client_Huabei_Region">华北地区</string>
+    <string name="client_Huazhong_Region">华中地区</string>
+    <string name="client_Southwest_Region">西南地区</string>
+    <string name="client_North_west_region">西北地区</string>
+    <string name="client_North_east_area">东北地区</string>
+    <string name="client_HongKong_Macao_and_Taiwan_regions">港澳台地区</string>
+    <string name="client_other_areas">其他地区</string>
+    <!-- end 所属地区-->
+    <!-- end 客户-->
+
+    <string name="Wall_of_Fame_description">这里展示的是当月表现突出的员工，荣誉墙每个月都会更新，若这个月还没上榜，请多加努力，还有机会哟！</string>
+
+
+    <!--start Bitliker-->
+    <string name="not_addr_to_select">没有可以选择的地址</string>
+    <string name="unoffice"><u>地点微调</u></string>
+    <string name="rice">米</string>
+    <string name="not_addr_message">系统尚未找到您的打卡地址信息，请联系管理员</string>
+    <string name="not_work_message">系统尚未找到您的班次，请联系管理员设置班次</string>
+    <string name="not_find_work">系统尚未找到您的班次</string>
+    <string name="not_signin_agin">请不要频繁打卡</string>
+    <string name="too_long">您当前位置距离考勤地点太远，请移往目标或重新定位</string>
+    <string name="signin_ok">签到成功</string>
+    <string name="signin_error">签到失败</string>
+    <string name="mac_changing">正在变更常用设备中，请勿打卡</string>
+    <string name="mac_other">该设备已被他人绑定</string>
+    <string name="activity_signing">打卡签到</string>
+    <string name="other_phone_error">请在常用手机签到！若手机更换请先填写手机变更单再来签到</string>
+    <string name="not_today">当前所在日期无法签到</string>
+    <string name="show_frist_mac">本次打卡会将本机设为常用签到手机，是否继续签到?</string>
+    <string name="allow_location">打开"定位服务"来允许"UU互联"确定你的位置</string>
+    <string name="free_work">自由打卡</string>
+    <string name="this_position">当前位置</string>
+    <string name="long_company">距离公司</string>
+    <string name="meet_position">会议地点</string>
+    <string name="meet_details">会议纪要</string>
+    <string name="recorder">发起人</string>
+    <string name="doing">进行中</string>
+    <string name="not_bigan">未开始</string>
+    <string name="meet_manage">会议管理</string>
+    <string name="meet_detail">会议详情</string>
+    <string name="meet_success_end">会议结束成功</string>
+    <string name="ended">已结束</string>
+    <string name="meet_signin_success">会议签到成功</string>
+    <string name="signin_number">当前签到人数</string>
+    <string name="signined">已签到</string>
+    <string name="already_signined">您已经签到过了</string>
+    <string name="to_end_meet">确定要结束会议吗?</string>
+    <string name="not_power_edit_tag">你不是会议管理员，没有权限编写会议纪要</string>
+    <string name="not_power_end_meet">你不是会议管理员，没有权限结束会议</string>
+    <string name="meet_ended_not_signin">会议已经结束，不能再签到</string>
+    <string name="push_task">发起任务</string>
+    <string name="meet_show">会议介绍</string>
+    <string name="meet_tag">会议标签</string>
+    <string name="signin_new">立即签到</string>
+    <string name="agare"><u>重新定位</u></string>
+    <string name="new_meet">新建会议</string>
+    <string name="add_meet_success_adding_task">添加会议成功，正在为会议成员创建日程</string>
+    <string name="add_meet_success">添加会议成功!</string>
+    <string name="error_try_agen">内部错误,请稍后再试或联系工作人员</string>
+    <string name="meet_add_task_success">为与会人员添加日程成功</string>
+    <string name="not_time_start_biger_end">开始时间不能大于或等于截止时间</string>
+    <string name="please_input_start_time">请填写开始时间</string>
+    <string name="meet_name_error">会议名为空或格式不正确</string>
+    <string name="start_time_error">开始时间为空或格式不正确</string>
+    <string name="end_time_error">截止时间为空或格式不正确</string>
+    <string name="position_error">地点为空或格式不正确</string>
+    <string name="meet_manager_error">会议管理员为空或格式不正确</string>
+    <string name="join_numer_error">参会人员不符要求</string>
+    <string name="not_power_check_bill">您没有查看单据的权限</string>
+    <string name="resourcer">执行人</string>
+    <string name="networks_out">当前网络不可用，请稍后重试!</string>
+    <string name="half_day">半天</string>
+    <string name="all_day">全天</string>
+    <string name="not_save_illegal_bill">当前单号地址非法，无法保存</string>
+    <string name="you_destination">您的目的地</string>
+    <string name="not_edit">未填写</string>
+    <string name="visit_company">拜访单位</string>
+    <string name="visit_address">拜访地址</string>
+    <string name="visit_aim">拜访目的</string>
+    <string name="expected_arrival_time">预计到达时间</string>
+    <string name="location_error_try_agen">位置信息不正确，请重新选择地址</string>
+    <string name="save_ok">保存成功</string>
+    <string name="sure_delete_mission">你确定删除该外勤计划吗</string>
+    <string name="sure_delete_content">你确定删除该联系人吗</string>
+    <string name="maintain_customers">客情维护</string>
+    <string name="business_process">业务办理</string>
+    <string name="other_vivit">其它拜访</string>
+    <string name="sure_input_valid">请输入有效数据</string>
+    <string name="too_long_edit_twenty">字数长度不能超过20个字符</string>
+    <string name="activity_select_aims">选择目的地</string>
+    <string name="activity_flights">排班设置</string>
+    <string name="activity_visit_aims">拜访目的</string>
+    <string name="activity_mission_set">外勤设置</string>
+    <string name="activity_mission_plan">外勤计划</string>
+    <string name="minute">分钟</string>
+    <string name="effective_range">有效距离</string>
+    <string name="reserve_time">预留时间</string>
+    <string name="auto_mission">自动外勤</string>
+    <string name="remind_time">提醒时间</string>
+    <string name="neer_submit_able">是否需要审批</string>
+    <string name="meet_signin">会议签到</string>
+    <string name="signin_setting">签到设置</string>
+    <string name="signin_detail">签到详情</string>
+    <string name="select_user">选择人员</string>
+    <string name="meet_task">会议任务</string>
+    <string name="my_mission">我的外勤</string>
+    <string name="add_mission_plan">+增加外勤计划</string>
+    <string name="perfect_company_name">完善单位名称</string>
+    <string name="company_name">公司名称</string>
+    <string name="skip_operation">跳过此步</string>
+
+
+    <string name="delete_back_default_work">删除班次后成员自动回到默认排班中，是否继续？</string>
+    <string name="a_person">个人</string>
+    <string name="a">个</string>
+    <string name="a_department">个部门</string>
+    <string name="department">部门</string>
+    <string name="default_work">默认排版</string>
+    <string name="member">成员</string>
+    <string name="fixed_shift">固定班次</string>
+    <string name="user_work">使用本班次</string>
+    <string name="conflict_personnel">冲突人员</string>
+    <string name="conflict_department">冲突部门</string>
+    <string name="default_not_edit_department">默认班次不能修改部门</string>
+    <string name="default_not_edit_member">默认班次不能修改人员</string>
+    <string name="not_null_name">规则名称不能为空</string>
+    <string name="not_null_work_time">考勤时间不能为空</string>
+    <string name="not_null_work_day">考勤日期不能为空</string>
+    <string name="will_save_conflict">保存本班次会将冲突的部门人员加入本班次，是否继续？</string>
+    <string name="add_flihts">新增班次</string>
+    <string name="edit_flihts">修改班次</string>
+    <string name="work_name">班次名称</string>
+    <string name="work_time">考勤时间</string>
+    <string name="work_day">考勤日期</string>
+    <string name="work_department">参与部门</string>
+    <string name="and_join_member">或参与人员</string>
+    <string name="earliest_work_time">最早上班时间</string>
+    <string name="most_input_three_time">最多添加三个时间</string>
+    <string name="select_earliest_work_time">请选择最早上班时间</string>
+    <string name="work_not_complete">上班时间未填写完整</string>
+    <string name="off_not_complete">下班时间未填写完整</string>
+    <string name="work_up_time">上班时间</string>
+    <string name="work_off_time" tools:ignore="ExtraTranslation">下班时间</string>
+    <string name="selected">已选择</string>
+    <string name="cancel_select_all">取消全选</string>
+    <string name="not_load_ok_fefresh">没有获取到数据，请尝试刷新通讯录</string>
+    <string name="select_all">全选</string>
+    <string name="not_data_to_select_number">数据为空，没有可选择人员</string>
+    <string name="time_include_time">选择的时间有交叉，请重新检查后提交</string>
+    <string name="work_time_setting">时间设置</string>
+    <string name="work_day_setting">日期设置</string>
+    <string name="holidays">法定节假日</string>
+    <string name="work_statistics">考勤统计</string>
+    <string name="select_join_department">选择参与部门</string>
+    <string name="select_join_number">选择参与人员</string>
+    <string name="navigation">导航</string>
+    <string name="outoff_work_alert">离开办公范围提醒</string>
+    <string name="not_allowed_name">规则名称为空或是包含特殊字符，请检查后提交</string>
+    <string name="outoff_work">系统检测到您已离开办公区域</string>
+    <string name="work_up_alert">上班时间快到了，请及时打卡</string>
+    <string name="work_off_alert">下班时间已到了，请及时打卡</string>
+    <string name="out_net_signin">网络未连接，无法自动为您签到</string>
+    <string name="auto_mission_signinup">自动外勤签到</string>
+    <string name="auto_mission_alert">自动外勤提醒</string>
+    <string name="uu_auto_signined_down">UU已经帮你自动签退</string>
+    <string name="uu_auto_signined_up">UU已经帮你自动外勤签到</string>
+    <string name="visit">拜访</string>
+    <string name="auto_mission_signindown">自动外勤签退</string>
+    <string name="auto_work_signin_log">自动打卡记录</string>
+    <string name="auto_signin">系统已为你自动打卡</string>
+    <string name="success_signin_down_mission">外勤签退成功</string>
+    <string name="success_signin_up_mission">自动外勤签到成功</string>
+    <string name="success_signin_down">签退成功</string>
+    <string name="success_signin_up">签到成功</string>
+    <string name="is_not_common_device">该设备不是考勤打卡常用设备</string>
+    <string name="is_not_common_device_not_signin">该设备不是考勤打卡常用设备,无法为您自动打卡</string>
+    <string name="is_changeing_not_signin">设备正处于申请变更绑定阶段,无法为您自动打卡</string>
+    <string name="is_binded_other_not_signin">该设备已被他人绑定,无法为您自动打卡</string>
+    <string name="to">对</string>
+    <string name="auto_work_signin_alert">自动打卡提醒</string>
+    <string name="uu_auto_work_signined_up">UU已经帮你自动打卡</string>
+    <string name="success_signin_down_can_back">外勤签退成功,您还有时间返回公司，请回公司签到</string>
+    <string name="success_signin_down_task_ok">外勤签退成功,当天任务已结束</string>
+    <string name="add_contacts">+添加联系人</string>
+    <string name="name">姓名</string>
+    <string name="position">岗位</string>
+    <string name="company_address">公司地址</string>
+    <string name="add_card">添加名片</string>
+    <string name="detailed_address">详细地址</string>
+    <string name="more_operation">更多操作</string>
+    <string name="add_mission">添加外勤</string>
+    <string name="stage_follow">阶段跟进</string>
+    <string name="add_schedule">添加日程</string>
+    <string name="seletc_business">请选择商机库</string>
+    <string name="visit_date">拜访日期</string>
+    <string name="visitrecord">拜访报告</string>
+    <string name="sure_delete_bc">确认删除此商机?</string>
+    <string name="sure_business_release">确定释放这个商机?</string>
+    <string-array name="crm_dialog_followup">
+        <item>商机释放</item>
+        <item>商机失效</item>
+        <item>转为新客户</item>
+        <item>关联已有客户</item>
+    </string-array>
+
+    <string-array name="one_five_hour">
+        <item>上班前1个小时</item>
+        <item>上班前2个小时</item>
+        <item>上班前3个小时</item>
+        <item>上班前4个小时</item>
+        <item>上班前5个小时</item>
+    </string-array>
+    <string name="create_business">创建商机</string>
+    <string name="describe">描述</string>
+    <string name="visit_content">拜访内容</string>
+    <string name="is_must_input">为必填项</string>
+    <string name="times">时段</string>
+    <string name="longs">距离</string>
+    <string name="create_addree">创建地点</string>
+    <string name="realtime_distance">实时距离</string>
+    <string name="real_arrival_time">实际到达时间</string>
+    <string name="recent_record_time">最近记录时间</string>
+    <string name="select_client">选择客户</string>
+    <string name="create_date">创建日期</string>
+    <string name="select_contact">选择联系人</string>
+    <string name="delete_business_ok">删除商机成功</string>
+    <string name="input_visit_remark">输入拜访目的</string>
+    <string name="input_contact">输入联系人</string>
+    <string name="update_business">修改商机</string>
+    <string name="search_select_hint">搜索项目、品牌、物料、型号等</string>
+    <string name="not_search_message">没有符合条件的结果</string>
+    <string name="contect_is_much">联系人为必填项</string>
+    <string name="context_is_much">拜访内容为必填项</string>
+    <string name="over_latetime">严重迟到</string>
+    <string name="work_signin">上班打卡</string>
+    <string name="unwork_signin">下班打卡</string>
+    <string name="hour">小时</string>
+    <string name="add_work_times">+新增上班时段</string>
+    <string name="all_work_time">合计工时</string>
+    <string name="two_hour_before">上班前2个小时</string>
+    <string name="earliest_work_signin_time">最早上班签到时间</string>
+    <string name="mobile_signcard">申诉班次</string>
+    <string name="mobile_mac">手机mac地址</string>
+    <string name="mobile_change_name">变更理由</string>
+    <string name="input_reason">请填写理由</string>
+    <string name="change_signin_ok">申诉成功!</string>
+    <string name="personnel">人员</string>
+    <string name="not_message_and_add">没有找到数据，请点击右上角的+进行添加</string>
+    <string name="change_mobile">打卡设备变更单</string>
+    <string name="supple_signin">申诉申请</string>
+    <string name="last_visit">上次拜访</string>
+    <string name="visit_num">总拜访</string>
+    <string name="search_address_input_company">请搜索地址后完善单位名称</string>
+    <string name="enterprise">企业</string>
+    <string name="map">地图</string>
+    <string name="other_map">使用其他地图</string>
+    <string name="click_finds"><u>点击查看</u></string>
+    <string name="unsignined">未签到</string>
+    <string name="input_meeting_note">会议纪要未按要求填写</string>
+    <string name="input_meeting_resolution">会议决议未按要求填写</string>
+    <string name="input_meeting_left">遗留问题未按要求填写</string>
+    <string name="input_meeting_next">后续工作未按要求填写</string>
+    <string name="leave">请假</string>
+    <string name="overtime">加班</string>
+    <string name="ychuqin">应该出勤</string>
+    <string name="achuqin">实际出勤</string>
+    <string name="nday">正常打卡</string>
+    <string name="outdays">出差</string>
+    <string name="signcard">补卡</string>
+    <string name="add_blacklist">加入黑名单</string>
+    <string name="cancel_attention">取消关注</string>
+    <string name="delete_all">彻底删除</string>
+    <string name="remark_name_format_error">备注名不合法，只允许中文、英文、字母和下划线，且长度为3至10个字符</string>
+    <string name="not_find_company_search">未找到公司位置，请搜索地址</string>
+    <string name="visited">已拜访</string>
+    <string name="create_meet_task">创建会议任务</string>
+    <string name="meeting_name">会议名称</string>
+    <string name="join_numer">参会人员</string>
+    <string name="administrators">管理员</string>
+    <string name="add_schedule_for_meeter">为参会人员创建日程</string>
+    <string name="select_locaton">选择位置</string>
+    <string name="friend_to_chat">你们已经是好友了，开始聊天吧</string>
+    <string name="not_system_permission">应用没有获取到权限</string>
+    <string name="chat_poto">照片</string>
+    <string name="chat_camera">拍照</string>
+    <string name="chat_video">录像</string>
+    <string name="chat_audio">语音通话</string>
+    <string name="chat_loc">位置</string>
+    <string name="chat_file">文件</string>
+    <string name="chat_card">名片</string>
+    <string name="send">发送 </string>
+    <string name="motalk_voice_chat_tip_1">按住说话</string>
+    <string name="motalk_voice_chat_tip_2">松开发送</string>
+    <string name="motalk_voice_chat_tip_3">上滑取消发送</string>
+    <string name="motalk_voice_chat_tip_4">松开取消发送</string>
+    <string name="motalk_voice_chat_tip_5">重新录制</string>
+    <string name="motalk_voice_chat_tip_6">松开结束</string>
+    <string name="msg_picture">[图片]</string>
+    <string name="msg_voice">[语音]</string>
+    <string name="msg_location">[位置]</string>
+    <string name="msg_animation">[动画]</string>
+    <string name="msg_video">[视频]</string>
+    <string name="msg_file">[文件]</string>
+    <string name="msg_be_add_attention">有人关注了你</string>
+    <string name="msg_be_say_hello">有人给你打招呼</string>
+    <string name="msg_be_passed">你通过了好友验证</string>
+    <string name="msg_has_new_friend">你有新朋友了</string>
+    <string name="msg_has_new_recommend_friend">你有新的推荐朋友</string>
+    <string name="add_chat_ok_btn">确定(<xliff:g id="count">%1$s</xliff:g>)</string>
+    <string name="select_contacts">选择联系人</string>
+    <string name="please_input_room_name">请输入群名</string>
+    <string name="please_input_room_desc">请输入群描述</string>
+    <string name="service_start_failed">您当前处于离线状态，请检查网络或重新登陆</string>
+    <string name="create_room">创建群</string>
+    <string name="room_name_empty_error">群名为空或不符要求</string>
+    <string name="room_des_empty_error">群描述为空或不符要求</string>
+    <string name="create_room_failed">创建群失败</string>
+    <string name="room_name">群名称</string>
+    <string name="room_description">群说明</string>
+    <string name="room_number">人&#160;&#160;&#160;&#160;数</string>
+    <string name="new_join_son_to_chating">新加入的小伙伴们,快来聊天吧!</string>
+    <string name="no_notice">暂时无公告</string>
+    <string name="no_block_room_message">取消屏蔽群消息</string>
+    <string name="block_room_message">屏蔽群消息</string>
+    <string name="delete_room">删除商务群</string>
+    <string name="exit_room">退出商务群</string>
+    <string name="add_administrators">添加管理员</string>
+    <string name="remove_administrators">移除管理员</string>
+    <string name="room_info">群信息</string>
+    <string name="notice">群内公告</string>
+    <string name="room_desc">群说明</string>
+    <string name="creator">创建者</string>
+    <string name="people_count">成员上限</string>
+    <string name="my_nick_name">我的群昵称</string>
+    <string name="can_not_remove_self">你不能移除你自己</string>
+    <string name="can_not_banned_self">你不能禁言你自己</string>
+    <string name="banned_voice">禁言</string>
+    <string name="banned_exit_room">退出群</string>
+    <string name="banned_delete_room">解散群</string>
+    <string name="create_chat_time">创建时间</string>
+    <string name="shield_chat">屏蔽群消息</string>
+    <string name="change_room_name">修改群名</string>
+    <string name="change_room_des">修改群说明</string>
+    <string name="change_my_nickname">修改我的群昵称</string>
+    <string name="add_notice">添加公告</string>
+    <string name="please_wait">请稍等&#8230;</string>
+    <string name="gag_success">禁言成功</string>
+    <string name="no_gag_success">取消禁言成功</string>
+    <string name="to_this_day">至今</string>
+    <string name="friendly_time_before_seconds">秒前</string>
+    <string name="friendly_time_before_minute">分钟前</string>
+    <string name="friendly_time_yesterday">昨天</string>
+    <string name="friendly_time_before_yesterday">前天</string>
+    <string name="copy">复&#160;&#160;制</string>
+    <string name="forward">转&#160;&#160;发</string>
+    <string name="delete">删&#160;&#160;除</string>
+    <string name="more">更&#160;&#160;多</string>
+    <string-array name="gags_select">
+        <item>不禁言</item>
+        <item>禁言一天</item>
+        <item>禁言3天</item>
+        <item>禁言一周</item>
+        <item>禁言半个月</item>
+        <item>禁言一个月</item>
+    </string-array>
+    <string name="missing_card">缺卡</string>
+    <string name="confirmed">待确认</string>
+    <string name="readed">已读</string>
+    <string name="unreaded">未读</string>
+    <string name="web_next_tv">下一条＞</string>
+    <string name="web_previous_tv">＜上一条</string>
+    <string name="subscription_number">隐藏该订阅号</string>
+    <string name="subscription_class">隐藏该订阅类</string>
+    <string name="unsubscribe">－退订</string>
+    <string name="not_unsubscribe_able">该订阅号不可退订</string>
+    <string name="unsubscribe_able">不可退订</string>
+    <string name="add_contact" tools:ignore="ExtraTranslation">新增联系人</string>
+    <string name="more_length">超过最大允许长度</string>
+    <string name="work_name_not_be_null">班次名称不能为空</string>
+    <!--end by Bitliker-->
+
+    <!--start by Arison-->
+    <!--对话框-->
+    <string name="app_name">UU互联</string>
+    <string name="app_dialog_title">系统提示</string>
+    <string name="app_dialog_ok">确认</string>
+    <string name="app_dialog_cancle">取消</string>
+    <string name="app_dialog_close">关闭</string>
+    <!--按钮-->
+    <string name="app_button_commit">提交</string>
+    <string name="app_button_save">保存</string>
+    <!--登录-->
+    <string name="login_button">登  录</string>
+    <string name="login_account">账号    |</string>
+    <string name="login_password">密码    |</string>
+    <string name="login_losspwd">忘记密码?</string>
+    <string name="login_getpwd">密码找回</string>
+    <string name="login_register">新用户注册</string>
+    <string name="please_input_phone_number">请输入手机号码</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="login_failed">登录失败</string>
+    <string name="login_account_empty"> 账号不能为空</string>
+    <string name="login_pwd_empty">密码不能为空</string>
+    <string name="login_exit">登出</string>
+    <!--数据更新-->
+    <string name="data_update">数据更新</string>
+    <string name="data_not_update_exit">用户数据尚未更新完毕，退出将放弃登陆，您是否要退出？</string>
+    <!--主界面-->
+    <string name="message">消息</string>
+    <string name="find">通讯录</string>
+    <string name="nearby">工作</string>
+    <string name="group_chat">群聊</string>
+    <string name="me">我的</string>
+    <!-- 消息-->
+    <string name="msg_title">消息</string>
+    <string name="msg_online">消息</string>
+    <string name="msg_offline">消息(离线)</string>
+    <string name="msg_connect">消息(连接中)</string>
+    <string name="msg_approval">我的审批</string>
+    <string name="msg_work">待办工作</string>
+    <string name="msg_subscribe">我的订阅</string>
+    <string name="friendly_time_just_now">刚刚</string>
+    <string name="mark_readed">标为未读</string>
+    <string name="mark_unread">标为已读</string>
+    <string name="msg_subscribe_data" tools:ignore="ExtraTranslation"> 查看企业数据</string>
+
+    <!--通讯录-->
+    <string name="contact_title">通讯录</string>
+    <string name="contact_company">企业架构</string>
+    <string name="contact_business">商务群</string>
+    <string name="contact_friend">UU好友</string>
+    <string name="contact_often">常用联系人</string>
+    <!--工作-->
+    <string name="work_title">工作</string>
+    <string name="work_customer">客户关系管理</string>
+    <string name="work_oa">行政办公</string>
+    <string name="work_business_manage">商务管理</string>
+    <string name="work_business_mall">优软商城</string>
+    <string name="work_business_find">商品查询</string>
+    <string name="work_business_me">我的商务</string>
+    <string name="work_oa_sigin" tools:ignore="ExtraTranslation">自动考勤</string>
+    <string name="work_oa_order" tools:ignore="ExtraTranslation">查看订单询价单</string>
+    <!--我-->
+    <string name="user_title">我</string>
+    <string name="user_firend_cirle">我的工作圈</string>
+    <string name="user_company">公司</string>
+    <string name="user_account">账套</string>
+    <string name="user_setting">设置</string>
+    <string name="user_scan">扫描</string>
+    <string name="user_dialog_company">选择登录的UAS账套</string>
+    <string name="user_dialog_master">切换账套</string>
+    <string name="user_master_success">账套切换成功</string>
+    <string name="user_master_fai">账套切换失败</string>
+
+    <!--设置-->
+    <string name="set_sport">UU运动</string>
+    <string name="set_push">允许推送</string>
+    <string name="set_clear">清除缓存</string>
+    <string name="set_sigin">打卡设置</string>
+    <string name="set_suggest">用户反馈</string>
+    <string name="set_about">关于UU互联</string>
+    <string name="set_version">当前版本</string>
+    <string name="set_login_out">退出登录</string>
+    <string name="set_language">语言设置</string>
+    <!--更新版本检测-->
+    <string name="update_load">当前版本</string>
+    <string name="update_msg">已经是最新版,不需要更新</string>
+    <!--关于-->
+    <string name="about_remark">去评价</string>
+    <string name="about_function">新功能介绍</string>
+    <string name="about_qcode">二维码</string>
+    <string name="about_qcode_msg">UU互联最新版二维码长按可识别</string>
+    <string name="about_us_company">深圳市优软科技有限公司 版权所有</string>
+    <string name="about_us_copyright">Copyright @ 2014&#8211;2016 UAS.All Rights Reserved</string>
+    <string name="about_share">分享</string>
+    <!--用户反馈-->
+    <string name="suggest_hink">请输入您的问题...(400字以内)</string>
+    <!--清除缓存-->
+    <string name="cache_msg">是否确定清除本地缓存</string>
+    <!--UU运动-->
+    <string name="sports_recode">运动记录</string>
+    <string name="sports_recode_distance">步行+跑步距离(估算)</string>
+    <string name="sports_kilometre">公里</string>
+    <string name="sports_tody">今天</string>
+    <string name="sports_step">步</string>
+    <string name="sports_step_tody">今日步数</string>
+    <string name="sports_recode_more">更多历史记录</string>
+    <string name="sports_dialog_content">更多历史记录</string>
+    <!--个人资料-->
+    <string name="user_info_title">个人资料</string>
+    <string name="user_birthday">生日</string>
+    <string name="user_sex">性别</string>
+    <string name="user_nickname">昵称</string>
+    <string name="user_images">头像</string>
+    <string name="user_area">地区</string>
+    <string name="user_body">男</string>
+    <string name="user_girl">女</string>
+    <string name="user_position">职位</string>
+    <string name="user_conpany_info">企业信息</string>
+
+    <!--通讯录 功能模块-->
+    <!--通讯录添加好友-->
+    <string name="title_friend_add">添加好友</string>
+    <string name="user_minage">最小年龄</string>
+    <string name="user_maxage">最大年龄</string>
+    <string name="user_appear">出现时间</string>
+    <string name="select_sex_title">选择性别</string>
+    <string name="select_date_title">选择日期</string>
+    <string-array name="array_select_date">
+        <item>所有日期</item>
+        <item>近一天</item>
+        <item>近两天</item>
+        <item>近三天</item>
+        <item>近一周</item>
+        <item>近两周</item>
+        <item>近一个月</item>
+        <item>近六周</item>
+        <item>近两个月</item>
+    </string-array>
+    <string name="user_phone">手机</string>
+    <string name="user_email">邮箱</string>
+    <string name="dialog_confim_phone">确认是否拨打电话</string>
+    <string name="dialog_phone">手机号码</string>
+    <string name="dialog_phone_action">拨打</string>
+    <string name="friend_add">加为好友</string>
+    <!--通讯录个人详情-->
+
+    <!--消息功能模块-->
+    <!--我的审批-->
+    <string name="task_unconfim">待审批</string>
+    <string name="task_confimed">已审批</string>
+    <string name="task_request_me">我发起</string>
+    <!--待办工作-->
+    <!--添加任务-->
+    <string name="task_add">新增任务</string>
+    <string name="task_send">发送</string>
+    <string name="task_title">任务标题</string>
+    <string name="task_detail">任务详情</string>
+    <string name="task_executor">执行人</string>
+    <string name="task_starttime">开始时间</string>
+    <string name="task_endtimetask_endtime" tools:ignore="ExtraTranslation">截止时间</string>
+    <!--任务详情-->
+    <string name="taskdetail_title">任务处理</string>
+    <string name="taskdetail_info">任务信息</string>
+    <string name="taskdetail_name">任务名称</string>
+    <string name="taskdetail_sponsor">提出人</string>
+    <string name="taskdetail_executor">执行人</string>
+    <string name="taskdetail_startime">开始时间</string>
+    <string name="taskdetail_endtime">结束时间</string>
+    <string name="taskdetail_state">状态</string>
+    <string name="taskdetail_desc">任务描述</string>
+    <string name="taskdetail_content_title">回复内容</string>
+    <string name="taskdetail_inputman">录入人</string>
+    <string name="taskdetail_time">时间</string>
+    <string name="taskdetail_content">内容</string>
+    <!--我的订阅-->
+    <string name="subscribe_title">我的订阅</string>
+    <string name="subscribe_manager">订阅管理</string>
+    <string name="subscribe_unsure">未订阅</string>
+    <string name="subscribe_confirmed">已订阅</string>
+    <string name="subscribe_setting">设置</string>
+    <string name="subscribe_unsetting">未订阅设置</string>
+    <string name="subscribe_hide_nodata">您没有隐藏的订阅号</string>
+    <string name="subscribe_detail_commit">+订阅</string>
+    <string name="subscribe_detail_title">订阅号详情</string>
+    <string name="subscribe_requested">已申请</string>
+    <string name="subscribe_cancled">取消订阅成功!</string>
+    <string name="subscribe_nodata">您没有任何订阅号</string>
+    <!--end by Arison-->
+
+    <!--umeng-->
+    <string name="umeng_socialize_network_break_alert" translatable="false">请连接网络后再尝试！</string>
+    <string name="umeng_socialize_comment" translatable="false">评论</string>
+    <string name="umeng_socialize_comment_detail" translatable="false">评论详情</string>
+    <string name="umeng_socialize_back" translatable="false">返回</string>
+    <string name="umeng_socialize_near_At" translatable="false">最近\@的好友</string>
+    <string name="umeng_socialize_friends" translatable="false">关注的好友</string>
+    <string name="umeng_socialize_send" translatable="false">发布</string>
+    <string name="umeng_socialize_tip_blacklist" translatable="false">对不起，因为违反了用户协议您已被禁言.</string>
+    <string name="umeng_socialize_tip_loginfailed" translatable="false">登录失败&#8230;</string>
+    <string name="umeng_socialize_msg_sec" translatable="false">秒前</string>
+    <string name="umeng_socialize_msg_min" translatable="false">分钟前</string>
+    <string name="umeng_socialize_msg_hor" translatable="false">小时前</string>
+    <string name="umeng_socialize_ucenter_login_title_guide" translatable="false">游客登录</string>
+    <string name="umeng_socialize_ucenter_login_title_platform" translatable="false">登录帐号</string>
+
+    <dimen name="alphabet_size">12dip</dimen>
+    <dimen name="umeng_socialize_pad_window_height">350dip</dimen>
+    <dimen name="umeng_socialize_pad_window_width">580dip</dimen>
+
+    <string name="umeng_socialize_share_content">友盟社会化组件（SDK）让移动应用快速整合社交分享功能，我们简化了社交平台的接入，为开发者提供坚实的基础服务。（一）支持各大主流社交平台，
+												（二）支持图片、文字、gif动图、音频、视频；@好友，关注官方微博等功能。
+												（三）提供详尽的后台用户社交行为分析。www.umeng.com/social</string>
+    <string name="umeng_socialize_login_qq">QQ空间</string>
+    <string name="umeng_socialize_login">登录</string>
+    <string name="umeng_socialize_text_choose_account">选择已有帐号登录</string>
+    <string name="umeng_socialize_text_authorize">授权</string>
+    <string name="umeng_socialize_text_unauthorize">未授权</string>
+    <string name="umeng_socialize_text_ucenter">个人中心</string>
+    <string name="umeng_socialize_text_login_fail">登录失败了，请重试</string>
+    <string name="umeng_socialize_text_comment_hint">说点什么吧&#8230;</string>
+    <string name="umeng_socialize_text_friend_list">好友列表</string>
+    <string name="umeng_socialize_text_visitor">游客</string>
+    <string name="umeng_socialize_text_tencent_no_connection">无法连接到腾讯微博客户端</string>
+    <string name="umeng_socialize_text_tencent_oauth_login_fail">授权登录失败</string>
+    <string name="umeng_socialize_text_tencent_version_no_match">版本不匹配，SSO只对微博客户端V3.8.1及以上的版本提供支持</string>
+    <string name="umeng_socialize_text_tencent_no_install">未安装腾讯微博客户端</string>
+    <string name="umeng_socialize_text_waitting">请稍候...</string>
+    <string name="umeng_socialize_text_waitting_weixin">跳转微信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_weixin_circle">跳转工作圈中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_yixin">跳转易信中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_yixin_circle">跳转易信朋友圈中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qq">跳转QQ中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_qzone">跳转QZone中，请稍候...</string>
+    <string name="umeng_socialize_text_waitting_redirect">跳转</string>
+    <string name="umeng_socialize_text_waitting_message">,请稍候...</string>
+    <string name="umeng_socialize_text_loading_message">载入中,请稍候...</string>
+    <!-- 平台名称 -->
+    <string name="umeng_socialize_text_tencent_key">腾讯微博</string>
+    <string name="umeng_socialize_text_wenxin_fav">微信收藏</string>
+    <string name="umeng_socialize_text_sina_key">微博</string>
+    <string name="umeng_socialize_text_qq_key">QQ</string>
+    <string name="umeng_socialize_text_qq_zone_key">QQ空间</string>
+    <string name="umeng_socialize_text_renren_key">人人网</string>
+    <string name="umeng_socialize_text_douban_key">豆瓣网</string>
+    <string name="umeng_socialize_text_weixin_key">微信</string>
+    <string name="umeng_socialize_text_weixin_circle_key">微信朋友圈</string>
+    <string name="umeng_socialize_text_weixin_fav_key">微信收藏</string>
+    <string name="umeng_socialize_text_add_custom_platform">请配置用户平台</string>
+    <string name="umeng_example_home_btn_plus">社交分享</string>
+    <string name="umeng_socialize_text_waitting_share">分享中&#8230;</string>
+    <string name="umeng_socialize_content_hint">说点啥&#8230;</string>
+    <string name="umeng_socialize_cancel_btn_str">取消</string>
+    <string name="umeng_socialize_send_btn_str">发送</string>
+    <string name="umeng_socialize_img_des"></string>
+    <string name="umeng_socialize_share">分享</string>
+
+    <string name="umeng_socialize_mail">邮件</string>
+    <string name="umeng_socialize_sms">短信</string>
+    <string name="umeng_socialize_sina">新浪</string>
+    <string name="umeng_socialize_text_yixin_key">易信</string>
+    <string name="umeng_socialize_text_yixincircle_key">易信朋友圈</string>
+
+    <string name="umeng_socialize_text_laiwangdynamic_key">来往动态</string>
+    <string name="umeng_socialize_text_evernote_key">印象笔记</string>
+    <string name="umeng_socialize_text_ydnote_key">有道云笔记</string>
+    <string name="umeng_socialize_text_facebook_key">facebook</string>
+    <string name="umeng_socialize_text_twitter_key">twitter</string>
+    <string name="umeng_socialize_text_instagram_key">instagram</string>
+    <string name="umeng_socialize_text_pinterest_key">pinterest</string>
+    <string name="umeng_socialize_text_pocket_key">pocket</string>
+    <string name="umeng_socialize_text_linkedin_key">Linkedin</string>
+    <string name="umeng_socialize_text_foursquare_key">Foursquare</string>
+    <string name="umeng_socialize_text_whatsapp_key">WhatsApp</string>
+    <string name="umeng_socialize_text_line_key">LINE</string>
+    <string name="umeng_socialize_text_flickr_key">Flickr</string>
+    <string name="umeng_socialize_text_tumblr_key">Tumblr</string>
+    <string name="umeng_socialize_text_alipay_key">支付宝</string>
+    <string name="umeng_socialize_text_kakao_key">Kakao Talk</string>
+    <string name="umeng_socialize_text_googleplus_key">GooglePlus</string>
+    <string name="umeng_socialize_text_more_key">更多</string>
+
+    <!--TODO PLAT 部分：写在下面-->
+    <!-- start平台考勤单据部分-->
+    <string-array name="platLeave_type_list">
+        <item>病假</item>
+        <item>产假</item>
+        <item>事假</item>
+        <item>婚假</item>
+        <item>丧假</item>
+        <item>年假</item>
+        <item>产检假</item>
+        <item>陪产假</item>
+        <item>产前假</item>
+        <item>调休</item>
+        <item>哺乳假</item>
+    </string-array>
+    <string name="add_new_people">新增人员</string>
+    <string name="leave_type">请假类型</string>
+    <string name="leave_reason">请假原因</string>
+    <string name="start_time">起始时间</string>
+    <string name="end_time">截止时间</string>
+    <string name="endT_large_startT">结束时间必须大于开始时间</string>
+    <string name="doc_detail">详情</string>
+    <string name="travel_reason">出差事由</string>
+    <string name="travel_destination">出差目的地</string>
+    <string name="ming_detail">明细</string>
+    <string name="doc_resubmit_success">重新提交成功</string>
+    <string name="doc_id">单据编号</string>
+    <string name="doc_record_time">录入时间</string>
+    <string name="doc_status">单据状态</string>
+    <string name="Expected_startT">预计开始时间</string>
+    <string name="Expected_endT">预计结束时间</string>
+    <string name="overwork_purpose">加班目的</string>
+    <string name="overwork_hours">加班时数</string>
+    <string name="overwork_detail">加班明细</string>
+    <string name="travel_detail">出差明细</string>
+    <string name="overwork_detail1">加班明细一</string>
+    <string name="travel_detail1">出差明细f</string>
+    <string name="complaint_doc">申诉单</string>
+    <string name="complaint_hour_T">申诉班次时间</string>
+    <string name="complaint_reson">申诉理由</string>
+    <string name="complaint_photo">申诉手机</string>
+    <string name="complaint_addres">申诉地址</string>
+    <string name="approvel_detail">审批语详情</string>
+    <string name="update_failed">更新失败</string>
+    <string name="Subordinates_visit">下属拜访</string>
+    <string name="my_visit">我的拜访</string>
+    <string name="talking_lost">会话已断开</string>
+    <string name="Program_error">程序错误</string>
+    <string name="error_notice1">数据获取失败，请稍后重试</string>
+    <string name="outplan_undone">外勤计划尚未完成</string>
+    <string name="work_calender">工作日历</string>
+    <string name="done">已完成</string>
+    <string name="undone">未完成</string>
+    <string name="oacreat_task">创建任务</string>
+    <string name="oacreat_calender">创建日程</string>
+    <string name="account_notice1">当前账号没有下属,如有问题请联系系统管理员</string>
+    <string name="nothing_now">暂无更多</string>
+    <string name="set_close_step_notice1">您已预关闭UU运动，下次重启应用时将不再开启UU运动</string>
+    <string name="set_close_step_notice2">尚未开启UU运动,或已预关闭</string>
+    <string name="close_step_notice3">小提示:UU在关闭后无法继续统计您的步数数据</string>
+    <string name="set_check_update_wait">正在检查更新,请稍等...</string>
+    <string name="set_isnewVersion">已经是最新版,不需要更新</string>
+    <string name="set_share_to">分享到</string>
+    <string name="device_nosupport_step">设该备不支持UU计步,抱歉</string>
+    <string name="uu_step_Running_in_the_background">UU运动正在后台运行</string>
+    <string name="comeon_more_sport">加油,要记得勤加运动</string>
+    <string name="uu_friend_notice">小UU友情提示</string>
+    <string name="uu_love_notice">如果想要我和微信一样准确的记录您的运动步数,请保持我和微信一样一直在后台运行哦,主人,O_O!</string>
+    <string name="i_known">我知道了</string>
+    <string name="send_words">发表文字</string>
+    <string name="please_waitting">请稍等</string>
+    <string name="ask_submit_success">问题提交成功</string>
+    <string name="look_over">查看</string>
+    <string name="pictures">图片</string>
+    <!-- 调用系统拍照的字符串 -->
+    <string name="c_take_picture">拍照</string>
+    <string name="c_take_picture_failed">拍照失败</string>
+    <string name="c_photo_album">相册</string>
+    <string name="c_photo_album_failed">选择失败</string>
+    <string name="c_crop_failed">裁减失败</string>
+    <string name="exit_tips">确定退出此账号吗？</string>
+    <string name="watting">等待</string>
+    <string name="approvel">审批</string>
+    <string name="Did_not_pass">未通过</string>
+    <string name="task_done_deal">已处理</string>
+    <string name="task_wait_todo">待处理</string>
+    <string name="task_refresh_again">请刷新重试</string>
+    <string name="new_add">新增</string>
+    <string name="task_sended">发起的</string>
+    <string name="task_Reply_to_your_task_completiong">回复您的任务完成情况...</string>
+    <string name="task_reply">回复</string>
+    <string name="task_turn_down">驳回</string>
+    <string name="task_go_on_time">持续时间</string>
+    <string name="task_input_detail_info">输入完整信息</string>
+    <string name="task_title_must_input">任务标题为必填项</string>
+    <string name="task_detail_must_input">任务详情为必填项</string>
+    <string name="task_doman_must_input">执行人为必选项</string>
+    <string name="task_limit_doman">执行人数量过多,超限1000字符了</string>
+    <string name="task_startT_must_input">开始时间为必选项</string>
+    <string name="task_endT_must_input">结束时间为必选项</string>
+    <string name="task_send_success">发送成功</string>
+    <string name="common_send">发送</string>
+    <string name="make_adeal_failed">操作失败</string>
+    <string name="rest">休息</string>
+    <string name="sign_flights">班次</string>
+    <string name="select_department_first">请先选择部门</string>
+    <string name="select_jobs">选择岗位</string>
+    <string name="select_department">选择部门</string>
+    <string name="Please_imput_the_correct_email_format">请输入正确的邮箱格式</string>
+    <string name="people_add_success">人员添加成功</string>
+    <string name="add_success">新增成功</string>
+    <string-array name="plat_department_list">
+        <item>总经办</item>
+        <item>采购部</item>
+        <item>销售部</item>
+        <item>财务部</item>
+        <item>人事行政部</item>
+        <item>研发部</item>
+    </string-array>
+    <!-- end平台考勤单据部分-->
+    <string name="plat_department1">总经办</string>
+    <string name="plat_department2">采购部</string>
+    <string name="plat_department3">销售部</string>
+    <string name="plat_department4">财务部</string>
+    <string name="plat_department5">人事行政部</string>
+    <string name="plat_department6">研发部</string>
+    <string-array name="plat_job1">
+        <item>总经理</item>
+        <item>副总经理</item>
+        <item>秘书</item>
+    </string-array>
+    <string-array name="plat_job2">
+        <item>经理</item>
+        <item>采购员</item>
+    </string-array>
+    <string-array name="plat_job3">
+        <item>经理</item>
+        <item>业务员</item>
+    </string-array>
+    <string-array name="plat_job4">
+        <item>经理</item>
+        <item>会计</item>
+        <item>出纳</item>
+    </string-array>
+    <string-array name="plat_job5">
+        <item>经理</item>
+        <item>人事专员</item>
+        <item>行政专员</item>
+    </string-array>
+    <string-array name="plat_job6">
+        <item>经理</item>
+        <item>工程师</item>
+    </string-array>
+    <!-- end平台部分-->
+
+    <!-- 工作圈部分-->
+    <string name="qzone_send_word">发文字</string>
+    <string name="qzone_send_picture">发图片</string>
+    <string name="qzone_send_video">发视频</string>
+    <string name="qzone_location_city">所在城市</string>
+    <string name="qzone_out_share">外部分享</string>
+    <string name="qzone_praise">赞</string>
+    <string name="qzone_comment">评论</string>
+    <string name="qzone_change_picture"></string>
+    <string name="qzone_copy">复制</string>
+    <string name="qzone_message_detail">说说详情</string>
+    <string name="qzone_saveto_phone">保 存 到 手 机</string>
+    <string name="qzone_cancel">取 消</string>
+    <string name="qzone_send_notice1">您未输入任何内容</string>
+    <string name="qzone_notshow_location">不显示位置</string>
+    <string name="qzone_ishare_too">我也去分享</string>
+    <string name="qzone_share_success">分享成功</string>
+    <string name="qzone_enter_qzone_now">是否立即进入工作圈查看</string>
+    <string name="qzone_edit_daily">编写日报</string>
+    <string name="qzone_enter_atnow">立即进入</string>
+    <string name="qzone_upload_failed">上传失败</string>
+    <string name="qzone_add_picture">添加图片</string>
+    <string name="qzone_sendshuo_now_think">这一刻的想法&#8230;</string>
+    <string name="qzone_now_location">所在位置</string>
+    <string name="qzone_say_something">说点什么..</string>
+    <string name="qzone_select_image">选择图片，最多9个</string>
+    <string name="qzone_select_video">选择视频，最多1个</string>
+    <string name="qzone_addd_nothing_video">您未添加任何视频文件</string>
+    <string name="qzone_add_video">添加视频</string>
+    <string name="qzone_select_failed">选择失败</string>
+    <string name="qzone_video_file_not_exist">视频文件不存在</string>
+    <string name="qzone_send">发动态</string>
+
+    <string name="sign_teams">团队考勤</string>
+    <string name="my_sign">我的考勤</string>
+    <string name="sign_late">迟到</string>
+    <string name="sign_leave">早退</string>
+    <string name="sign_Absenteeism">旷工</string>
+    <string name="sign_actualtime">实际工时</string>
+    <string name="sign_Times">次</string>
+    <string name="sign_hour_day">小时/天</string>
+    <string name="sign_look_alldatas">查看完整表单</string>
+    <string name="sign_the_first">第一名</string>
+    <string name="sign_the_second">第二名</string>
+    <string name="sign_the_third">第三名</string>
+    <string name="sign_teams_rank">团队勤奋榜</string>
+    <string name="sign_calendar">日历</string>
+    <string name="sign_Average_hours">平均工时</string>
+
+    <string-array name="sign_distance">
+        <item>200米</item>
+        <item>300米</item>
+        <item>500米</item>
+        <item>1000米</item>
+        <item>1500米</item>
+    </string-array>
+    <string-array name="work_distance">
+        <item>200米</item>
+        <item>300米</item>
+        <item>500米</item>
+        <item>1000米</item>
+        <item>1500米</item>
+    </string-array>
+    <string name="daily_record" tools:ignore="ExtraTranslation">日报记录</string>
+    <string name="search1">查找</string>
+    <string name="formal_customer">正式客户</string>
+    <string name="client_yu_luru">客户预录入</string>
+    <string name="client_type">客户类型</string>
+    <string name="common_select1">请选择</string>
+    <string name="only_input_Positive_real_number" tools:ignore="ExtraTranslation">只能输入正实数</string>
+    <string name="only_imput_aaa" tools:ignore="ExtraTranslation">只能输入数字和大小写英文和中文，限定字符长度不大于100</string>
+    <string name="only_imput_aaa1" tools:ignore="ExtraTranslation">限定字符长度不大于100</string>
+    <string name="only_imput_aaa2" tools:ignore="ExtraTranslation">限定字符长度不大于300</string>
+    <string name="error_system_findunknow_error">很抱歉! 系统发现未知错误！</string>
+    <string name="select_flights" tools:ignore="ExtraTranslation">选择班次</string>
+    <string name="delete_prompt">确定要删除吗？</string>
+    <string-array name="step_week1" tools:ignore="ExtraTranslation">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+    <string-array name="step_week2" tools:ignore="ExtraTranslation">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string name="step_Sunday" tools:ignore="ExtraTranslation">日</string>
+    <string name="step_Monday" tools:ignore="ExtraTranslation">一</string>
+    <string name="step_Tuesday" tools:ignore="ExtraTranslation">二</string>
+    <string name="step_Wednesday" tools:ignore="ExtraTranslation">三</string>
+    <string name="step_Thursday" tools:ignore="ExtraTranslation">四</string>
+    <string name="step_Friday" tools:ignore="ExtraTranslation">五</string>
+    <string name="step_Saturday" tools:ignore="ExtraTranslation">六</string>
+    <string name="all_date">所有日期</string>
+    <string name="update_success">更新成功</string>
+    <string name="visitting_type" tools:ignore="ExtraTranslation">拜访类型</string>
+    <string name="connect_businedd" tools:ignore="ExtraTranslation">关联商机</string>
+    <string name="startT_cannott_big_sT" tools:ignore="ExtraTranslation">开始时间不能大于当前系统时间</string>
+    <string name="endT_cannott_big_sT" tools:ignore="ExtraTranslation">截止时间不能大于当前系统时间</string>
+    <string name="input_vist_context" tools:ignore="ExtraTranslation">请输入拜访内容</string>
+    <string name="limit_unno_zijie"  tools:ignore="ExtraTranslation">不能输入特殊字符</string>
+    <string name="Original_visit" tools:ignore="ExtraTranslation" >原厂拜访</string>
+    <string name="ws_client_address_name" tools:ignore="ExtraTranslation">完善客户地址名称</string>
+    <string name="user_noOpen_app" tools:ignore="ExtraTranslation">该用户暂未开通app</string>
+    <string name="select_form_phoneablum">从手机相册选择</string>
+    <string name="select">选择</string>
+    <string name="country">国家</string>
+    <string name="province">省份</string>
+    <string name="city">城市</string>
+    <string name="county">县区</string>
+    <string name="locationing">正在定位</string>
+    <string name="current_location">当前位置</string>
+    <string name="hot_city">热门城市</string>
+    <string name="select_city_by_province">按省份选择城市</string>
+    <string name="location_failed">定位失败</string>
+    <string name="please_unput_yourP">请输入您的问题...(400字以内)</string>
+    <string name="local_video">本地视频</string>
+    <string name="Business_license_number">营业执照号</string>
+    <string name="crm_branch">我的下属</string>
+    <string name="crm_niche_notice1">默认显示一个遗忘客户，点击显示更多</string>
+    <!--翻译补漏-->
+    <string name="language_sys">跟随系统</string>
+    <string name="language_rCN">简体中文</string>
+    <string name="language_rTW">繁體中文</string>
+    <string name="language_en">English</string>
+
+    <string name="Rated_UU">为UU评分</string>
+    <string name="Rated_notice1">请您为UU评一个分数吧，只需要花费您很少的时间，感谢您的支持!</string>
+    <string name="Rated_now">现在去评分</string>
+    <string name="Rated_suggest">用户反馈</string>
+    <string name="Rated_next">以后再说</string>
+    <string name="fangkui_success">提交成功,我们会在第一时间查看您的问题,谢谢您的配合！</string>
+    <string name="Uploaded_successfully">上传成功</string>
+    <string name="sign_to">至</string>
+    <string name="shorthand_year">年</string>
+    <string name="sShorthand_month">月</string>
+    <string name="shorthand_day">日</string>
+    <string name="creater" tools:ignore="ExtraTranslation">创建人</string>
+    <string name="address">地址</string>
+    <string name="assign">分配</string>
+    <string name="transfer">转移</string>
+    <string name="work_sign" tools:ignore="ExtraTranslation">上班打卡</string>
+    <string name="off_sign" tools:ignore="ExtraTranslation">下班打卡</string>
+    <string name="CRM_grabBusinessFaild">抢占商机失败</string>
+    <string name="CRM_sorryYouHaveOverTheBiggestBusinessQuantity">对不起,您已超过最大拥有的商机数量!</string>
+    <string name="CRM_addDate_sorryThisBusinessHaveAdd">对不起，此商机已添加过日程！</string>
+    <string name="CRM_businessLose_leaderGetFaild">获取直属领导数据失败</string>
+    <string name="CRM_businessLose_treatmentTime">处理时间</string>
+    <string name="CRM_businessLose_leader">直属领导</string>
+    <string name="CRM_sorryOnlyPickOneClient">对不起，只能选择一个客户</string>
+    <string name="CRM_pleasePickClientFirst">请先选择客户</string>
+    <string name="CRM_current_page_change_ecet">当前页数据已更改，请先更新，然后提交</string>
+    <string name="CRM_unable_ecet">无法访问服务器，请稍后再试</string>
+
+    <string name="MyAttendanceRules_legalHoliday">遵循法定节假日</string>
+    <string name="MyAttendanceRules_newYearsDay">元旦</string>
+    <string name="MyAttendanceRules_SpringFestival">春节</string>
+    <string name="MyAttendanceRules_QingmingFestival">清明节</string>
+    <string name="MyAttendanceRules_LaborDay">劳动节</string>
+    <string name="MyAttendanceRules_TheDragonBoatFestival">端午节</string>
+    <string name="MyAttendanceRules_nationalDay">国庆节</string>
+    <string name="MyAttendanceRules_MidAutumnFestival">中秋节</string>
+    <string name="SchedulingSetting_DeleteTitle">是否删除该班次</string>
+    <string name="SchedulingSetting_ConflictDepartment">有冲突部门1个，查看设置</string>
+    <string name="SchedulingSetting_ConflictPerson1">有冲突人员</string>
+    <string name="SchedulingSetting_ConflictPerson2">个，查看设置</string>
+    <string name="WorkingTime1">上班时间1</string>
+    <string name="WorkingTime2">上班时间2</string>
+    <string name="WorkingTime3">上班时间3</string>
+    <string name="SchedulingTime_SelectReminder">选择时间超出时间</string>
+    <string name="SchedulingTime_SelectBestWorking1">提前1小时</string>
+    <string name="SchedulingTime_SelectBestWorking2">提前2小时</string>
+    <string name="SchedulingTime_SelectBestWorking3">提前3小时</string>
+    <string name="SchedulingTime_SelectBestWorking4">提前4小时</string>
+    <string name="SchedulingTime_SelectBestWorking5">提前5小时</string>
+    <string name="SchedulingTime_SelectBestWorking6">提前6小时</string>
+    <string name="SchedulingTime_SelectBestWorking7">提前7小时</string>
+    <string name="ParticipatingPerson_selectedPerson2">个人员</string>
+    <string name="rule_name">班次名称</string>
+    <string name="Set_Scheduling">排班</string>
+    <string name="Scheduling_type">排班类型</string>
+    <string name="Normal_frequency">正常班次</string>
+    <string name="no_flights">无班次，联系管理员</string>
+    <string name="Monday">周一</string>
+    <string name="Tuesday">周二</string>
+    <string name="Wednesday">周三</string>
+    <string name="Thursday">周四</string>
+    <string name="Friday">周五</string>
+    <string name="Saturday">周六</string>
+    <string name="Sunday">周日</string>
+    <string name="holiday_date1">12月30日~1月1日	1月1日（周一）补休	共3天</string>
+    <string name="holiday_date2">2月15日(除夕）~2月21日	2月11日（周日）上班，2月24日（周六）上班	共7天</string>
+    <string name="holiday_date3">4月5日~4月7日	4月8日（周日）上班	共3天</string>
+    <string name="holiday_date4">4月29日~5月1日	4月28日（周六）上班	共3天</string>
+    <string name="holiday_date5">6月16日~6月18日	6月18日（周一）补休	共3天</string>
+    <string name="holiday_date6">9月22日~9月24日	9月24日（周一）补休	共3天</string>
+    <string name="holiday_date7">10月1日~10月7日	9月29日（周六）、9月30日（周日）上班	共7天</string>
+    <string name="before_work">上班前</string>
+    <string name="remove_blacklist">移出黑名单</string>
+    <string name="say_hello">打招呼</string>
+    <string name="send_msg">发消息</string>
+    <string name="say_hello_succ">打招呼成功</string>
+    <string name="add_friend_succ">加好友成功</string>
+    <string name="error_phone" tools:ignore="ExtraTranslation">手机格式不正确</string>
+    <string name="say_hello_dialog_title">验证消息</string>
+    <string name="say_hello_dialog_hint">亲，给我个加你的理由吧！</string>
+    <string name="say_hello_default">嘿，你好！</string>
+    <string name="add_attention_succ">加关注成功</string>
+    <string name="add_attention_failed">加关注失败，你已被对方加入黑名单</string>
+    <string name="set_remark_name">设置备注名称</string>
+    <string name="remove_blacklist_succ">移出黑名单成功</string>
+    <string name="cancel_attention_prompt">确定要取消关注吗？</string>
+    <string name="delete_all_prompt">彻底删除操作，如果对方也关注了你，那么也将取消对方对你的关注，确定要彻底删除吗？</string>
+    <string name="cancel_attention_succ">取消关注成功</string>
+    <string name="prompt_title">提示</string>
+    <string name="delete_all_succ">删除成功</string>
+    <string name="remove_blacklist_prompt">确定要移出黑名单吗</string>
+    <string name="add_blacklist_prompt">确定要加入黑名单吗？</string>
+    <string name="add_blacklist_succ">加入黑名单成功</string>
+    <string name="unsubmit">反提交</string>
+    <string name="Operation_succeeded">反提交成功</string>
+
+
+    <string name="crm_icon1">我的排名</string>
+    <string name="crm_icon2">本月销售简报</string>
+    <string name="crm_icon3">我的下属</string>
+    <string name="crm_icon4">我的指标</string>
+    <string name="crm_icon5">遗忘的客户</string>
+    <string name="info_2dcode">二维码名片</string>
+    <string name="scan_2dcode_addme">扫一扫上面的二维码图案，加我好友</string>
+    <string name="share_2code">分享二维码</string>
+    <string name="change_style">换个样式</string>
+    <string name="save_to_MBphone">保存到手机</string>
+    <string name="scan_2dcode">扫描二维码</string>
+    <string name="common_title">标题</string>
+    <string name="Reimbursement_type">报销类型</string>
+    <string name="Consumer_details">消费明细</string>
+    <string name="Add_invoice">添加发票</string>
+    <string name="Results_of_scan">扫描结果</string>
+    <string name="Expense_reimbursement">费用报销</string>
+    <string name="RMB">人民币</string>
+    <string name="currency">币种</string>
+    <string name="my_data">我的资料</string>
+    <string name="clear_completed">清除完毕</string>
+
+    <!--login-->
+    <string name="login_success_erp">UAS验证成功！</string>
+    <string name="login_success_b2b">验证B2B成功！</string>
+    <string name="login_error_b2b">平台登录失败！</string>
+    <string name="login_error_erp">UAS验证失败！</string>
+    <string name="login_error_info">手机号或者密码错误！</string>
+    <string name="login_progress_b2b">正在验证B2B...</string>
+    <string name="login_progress_erp">正在验证UAS...</string>
+    <string name="login_company_select">选择公司</string>
+
+    <string name="invoice_submitted_successfully">发票提交成功</string>
+    <string name="sending_picture">正在上传图片</string>
+    <string name="select_cost_type">请选择报销类型</string>
+    <string name="select_money_type">请选择币种</string>
+    <string name="add_cost_details">请增加消费明细</string>
+
+    <!--本地通讯录-->
+    <string name="app_local_contacts">手机通讯录</string>
+    <string name="sure_delete_this_details">确定删除该条消费明细？</string>
+
+    <string name="replay_text">回复<xliff:g id="nick_name">%1$s</xliff:g>:</string>
+    <string name="comment_count">评论数(<xliff:g id="count">%1$d</xliff:g>)</string>
+    <string name="count_down">倒计时：</string>
+    <string name="recording_completed">录制完成</string>
+    <string name="input_cost_name">请输入消费明细名称</string>
+    <string name="add_cost_details1">添加消费明细</string>
+    <string name="invoice">发票</string>
+    <string name="please_add_image">请添加图片</string>
+    <string name="added">已添加</string>
+    <string name="invite">邀请注册</string>
+    <string name="add">新增</string>
+    <string name="add_friend">添加好友</string>
+    <string name="next_article">下一条</string>
+
+    <string name="title_approval">审批单据</string>
+    <string name="person_register">个人注册</string>
+    <string name="phone_number">手机号</string>
+    <string name="rpassword">密码</string>
+    <string name="input_person_sign">请输入个性签名</string>
+    <string name="to_login">已有账户？登录</string>
+    <string name="input_phone_number">请输入手机号</string>
+    <string name="input_name">请输入姓名</string>
+
+    <string name="give_up">放弃</string>
+    <string name="app_time_selecting">选择时间</string>
+    <string name="qzone_edit_weekly">编写周报</string>
+    <string name="qzone_edit_monthly">编写月报</string>
+    <string name="business_statistics">商家统计</string>
+    <string name="usoft_science">优软科技</string>
+    <string name="work_plat_setting">工作面板设置</string>
+    <string name="complete">完成</string>
+
+    <!--工作台菜单-->
+    <string name="str_work_add_func">添加应用</string>
+
+    <string name="str_uu_application">UU应用</string>
+    <string name="str_work_subscribe_secretary">预约小秘书</string>
+    <string name="str_work_uu_sports">UU运动</string>
+    <string name="str_work_invite_register">邀请注册</string>
+    <string name="str_work_uu_education">UU课堂</string>
+    <string name="str_work_yingtang_song">英唐之歌</string>
+
+    <string name="str_administrative_office">行政办公</string>
+    <string name="str_work_work_approval">我的审批</string>
+    <string name="str_work_backlog">待办工作</string>
+    <string name="str_work_work_calendar">工作日历</string>
+    <string name="str_work_work_report">工作报告</string>
+    <string name="str_work_punch_clock">打卡签到</string>
+    <string name="str_work_outwork_sign">外勤签到</string>
+    <string name="str_work_attendance_statistics">考勤统计</string>
+    <string name="str_work_overtime_request">加班申请</string>
+    <string name="str_work_leave_request">请假申请</string>
+    <string name="str_work_travel_request">出差申请</string>
+    <string name="str_work_expense_account">费用报销</string>
+    <string name="str_work_meeting_manage">会议管理</string>
+    <string name="str_work_special_attendance">特殊考勤</string>
+    <string name="str_work_device_manage">设备管理</string>
+
+    <string name="str_customer_relationship">客户关系管理</string>
+    <string name="str_work_business_manage">商机管理</string>
+    <string name="str_work_customer_link">联系人</string>
+    <string name="str_work_customer_manage">客户管理</string>
+    <string name="str_work_customer_visit">客户拜访</string>
+    <string name="str_work_sales_data">销售看板</string>
+    <string name="str_work_honor_rank">荣誉墙</string>
+
+    <string name="str_enterprise_application">企业应用</string>
+    <string name="str_work_data_inquiry">数据查询</string>
+    <string name="str_work_report_statistics">报表统计</string>
+    <string name="str_work_real_time_subs">实时看板</string>
+    <string name="str_work_subs_manage">订阅号管理</string>
+    <string name="str_work_salary_bill">企业工资条</string>
+
+    <string name="str_usoft_cloud_platform">优软云平台</string>
+    <string name="str_work_b2b_commerce">B2B商务</string>
+    <string name="str_work_usoft_mall">优软商城</string>
+    <string name="str_work_charitable_donations">一元捐</string>
+    <!--工作台菜单-->
+
+    <string name="str_search_history">搜索历史</string>
+    <string name="str_clear">清空</string>
+    <string name="str_company_salary">工资条</string>
+    <!--工作台菜单-->
+    <string name="who_is_champion">占领了封面</string>
+    <string name="get_again">重新获取</string>
+    <string name="msg_send_success">短信发送成功,请在一分钟内完成输入查询</string>
+    <string name="input_search_date">请输入查询日期</string>
+    <string name="input_search_ycode">请输入验证码</string>
+    <string name="input_search_password">请输入查询密码</string>
+    <string name="please_settting_password">请设置至少6位数查询密码</string>
+    <string name="setting_password_success">设置密码成功</string>
+    <string name="code_outtime">验证码超时，请重新获取</string>
+    <string name="please_settting_password1">请输入6位数验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="salary_search">工资查询</string>
+    <string name="cannot_sign">工资数据为空，无法签字</string>
+    <string name="input_your_error">请输入你的报错问题</string>
+    <string name="not_sign">您没有签名</string>
+    <string name="salary">工资</string>
+    <string name="send_error_ok">报错成功</string>
+    <string name="ss_send_success">工资条签名提交成功</string>
+    <string name="no_salary_data">本月无工资信息</string>
+    <string name="error_msg">报错信息</string>
+    <string name="salary_sign">签名</string>
+    <string name="confirm_phone">请确认手机号</string>
+    <string name="code_send_phone">验证码已发送至手机</string>
+    <string name="please_set_pw">请设置密码</string>
+    <string name="password">密码</string>
+    <string name="input_6_pw">请输入新密码(限6-20位)</string>
+    <string name="need_6_str">需6-20位字符</string>
+    <string name="firstused_setpw">首次使用，请设置密码</string>
+    <string name="input_qpw">请输入查询密码(限20位)</string>
+    <string name="change_qpw">修改查詢密碼</string>
+    <string name="next_step">下一步</string>
+
+    <!--start 商家设置-->
+    <string name="business_setting">商家设置</string>
+    <string name="ranking">排行榜</string>
+    <string name="information_photo">形象照片</string>
+    <string name="set_e_relax">设置员工休息日</string>
+    <string name="set_c_relax">设置企业休息日</string>
+    <string name="set_location">设置服务/场地/房间</string>
+    <string name="click_change_img">点击更换照片</string>
+    <string name="cur_no_room">暂未获取到部门/科室</string>
+    <string name="select_room">选择科室</string>
+    <string name="please_add_headerimg">请添加头像照片</string>
+    <string name="room">科室</string>
+    <string name="tel_number">号码</string>
+    <string name="input_name_date">请输入完整姓名/休息日期</string>
+    <string name="hava_save_detail">存在重复的条目明细</string>
+    <string name="input_person_name">请输入人员名称</string>
+    <string name="cannot_select_beforedate">不可选择过去时间</string>
+    <string name="relax_time_rapeat">休息时间不可重复</string>
+    <string name="input_all_date">请输入完整休息日期</string>
+    <string name="update_room">更新服务/场地/房间</string>
+    <string name="input_name1">请输入名称</string>
+    <string name="add_img">请添加照片</string>
+    <string name="please_input_room">请输入服务/场地/房间名称</string>
+    <string name="please_input_time">请输入服务时间/分钟</string>
+    <string name="setting_worktime">设置营业时间</string>
+    <string name="setting_time_type">设置预约时间类型</string>
+    <string name="business_detail1">商家详情</string>
+    <string name="room_type">设置包房预订类型</string>
+    <string name="please_select_room_type">请选择包房预订类型</string>
+    <string name="please_input_bdi">请输入商家详情介绍</string>
+    <string name="unlaw_str">含违规字符</string>
+    <string name="select_bookT_type">请选择预约时间类型</string>
+    <string name="time_canot_empty">时间段不能为空</string>
+    <string name="booking_times">时间段：</string>
+    <string name="book_time_type">预约时间类型</string>
+    <string name="time_d">按时间段</string>
+    <string name="time_p">按时间点</string>
+    <string name="room_book_type"></string>
+    <string name="zzw">早中晚</string>
+    <string name="zw">中晚</string>
+    <string name="please_inpuy_bi">请输入商家详情介绍限400字</string>
+    <string name="table_set">桌位设置</string>
+    <string name="net_expection">服务器异常请稍后再试</string>
+    <string name="input_all_msg">请输全设置信息</string>
+    <string name="table_setting">桌位设置</string>
+    <string name="pi_tablecode">请输入桌位代码</string>
+    <string name="pi_number">请输入数量</string>
+    <string name="pi_remark">请输入备注</string>
+    <string name="pi_bookdays">请输入可被预约量/天</string>
+    <string name="pi_seatnumber">请输入最多可坐人数</string>
+    <string name="pi_tabletype">请选择桌位类型</string>
+    <string name="b_table">大桌</string>
+    <string name="m_table">中桌</string>
+    <string name="s_table">小桌</string>
+    <string name="table_repeat">桌位不可重复设置</string>
+    <string name="booking_time_set">预约时间段设置</string>
+    <string name="host_null_please_login_retry">站点地址获取失败，请重新登录后重试</string>
+    <string name="str_common_empty_text">暂无记录</string>
+    <string name="str_system_admin">系统管理员</string>
+    <string name="font_size">字体大小</string>
+
+    <!--smartrefresh-->
+    <string name="srl_header_pulling">下拉可以刷新</string>
+    <string name="srl_header_refreshing">正在刷新…</string>
+    <string name="srl_header_loading">正在加载…</string>
+    <string name="srl_header_release">释放立即刷新</string>
+    <string name="srl_header_finish">刷新完成</string>
+    <string name="srl_header_failed">刷新失败</string>
+    <string name="srl_header_update">上次更新 M-d HH:mm</string>
+    <string name="srl_header_secondary">释放进入二楼</string>
+
+    <string name="srl_footer_pulling">上拉加载更多</string>
+    <string name="srl_footer_release">释放立即加载</string>
+    <string name="srl_footer_loading">正在加载…</string>
+    <string name="srl_footer_refreshing">正在刷新…</string>
+    <string name="srl_footer_finish">加载完成</string>
+    <string name="srl_footer_failed">加载失败</string>
+    <string name="srl_footer_nothing">没有更多数据了</string>
+
+    <string name="srl_content_empty">SmartRefreshLayout中没有找到内容视图。您是否忘记在xml布局文件中添加？</string>
+    <string name="srl_component_falsify" formatted="false">%s 虚假区域\n代表运行时拖动的高度【%.1fdp】 \n而不会显示任何东西</string>
+    <string name="project_business_chance">项目商机</string>
+    <string name="work_out_face_sign">人脸打卡</string>
+
+</resources>

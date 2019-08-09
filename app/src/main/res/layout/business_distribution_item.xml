@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:background="@color/bg_main"
+    android:padding="8dp">
+
+    <CheckBox
+        android:id="@+id/select_scb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:checked="false"
+        android:drawableLeft="@drawable/oa_rb_button_bg"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/head_img"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/select_scb"
+        android:src="@drawable/friend_u"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/head_img"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name_tv"
+        android:layout_below="@+id/name_tv"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+</RelativeLayout>

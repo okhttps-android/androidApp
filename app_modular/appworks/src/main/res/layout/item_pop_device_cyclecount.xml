@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding">
+
+    <TextView
+        android:id="@+id/captionTv"
+        android:layout_width="70dp"
+        android:textColor="@color/text_hine"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/valuesEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding"
+        android:textSize="@dimen/text_hine"
+        android:textColor="@color/text_main"
+        android:background="@drawable/frame_square_hint_bg"
+        android:drawableRight="@drawable/ic_menu_retract"
+        android:paddingLeft="@dimen/padding" />
+
+
+</LinearLayout>

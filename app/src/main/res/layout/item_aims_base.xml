@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_color2">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/misson_item_pl"
+       >
+
+        <TextView
+            android:id="@+id/long_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+
+        <TextView
+            android:id="@+id/company_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/long_tv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/companyaddr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/company_tv"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+
+        <TextView
+            android:id="@+id/last_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/visit_num_tv"
+            android:layout_alignBottom="@+id/visit_num_tv"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:drawableLeft="@drawable/icon_last_missiom"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+
+        <TextView
+            android:id="@+id/visit_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyaddr_tv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/last_time_tv"
+            android:drawableLeft="@drawable/icon_all_mission"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/item_line"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/icon_emind"
+                android:gravity="center"
+                android:text="没有符合条件的结果" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#ebe9e9" />
+
+        <RelativeLayout
+            android:id="@+id/add_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/add_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/oa_next" />
+
+            <ImageView
+                android:id="@+id/home_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_address" />
+
+            <TextView
+                android:id="@+id/add_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@id/add_tag"
+                android:layout_toRightOf="@id/home_tag"
+                android:gravity="center|left"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/add_tv"
+                android:layout_below="@id/add_tv"
+                android:layout_marginTop="3dp"
+                android:layout_toLeftOf="@id/add_tag"
+                android:layout_toRightOf="@id/home_tag"
+                android:text="加入常用地址"
+                android:textSize="@dimen/text_main" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

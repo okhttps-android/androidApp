@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shape_corner_deep_blue_bg" android:state_selected="true" />
+    <item android:drawable="@drawable/shape_corner_deep_blue_bg" android:state_pressed="true" />
+    <item android:drawable="@drawable/shape_corner_deep_blue_bg" android:state_checked="true" />
+    <item android:drawable="@drawable/shape_corner_shallow_blue_bg" android:state_enabled="true" />
+    <item android:drawable="@drawable/shape_corner_blue_unable_bg" android:state_enabled="false" />
+    <item android:drawable="@drawable/shape_corner_shallow_blue_bg" />
+</selector>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:state_pressed="true">
+            <shape>
+                <solid android:color="@color/btn_orange_press" />
+                <corners android:radius="1dp" />
+                <padding android:bottom="0.5dp" android:left="0.5dp" android:right="0.5dp" android:top="0.5dp" />
+            </shape>
+        </item>
+        <item android:state_enabled="false">
+            <shape>
+                <solid android:color="@color/btn_orange_press" />
+                <corners android:radius="1dp" />
+                <padding android:bottom="0.5dp" android:left="0.5dp" android:right="0.5dp" android:top="0.5dp" />
+            </shape>
+        </item>
+        <item>
+            <shape android:shape="rectangle">
+                <corners
+                    android:topLeftRadius="4dp"
+                    android:topRightRadius="4dp"
+                    android:bottomRightRadius="4dp"
+                    android:bottomLeftRadius="4dp">
+                </corners>
+                <stroke
+                    android:width="1dp"
+                    android:color="#999999">
+                </stroke>
+                <solid
+                    android:color="@color/titleBlue">
+                </solid>
+            </shape>
+    
+        </item>
+    </selector>-->

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseRefreshLayout">
+        <attr name="enablePullUp" format="boolean" />
+        <attr name="enablePullDown" format="boolean" />
+        <attr name="pullBackground" format="color|reference" />
+        <attr name="fectiveScroll" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="EmptyRecyclerView">
+        <attr name="emptyText" format="string"/>
+        <attr name="emptyImage" format="reference"/>
+        <attr name="emptyLayout" format="reference"/>
+    </declare-styleable>
+</resources>

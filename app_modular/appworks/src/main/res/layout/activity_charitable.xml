@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_bg"
+    tools:context="com.uas.appworks.OA.platform.activity.CharitableActivity">
+
+    <com.modular.apputils.widget.DivideRadioGroup
+        android:id="@+id/selectRg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bar"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null">
+
+            <TextView
+                android:id="@+id/listNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/listRb"
+                style="@style/IMTabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:drawableTop="@drawable/project_list_bg"
+                android:paddingTop="3dp"
+                android:text="项目列表" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null">
+
+            <TextView
+                android:id="@+id/activityNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/activityRb"
+                style="@style/IMTabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/activity_list_bg"
+                android:paddingTop="3dp"
+                android:text="活动中心" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null">
+
+            <TextView
+                android:id="@+id/userNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/userRb"
+                style="@style/IMTabButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/user_list_bg"
+                android:paddingTop="3dp"
+                android:text="个人中心" />
+        </FrameLayout>
+
+    </com.modular.apputils.widget.DivideRadioGroup>
+
+
+    <FrameLayout
+        android:id="@+id/contantFl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/selectRg" />
+
+
+</RelativeLayout>

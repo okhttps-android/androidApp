@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_pop_state"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/ssq_pop_play"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                 <Button
+                     android:id="@+id/btn_state_ALL"
+                     android:layout_width="fill_parent"
+                     android:layout_height="42.0dip"
+                     android:layout_marginBottom="5dip"
+                     android:layout_marginLeft="10.0dip"
+                     android:layout_marginRight="8.0dip"
+                     android:layout_marginTop="5dip"
+                     android:layout_weight="1.0"
+                     android:background="@drawable/popup_button_selector"
+                     android:gravity="center"
+                     android:paddingLeft="8.0dip"
+                     android:paddingRight="8.0dip"
+                     android:text="所有"
+                     android:textColor="#ff7d7d7d"
+                     android:textSize="15.0sp" />
+                <Button
+                    android:id="@+id/btn_state_START"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42.0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/popup_button_selector"
+                    android:gravity="center"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:text="进行中"
+                    android:textColor="#ff7d7d7d"
+                    android:textSize="15.0sp" />
+                 <!-- android:textColor="#ffd80204" -->
+                <Button
+                    android:id="@+id/btn_state_FINISHED"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42.0dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/popup_button_selector"
+                    android:gravity="center"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:text="已完成"
+                    android:textColor="#ff7d7d7d"
+                    android:textSize="15.0sp" />
+                <Button
+                    android:id="@+id/btn_state_UNCONFIRMED"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42.0dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/popup_button_selector"
+                    android:gravity="center"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:text="待确认"
+                    android:textColor="#ff7d7d7d"
+                    android:textSize="15.0sp" />
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                 <Button
+                    android:id="@+id/btn_state_ADD"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/popup_button_selector"
+                    android:gravity="center"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:text="添加"
+                    android:textColor="#ff7d7d7d"
+                    android:textSize="15.0sp" />
+                  <Button
+                    android:id="@+id/btn_state_TASKFOME"
+                    android:layout_width="fill_parent"
+                    android:layout_height="42.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="8.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/popup_button_selector"
+                    android:gravity="center"
+                    android:paddingLeft="8.0dip"
+                    android:paddingRight="8.0dip"
+                    android:text="我发起的任务"
+                    android:textColor="#ff7d7d7d"
+                    android:textSize="15.0sp" />
+                 </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

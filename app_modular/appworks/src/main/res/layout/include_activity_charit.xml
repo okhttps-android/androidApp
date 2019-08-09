@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/statusRl"
+    android:layout_height="40dp">
+    <TextView
+        android:id="@+id/statusTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:clickable="true"
+        android:privateImeOptions="20dp"
+        android:paddingRight="20dp"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/icon_more_down"
+        android:paddingBottom="@dimen/padding"
+        android:paddingTop="@dimen/padding"
+        android:text="全部" />
+</RelativeLayout>

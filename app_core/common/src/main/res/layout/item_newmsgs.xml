@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebe9e9"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/item_line" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/selector_me_menu_item_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="@dimen/item_height"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <!--android:background="@color/item_color1"-->
+        <FrameLayout
+            android:id="@+id/msgs_area"
+            android:layout_width="57dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/msgs_img"
+                android:layout_width="@dimen/item_img_height"
+                android:layout_height="@dimen/item_img_width"
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent"
+                android:contentDescription="@string/app_name"
+                android:padding="1dp"
+                android:src="@drawable/daibangongzuo" />
+
+            <TextView
+                android:id="@+id/msgs_nums_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:background="@drawable/tab_unread_bg"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="10.0dip"
+                android:visibility="visible"
+                />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/waitting_work_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/msgs_area"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/msgs_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/text_main"
+                android:textSize="16sp"
+                android:text="通知公告"
+                />
+
+            <TextView
+                android:id="@+id/msgs_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp"
+                android:text="刚刚"/>
+
+            <TextView
+                android:id="@+id/msgs_content_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/msgs_title_tv"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/text_hine"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

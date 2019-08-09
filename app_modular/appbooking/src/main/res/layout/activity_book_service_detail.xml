@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/guide_view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/gray_light"
+      />
+
+    <TextView
+        android:id="@+id/book_service_detail_store_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:drawableRight="@drawable/oa_next"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/unspecified_hair_stylist"
+        android:textSize="12sp"
+       />
+
+    <TextView
+        android:id="@+id/guide_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/gray_light"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/specified_hair_stylist"
+        android:textSize="14sp"
+        />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/book_service_detail_ptlv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/item_line"
+        android:dividerHeight="@dimen/line"
+      />
+</LinearLayout>

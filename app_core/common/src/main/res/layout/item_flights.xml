@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/delete_rule_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@drawable/delete_rule" />
+
+    <TextView
+        android:id="@+id/rule_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/delete_rule_img"
+        android:text="@string/default_work"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/mumber_tag_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rule_name_tv"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/munber_tag"
+        android:drawablePadding="10dp"
+        android:text="@string/member"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+
+    <TextView
+        android:id="@+id/mumber_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/mumber_tag_tv"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/mumber_tag_tv"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+
+
+    <TextView
+        android:id="@+id/week_tag_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mumber_tag_tv"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/week_tag"
+        android:drawablePadding="10dp"
+        android:text="@string/fixed_shift"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+
+    <TextView
+        android:id="@+id/week_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/mumber_tv"
+        android:layout_alignTop="@id/week_tag_tv"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+</RelativeLayout>

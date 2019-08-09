@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:background="@drawable/selector_item_white_pass">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/item_line"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tag_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="bottom"
+        android:text="A"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@id/tag_tv"
+        android:background="@color/item_line"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tag_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/common_header_boy"
+        />
+<LinearLayout
+    android:id="@+id/em_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignTop="@id/header_img"
+    android:layout_marginLeft="10dp"
+    android:layout_toRightOf="@id/header_img"
+    android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="陈虎"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/text_main"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/sub_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="优软产品规划部>部长"
+        android:textColor="#999999"
+        android:layout_marginTop="2dp"
+        android:textSize="12sp" />
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/header_img"
+        android:layout_marginRight="20dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/phone_img"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/time_tv"
+        android:layout_alignTop="@id/header_img"
+        android:layout_below="@id/time_tv"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/phone" />
+
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/approvalStyle"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/key1Tv"
+        style="@style/approvalItemStyle"
+        android:layout_width="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"/>
+
+    <FrameLayout
+        android:id="@+id/values1Fl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="2">
+        <!--android:background="@drawable/shape_from_edit"-->
+        <EditText
+            android:id="@+id/value1Et"
+            style="@style/approvalItemStyle"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:hint="@string/common_input2"/>
+
+        <TextView
+            android:id="@+id/value1Tv"
+            android:layout_width="match_parent"
+            style="@style/approvalItemStyle"
+            android:gravity="center|left"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/key2Tv"
+        style="@style/approvalItemStyle"
+        android:layout_width="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        />
+
+    <FrameLayout
+        android:id="@+id/values2Fl"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <EditText
+            android:id="@+id/value2Et"
+            style="@style/approvalItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:hint="@string/common_input2"
+            />
+
+        <TextView
+            android:id="@+id/value2Tv"
+            style="@style/approvalItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>

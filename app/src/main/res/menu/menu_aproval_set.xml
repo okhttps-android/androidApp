@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/oa_approval_set"
+        android:title="编辑模板"
+        android:icon="@drawable/edit_template"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/returnOld"
+        android:title="返回旧版"
+        android:icon="@drawable/qiehuan2"
+        app:showAsAction="ifRoom"  />
+</menu>

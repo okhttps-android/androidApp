@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hint_item_text_bg">#505050</color>
+    <color name="activitying">#2ba752</color>
+    <color name="activityed">#999999</color>
+    <color name="reactivity">#ef613b</color>
+    <color name="indianred_pass">#c84421</color>
+    <color name="cui">#5bbcaf</color>
+    <color name="cui_yellow">#EDFC71</color>
+    <color name="approval_select_tab">#1084D1</color>
+    <color name="approval_tab">#666666</color>
+</resources>

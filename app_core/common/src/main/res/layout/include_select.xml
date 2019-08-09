@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_rl"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/sure_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:layout_alignParentRight="true"
+        android:background="@color/titleBlue"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/common_sure"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_main" />
+
+
+    <CheckBox
+        android:id="@+id/all_sure_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:button="@drawable/oa_checkbox"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/select_all"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/mumber_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/sure_tv"
+        android:drawablePadding="10dp"
+        android:gravity="center|right"
+        android:lines="1"
+        android:textColor="@color/text_hine"
+        android:textSize="@dimen/text_hine" />
+</RelativeLayout>

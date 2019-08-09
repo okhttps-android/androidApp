@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/delete_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="6dp"
+        android:text="@string/common_delete"
+        android:textColor="@color/button_focus"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_below="@+id/delete_tv"
+        android:background="@color/item_line"/>
+
+    <RelativeLayout
+        android:id="@+id/company_rl"
+        style="@style/item_menu"
+        android:layout_below="@id/delete_tv">
+
+        <TextView
+            android:id="@+id/company_tag"
+            style="@style/item_menu_tag"
+            android:gravity="center_vertical"
+            android:text="@string/name"/>
+
+        <TextView
+            android:id="@+id/company_tv"
+            style="@style/item_menu_input"
+            android:layout_toRightOf="@id/company_tag"
+            android:drawablePadding="6dp"
+            android:hint="@string/select_must"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/date_rl"
+        style="@style/item_menu"
+        android:layout_below="@id/company_rl">
+
+
+        <TextView
+            android:id="@+id/date_tag"
+            style="@style/item_menu_tag"
+            android:gravity="center_vertical"
+            android:text="@string/rest_date"
+            android:textColor="@color/hintColor"/>
+
+        <TextView
+            android:id="@+id/date_tv"
+            style="@style/item_menu_input"
+            android:layout_toRightOf="@id/date_tag"
+            android:hint="@string/select_must"
+            android:inputType="phone"
+            android:textColor="@color/hintColor"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_below="@id/date_rl"
+        android:background="@color/item_line"/>
+
+    <TextView
+        android:id="@+id/additem_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/week_bar_height"
+        android:layout_below="@id/date_rl"
+        android:background="@color/me_menu_item_normal"
+        android:gravity="center"
+        android:text="@string/add_contacts"
+        android:textColor="@color/button_focus"/>
+</RelativeLayout>

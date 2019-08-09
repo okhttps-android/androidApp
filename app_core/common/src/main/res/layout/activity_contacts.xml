@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.core.widget.VoiceSearchView
+        android:id="@+id/voiceSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:layout_below="@+id/voiceSearchView"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        android:listSelector="@android:color/transparent"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawableEnd="@drawable/default_ptr_rotate"
+        ptr:ptrDrawableStart="@drawable/default_ptr_flip"
+        ptr:ptrHeaderTextColor="@color/refresh"
+        ptr:ptrMode="both"
+        ptr:ptrOverScroll="false"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        ptr:ptrShowIndicator="false" />
+    <LinearLayout
+        android:id="@+id/include_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/item_line" />
+
+        <include layout="@layout/include_select" />
+    </LinearLayout>
+</RelativeLayout>

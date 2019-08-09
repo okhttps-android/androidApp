@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/ry_business_no"
+        style="@style/form_relative_customer"
+        android:background="@color/item_color2">
+
+
+        <TextView
+            android:id="@+id/apply_subscribe_order_tv"
+            style="@style/form_relative_left_text2"
+            android:text="采购单分析"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+        <TextView
+            style="@style/form_relative_left_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/apply_subscribe_order_tv"
+            android:text="*"
+            android:textColor="@color/red" />
+        <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/apply_subscribe_name_et"
+            style="@style/form_relative_right_text"
+            android:hint="请输入"
+            editTextFormExample:testType="nocheck"/>
+    </RelativeLayout>
+
+    <!--<ImageView style="@style/app_comm_list_line_gray" />-->
+
+    <RelativeLayout
+        android:id="@+id/ry_business_name"
+        style="@style/form_relative_customer"
+        android:background="@color/item_color2">
+
+
+        <TextView
+            android:id="@+id/apply_subscribe_data_tv"
+            style="@style/form_relative_left_text2"
+            android:text="单据日期"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+        <TextView
+            style="@style/form_relative_left_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/apply_subscribe_data_tv"
+            android:text="*"
+            android:textColor="@color/red" />
+        <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/apply_subscribe_data_et"
+            style="@style/form_relative_right_text"
+            editTextFormExample:testType="nocheck"
+            android:hint="请选择" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ry_leave_type"
+        style="@style/form_relative_customer"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv_leave_type"
+            style="@style/form_relative_left_text"
+            android:text="请假类型：" />
+
+        <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/et_leave_type"
+            style="@style/form_relative_right_text"
+            android:focusableInTouchMode="false"
+            editTextFormExample:testType="nocheck" />
+    </RelativeLayout>
+
+    <!--<ImageView style="@style/app_comm_list_line_gray" />-->
+
+    <RelativeLayout
+        android:id="@+id/ry_business_source"
+        style="@style/form_relative_customer"
+        android:background="@color/item_color2">
+
+
+        <TextView
+            android:id="@+id/apply_subscribe_status_tv"
+            style="@style/form_relative_left_text2"
+            android:text="单据状态"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+        <TextView
+            style="@style/form_relative_left_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/apply_subscribe_status_tv"
+            android:text="*"
+            android:textColor="@color/red" />
+        <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/apply_subscribe_status_et"
+            style="@style/form_relative_right_text"
+            android:drawableRight="@drawable/nav_icon_search_default"
+            editTextFormExample:testType="nocheck"
+            android:hint="请选择" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ry_business"
+        style="@style/form_relative_customer"
+        android:background="@color/item_color2">
+
+
+        <TextView
+            android:id="@+id/apply_subscribe_person_tv"
+            style="@style/form_relative_left_text2"
+            android:text="申请人"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+        <TextView
+            style="@style/form_relative_left_text"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/apply_subscribe_person_tv"
+            android:text="*"
+            android:textColor="@color/red" />
+        <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/apply_subscribe_person_et"
+            android:drawableRight="@drawable/nav_icon_search_default"
+            style="@style/form_relative_right_text"
+            editTextFormExample:testType="nocheck"
+            android:hint="请选择" />
+    </RelativeLayout>
+    <!--<ImageView style="@style/app_comm_list_line_gray" />-->
+
+    <RelativeLayout
+        android:id="@+id/ry_business_phone"
+        style="@style/form_relative_customer"
+        android:background="@color/item_color2"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv_iv_leave_days"
+            style="@style/form_relative_left_text"
+            android:text="商机类型"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+        <TextView
+            style="@style/form_relative_left_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_iv_leave_days"
+            android:text="*"
+            android:textColor="@color/red" />
+        <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/et_business_type"
+            style="@style/form_relative_right_text"
+            android:drawableRight="@drawable/nav_icon_search_default"
+            whatever:customRegexp="^(([0-9])|([0-9]+\\.?[0-9]+))$"
+            whatever:testErrorString="@string/error_only_numeric_digits_allowed"
+            whatever:testType="nocheck"
+            android:hint="请选择" />
+    </RelativeLayout>
+
+    <!--<ImageView style="@style/app_comm_list_line_gray" />-->
+
+    <!--<ImageView style="@style/app_comm_list_line_gray" />-->
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/ry_business_jieDuan"
+        style="@style/form_relative_customer"
+        android:background="@color/item_color2">
+
+
+        <TextView
+            android:id="@+id/apply_subscribe_post_tv"
+            style="@style/form_relative_left_text2"
+            android:text="申请人岗位"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+        <TextView
+            style="@style/form_relative_left_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/apply_subscribe_post_tv"
+            android:text="*"
+            android:textColor="@color/red" />
+        <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/apply_subscribe_post_et"
+            style="@style/form_relative_right_text"
+            android:drawableRight="@drawable/nav_icon_search_default"
+            editTextFormExample:customFormat="yyyy-MM-dd HH:mm"
+            editTextFormExample:testType="nocheck"
+            android:hint="请选择" />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/ry_business_enterMan"
+        style="@style/form_relative_customer"
+        android:background="@color/item_color2">
+
+
+        <TextView
+            android:id="@+id/apply_subscribe_branch_tv"
+            style="@style/form_relative_left_text2"
+            android:text="申请部门"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+        <TextView
+            style="@style/form_relative_left_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/apply_subscribe_branch_tv"
+            android:text="*"
+            android:textColor="@color/red" />
+        <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/apply_subscribe_branch_et"
+            style="@style/form_relative_right_text"
+            android:drawableRight="@drawable/nav_icon_search_default"
+            editTextFormExample:customFormat="yyyy-MM-dd HH:mm"
+            editTextFormExample:testType="nocheck"
+            android:hint="请选择" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ry_business_enterTime"
+        style="@style/form_relative_customer"
+        android:background="@color/item_color2">
+
+        <TextView
+            style="@style/form_relative_left_text2"
+            android:text="申请原因"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/apply_subscribe_reason_et"
+            style="@style/form_relative_right_text"
+            editTextFormExample:customFormat="yyyy-MM-dd HH:mm"
+            editTextFormExample:testType="date"
+            android:hint="请输入" />
+    </RelativeLayout>
+</LinearLayout>

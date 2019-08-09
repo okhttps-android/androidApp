@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+     android:layout_marginBottom="@dimen/dp_10"
+     android:layout_above="@+id/rl_bottom">
+     <LinearLayout
+         android:id="@+id/ll_text_size"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@color/lightgray"
+         android:orientation="vertical"
+         tools:context="com.uas.appme.settings.activity.FontSizeActivity">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:background="@color/white"
+             android:gravity="center_vertical"
+             android:orientation="horizontal">
+
+             <ImageView
+                 android:layout_width="@dimen/dp_40"
+                 android:layout_height="@dimen/dp_40"
+                 android:layout_margin="@dimen/dp_10"
+                 android:src="@drawable/icon_yuyue3" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="xx的项目申请"
+                 android:textColor="@color/black"
+                 android:textSize="@dimen/sp_16" />
+
+         </LinearLayout>
+         <!--<view style="@style/app_line_horizontal_05p"
+             android:layout_marginLeft="@dimen/dp_10"
+             android:layout_marginRight="@dimen/dp_10"></view>-->
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/white"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingBottom="3dp"
+                 android:paddingLeft="@dimen/dp_10"
+                 android:paddingTop="3dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="项目类型" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:text="2017091239"
+                     android:textColor="@color/black" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingBottom="3dp"
+                 android:paddingLeft="@dimen/dp_10"
+                 android:paddingTop="3dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="项目编号" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:text="WE1293012"
+                     android:textColor="@color/black" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingBottom="3dp"
+                 android:paddingLeft="@dimen/dp_10"
+                 android:paddingTop="3dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="客户名称" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:text="深圳市智手环科技有限公司"
+                     android:textColor="@color/black" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingBottom="3dp"
+                 android:paddingLeft="@dimen/dp_10"
+                 android:paddingTop="3dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="客户编号" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:text="29534234"
+                     android:textColor="@color/black" />
+             </LinearLayout>
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/dp_10"
+             android:background="@color/white"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@color/white"
+                 android:orientation="horizontal">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:paddingBottom="3dp"
+                     android:paddingLeft="@dimen/dp_10"
+                     android:paddingTop="3dp"
+                     android:text="单据序号1"
+                     android:textColor="#00A4EE" />
+
+             </LinearLayout>
+             <!--<view style="@style/app_line_horizontal_05p"
+                 android:layout_marginLeft="@dimen/dp_10"
+                 android:layout_marginRight="@dimen/dp_10"></view>-->
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingBottom="3dp"
+                 android:paddingLeft="@dimen/dp_10"
+                 android:paddingTop="3dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="预测单号" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:text="20170729534234"
+                     android:textColor="@color/black" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingBottom="3dp"
+                 android:paddingLeft="@dimen/dp_10"
+                 android:paddingTop="3dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="预测序号" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:text="34534234"
+                     android:textColor="@color/black" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingBottom="3dp"
+                 android:paddingLeft="@dimen/dp_10"
+                 android:paddingTop="3dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="物料编号" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:text="29534234"
+                     android:textColor="@color/black" />
+             </LinearLayout>
+         </LinearLayout>
+         <!--    <view style="@style/app_line_horizontal_05p"
+                 android:layout_marginLeft="@dimen/dp_10"
+                 android:layout_marginRight="@dimen/dp_10"></view>-->
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/white"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="3dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="3dp"
+                     android:text="单据序号1"
+                     android:textColor="#00A4EE" />
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingBottom="3dp"
+                 android:paddingLeft="@dimen/dp_10"
+                 android:paddingTop="3dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="预测单号" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:text="20170729534234"
+                     android:textColor="@color/black" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingBottom="3dp"
+                 android:paddingLeft="@dimen/dp_10"
+                 android:paddingTop="3dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="预测序号" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:text="34534234"
+                     android:textColor="@color/black" />
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:paddingBottom="3dp"
+                 android:paddingLeft="@dimen/dp_10"
+                 android:paddingTop="3dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="物料编号" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="20dp"
+                     android:text="29534234"
+                     android:textColor="@color/black" />
+             </LinearLayout>
+         </LinearLayout>
+
+
+     </LinearLayout>
+ </ScrollView>
+<RelativeLayout
+    android:id="@+id/rl_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_marginTop="20dp"
+    android:layout_above="@+id/seek_font_ll"
+    android:background="@android:color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:text="小"/>
+    <TextView
+        android:id="@+id/tv_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="中"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:textSize="26dp"
+        android:text="大"/>
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/seek_font_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <com.uas.appme.widget.SetTextSizeView
+            android:id="@+id/seek_font"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/white"
+            app:SetTextlineWidth="0.1dp"
+            app:circleColor="@android:color/white"
+            app:circleRadius="12dp"
+            app:lineColor="@android:color/black"
+            app:totalCount="2" />  
+    </LinearLayout>
+ 
+</RelativeLayout>
+

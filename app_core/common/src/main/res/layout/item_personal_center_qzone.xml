@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_background"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/avatar_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/avatar_normal"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nick_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_nick_name_bg"
+            android:gravity="center_vertical"
+            android:text="texts"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/body_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/text_click_bg"
+            android:text="ss"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+
+        <FrameLayout
+            android:id="@+id/content_fl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qzone_location_city"
+            android:textSize="@dimen/text_hine"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:textColor="@color/link_nick_name_color"
+            />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="时间"
+                android:textColor="@color/text_hine"
+                android:textSize="@dimen/text_min" />
+
+            <TextView
+                android:id="@+id/daily_share_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/time_tv"
+                android:background="@drawable/text_click_bg"
+                android:text="@string/qzone_out_share"
+                android:textSize="@dimen/text_min"
+                android:visibility="visible"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:textColor="@color/text_hine" />
+
+            <TextView
+                android:id="@+id/delete_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/daily_share_tv"
+                android:background="@drawable/text_click_bg"
+                android:gravity="center"
+                android:text="@string/common_delete"
+                android:textColor="@color/link_nick_name_color"
+                android:textSize="@dimen/text_min"
+                android:paddingLeft="10dp"/>
+
+
+
+            <ImageView
+                android:id="@+id/operation_more_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_msg_friend"
+                android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/praise_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2">
+                <!--android:background="@drawable/praise_bg"-->
+                <ImageView
+                    android:id="@+id/img_praise_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/friend_prialy_top" />
+
+                <TextView
+                    android:id="@+id/multi_praise_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_zan_friend"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="10dp"
+                    android:textSize="@dimen/text_min"
+                    android:text=""
+                    />
+
+                <View
+                    android:id="@+id/img_praise_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_below="@+id/multi_praise_tv"
+                    android:background="@color/item_line" />
+
+                <com.core.widget.MyListView
+                    android:id="@+id/command_listView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/multi_praise_tv"
+                    android:paddingTop="5dp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

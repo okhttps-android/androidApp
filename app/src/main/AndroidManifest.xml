@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.xzjmyk.pm.activity"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:versionCode="158"
+          android:versionName="6.1.9">
+
+    <uses-sdk android:targetSdkVersion="22" />
+    <!-- share umeng -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.microphone" />
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <!-- 录音录像的权限 -->
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 基本的 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 富媒体需要声明的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <!-- 适配Android N系统必需的ContentProvider写权限声明，写权限包含应用包名 -->
+    <!-- <uses-permission android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.push.example" /> -->
+    <!-- <permission -->
+    <!-- android:name="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.baidu.push.example" -->
+    <!-- android:protectionLevel="normal"> -->
+    <!-- </permission> -->
+
+    <!-- 百度自动更新 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!-- 设置索尼的Badge需添加权限 -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 计步器用到 -->
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+
+    <!-- <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" /> -->
+    <!-- 自动聚焦权限 -->
+    <!-- 全局样式不要随意改动  @style/AppTheme -->
+    <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:name="com.core.app.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@drawable/uuu"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:theme="@style/MainBaseTheme"
+        tools:replace="icon,label,theme">
+        
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <!-- 启动页面 -->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:hardwareAccelerated="true"
+            android:icon="@drawable/uuu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.modular.main.SplashActivity" />
+                <action android:name="cat.ereza.customactivityoncrash.RESTART" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 异常跳转页面 -->
+        <activity
+            android:name=".CustomCrashActivity"
+            android:process=":error_activity">
+            <intent-filter>
+                <action android:name="cat.ereza.customactivityoncrash.ERROR" />
+            </intent-filter>
+        </activity>
+        <!--RN摇一摇调式功能界面弹出Activity配置-->
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+        
+        <activity android:name=".rn.RnIndexActivity"/>
+        <!-- 登录模块 -->
+        <activity
+            android:name="com.modular.login.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.account.LoginHistoryActivity" />
+        <!---->
+        <activity android:name=".ui.account.DataDownloadActivity">
+            <intent-filter>
+                <action android:name="com.modular.main.DataDownloadActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".ui.account.RegisterActivity" />
+        <activity android:name=".ui.account.RegisterPasswordActivity" />
+        <activity android:name=".ui.account.RegisterUserBasicInfoActivity" />
+
+        <!-- ERP模块 -->
+        <activity android:name=".ui.erp.activity.NoticeMenuActivity" />
+        <activity android:name=".ui.erp.activity.LogsDisplayActivty" />
+        <activity android:name=".ui.erp.activity.ApproveDisplayActivity" />
+        <activity android:name=".ui.erp.activity.SaleDetailActivity">
+            <intent-filter>
+                <action android:name="com.modular.plat.SaleDetailActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.erp.activity.LeaveActivity">
+            <intent-filter>
+                <action android:name="com.modular.plat.LeaveActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.erp.activity.ExtraLeaveActivity">
+            <intent-filter>
+                <action android:name="com.modular.plat.ExtraLeaveActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.erp.activity.WorkExtraActivity"
+            android:label="@string/oaovertime_apply"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.modular.plat.WorkExtraActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.erp.activity.TravelActivity"
+            android:label="@string/oatravel_apply">
+            <intent-filter>
+                <action android:name="com.modular.plat.TravelActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.erp.activity.SaleSelectActivity" />
+        <activity android:name=".ui.message.SelectActivity">
+            <intent-filter>
+                <action android:name="com.modular.message.SelectActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.erp.activity.SaleChartActivity" />
+        <activity android:name=".ui.erp.activity.QueryActivity" />
+        <activity android:name=".ui.erp.activity.ErpMenActivity" />
+
+        <activity android:name=".ui.circle.view.CardInfoActivity">
+            <intent-filter>
+                <action android:name="com.modular.view.CardInfoActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.erp.activity.oa.AskForLeaveActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.erp.activity.oa.OvertimeApplyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.erp.activity.oa.SpecialAttendanceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.erp.activity.oa.TravelRequestActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.erp.activity.AddTaskActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.erp.activity.WebViewCommActivity"
+            android:hardwareAccelerated="false">
+            <intent-filter>
+                <action android:name="com.modular.main.WebViewCommActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.erp.activity.WebViewLoadActivity">
+            <intent-filter>
+                <action android:name="com.modular.main.WebViewLoadActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.erp.activity.NewsDetailActivity" />
+        <activity android:name=".ui.erp.activity.NewsTwoActivity" />
+        <activity android:name=".ui.erp.activity.NoticesActivity" />
+        <activity android:name=".ui.erp.activity.InformActivity" />
+        <activity
+            android:name=".ui.platform.task.TaskActivity"
+            android:theme="@style/MainBaseTheme">
+            <intent-filter>
+                <action android:name="com.modular.task.TaskActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.erp.activity.ScheduleActivity" />
+        <activity android:name="com.modular.appmessages.activity.SubscribeDetailActivity" />
+        <!-- 通用的activity 加载fragment -->
+        <activity android:name=".ui.erp.activity.UUFriendActivity" />
+        <activity android:name="com.uas.appcontact.ui.activity.CommonFragmentActivity" />
+        <activity
+            android:name="com.uas.appcontact.ui.activity.MyFriendActivity"
+            android:windowSoftInputMode="stateUnspecified|adjustNothing" />
+        <!-- UserCheckedActivity -->
+        <activity
+            android:name=".ui.UserCheckedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.DialogStyle" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainBaseTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.modular.main.MainActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 消息模块 -->
+        <activity android:name=".ui.message.ChatActivity">
+            <intent-filter>
+                <action android:name="com.modular.message.ChatActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.message.MucChatActivity"
+            android:theme="@style/MainBaseTheme">
+            <intent-filter>
+                <action android:name="com.modular.message.MucChatActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.uas.appme.other.activity.RoomInfoActivity" />
+        <activity
+            android:name=".ui.message.AddContactsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+
+            <intent-filter>
+                <action android:name="com.modular.main.AddContactsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.modular.appmessages.activity.ManageAllSubscriptionActivity" />
+        <!-- 群聊 -->
+        <activity android:name=".ui.groupchat.SelectContactsActivity">
+            <intent-filter>
+                <action android:name="com.modular.groupchat.SelectContactsActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Circlr模块 -->
+        <activity android:name=".ui.circle.BusinessCircleActivity" />
+        <activity android:name=".ui.circle.PersonalQzoneActivity" />
+        <activity android:name=".ui.circle.CircleAudioRecordActivity" />
+        <activity
+            android:name=".ui.circle.SendAudioActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.circle.SendShuoshuoActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.modilar.circle.SendShuoshuoActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.circle.SendVideoActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".ui.circle.PMsgDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustUnspecified" />
+        <activity android:name=".ui.circle.BaiduMapActivity">
+            <intent-filter>
+                <action android:name="com.modular.baidu.BaiduMapActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 附近模块 -->
+        <activity
+            android:name="com.uas.appcontact.ui.activity.UserSearchActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name="com.uas.appcontact.ui.activity.UserListActivity" />
+        <!-- Me模块 -->
+        <activity android:name=".ui.me.LocalVideoActivity">
+            <intent-filter>
+                <action android:name="com.modular.im.LocalVideoActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".video.VideoRecordActivity" />
+        <activity
+            android:name="com.uas.appme.other.activity.CardcastActivity" />
+        <activity
+            android:name="com.uas.appme.other.activity.BasicInfoEditActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name=".CaptureResultActivity" />
+        <!-- Tool Activity -->
+
+
+        <activity
+            android:name=".ui.tool.SelectConstantActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.tool.SelectConstantSectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.uas.appme.other.activity.BasicInfoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.modular.basic.BasicInfoActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.tool.VideoPlayActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.modular.tool.VideoPlayActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.tool.WebViewActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.modular.main.WebViewActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.tool.MemoryFileManagement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.circle.SendBaiDuLocate"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.modular.im.SendBaiDuLocate" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- CoreService -->
+        <service android:name="com.core.xmpp.CoreService" />
+        <!-- 百度Location -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- 正式apikey -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="KxANrz9HRWVqGGCm2cN8mXarpW0bBuYA" />
+
+        <!-- 文件选择的activity -->
+        <activity
+            android:name="com.ipaulpro.afilechooser.FileChooserActivity"
+            android:exported="true"
+            android:icon="@drawable/ic_chooser"
+            android:label="@string/choose_file">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <!-- 文件选择的内容提供者 -->
+        <provider
+            android:name="com.ipaulpro.afilechooser.LocalStorageProvider"
+            android:authorities="com.me.afilechooser.provider"
+            android:enabled="@bool/use_provider"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
+            </intent-filter>
+        </provider>
+
+        <receiver android:name=".broadcast.ScrenLockedBroadCastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.message.InstantMessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.modular.message.InstantMessageActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.message.SelectNewContactsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.message.SelectNewGroupInstantActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ipaulpro.afilechooser.FileReceiverActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.modular.afilechooser.FileReceiverActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- oA模块提醒功能本地推送 -->
+
+
+        <!--
+            <activity android:name=".ui.erp.activity.NoticeMenuActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity android:name=".ui.message.SelectCardActivity">
+            <intent-filter>
+                <action android:name="com.modular.main.SelectCardActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 百度 -->
+        <meta-data
+            android:name="BDAPPID"
+            android:value="7178311" />
+        <meta-data
+            android:name="BDAPPKEY"
+            android:value="EmEVqG9NiKchcSbkoGkiyG2F2rp8YNmf" />
+        <!-- <meta-data -->
+        <!-- android:name="BDAPPID" -->
+        <!-- android:value="8037149" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="BDAPPKEY" -->
+        <!-- android:value="GMZFDGbbchdQQXjpabX38rTlychRGnEF" /> -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- <activity
+             android:name="com.baidu.autoupdatesdk.ConfirmDialoigActivity"
+             android:configChanges="keyboardHidden|orientation"
+             android:exported="false"
+             android:screenOrientation="portrait"
+             android:theme="@style/bdp_update_dialog_style_fullscreen" />-->
+
+        <!--<receiver-->
+        <!--android:name="com.baidu.autoupdatesdk.receiver.BDBroadcastReceiver"-->
+        <!--android:exported="false">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="com.baidu.autoupdatesdk.ACTION_NEW_UPDATE" />-->
+        <!--<action android:name="com.baidu.autoupdatesdk.ACTION_DOWNLOAD_COMPLETE" />-->
+        <!--<action android:name="com.baidu.autoupdatesdk.ACTION_NEW_AS" />-->
+        <!--<action android:name="com.baidu.autoupdatesdk.ACTION_AS_DOWNLOAD_COMPLETE" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <activity
+            android:name=".video.VideoActivity" />
+        <activity
+            android:name=".ui.erp.activity.CompanyActivity"
+            android:hardwareAccelerated="true" />
+
+        <activity android:name=".ui.circle.PhoneSelectActivity" />
+        <activity android:name=".ui.erp.activity.crm.ClientActivity">
+            <intent-filter>
+                <action android:name="com.modular.crm.ClientActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ApplySubscribeActivity" />
+        <!-- android:theme="@style/Theme.AppCompat.NoActionBar" /> -->
+
+        <activity
+            android:name=".ui.message.uas.B2bMsgActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.erp.activity.oa.OutofficeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/oaoutplan_title"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            <intent-filter>
+                <action android:name="com.modualr.appworks.OutofficeActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.erp.activity.oa.OARegisterActivity"
+            android:label="@string/meet_signin">
+            <intent-filter>
+                <action android:name="com.modular.metting.appworks.OARegisterActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.erp.activity.crm.VisitReportAddActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.erp.activity.crm.TaskAddActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+            <intent-filter>
+                <action android:name="com.modular.appworks.TaskAddActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.erp.activity.crm.VisitReportPlanActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!--
+            <activity
+            android:name=".ui.erp.activity.oa.AddDailyActivity"
+            android:theme="@style/OAThemeSignin" />
+        -->
+
+
+        <activity
+            android:name=".ui.erp.activity.oa.LocationMapActivity"
+            android:label="@string/unoffice" />
+        <activity
+            android:name=".ui.erp.activity.oa.AlarmaActivity"
+            android:label="@string/signin_setting" />
+
+        <activity
+            android:name=".ui.message.SubscripSetActivity"
+            android:label="申请订阅" />
+        <activity
+            android:name=".ui.erp.activity.oa.OutofficeSetActivity"
+            android:label="@string/signin_setting" />
+        <activity android:name=".ui.erp.activity.oa.TestActivity" />
+        <activity
+            android:name=".ui.erp.activity.oa.OutSigninOKActivity"
+            android:label="@string/signin_detail" />
+        <activity
+            android:name=".ui.erp.activity.crm.ContactManAddActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <activity
+            android:name=".ui.erp.activity.oa.OutLogListActivity"
+            android:label="@string/my_mission" />
+        <activity android:name=".ui.erp.activity.crm.SubsActivity" />
+        <activity android:name="com.uas.appme.other.activity.UpdateSingleTextActivity" />
+        <activity android:name="com.uas.appme.other.activity.UpdateSexActivity">
+            <intent-filter>
+                <action android:name="com.modular.me.UpdateSexActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.erp.activity.oa.OAActivity"
+            android:theme="@style/MainBaseTheme">
+            <intent-filter>
+                <action android:name="com.modular.work.OAActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 分享开始   umeng api key -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57ea27bb67e58e088c003bbf" />
+        <!-- weixin -->
+        <!--<activity-->
+        <!--android:name="com.core.api.wxapi.WXEntryActivity"-->
+        <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+        <!--android:exported="true"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+        <!-- qq -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104894295" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.core.api.wxapi.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <!-- 分享结束 -->
+        <activity
+            android:name=".ui.groupchat.CreateGroupActivity"
+            android:label="@string/title_friend_add">
+            <intent-filter>
+                <action android:name="com.modular.groupchat.CreateGroupActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 百度推送相关 -->
+        <!-- push必须的receviver和service声明 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.PushServiceReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.SHOW" />
+                <action android:name="com.baidu.android.pushservice.action.media.CLICK" />
+                <!-- 以下四项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Push服务接收客户端发送的各种请求 -->
+        <receiver
+            android:name="com.baidu.android.pushservice.RegistrationReceiver"
+            android:process=":bdservice_v1">
+            <intent-filter android:priority="1000">
+                <action android:name="com.baidu.android.pushservice.action.METHOD" />
+                <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.android.pushservice.PushService"
+            android:exported="true"
+            android:process=":bdservice_v1">
+            <intent-filter android:priority="1000">
+                <action android:name="com.baidu.android.pushservice.action.PUSH_SERVICE" />
+            </intent-filter>
+        </service>
+        <!-- </service> -->
+
+
+        <!-- 4.4版本新增的CommandService声明，提升小米和魅族手机上的实际推送到达率 -->
+        <service
+            android:name="com.baidu.android.pushservice.CommandService"
+            android:exported="true" />
+        <!-- push结束 -->
+
+
+        <!-- 适配Android N系统必需的ContentProvider声明，写权限包含应用包名 -->
+        <provider
+            android:name="com.baidu.android.pushservice.PushInfoProvider"
+            android:authorities="com.xzjmyk.pm.activity.bdpush"
+            android:exported="true"
+            android:protectionLevel="signature"
+            android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER.com.xzjmyk.pm.activity" />
+
+        <!-- baidu  push service start -->
+        <!-- 用于接收系统消息以保证PushService正常运行 -->
+        <!-- push富媒体，使用富媒体推送必须声明 -->
+        <!--
+           <activity
+               android:name="com.baidu.android.pushservice.richmedia.MediaViewActivity"
+               android:configChanges="orientation|keyboardHidden"
+               android:label="MediaViewActivity" >
+           </activity>
+           <activity
+               android:name="com.baidu.android.pushservice.richmedia.MediaListActivity"
+               android:configChanges="orientation|keyboardHidden"
+               android:label="MediaListActivity"
+               android:launchMode="singleTask" >
+           </activity>
+        -->
+        <!-- push富媒体结束 -->
+        <!-- push应用定义消息receiver声明 -->
+        <receiver android:name=".ui.PushNetMessageReceiver">
+            <intent-filter android:priority="1000">
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+        <!-- 在百度开发者中心查询应用的API Key -->
+
+        <receiver android:name=".broadcast.DateTimeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="api_key"
+            android:value="EmEVqG9NiKchcSbkoGkiyG2F2rp8YNmf" />
+        <!-- 百度推送相关结束 -->
+
+
+        <activity
+            android:name=".ui.erp.activity.oa.DestinationActivity"
+            android:label="@string/activity_select_aims" />
+        <!-- 动态表单 -->
+
+
+        <activity android:name=".ui.me.SpeechrecognitionActivity" />
+        <activity android:name=".ui.erp.activity.oa.ErpActivity" />
+        <activity
+            android:name=".ui.erp.activity.oa.SelectAimActivity"
+            android:label="@string/activity_select_aims">
+            <intent-filter>
+                <action android:name="com.modular.form.SelectAimActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.erp.activity.oa.SelectRemarkActivity"
+            android:label="@string/activity_visit_aims"
+            android:windowSoftInputMode="stateUnspecified|adjustNothing">
+            <intent-filter>
+                <action android:name="com.modular.appworks.SelectRemarkActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.erp.activity.oa.FlihtsTimeActivity"
+            android:label="@string/work_time_setting">
+            <intent-filter>
+                <action android:name="com.modular.appworks.FlihtsTimeActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.erp.activity.oa.FlightsDateActivity"
+            android:label="@string/work_day_setting">
+            <intent-filter>
+                <action android:name="com.modular.appworks.FlightsDateActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.erp.activity.oa.SelectDepartmentActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/select_join_department"
+            android:windowSoftInputMode="stateUnspecified|adjustNothing">
+            <intent-filter>
+                <action android:name="com.modular.common.SelectDepartmentActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.me.TimeStatisticsActivity"
+            android:label="时间统计" />
+        <activity
+            android:name=".ui.erp.activity.oa.SelectCollisionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/select_join_number"
+            android:windowSoftInputMode="stateUnspecified|adjustNothing">
+            <intent-filter>
+                <action android:name="com.modular.main.SelectCollisionActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- 消息红点模块 -->
+        <activity android:name=".ui.erp.activity.oa.WaittingWorksActivity" />
+        <activity
+            android:name=".ui.platform.pageforms.WorkPageActivity"
+            android:label="@string/overtime_doc" />
+
+        <!-- 独立模块需要重写的界面 -->
+        <activity
+            android:name=".ui.platform.pageforms.LeavePageActivity"
+            android:label="@string/vacation_doc" />
+
+        <activity
+            android:name=".ui.platform.pageforms.TravelPageActivity"
+            android:label="@string/travel_doc"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.platform.pageforms.FormDetailActivity">
+            <intent-filter>
+                <action android:name="com.modular.appwork.FormDetailActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.platform.task.TaskB2BActivity"
+            android:theme="@style/MainBaseTheme">
+            <intent-filter>
+                <action android:name="com.modular.task.TaskB2BActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.platform.task.TaskAddB2BActivity">
+            <intent-filter>
+                <action android:name="com.modular.task.TaskAddB2BActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.platform.task.TaskDetailB2BActivity" />
+        <activity
+            android:name=".ui.erp.activity.PlatLeaveAddActivity"
+            android:label="@string/vacation_doc"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.modular.oa.PlatLeaveAddActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.platform.activity.ChangeDealManActivity"
+            android:label="导航">
+            <intent-filter>
+                <action android:name="com.modular.changedealman.ChangeDealManActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.uas.appworks.CRM.erp.activity.TaskAddErpActivity">
+            <intent-filter>
+                <action android:name="com.modular.task.TaskAddErpActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 计步功能 服务 -->
+        <service
+            android:name="com.uas.appme.pedometer.service.StepService"
+            android:priority="1000"
+            android:process="com.spring.stepcount.service">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.erp.activity.oa.FlihtsDateSelectActivity"
+            android:label="@string/work_day">
+            <intent-filter>
+                <action android:name="com.modular.appworks.FlihtsDateSelectActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.erp.activity.ADActivity" />
+        <activity
+            android:name=".ui.erp.activity.oa.AddContactsActivity"
+            android:label="@string/add_contact"></activity>
+        <activity
+            android:name=".ui.erp.activity.oa.AddVisitReportActivity"
+            android:label="@string/visitrecord" />
+
+        <activity
+            android:name=".ui.me.InfoCodeActivity"
+            android:label="@string/info_2dcode" />
+        <activity
+            android:name=".ui.me.ScanInfoResultsActivity"
+            android:label="@string/Results_of_scan" />
+
+        <activity
+            android:name=".ui.erp.activity.secretary.SelectPContactsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.erp.activity.secretary.BookingDetailActivity">
+            <intent-filter>
+                <action android:name="com.modular.booking.BookingDetailActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.erp.activity.secretary.BookingListActivity"
+            android:label="@string/booking_menu"
+            android:theme="@style/MainBaseTheme">
+            <intent-filter>
+                <action android:name="com.modular.booking.BookingListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.erp.activity.secretary.BookingAddActivity"
+            android:label="@string/booking_add"
+            android:theme="@style/MainBaseTheme"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.ui.erp.activity.secretary.BookingAddActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.core.utils.pictureselector.PictureSelectorDemo"
+            android:label="PictureSelectorDemo" />
+
+        <activity
+            android:name="com.xzjmyk.pm.im.audio.FaceRecognition.FaceView.OnlineFaceDemo"
+            android:label="在线人脸识别" />
+        <activity android:name=".ui.erp.activity.oa.FileLoadingActivity" />
+
+        <activity android:name=".ui.me.TemperatureActivity" />
+
+        <activity android:name="com.core.widget.view.selectcalendar.SelectCalendarActivity" />
+        <activity
+            android:name=".ui.erp.activity.oa.NavigationActivity"
+            android:label="@string/navigation">
+            <intent-filter>
+                <action android:name="com.modular.appworks.NavigationActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.modular.appmessages.activity.UUSportActivity"
+            android:label="@string/set_sport" />
+
+
+        <!--微信支付回调页面-->
+        <activity
+            android:name="com.xzjmyk.pm.activity.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wxd1deafafe3fd9a21" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xzjmyk.pm.activity.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wxd1deafafe3fd9a21" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.core.service.InitializeService" />
+
+        <!-- android:authorities="包名.fileprovider"将“包名”替换为实际包名 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.xzjmyk.pm.activity.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

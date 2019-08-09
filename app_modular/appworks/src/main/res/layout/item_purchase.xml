@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/padding">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/timeTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="编号:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/timeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/timeTag"
+        android:layout_toRightOf="@id/timeTag"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/remarksTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeTv"
+        android:layout_marginTop="@dimen/padding"
+        android:text="产品:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/remarksTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/remarksTag"
+        android:layout_toRightOf="@id/timeTag"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/totalTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remarksTv"
+        android:layout_marginTop="@dimen/padding"
+        android:text="规格型号:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/totalTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/totalTag"
+        android:layout_toRightOf="@id/timeTag"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/amountTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalTv"
+        android:layout_marginTop="@dimen/padding"
+        android:text="单价:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/amountTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/amountTag"
+        android:layout_toRightOf="@id/timeTag"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/dateTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amountTv"
+        android:layout_marginTop="@dimen/padding"
+        android:text="交货日期:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/dateEd"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@id/dateTag"
+        android:layout_toRightOf="@id/timeTag"
+        android:background="@drawable/edit_white_right_angle"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/numberTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateEd"
+        android:layout_marginTop="@dimen/padding"
+        android:text="数量:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/numberEd"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@id/numberTag"
+        android:layout_toRightOf="@id/timeTag"
+        android:background="@drawable/edit_white_right_angle"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/numberUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/numberTag"
+        android:layout_marginLeft="@dimen/padding"
+        android:layout_toRightOf="@id/numberEd"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:padding="0.5dp"
+        android:text="PCS"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/remarksInputTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberEd"
+        android:layout_marginTop="@dimen/padding"
+        android:text="备注:"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/remarksInputEd"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/remarksInputTag"
+        android:layout_toRightOf="@id/timeTag"
+        android:background="@drawable/edit_white_right_angle"
+        android:gravity="center_vertical"
+        android:minHeight="25dp"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_hine" />
+
+</RelativeLayout>

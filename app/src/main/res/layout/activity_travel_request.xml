@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical">
+
+    <!--出差申请-->
+    <com.core.widget.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ly_head_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/item_line" />
+
+                <RelativeLayout
+                    android:id="@+id/travel_request_starttime_rl"
+                    style="@style/form_relative_customer2"
+                    android:background="@color/item_color1">
+
+
+                    <TextView
+                        android:id="@+id/tv_set_startdate"
+                        style="@style/form_relative_left_text2"
+                        android:text="开始时间"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <TextView
+                        android:id="@+id/travel_request_starttime_tv"
+                        style="@style/IMTbleLine_TextValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/Start_time_img"
+                        android:hint="选择时间（必填）"/>
+
+                    <ImageView
+                        android:id="@+id/Start_time_img"
+                        style="@style/Doc_Img" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/item_line" />
+
+                <RelativeLayout
+                    android:id="@+id/travel_request_endtime_rl"
+                    style="@style/form_relative_customer2"
+                    android:background="@color/item_color2">
+
+                    <TextView
+                        android:id="@+id/tv_set_endtime"
+                        style="@style/form_relative_left_text2"
+                        android:text="结束时间"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <TextView
+                        android:id="@+id/travel_request_endtime_tv"
+                        style="@style/IMTbleLine_TextValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/end_time_img"
+                        android:hint="选择时间（必填）" />
+
+                    <ImageView
+                        android:id="@+id/end_time_img"
+                        style="@style/Doc_Img" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/item_line" />
+
+                <RelativeLayout
+                    android:id="@+id/ry_leader_no"
+                    style="@style/form_relative_customer2"
+                    android:background="@color/item_color1">
+
+
+                    <TextView
+                        android:id="@+id/tv_pushid"
+                        style="@style/form_relative_left_text2"
+                        android:text="预计天数"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <TextView
+                        android:id="@+id/et_trave_address"
+                        style="@style/IMTbleLine_TextValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:hint="@string/common_input"
+                        android:visibility="gone"/>
+
+                    <com.andreabaccega.widget.FormEditText
+                        android:id="@+id/travel_request_days_et"
+                        android:padding="5dp"
+                        android:layout_alignParentRight="true"
+                        android:hint="@string/common_input"
+                        android:background="@null"
+                        style="@style/IMTbleLine_TextValue"
+                        android:layout_toRightOf="@id/tv_pushid"
+                        editTextFormExample:testType="nocheck"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/item_line" />
+
+                <RelativeLayout
+                    android:id="@+id/tv_set_traffictv_set_traffic"
+                    style="@style/form_relative_customer2"
+                    android:background="@color/item_color1">
+
+
+                    <TextView
+                        android:id="@+id/tv_set_traffic"
+                        style="@style/form_relative_left_text2"
+                        android:text="目的地"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+                    <com.andreabaccega.widget.FormEditText
+                        android:id="@+id/travel_request_destination_et"
+                        android:padding="5dp"
+                        android:layout_alignParentRight="true"
+                        android:hint="@string/common_input"
+                        android:background="@null"
+                        style="@style/IMTbleLine_TextValue"
+                        android:layout_toRightOf="@id/tv_set_traffic"
+                        editTextFormExample:testType="nocheck"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/item_line" />
+
+                <RelativeLayout
+                    android:id="@+id/tv_set_stay"
+                    style="@style/form_relative_customer2"
+                    android:background="@color/item_color1">
+
+
+                    <TextView
+                        android:id="@+id/tv_leave_category"
+                        style="@style/form_relative_left_text2"
+                        android:text="洽谈对象"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+                    <com.andreabaccega.widget.FormEditText
+                        android:id="@+id/travel_request_target_et"
+                        android:padding="5dp"
+                        android:layout_alignParentRight="true"
+                        android:hint="@string/common_input"
+                        android:background="@null"
+                        style="@style/IMTbleLine_TextValue"
+                        android:layout_toRightOf="@id/tv_leave_category"
+                        editTextFormExample:testType="nocheck"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/item_line" />
+
+                <RelativeLayout
+                    android:id="@+id/ry_relations"
+                    style="@style/form_relative_customer2"
+                    android:background="@color/item_color1">
+
+
+                    <TextView
+                        android:id="@+id/tv_set_relations"
+                        style="@style/form_relative_left_text2"
+                        android:text="项目及目标"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <com.andreabaccega.widget.FormEditText
+                        android:id="@+id/travel_request_project_et"
+                        android:padding="5dp"
+                        android:layout_alignParentRight="true"
+                        android:hint="@string/common_input"
+                        android:background="@null"
+                        style="@style/IMTbleLine_TextValue"
+                        android:layout_toRightOf="@id/tv_set_relations"
+                        editTextFormExample:testType="nocheck"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="@color/item_line" />
+
+                <RelativeLayout
+                    android:id="@+id/travel_request_basis_rl"
+                    style="@style/form_relative_customer2"
+                    android:background="@color/item_color1">
+
+                    <TextView
+                        android:id="@+id/tv_set_t"
+                        style="@style/form_relative_left_text2"
+                        android:text="考勤依据"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+                    <TextView
+                        android:id="@+id/travel_request_basis_tv"
+                        style="@style/IMTbleLine_TextValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/voc_type_img"
+                        android:hint="选择依据（必填）"/>
+
+                    <ImageView
+                        android:id="@+id/voc_type_img"
+                        style="@style/Doc_Img" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@color/item_line" />
+
+                <RelativeLayout
+                    android:id="@+id/ry_leave_reason"
+                    style="@style/form_relative_customer2"
+                    android:background="@color/item_color2">
+
+
+                    <TextView
+                        android:id="@+id/tv_set_tit"
+                        style="@style/form_relative_left_text2"
+                        android:text="出差事由"
+                        android:textColor="@color/text_main"
+                        android:textSize="@dimen/text_main" />
+
+
+                </RelativeLayout>
+
+
+                <com.andreabaccega.widget.FormEditText
+                    android:id="@+id/travel_request_explain_et"
+                    style="@style/form_relative_right_text"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="top"
+                    android:hint="请输入出差事由"
+                    android:minHeight="200dp"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.core.widget.CustomerScrollView>
+
+    <LinearLayout
+        android:id="@+id/ly_bottom_submit"
+        style="@style/form_linear_customer">
+
+        <Button
+            android:id="@+id/travel_request_commit_btn"
+            style="@style/from_button_base_bule"
+            android:layout_marginTop="10dp"
+            android:text="提   交" />
+    </LinearLayout>
+
+    <include layout="@layout/item_work_view" />
+</LinearLayout>

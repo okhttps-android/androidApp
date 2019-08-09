@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/refreshLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlHeaderHeight="140dp"
+    app:srlHeaderMaxDragRate="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#555"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="5dp"
+        android:padding="20dp"
+        android:text="网页由 www.ubtob.com 提供"
+        android:textColor="#aaa"
+        android:textSize="16sp"
+        app:layout_srlBackgroundColor="#555"
+        app:layout_srlSpinnerStyle="FixedBehind" />-->
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/invite_register_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/invite_register_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="恭喜您注册成功，我们已为您开通以下服务："
+            android:textColor="#2F95DD"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_trademark_b2b" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_trademark_mall" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_trademark_uu" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_trademark_job" />
+    </LinearLayout>
+</FrameLayout>
+
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:background="@drawable/selector_item_white_pass"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="@dimen/item_height"
+    android:paddingLeft="10dp"
+    android:paddingRight="15dp">
+
+    <FrameLayout
+        android:id="@+id/headerFl"
+        android:layout_width="53dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/headerImg"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:padding="1dp"
+            android:src="@drawable/avatar_round" />
+
+        <TextView
+            android:id="@+id/headerNumTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:background="@drawable/tab_unread_bg"
+            android:gravity="center"
+            android:text="999"
+            android:textColor="@android:color/white"
+            android:textSize="10.0dp"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/headerContactRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/headerFl"
+        android:gravity="center_vertical">
+
+        <com.core.widget.RedView
+            android:id="@+id/headerRv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:visibility="gone"
+            app:showImage="false"
+            app:text="" />
+
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#999999"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/schedule_time_tv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="会所"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/headerSubTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTv"
+            android:layout_toLeftOf="@+id/schedule_time_tv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="预约有优惠"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

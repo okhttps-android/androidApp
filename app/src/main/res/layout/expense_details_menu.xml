@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/details_presentation"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crm_nodatas"
+        android:drawableLeft="@drawable/expense_tishi_detail"
+        android:background="@color/bg_main"
+        android:visibility="gone"
+        />
+    <com.core.widget.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.core.widget.NScrollerGridView
+                android:id="@+id/gv_details_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="15dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:numColumns="3">
+            </com.core.widget.NScrollerGridView>
+        </LinearLayout>
+    </com.core.widget.CustomerScrollView>
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_bule_btn"
+            android:padding="10dp"
+            android:text="@string/common_sure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main" />
+    </LinearLayout>
+</LinearLayout>

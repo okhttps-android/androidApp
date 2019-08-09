@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MainBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+        <item name="android:windowAnimationStyle">@style/IMAnimationStyle</item>
+        <item name="android:listViewStyle">@style/IMListView</item>
+        <item name="homeAsUpIndicator">@drawable/actionbar_up_indicator</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+        <item name="android:windowTranslucentNavigation" tools:ignore="NewApi">false</item>
+        <item name="styleLoadingLayout">@style/LoadingLayoutStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/actionbar_up_indicator</item>
+        <item name="actionMenuTextColor">#ffffff</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+
+    </style>
+</resources>

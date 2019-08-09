@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hine_bg"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.crm.AddBusinessActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hine_bg"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/company_rl"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/company_tag"
+                style="@style/item_menu_tag"
+                android:gravity="center_vertical"
+                android:text="@string/Company_Name" />
+
+            <TextView
+                android:id="@+id/company_tv"
+                style="@style/item_menu_input"
+                android:layout_toRightOf="@id/company_tag"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/oa_next"
+                android:hint="@string/common_select" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/company_add_rl"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/company_add_tag"
+                style="@style/item_menu_tag"
+                android:gravity="center_vertical"
+                android:text="@string/enterprise_address"
+                android:textColor="@color/hintColor" />
+
+            <TextView
+                android:id="@+id/company_add_tv"
+                style="@style/item_menu_input"
+                android:layout_toRightOf="@id/company_add_tag"
+                android:textColor="@color/hintColor" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remark_rl"
+            style="@style/item_menu">
+
+            <TextView
+                android:id="@+id/remark_tag"
+                style="@style/item_menu_tag"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="@string/describe" />
+
+            <TextView
+                android:id="@+id/remark_tv"
+                style="@style/item_menu_input"
+                android:layout_toRightOf="@id/remark_tag"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/oa_next"
+                android:hint="@string/common_select_not_must" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/business_stage_rl"
+            style="@style/item_menu"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/business_stage_tag"
+                style="@style/item_menu_tag"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="@string/business_stage" />
+
+            <TextView
+                android:id="@+id/business_stage_tv"
+                style="@style/item_menu_input"
+                android:layout_toRightOf="@id/business_stage_tag"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/oa_next"
+                android:hint="@string/common_select_not_must" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/business_Library_rl"
+            style="@style/item_menu"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/business_Library_tag"
+                style="@style/item_menu_tag"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:text="@string/business_Library" />
+
+            <TextView
+                android:id="@+id/business_Library_tv"
+                style="@style/item_menu_input"
+                android:layout_toRightOf="@id/business_Library_tag"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/oa_next"
+                android:hint="@string/common_select_not_must" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <com.core.widget.MyListView
+            android:id="@+id/contact_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/me_menu_item_normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line" />
+
+        <TextView
+            android:id="@+id/additem_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/misson_item_height"
+            android:background="@color/me_menu_item_normal"
+            android:gravity="center"
+            android:text="@string/add_contacts"
+            android:textColor="@color/button_focus" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="60dp">
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_bule_btn"
+                android:padding="10dp"
+                android:text="@string/common_save_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_main" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

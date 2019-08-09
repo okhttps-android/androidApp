@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding"
+    android:layout_marginRight="@dimen/padding"
+    android:background="@color/base_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radian_top_cui_bg"
+        android:paddingBottom="@dimen/padding">
+
+        <TextView
+            android:id="@+id/codeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginLeft="@dimen/padding"
+            android:gravity="center_horizontal"
+            android:text="单程机票：671283"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_hine" />
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/codeTv"
+            android:layout_marginRight="@dimen/padding"
+            android:text="已提交"
+            android:textColor="@color/cui_yellow"
+            android:textSize="@dimen/text_hine" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_below="@id/codeTv"
+            android:background="@color/item_line" />
+
+        <LinearLayout
+            android:id="@+id/orderInfoRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/codeTv"
+            android:layout_marginTop="@dimen/padding"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/fromLL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="@dimen/padding"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fromCityTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textXXL" />
+
+                <TextView
+                    android:id="@+id/startDateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fromCityTv"
+                    android:lines="1"
+                    android:text="2017-12-12"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main" />
+
+                <TextView
+                    android:id="@+id/startTimeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="07:20"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main" />
+
+            </LinearLayout>
+
+            <com.modular.apputils.widget.TravelDirectionView
+                android:id="@+id/mTravelDirectionView"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                app:time="2小时20分"
+                app:timeSize="14dp"
+                app:title="D7890"
+                app:titleSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/toLL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/toCityTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/codeTv"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textXXL" />
+
+                <TextView
+                    android:id="@+id/toDateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/fromCityTv"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="2017-12-12"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main" />
+
+                <TextView
+                    android:id="@+id/toTimeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="07:20"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userInfoRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding"
+            android:text="周炳"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/idTypeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/nameTv"
+            android:layout_marginLeft="@dimen/padding"
+            android:text="二代身份证"
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+
+        <TextView
+            android:id="@+id/idCardTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding"
+            android:layout_toLeftOf="@id/idTypeTv"
+            android:layout_toRightOf="@id/nameTv"
+            android:text=""
+            android:textColor="@color/text_hine"
+            android:textSize="@dimen/text_hine" />
+
+        <TextView
+            android:id="@+id/orderTypeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idCardTv"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:text="1间"
+            android:textColor="@color/text_main"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/seatTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/idCardTv"
+            android:layout_alignTop="@id/orderTypeTv"
+            android:layout_marginRight="@dimen/padding"
+            android:text="A30H"
+            android:textColor="@color/hintColor"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/realFeeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/orderTypeTv"
+            android:layout_marginLeft="30dp"
+            android:layout_toLeftOf="@+id/payTypeTv"
+            android:layout_toRightOf="@id/seatTv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingRight="3dp"
+            android:text="54元"
+            android:textColor="@color/indianred"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/payTypeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/orderTypeTv"
+            android:text="前台自付"
+            android:textColor="@color/indianred"
+            android:textSize="@dimen/text_main" />
+
+        <TextView
+            android:id="@+id/doneTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/orderTypeTv"
+            android:background="@drawable/text_frame_radian_red_bg"
+            android:padding="4dp"
+            android:text="取消预约"
+            android:textColor="@color/indianred" />
+
+        <TextView
+            android:id="@+id/changeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderTypeTv"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_toLeftOf="@id/doneTv"
+            android:background="@drawable/text_frame_radian_hint_bg"
+            android:padding="4dp"
+            android:text="改签"
+            android:textColor="@color/text_hine" />
+
+        <TextView
+            android:id="@+id/expandTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/doneTv"
+            android:drawableRight="@drawable/icon_more_down"
+            android:text="申请记录" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_below="@id/doneTv" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@color/item_line" />
+
+    <RelativeLayout
+        android:id="@+id/subRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radian_bottom_white_bg"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/addressTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:text="行程"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/tripTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/addressTag"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/addressTag"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="城市地址"
+            android:textColor="@color/text_main" />
+
+        <TextView
+            android:id="@+id/dateTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressTag"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:text="出发时间"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/dateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tripTv"
+            android:layout_alignTop="@id/dateTag"
+            android:layout_toRightOf="@id/dateTag"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="城市地址"
+            android:textColor="@color/text_main" />
+
+        <TextView
+            android:id="@+id/numberTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateTag"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:text="席别"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/levelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tripTv"
+            android:layout_alignTop="@id/numberTag"
+            android:layout_toRightOf="@id/numberTag"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="城市地址"
+            android:textColor="@color/text_main" />
+
+
+        <TextView
+            android:id="@+id/expecteFeeTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numberTag"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_marginTop="@dimen/padding"
+            android:text="预计费用"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/expecteFeeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tripTv"
+            android:layout_alignTop="@id/expecteFeeTag"
+            android:layout_toRightOf="@id/expecteFeeTag"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="预计费用"
+            android:textColor="@color/text_main" />
+    </RelativeLayout>
+</LinearLayout>

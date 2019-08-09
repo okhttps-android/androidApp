@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:whatever="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.xzjmyk.pm.activity.ui.erp.activity.crm.VisitReportPlanActivity">
+
+        <RelativeLayout
+            android:id="@+id/rl_name"
+            style="@style/form_relative_customer"
+            android:background="@color/item_color2">
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="名称"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="45dp"
+                android:layout_toRightOf="@+id/name_text"
+                android:text="*"
+                android:textColor="@color/red" />
+            <!--  android:drawableRight="@drawable/nav_icon_search_default"-->
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                                                   android:id="@+id/tv_name"
+                                                   style="@style/form_relative_right_text"
+                                                   android:hint="请输入"
+                                                   editTextFormExample:testType="nocheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sex_erp_rl"
+            style="@style/form_relative_customer"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/sex_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="执行人"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/sex_text"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                                                   android:id="@+id/tv_executive"
+                                                   style="@style/form_relative_right_text"
+                                                   android:drawableRight="@drawable/nav_icon_search_default"
+                                                   android:hint="请选择"
+                                                   editTextFormExample:testType="nocheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/form_relative_customer"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_id1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="开始日期"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_id1"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                                                   android:id="@+id/tv_date_start"
+                                                   style="@style/form_relative_right_text"
+                                                   android:drawableRight="@drawable/nav_icon_search_default"
+                                                   android:hint="请选择"
+                                                   editTextFormExample:testType="nocheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/company_erp_rl"
+            style="@style/form_relative_customer"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_id2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="截止日期"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_id2"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                                                   android:id="@+id/tv_date"
+                                                   style="@style/form_relative_right_text"
+                                                   android:drawableRight="@drawable/nav_icon_search_default"
+                                                   android:hint="请选择"
+                                                   editTextFormExample:testType="nocheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/deparment_erp_rl"
+            style="@style/form_relative_customer"
+
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_id3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="紧急程度"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <TextView
+                style="@style/form_relative_left_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_id3"
+                android:text="*"
+                android:textColor="@color/red" />
+
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                                                   android:id="@+id/tv_priority"
+                                                   style="@style/form_relative_right_text"
+                                                   android:drawableRight="@drawable/nav_icon_search_default"
+                                                   android:hint="请选择"
+                                                   editTextFormExample:testType="nocheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/position_erp_rl"
+            style="@style/form_relative_customer"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/position_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="类型"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                                                   android:id="@+id/tv_type"
+                                                   style="@style/form_relative_right_text"
+                                                   android:focusable="false"
+                                                   android:text="任务"
+                                                   editTextFormExample:testType="nocheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tel_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/customer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="关联客户"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                                                   android:id="@+id/tv_customer"
+                                                   style="@style/form_relative_right_text"
+                                                   android:hint="请选择"
+                                                   editTextFormExample:testType="nocheck" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/startTime_erp_rl"
+            style="@style/IMTbleLine_UP_Me"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/startTime_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="提醒"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                                                   android:id="@+id/tv_notice"
+                                                   style="@style/form_relative_right_text"
+                                                   android:hint="请选择"
+                                                   editTextFormExample:testType="nocheck" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/email_erp_rl"
+            style="@style/form_relative_customer"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_content"
+                android:layout_marginLeft="20dp"
+                android:drawablePadding="10dp"
+                android:padding="5dp"
+                android:text="详情"
+                android:textColor="@color/text_main"
+                android:textSize="@dimen/text_main" />
+
+            <com.andreabaccega.widget.FormEditText xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+                                                   android:id="@+id/tv_content"
+                                                   style="@style/form_relative_right_text"
+                                                   android:gravity="top|left"
+                                                   android:minLines="4"
+                                                   android:padding="5dp"
+                                                   editTextFormExample:testType="nocheck" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+

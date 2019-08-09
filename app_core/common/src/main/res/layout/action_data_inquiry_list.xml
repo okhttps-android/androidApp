@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingRight="@dimen/paddingMin">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_baseutil_back" />
+
+    <ImageView
+        android:id="@+id/data_inquiry_filter_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_advanced_filter" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:visibility="visible">
+
+        <com.core.widget.ClearEditText
+            android:id="@+id/data_inquiry_filter_et"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_input"
+            android:drawableRight="@drawable/search_clear"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="34dp"
+            android:paddingRight="26dp"
+            android:textColor="@color/dark_grey"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/data_inquiry_filter_scan_iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/ic_scan_gray" />
+
+        <ImageView
+            android:id="@+id/data_inquiry_voice_iv"
+            android:layout_width="10dp"
+            android:layout_height="16dp"
+            android:layout_alignRight="@+id/search_edit"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/btn_yuyin_nor"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

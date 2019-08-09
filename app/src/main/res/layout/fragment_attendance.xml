@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.fragment.AttendanceFragment">
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <com.core.widget.view.oacalender.CalenderView
+        android:id="@+id/calender"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/item_line" />
+
+        <ScrollView
+            android:id="@+id/month_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/include_attendance_show" />
+        </ScrollView>
+
+        <ListView
+            android:id="@+id/day_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/item_line"
+            android:dividerHeight="2px"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

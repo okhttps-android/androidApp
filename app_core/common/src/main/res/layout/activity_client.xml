@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/bg_underlying"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6A6A6A"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ib_business"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/tab_icon4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/crmmain_business"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ib_customer"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/tab_icon1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/crmmain_client"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ib_customer_vistor"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/tab_icon2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/crmmain_customer_visit"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ib_waller"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:background="@drawable/tab_icon3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/crmmain_wall_of_fame"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/client_ptrsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--我的排名-->
+            <LinearLayout
+                style="@style/crm_ll_card"
+                android:layout_margin="0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_icon1"
+                        android:src="@drawable/crm_left" />
+
+                    <TextView
+                        android:id="@+id/iv_icon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/crm_icon1"
+                        android:textColor="#62B7F2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_icon1"
+                        android:src="@drawable/crm_right" />
+
+                    <TextView
+                        android:id="@+id/ib_ranking_condition"
+                        style="@style/crm_ib_card_topRight"
+                        android:drawableRight="@drawable/nav_icon_search_default"
+                        android:text="@string/crm_filter" />
+                </RelativeLayout>
+
+                <!--<View style="@style/app_line_gray_1dp"></View>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/crm_card_round_tv"
+                        android:text="@string/crm_sales" />
+
+                    <LinearLayout style="@style/crm_ll_card_ranking">
+
+                        <TextView
+                            android:id="@+id/tv_rank_sale_left"
+                            style="@style/crm_tv_ranking_left" />
+
+                        <TextView
+                            android:id="@+id/tv_rank_sale_right"
+                            style="@style/crm_tv_ranking_right" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/app_line_gray_1dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/crm_card_round_tv"
+                        android:text="@string/crm_Gross_profit" />
+
+                    <LinearLayout style="@style/crm_ll_card_ranking">
+
+                        <TextView
+                            android:id="@+id/tv_rank_rirun_left"
+                            style="@style/crm_tv_ranking_left" />
+
+                        <TextView
+                            android:id="@+id/tv_rank_rirun_right"
+                            style="@style/crm_tv_ranking_right" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/app_line_gray_1dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/crm_card_round_tv"
+                        android:text="@string/crm_Numberofcustome_visits" />
+
+                    <LinearLayout style="@style/crm_ll_card_ranking">
+
+                        <TextView
+                            android:id="@+id/tv_rank_visit_left"
+                            style="@style/crm_tv_ranking_left"
+                            android:text="@string/crm_di_ming" />
+
+                        <TextView
+                            android:id="@+id/tv_rank_visit_right"
+                            style="@style/crm_tv_ranking_right"
+                            android:text="@string/crm_ge" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/app_line_gray_1dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/crm_card_round_tv"
+                        android:text="@string/crm_extra_get" />
+
+                    <LinearLayout style="@style/crm_ll_card_ranking">
+
+                        <TextView
+                            android:id="@+id/tv_rank_income_left"
+                            style="@style/crm_tv_ranking_left"
+                            android:text="@string/crm_di_ming" />
+
+                        <TextView
+                            android:id="@+id/tv_rank_income_right"
+                            style="@style/crm_tv_ranking_right"
+                            android:text="@string/crm_ge" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/crm_ll_card"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_sale"
+                        android:src="@drawable/crm_left" />
+
+                    <TextView
+                        android:id="@+id/iv_sale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/crm_icon2"
+                        android:textColor="#62B7F2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_sale"
+                        android:src="@drawable/crm_right" />
+
+                    <!--   <ImageButton style="@style/crm_ib_card_topRight"
+                           android:id="@+id/ib_sale_condition" />-->
+                </RelativeLayout>
+
+                <!--<View style="@style/app_line_gray_1dp"></View>-->
+
+                <LinearLayout
+                    style="@style/crm_ll_sale"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/tv_huikuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_mony"
+                        android:drawablePadding="5dp"
+                        android:gravity="left"
+                        android:text="@string/crm_back0wyuan" />
+
+                    <TextView
+                        android:id="@+id/tv_chuhuo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/icon_mony"
+                        android:drawablePadding="5dp"
+                        android:gravity="left"
+                        android:text="@string/crm_out0wyuan" />
+                </LinearLayout>
+                <!--图表-->
+                <LinearLayout
+                    style="@style/crm_ll_sale"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/crm_chart_sale"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/crm_ll_sale"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        style="@style/LinearLayout_horizontal"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/crm_card_round_tv"
+                            android:text="@string/crmmain_client" />
+
+                        <TextView
+                            android:id="@+id/tv_sale_customer"
+                            style="@style/TextView_VerticalCenter"
+                            android:text="@string/crm_newadd_c" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayout_horizontal"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/crm_card_round_tv"
+                            android:text="@string/common_Contact_person" />
+
+                        <TextView
+                            android:id="@+id/tv_sale_linkman"
+                            style="@style/TextView_VerticalCenter"
+                            android:text="@string/crm_newadd_c" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    style="@style/app_line_gray_1dp"
+                    android:visibility="gone"></View>
+
+                <LinearLayout
+                    style="@style/crm_ll_sale"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        style="@style/LinearLayout_horizontal"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/crm_card_round_tv"
+                            android:text="@string/crm_Numberofbusiness" />
+
+                        <TextView
+                            android:id="@+id/tv_sale_business"
+                            style="@style/TextView_VerticalCenter"
+                            android:text="@string/crm_newadd_c" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayout_horizontal"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/crm_card_round_tv"
+                            android:text="@string/crm_change_business" />
+
+                        <TextView
+                            android:id="@+id/tv_sale_businessChange"
+                            style="@style/TextView_VerticalCenter"
+                            android:text="@string/crm_newadd_c" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    style="@style/app_line_gray_1dp"
+                    android:visibility="gone"></View>
+
+                <LinearLayout
+                    style="@style/crm_ll_sale"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        style="@style/LinearLayout_horizontal"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/crm_card_round_tv"
+                            android:text="@string/crm_Sales_order" />
+
+                        <TextView
+                            android:id="@+id/tv_sale_order"
+                            style="@style/TextView_VerticalCenter"
+                            android:text="@string/crm_newadd_c" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayout_horizontal"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/crm_card_round_tv"
+                            android:text="@string/crm_visit_record" />
+
+                        <TextView
+                            android:id="@+id/tv_sale_visit"
+                            style="@style/TextView_VerticalCenter"
+                            android:text="@string/crm_newadd_c" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    style="@style/app_line_gray_1dp"
+                    android:visibility="gone"></View>
+
+                <LinearLayout
+                    style="@style/crm_ll_sale"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        style="@style/LinearLayout_horizontal"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/crm_card_round_tv"
+                            android:text="@string/crm_out_doc" />
+
+                        <TextView
+                            android:id="@+id/tv_sale_chuhuo"
+                            style="@style/TextView_VerticalCenter"
+                            android:text="@string/crm_newadd_c" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/LinearLayout_horizontal"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/crm_card_round_tv"
+                            android:text="@string/crm_Back_money" />
+
+                        <TextView
+                            android:id="@+id/tv_sale_huikuan"
+                            style="@style/TextView_VerticalCenter"
+                            android:text="@string/crm_newadd_c" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    style="@style/app_line_gray_1dp"
+                    android:visibility="gone"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_subordinate"
+                style="@style/crm_ll_card"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_icon3"
+                        android:src="@drawable/crm_left" />
+
+                    <TextView
+                        android:id="@+id/iv_icon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/crm_icon3"
+                        android:textColor="#62B7F2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_icon3"
+                        android:src="@drawable/crm_right" />
+
+                    <!-- <ImageButton style="@style/crm_ib_card_topRight"
+                         android:id="@+id/ib_em_condition" />-->
+                </RelativeLayout>
+
+                <!--<View style="@style/app_line_gray_1dp"></View>-->
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:layout_weight="3"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="@string/crm_plansales_dec1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="@string/crm_realsales_dec2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_data_one"
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="8dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_em_a"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.5"
+                        android:text="沈佳" />
+
+                    <TextView
+                        android:id="@+id/tv_em_plana"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="@string/crm_wyuan" />
+
+                    <TextView
+                        android:id="@+id/tv_em_salea"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="@string/crm_wyuan" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_data_two"
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="8dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_em_b"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.5"
+                        android:text="沈佳" />
+
+                    <TextView
+                        android:id="@+id/tv_em_planb"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="@string/crm_wyuan" />
+
+                    <TextView
+                        android:id="@+id/tv_em_saleb"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="@string/crm_wyuan" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_data_three"
+                    style="@style/LinearLayout_horizontal"
+                    android:padding="8dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_em_c"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1.5"
+                        android:text="沈佳" />
+
+                    <TextView
+                        android:id="@+id/tv_em_planc"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="@string/crm_wyuan" />
+
+                    <TextView
+                        android:id="@+id/tv_em_salec"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="@string/crm_wyuan" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_data_empty"
+                    style="@style/LinearLayout_horizontal"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="沈佳"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/subs_tv"
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/ic_more_blue_arrow"
+                        android:gravity="center"
+                        android:text="@string/crm_nodatas" />
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_weight="1"
+                        android:text="@string/crm_wyuan"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+                <View style="@style/app_line_gray_1dp"></View>
+
+                <LinearLayout
+                    style="@style/LinearLayout_vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="沈佳" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="第三事业部" />
+
+                    <LinearLayout
+                        style="@style/crm_ll_sale_item"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            style="@style/LinearLayout_horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_Plan_sales" />
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_wyuan" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/LinearLayout_horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_Actual_sales" />
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_wyuan" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/crm_ll_sale_item"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            style="@style/LinearLayout_horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_Plan_gross_profit" />
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_wyuan" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/LinearLayout_horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="实际毛利润：" />
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text=" 万元" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/app_line_gray_1dp"></View>
+
+                <LinearLayout
+                    style="@style/LinearLayout_vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="沈佳" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="第三事业部" />
+
+                    <LinearLayout
+                        style="@style/crm_ll_sale_item"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            style="@style/LinearLayout_horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_Plan_sales" />
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_wyuan" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/LinearLayout_horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_Actual_sales" />
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_wyuan" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/crm_ll_sale_item"
+
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            style="@style/LinearLayout_horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_Plan_gross_profit" />
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_wyuan" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/LinearLayout_horizontal"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_Actual_gross_profit" />
+
+                            <TextView
+                                style="@style/TextView_VerticalCenter"
+                                android:text="@string/crm_wyuan" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/crm_ll_card"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_icon4"
+                        android:src="@drawable/crm_left" />
+
+                    <TextView
+                        android:id="@+id/iv_icon4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/crm_icon4"
+                        android:textColor="#62B7F2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_icon4"
+                        android:src="@drawable/crm_right" />
+
+                    <TextView
+                        android:id="@+id/ib_index_condition"
+                        style="@style/crm_ib_card_topRight"
+                        android:drawableRight="@drawable/nav_icon_search_default"
+                        android:text="@string/crm_filter" />
+                </RelativeLayout>
+
+                <!--<View style="@style/app_line_gray_1dp"></View>-->
+
+                <LinearLayout
+                    style="@style/LinearLayout_horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        style="@style/LinearLayout_vertical"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/crm_tv_sale_title"
+                            android:text="@string/crm_Plan_sales" />
+
+                        <TextView
+                            style="@style/crm_tv_sale_title_value"
+                            android:text="@string/crm_sale_num" />
+
+                        <TextView
+                            style="@style/crm_tv_sale_title"
+                            android:text="@string/crm_Plan_sales" />
+
+                        <TextView
+                            style="@style/crm_tv_sale_title_value"
+                            android:text="@string/crm_sale_num" />
+
+                        <TextView
+                            style="@style/crm_tv_sale_title"
+                            android:text="@string/crm_Plan_sales" />
+
+                        <TextView
+                            style="@style/crm_tv_sale_title_value"
+                            android:text="@string/crm_sale_num" />
+
+                        <TextView
+                            style="@style/crm_tv_sale_title"
+                            android:text="@string/crm_Plan_sales" />
+
+                        <TextView
+                            style="@style/crm_tv_sale_title_value"
+                            android:text="@string/crm_sale_num" />
+                    </LinearLayout>
+
+                    <View style="@style/app_line_v_1dp"></View>
+
+                    <LinearLayout
+                        style="@style/LinearLayout_vertical"
+                        android:layout_weight="1">
+
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/crm_chart_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/crm_ll_card"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/iv_icon5"
+                        android:src="@drawable/crm_left" />
+
+                    <TextView
+                        android:id="@+id/iv_icon5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/crm_icon5"
+                        android:textColor="#62B7F2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/iv_icon5"
+                        android:src="@drawable/crm_right" />
+
+                    <TextView
+                        android:id="@+id/tv_cu_count"
+                        style="@style/crm_tv_card_topLeftTitle"
+                        android:text="@string/crm_customer_forget_num"
+                        android:visibility="gone" />
+                    <!--
+                                    <TextView
+                                        android:id="@+id/ib_forget_condition"
+                                        style="@style/crm_ib_card_topRight"
+                                        android:text="更多"
+                                        android:textColor="@color/gray_light" />-->
+                </RelativeLayout>
+
+                <!--<View style="@style/app_line_gray_1dp"></View>-->
+
+                <LinearLayout
+                    android:id="@+id/ll_customer_lost"
+                    style="@style/LinearLayout_vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_customer_name"
+                        style="@style/TextView_Basic"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/uas_company_name" />
+
+                    <LinearLayout
+                        style="@style/LinearLayout_horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            style="@style/LinearLayout_vertical"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                style="@style/TextView_Basic"
+                                android:text="@string/last_followup_time" />
+
+                            <TextView
+                                android:id="@+id/tv_customer_lastTime"
+                                style="@style/TextView_Basic"
+                                android:text="2016年07月1日 18:00" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_customer_days"
+                            style="@style/TextView_Basic_match"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="距离上次跟进188天" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_data_empty1"
+                    style="@style/LinearLayout_horizontal"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="沈佳"
+                        android:visibility="gone" />
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/crm_nodatas" />
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_weight="1"
+                        android:text="@string/crm_wwyuan"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_data_more"
+                    style="@style/LinearLayout_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        style="@style/TextView_VerticalCenter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="默认显示一个遗忘客户，点击显示更多"
+                        android:textColor="@color/gray" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_more_blue_arrow" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/crm_ll_card"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_sell_honor" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="@string/Wall_of_Fame_description"
+                        android:textColor="#FF666666"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/client_sell_honor_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/client_sell_honor_empty_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="暂时没有数据"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+
+</LinearLayout>
+

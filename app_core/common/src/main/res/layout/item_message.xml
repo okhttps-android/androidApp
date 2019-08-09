@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:background="@drawable/selector_item_white_pass"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="@dimen/item_height"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <FrameLayout
+        android:id="@+id/schedule_head_area"
+        android:layout_width="57dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar_img"
+            android:layout_width="@dimen/item_img_height"
+            android:layout_height="@dimen/item_img_width"
+            android:layout_gravity="center_vertical"
+            android:background="@color/transparent"
+            android:contentDescription="@string/app_name"
+            android:padding="1dp"
+            android:src="@drawable/home_image_01_u" />
+
+        <TextView
+            android:id="@+id/num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:background="@drawable/tab_unread_bg"
+            android:gravity="center"
+            android:text="999"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@id/schedule_head_area"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/nick_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/time_tv"
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_marginTop="2dp"
+            android:text="我的审批"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:textColor="#999999"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/content_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nick_name_tv"
+            android:layout_marginTop="@dimen/paddingMin"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

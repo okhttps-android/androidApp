@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FBFBFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/bg_main"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/icon_date_nor"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/wage_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/oa_next"
+            android:gravity="center|left"
+            android:paddingRight="20dp"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/announcement_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FBFBFB" />
+        <TextView
+            android:id="@+id/announcement"
+            android:textSize="13sp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="公告：本月工资发放内容包括了上个月的餐补，请大家查看明细"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="#2f95dd"
+            />
+    </LinearLayout>
+
+
+    <com.core.widget.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+               <LinearLayout
+                   android:id="@+id/wages_ll"
+                   android:visibility="visible"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:background="@color/white">
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="10dp"
+                       android:background="#FBFBFB" />
+                   <com.core.widget.MyListView
+                       android:id="@+id/wages_lv"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:padding="10dp"
+                       android:visibility="visible"
+                       android:background="@color/white"
+                       >
+                   </com.core.widget.MyListView>
+
+                   <ImageView
+                       android:background="@drawable/sealang"
+                       android:layout_width="match_parent"
+                       android:layout_height="20dp" />
+               </LinearLayout>
+                <ImageView
+                    android:id="@+id/received_im"
+                    android:layout_alignBottom="@+id/wages_ll"
+                    android:layout_alignRight="@+id/wages_ll"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/received"
+                    android:visibility="gone"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="40dp"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/wage_nodata_ll"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/wage_nodata"
+                    />
+                <TextView
+                    android:padding="5dp"
+                    android:text="@string/no_salary_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/error_ll"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:text="@string/error_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:id="@+id/error_tv"
+                    android:text="报错等我QQ信息"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:padding="10dp"
+                    />
+                <ImageView
+                    android:background="@drawable/sealang"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btn_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_bule_btn"
+                    android:padding="10dp"
+                    android:text="@string/salary_sign"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_main"
+                    android:layout_weight="1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="30dp"
+                    /></LinearLayout>
+        </LinearLayout>
+   </com.core.widget.CustomerScrollView>
+
+</LinearLayout>

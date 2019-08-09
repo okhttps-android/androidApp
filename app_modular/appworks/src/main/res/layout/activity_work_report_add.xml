@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/work_report_add_date_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#F2F2F2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/work_report_add_time_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    tools:text="2017年10月17号     星期三" />
+
+                <RadioGroup
+                    android:id="@+id/work_report_add_time_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/work_report_add_time_before_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_big_gray_corner_blue_bg"
+                        android:button="@null"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="6dp"
+                        android:textColor="@color/selector_gray_white_color"
+                        tools:text="@string/str_last_month" />
+
+                    <RadioButton
+                        android:id="@+id/work_report_add_time_present_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/selector_big_gray_corner_blue_bg"
+                        android:button="@null"
+                        android:checked="true"
+                        android:paddingBottom="6dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="6dp"
+                        android:textColor="@color/selector_gray_white_color"
+                        tools:text="@string/str_this_month" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/work_report_add_old_schedule_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/background" />
+
+            <TextView
+                android:id="@+id/work_report_add_old_schedule_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/work_schedule_this_mohth"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.core.widget.DrawableCenterTextView
+                    android:id="@+id/work_report_add_old_schedule_empty_tv"
+                    style="@style/work_report_edittext_style"
+                    android:layout_below="@+id/work_report_add_old_schedule_content_tv"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/ic_work_report_notice"
+                    android:gravity="center_vertical"
+                    android:text="@string/work_schedule_empty_last_month"
+                    android:textColor="@color/gray"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/work_report_add_old_schedule_content_tv"
+                    style="@style/form_relative_right_text2"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/work_report_add_summary_title_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/work_summary_this_month"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/work_report_add_summary_error_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/word_overrun_one_thousand"
+                android:textColor="@color/no_approval"
+                android:textSize="16sp"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/work_report_add_summary_voice_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/btn_yuyin_nor"
+                android:visibility="visible"
+                />
+
+        </LinearLayout>
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/work_report_add_summary_content_et"
+            style="@style/work_report_edittext_style"
+            android:hint="@string/please_input_work_summary_this_month"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/background" />
+
+        <LinearLayout
+            android:id="@+id/work_report_add_new_schedule_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/work_report_add_new_schedule_title_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/work_schedule_next_month"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/work_report_add_new_schedule_error_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/word_overrun_one_thousand"
+                    android:textColor="@color/no_approval"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    />
+
+                <ImageView
+                    android:id="@+id/work_report_add_new_schedule_voice_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/btn_yuyin_nor"
+                    android:visibility="visible"
+                    />
+
+            </LinearLayout>
+
+            <com.andreabaccega.widget.FormEditText
+                android:id="@+id/work_report_add_new_schedule_content_et"
+                style="@style/work_report_edittext_style"
+                android:hint="@string/please_input_work_schedule_next_month" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/work_report_add_experience_title_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/wd_experience_title"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/work_report_add_experience_error_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/word_overrun_one_thousand"
+                android:textColor="@color/no_approval"
+                android:textSize="16sp"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/work_report_add_experience_voice_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/btn_yuyin_nor"
+                android:visibility="visible"
+                />
+
+            <ImageView
+                android:id="@+id/work_report_add_experience_share_iv"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ex_icon_share_nor"
+                android:visibility="visible"
+                />
+
+        </LinearLayout>
+
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/work_report_add_experience_content_et"
+            style="@style/work_report_edittext_style"
+            android:hint="@string/share_work_experience_to_zone"
+            />
+
+        <LinearLayout
+            style="@style/form_linear_customer">
+
+            <Button
+                android:id="@+id/work_report_add_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_bule_btn"
+                android:padding="10dp"
+                android:text="@string/common_submit_button"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_main" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

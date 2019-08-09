@@ -1,0 +1,134 @@
+<!--登录界面-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login_background"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="30dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_head"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="60dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_login_default_header"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_head"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_login_editext"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_login_username" />
+
+                    <com.core.widget.ClearEditText
+                        android:id="@+id/phone_numer_edit"
+                        style="@style/IMLineEditText"
+                        android:hint="@string/phone_number"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textCursorDrawable="@drawable/shape_edittext_white_cursor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/shape_login_editext"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_login_password" />
+
+                    <com.core.widget.ClearEditText
+                        android:id="@+id/password_edit"
+                        style="@style/IMLineEditPass"
+                        android:hint="@string/rpassword"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textCursorDrawable="@drawable/shape_edittext_white_cursor" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/login_btn"
+                    style="@style/commonButtonStyle"
+                    android:layout_marginTop="20dp"
+                    android:enabled="false"
+                    android:text="@string/login_button"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_findPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_content"
+                android:text="@string/login_losspwd"
+                android:textColor="#AADAFB" />
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/ll_content"
+                android:text="@string/login_register"
+                android:textColor="#AADAFB" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/login_toast_head"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <FrameLayout
+                android:id="@+id/login_toast_fl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>

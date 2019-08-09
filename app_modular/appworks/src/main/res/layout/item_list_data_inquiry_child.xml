@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp">
+
+    <LinearLayout
+        android:id="@+id/item_data_inquiry_child_ll1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/item_data_inquiry_child_caption_tv1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/data_inquiry_caption_textcolor"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/item_data_inquiry_child_value_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/data_inquiry_value_textcolor"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_data_inquiry_child_ll2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/item_data_inquiry_child_caption_tv2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/data_inquiry_caption_textcolor"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/item_data_inquiry_child_value_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/data_inquiry_value_textcolor"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oa_signin_tv_bg"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/departments_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="uas产品部"
+        android:textColor="@color/text_main"
+        android:textSize="@dimen/text_main" />
+
+    <TextView
+        android:id="@+id/num_type_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/departments_tv"
+        android:text="3人 | 排班制"
+        android:textColor="@color/hintColor"
+        android:textSize="@dimen/text_hine" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/oa_signin_delete" />
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/departments_tv"
+        android:layout_marginTop="15dp"
+        android:maxLines="1"
+        android:text="班次A 08:30-18:00;班次B 09：00-12：00;班次C 14：00-15：00.。。"
+        android:textColor="@color/hintColor" />
+
+    <TextView
+        android:id="@+id/addr_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_tv"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/oa_signin"
+        android:maxLines="1"
+        android:text="asdadadasda"
+        android:textColor="@color/hintColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addr_tv"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addr_tv"
+            android:layout_weight="2"
+            android:background="@drawable/oa_signin_tv_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="修改规则" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addr_tv"
+            android:layout_weight="3"
+            android:background="@drawable/oa_signin_tv_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="修改成员负责人" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addr_tv"
+            android:layout_weight="2"
+            android:background="@drawable/oa_signin_tv_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="编辑排班" />
+    </LinearLayout>
+
+</RelativeLayout>

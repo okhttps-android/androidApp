@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black">
+    <!--华东地区，华南地区，华北地区，华中地区，西南地区，西北地区，东北地区，港澳台地区，海外地区，其它地区-->
+    <item
+        android:id="@+id/cu_eastChina"
+        android:background="@color/light_gray"
+        android:title="华东地区" />
+    <item
+        android:id="@+id/cu_southChina"
+        android:title="华南地区" />
+    <item
+        android:id="@+id/cu_northChina"
+        android:title="华北地区" />
+    <item
+        android:id="@+id/cu_center"
+        android:title="华中地区" />
+    <item
+        android:id="@+id/cu_southwest"
+        android:title="西南地区" />
+    <item
+        android:id="@+id/cu_northwest"
+        android:title="西北地区" />
+    <item
+        android:id="@+id/cu_northeast"
+        android:title="东北地区" />
+    <item
+        android:id="@+id/cu_webPages"
+        android:title="港澳台地区" />
+    <item
+        android:id="@+id/cu_seas"
+        android:title="海外地区" />
+    <item
+        android:id="@+id/cu_other"
+        android:title="其它地区" />
+</menu>

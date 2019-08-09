@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cycleCountToolBar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/common_toolbar_bg"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/backImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseutil_back" />
+
+        <com.modular.apputils.widget.MenuVoiceSearchView
+            android:id="@+id/mVoiceSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal" />
+
+
+
+        <ImageView
+            android:id="@+id/addImg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/padding"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:src="@drawable/more" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:editTextFormExample="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hine_bg"
+    android:orientation="vertical"
+    tools:context="com.xzjmyk.pm.activity.ui.erp.activity.oa.AddContactsActivity">
+
+    <RelativeLayout
+        android:id="@+id/name_rl"
+        style="@style/item_menu">
+
+        <TextView
+            android:id="@+id/name_tag"
+            style="@style/item_menu_tag"
+            android:gravity="center_vertical"
+            android:text="@string/name" />
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/name_et"
+            style="@style/item_menu_input"
+            android:layout_toRightOf="@id/name_tag"
+            android:hint="@string/common_input"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/position_et"
+            editTextFormExample:testType="nocheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/position_rl"
+        style="@style/item_menu">
+
+        <TextView
+            android:id="@+id/position_tag"
+            style="@style/item_menu_tag"
+            android:gravity="center_vertical"
+            android:text="@string/position" />
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/position_et"
+            style="@style/item_menu_input"
+            android:layout_toRightOf="@id/position_tag"
+            android:hint="@string/common_input"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/mobile_et"
+            editTextFormExample:testType="nocheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mobile_rl"
+        style="@style/item_menu">
+
+        <TextView
+            android:id="@+id/mobile_tag"
+            style="@style/item_menu_tag"
+            android:gravity="center_vertical"
+            android:text="@string/user_phone" />
+
+        <com.andreabaccega.widget.FormEditText
+            android:id="@+id/mobile_et"
+            style="@style/item_menu_input"
+            android:layout_toRightOf="@id/mobile_tag"
+            android:hint="@string/common_input"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            editTextFormExample:testType="nocheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/company_rl"
+        style="@style/item_menu"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/company_tag"
+            style="@style/item_menu_tag"
+            android:gravity="center_vertical"
+            android:text="@string/company_name" />
+
+        <TextView
+            android:id="@+id/company_tv"
+            style="@style/item_menu_input"
+            android:layout_toRightOf="@id/company_tag"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/oa_next"
+            android:hint="@string/common_select_not_must" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/company_add_rl"
+        style="@style/item_menu">
+
+        <TextView
+            android:id="@+id/company_add_tag"
+            style="@style/item_menu_tag"
+            android:gravity="center_vertical"
+            android:text="@string/company_address"
+            android:textColor="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/company_add_tv"
+            style="@style/item_menu_input"
+            android:layout_toRightOf="@id/company_add_tag"
+            android:textColor="@color/hintColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/me_menu_item_normal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/card_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_card"
+            android:textColor="@color/hintColor" />
+
+        <ImageView
+            android:id="@+id/card_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/card_tag"
+            android:layout_margin="20dp"
+            android:background="@null"
+            android:src="@drawable/picture" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_bule_btn"
+            android:padding="10dp"
+            android:text="@string/common_submit_button"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_main" />
+    </RelativeLayout>
+</LinearLayout>
