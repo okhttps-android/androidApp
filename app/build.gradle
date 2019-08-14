@@ -1,3 +1,5 @@
+
+
 apply plugin: 'com.android.application'
 apply plugin: 'com.getkeepsafe.dexcount'
 //apply plugin: 'me.tatarka.retrolambda'
@@ -52,7 +54,7 @@ def getVersionCode() {
 
 
 android {
-    
+
     def versionArray = getVersionCode()
     //====================Add below two line=============
     dexOptions {
@@ -66,7 +68,7 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-       
+
     }
     signingConfigs {
         config {
@@ -146,20 +148,18 @@ android {
                     //variant.mergedFlavor.versionName ="v"+versionArray[0].toString().substring(0,1)+"."+ versionArray[0].toString().substring(1,2)+"."+  versionArray[0].toString().substring(2,3)
                     def releaseInfo = "v" + versionArray[0].toString().substring(0, 1) + "." + versionArray[0].toString().substring(1, 2) + "." + versionArray[0].toString().substring(2, 3) + "_" + variant.productFlavors[0].name + "(Build" + versionArray[1] + ")"
                     fileName = "WeiChat_${releaseInfo}_release.apk"
-
                 } else if (variant.buildType.name.equals('debug')) {
                     //赋值app属性版本名
                     variant.mergedFlavor.versionName = getVersionName() + "_" + releaseTime() + "_" + variant.productFlavors[0].name + "(Build" + versionArray[3] + ")" + "_debug"
                     def debugInfo = getVersionName() + "_" + releaseTime() + "_" + variant.productFlavors[0].name + "(Build" + versionArray[3] + ")"
                     fileName = "WeiChat_${debugInfo}_debug.apk"
-
                 }
                 output.outputFile = new File(outputFile.parent, fileName)
             }
         }
     }*/
 
-  
+
 }
 
 repositories{
@@ -169,6 +169,9 @@ repositories{
 }
 
 dependencies {
+    
+
+   
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile deps.junit
     compile deps.appcompatV7
@@ -201,8 +204,6 @@ dependencies {
     compile project(':apputils')
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
 //    compile 'com.android.support:support-v4:26.+'
-
-    
     compile(name: 'autoupdatesdk-release', ext: 'aar')
 }
 

@@ -6,6 +6,6 @@ public class RnIndexActivity extends ReactActivity {
 
     @Override
     protected String getMainComponentName() {
-        return "HybridAndroid";
+        return "UU_RN";
     }
 }
