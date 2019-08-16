@@ -13,6 +13,7 @@ import android.util.Log;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.beefe.picker.PickerViewPackage;
 import com.common.config.BaseApplication;
 import com.common.config.BaseConfig;
 import com.core.db.DBOpenHelper;
@@ -411,7 +412,8 @@ public class MyApplication extends BaseApplication implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
-                    new RNGestureHandlerPackage()
+                    new RNGestureHandlerPackage(),
+                    new PickerViewPackage()
             );
         }
 
