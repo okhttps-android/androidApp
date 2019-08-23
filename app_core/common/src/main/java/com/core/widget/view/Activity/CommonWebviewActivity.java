@@ -2,15 +2,19 @@ package com.core.widget.view.Activity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.webkit.DownloadListener;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import com.common.file.DownloadUtil;
 import com.core.app.R;
@@ -28,6 +32,9 @@ public class CommonWebviewActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_common_webview);
         mWebView = (WebView) findViewById(R.id.webview);
+
+        mWebView.addJavascriptInterface(new JavaScriptinterface(this),
+                "android");
 
         WebSettings webSettings = mWebView.getSettings();
         //允许加载JavaScript
@@ -92,6 +99,35 @@ public class CommonWebviewActivity extends Activity {
         if (mWebView != null) {
             mWebView.removeAllViews();
             mWebView.destroy();
+        }
+    }
+
+
+    public class JavaScriptinterface {
+        Context context;
+        public JavaScriptinterface(Context c) {
+            context= c;
+        }
+
+        /**
+         * 与js交互时用到的方法，在js里直接调用的
+         */
+        @JavascriptInterface
+        public void showToast(String ssss) {
+
+            Toast.makeText(CommonWebviewActivity.this, ssss, Toast.LENGTH_LONG).show();
+        }
+
+        @JavascriptInterface
+        public void requestedOrientationLandscape(){
+            // 设置为横屏模式  
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+
+        @JavascriptInterface
+        public void requestedOrientationPortrait(){
+            // 设置为横屏模式  
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
     }
 }

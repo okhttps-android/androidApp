@@ -60,6 +60,7 @@ import com.core.utils.FlexJsonUtil;
 import com.core.utils.StatusBarUtil;
 import com.core.utils.ToastUtil;
 import com.core.utils.helper.AvatarHelper;
+import com.core.widget.view.Activity.CommonWebviewActivity;
 import com.me.network.app.http.HttpClient;
 import com.me.network.app.http.Method;
 import com.me.network.app.http.rx.Result2Listener;
@@ -78,7 +79,6 @@ import com.uas.appworks.crm3_0.activity.CustomerVisitActivity;
 import com.uuzuche.lib_zxing.activity.CaptureActivity;
 import com.xzjmyk.pm.activity.CaptureResultActivity;
 import com.xzjmyk.pm.activity.R;
-import com.xzjmyk.pm.activity.rn.RnIndexActivity;
 import com.xzjmyk.pm.activity.ui.MainActivity;
 import com.xzjmyk.pm.activity.ui.circle.BusinessCircleActivity;
 import com.xzjmyk.pm.activity.util.im.UserRoleUtils;
@@ -550,7 +550,12 @@ public class MeFragment extends EasyFragment implements View.OnClickListener, On
                 ct.startActivity(intent);
                 break;
             case R.id.setting_rl:// 设置
-                ct.startActivity(new Intent(getActivity(), RnIndexActivity.class));
+                
+               // ct.startActivity(new Intent(getActivity(), RnIndexActivity.class));
+                
+                ct.startActivity(new Intent(getActivity(), CommonWebviewActivity.class)
+                .putExtra("scan_url","http://10.1.80.118:3000/android"));
+                
 //                ct.startActivity(new Intent(getActivity(), SettingActivity.class));
 //                CommonUtil.setSharedPreferences(ct, Constants.NEW_SETING, true);
 //                tv_menu_setting.setVisibility(View.GONE);

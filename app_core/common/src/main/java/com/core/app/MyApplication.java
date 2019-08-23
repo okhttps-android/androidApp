@@ -30,8 +30,10 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.github.yamill.orientation.OrientationPackage;
 import com.hss01248.notifyutil.NotifyUtil;
 import com.lidroid.xutils.HttpUtils;
+import com.microsoft.codepush.react.CodePush;
 import com.nostra13.universalimageloader.cache.disc.impl.TotalSizeLimitedDiscCache;
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.cache.memory.MemoryCacheAware;
@@ -413,7 +415,9 @@ public class MyApplication extends BaseApplication implements ReactApplication {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
                     new RNGestureHandlerPackage(),
-                    new PickerViewPackage()
+                    new PickerViewPackage(),
+                    new CodePush("",INSTANCE),
+                    new OrientationPackage()
             );
         }
 
