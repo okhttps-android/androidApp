@@ -10,7 +10,9 @@
         android:supportsRtl="true">
 
 
-        <activity android:name="com.core.widget.view.Activity.CommonWebviewActivity"/>
+        <activity
+            android:configChanges="keyboardHidden|orientation"
+            android:name="com.core.widget.view.Activity.CommonWebviewActivity"/>
         <activity android:name="com.core.widget.view.Activity.ImgFileListActivity"
             android:label="相册列表"/>
         <activity android:name="com.core.utils.pictureselector.ImgsActivity"

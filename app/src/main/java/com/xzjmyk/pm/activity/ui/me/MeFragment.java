@@ -554,7 +554,7 @@ public class MeFragment extends EasyFragment implements View.OnClickListener, On
                // ct.startActivity(new Intent(getActivity(), RnIndexActivity.class));
                 
                 ct.startActivity(new Intent(getActivity(), CommonWebviewActivity.class)
-                .putExtra("scan_url","http://10.1.80.118:3000/android"));
+                .putExtra("scan_url","http://10.1.80.225:8000/#/dashboard/share_key/12dc375e7ced09941519edad44f8cd24b0f3e5286eb3976c7bffe0e04ed55ac6"));
                 
 //                ct.startActivity(new Intent(getActivity(), SettingActivity.class));
 //                CommonUtil.setSharedPreferences(ct, Constants.NEW_SETING, true);
