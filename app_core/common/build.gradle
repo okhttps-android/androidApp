@@ -28,6 +28,8 @@ dependencies {
     implementation project(':react-native-picker')
     implementation project(':react-native-code-push')
     implementation project(':react-native-orientation')
+    compile project(':react-native-vector-icons') 
+    
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile deps.junit
     compile deps.appcompatV7

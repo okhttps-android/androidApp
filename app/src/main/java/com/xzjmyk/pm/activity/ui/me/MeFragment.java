@@ -60,7 +60,6 @@ import com.core.utils.FlexJsonUtil;
 import com.core.utils.StatusBarUtil;
 import com.core.utils.ToastUtil;
 import com.core.utils.helper.AvatarHelper;
-import com.core.widget.view.Activity.CommonWebviewActivity;
 import com.me.network.app.http.HttpClient;
 import com.me.network.app.http.Method;
 import com.me.network.app.http.rx.Result2Listener;
@@ -79,6 +78,7 @@ import com.uas.appworks.crm3_0.activity.CustomerVisitActivity;
 import com.uuzuche.lib_zxing.activity.CaptureActivity;
 import com.xzjmyk.pm.activity.CaptureResultActivity;
 import com.xzjmyk.pm.activity.R;
+import com.xzjmyk.pm.activity.rn.RnIndexActivity;
 import com.xzjmyk.pm.activity.ui.MainActivity;
 import com.xzjmyk.pm.activity.ui.circle.BusinessCircleActivity;
 import com.xzjmyk.pm.activity.util.im.UserRoleUtils;
@@ -551,10 +551,10 @@ public class MeFragment extends EasyFragment implements View.OnClickListener, On
                 break;
             case R.id.setting_rl:// 设置
                 
-               // ct.startActivity(new Intent(getActivity(), RnIndexActivity.class));
+                ct.startActivity(new Intent(getActivity(), RnIndexActivity.class));
                 
-                ct.startActivity(new Intent(getActivity(), CommonWebviewActivity.class)
-                .putExtra("scan_url","http://10.1.80.225:8000/#/dashboard/share_key/12dc375e7ced09941519edad44f8cd24b0f3e5286eb3976c7bffe0e04ed55ac6"));
+//                ct.startActivity(new Intent(getActivity(), CommonWebviewActivity.class)
+//                .putExtra("scan_url","http://10.1.80.225:8000/#/dashboard/share_key/12dc375e7ced09941519edad44f8cd24b0f3e5286eb3976c7bffe0e04ed55ac6"));
                 
 //                ct.startActivity(new Intent(getActivity(), SettingActivity.class));
 //                CommonUtil.setSharedPreferences(ct, Constants.NEW_SETING, true);

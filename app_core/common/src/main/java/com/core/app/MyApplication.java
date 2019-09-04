@@ -44,6 +44,7 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
 import com.nostra13.universalimageloader.core.display.RoundedBitmapDisplayer;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.tencent.mm.opensdk.openapi.IWXAPI;
 import com.tencent.mm.opensdk.openapi.WXAPIFactory;
@@ -417,7 +418,8 @@ public class MyApplication extends BaseApplication implements ReactApplication {
                     new RNGestureHandlerPackage(),
                     new PickerViewPackage(),
                     new CodePush("",INSTANCE),
-                    new OrientationPackage()
+                    new OrientationPackage(),
+                    new VectorIconsPackage()
             );
         }
 
